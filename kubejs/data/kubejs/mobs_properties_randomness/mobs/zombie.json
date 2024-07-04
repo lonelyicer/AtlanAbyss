@@ -1,0 +1,19 @@
+{
+    "mob_id": "minecraft:zombie",
+    "attributes": [
+        {
+            "id": "minecraft:generic.attack_damage",
+            "modifier_name": "attack_damage for Zombies",
+            "amount": {
+                "min": 5,
+                "difficulty_modifier": {
+                    "operation": "add",
+                    "easy": -5,
+                    "normal": 0,
+                    "hard": 5
+                }
+            },
+            "operation": "addition"
+        }
+    ]
+}

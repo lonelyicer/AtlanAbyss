@@ -38,7 +38,7 @@
               "count": {
                 "type": "minecraft:uniform",
                 "min": 0.0,
-                "max": 1.0
+                "max": 3.0
               }
             }
           ],
@@ -105,6 +105,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
+          "weight": 9,
           "functions": [
             {
               "function": "minecraft:furnace_smelt",
@@ -122,6 +123,21 @@
             }
           ],
           "name": "minecraft:gameplay/fishing/fish"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:looting_enchant",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 0.0,
+                "max": 1.0
+              }
+            }
+          ],
+          "name": "minecraft:guardian_spawn_egg"
         }
       ],
       "conditions": [

@@ -5,7 +5,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "weight": 1,
+                    "weight": 8,
                     "name": "tacz:modern_kinetic_gun",
                     "functions": [
                         {
@@ -16,7 +16,7 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 1,
+                    "weight": 7,
                     "name": "tacz:modern_kinetic_gun",
                     "functions": [
                         {
@@ -27,7 +27,18 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 1,
+                    "weight": 6,
+                    "name": "tacz:modern_kinetic_gun",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{GunFireMode:\"AUTO\",GunId:\"tacz:uzi\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 5,
                     "name": "tacz:modern_kinetic_gun",
                     "functions": [
                         {
@@ -38,57 +49,12 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 3,
-                    "name": "kubejs:pistol_ammo",
+                    "weight": 1,
+                    "name": "tacz:modern_kinetic_gun",
                     "functions": [
                         {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 10,
-                                "max": 30
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 3,
-                    "name": "kubejs:smg_ammo",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 15,
-                                "max": 45
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 3,
-                    "name": "kubejs:shotgun_ammo",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 1,
-                                "max": 10
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 3,
-                    "name": "kubejs:rifle_ammo",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 5,
-                                "max": 20
-                            }
+                            "function": "minecraft:set_nbt",
+                            "tag": "{GunFireMode:\"AUTO\",GunId:\"tacz:rpg7\"}"
                         }
                     ]
                 }

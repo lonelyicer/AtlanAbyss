@@ -31,18 +31,12 @@
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:enchanted_golden_apple",
-                    "conditions": [
-                        {
-                            "condition": "minecraft:random_chance",
-                            "chance": 0.7
-                        }
-                    ],
                     "functions": [
                         {
                             "function": "minecraft:set_count",
                             "count": {
-                                "min": 1,
-                                "max": 64
+                                "min": 16,
+                                "max": 32
                             }
                         }
                     ]
@@ -69,22 +63,16 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "name": "kubejs:lucky/uma_supply_book",
-                    "conditions": [
-                        {
-                            "condition": "minecraft:random_chance",
-                            "chance": 0.6
-                        }
-                    ]
+                    "name": "kubejs:lucky/album"
                 }
             ]
         },
         {
-            "rolls": 1,
+            "rolls": 5,
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "name": "kubejs:lucky/album"
+                    "name": "kubejs:lucky"
                 }
             ]
         }

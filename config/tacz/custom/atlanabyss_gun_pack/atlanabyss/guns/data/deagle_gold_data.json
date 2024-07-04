@@ -4,10 +4,10 @@
   "bullet": {
     "life": 0.7,
     "bullet_amount": 1,
-    "damage": 24,
+    "damage": 18,
     "tracer_count_interval": 0,
     "extra_damage": {
-      "armor_ignore": 0.5,
+      "armor_ignore": 0.25,
       "head_shot_multiplier": 1.75,
       "damage_adjust": [
         {"distance": 0.5, "damage": 30},
@@ -24,9 +24,9 @@
   },
   "ammo_amount": 7,
   "extended_mag_ammo_amount": [
-    8,
-    10,
-    12
+    12,
+    15,
+    20
   ],
   "bolt": "closed_bolt",
   "reload": {
@@ -45,8 +45,8 @@
   "aim_time": 0.2,
   "sprint_time": 0.2,
   "fire_mode": [
-    "semi",
-    "auto"
+    "auto",
+    "semi"
   ],
   "allow_attachment_types": [
     "scope",

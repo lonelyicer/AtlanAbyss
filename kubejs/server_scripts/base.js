@@ -8,7 +8,7 @@ onEvent('recipes', event => {
 
 	let {
 		mixing,
-		cutting,
+		haunting,
 		filling,
 		emptying,
 		splashing,
@@ -365,6 +365,9 @@ onEvent('recipes', event => {
 		'2x minecraft:sugar',
 		'farmersdelight:wheat_dough'
 	]).id("atlanabyss:cake_base")
+
+	//火把
+	event.campfireCooking('minecraft:torch', 'minecraft:stick').cookingTime(16).id("atlanabyss:campfire_stick")
 
 	//安山合金
 	remove('create:crafting/materials/andesite_alloy_from_zinc')
@@ -1351,11 +1354,11 @@ onEvent('recipes', event => {
 	// 	'twilightforest:raw_ironwood'
 	// ], 1, 'kubejs:twilight_spring', 'twilight_spring')
 
-	function ccss(item, result, xp, id) {
-		event.campfireCooking(result, item).xp(xp).id("atlanabyss:campfire_" + id)
-		event.smelting(result, item).xp(xp).id("atlanabyss:smelting_" + id)
-		event.smoking(result, item).xp(xp).id("atlanabyss:smoking_" + id)
-	}
+	// function ccss(item, result, xp, id) {
+	// 	event.campfireCooking(result, item).xp(xp).id("atlanabyss:campfire_" + id)
+	// 	event.smelting(result, item).xp(xp).id("atlanabyss:smelting_" + id)
+	// 	event.smoking(result, item).xp(xp).id("atlanabyss:smoking_" + id)
+	// }
 	// ccss('kubejs:raw_insect', 'kubejs:cooked_insect', 1, 'raw_insect')
 	// ccss('kubejs:raw_meef_slice', 'kubejs:cooked_meef_slice', 1, 'raw_meef_slice')
 	// ccss('kubejs:raw_venison_rib', 'kubejs:cooked_venison_rib', 1, 'raw_venison_rib')
@@ -1648,24 +1651,19 @@ onEvent('recipes', event => {
 	).id('atlanabyss:pressing_desh_sheet')//戴斯板
 
 	//缠魂
-	function createHaunting(input, output, id) {
-		event.custom({
-			type: 'create:haunting',
-			ingredients: [Ingredient.of(input).toJson()],
-			results: [Item.of(output).toResultJson()]
-		}).id('atlanabyss:' + id);
-	}
-	createHaunting('minecraft:prismarine_shard', 'ars_nouveau:wilden_spike', 'wilden_spike')//新生魔艺掉落物
-	createHaunting('minecraft:bone', 'ars_nouveau:wilden_horn', 'wilden_horn')
-	createHaunting('minecraft:rotten_flesh', 'ars_nouveau:wilden_wing', 'wilden_wing')
-	createHaunting('#atlanabyss:vanilla_saplings', 'ars_nouveau:green_archwood_sapling', 'green_archwood_sapling')//新生魔艺绿树
-	createHaunting('tconstruct:rose_gold_ingot', 'create:polished_rose_quartz', 'rose_gold_quartz')//玫瑰石英
-	createHaunting('minecraft:bone_meal', 'botania:fertilizer', 'fertilizer')//花肥
-	createHaunting('thermal:blitz_powder', 'thermal:lightning_charge', 'lightning_charge')//鸣雷弹
-	createHaunting('thermal:blizz_powder', 'thermal:ice_charge', 'ice_charge')//瀑冰弹
-	createHaunting('thermal:basalz_powder', 'thermal:earth_charge', 'earth_charge')//裂岩弹
-	createHaunting('minecraft:blaze_powder', 'minecraft:fire_charge', 'fire_charge')//火焰弹
+	haunting('ars_nouveau:wilden_spike', 'minecraft:prismarine_shard').id('atlanabyss:haunting_wilden_spike');//新生魔艺掉落物
+	haunting('ars_nouveau:wilden_horn', 'minecraft:bone').id('atlanabyss:haunting_wilden_horn')
+	haunting('ars_nouveau:wilden_wing', 'minecraft:rotten_flesh').id('atlanabyss:haunting_wilden_wing')
+	haunting('ars_nouveau:green_archwood_sapling', '#atlanabyss:vanilla_saplings').id('atlanabyss:haunting_green_archwood_sapling')//新生魔艺绿树
+	haunting('create:polished_rose_quartz', 'tconstruct:rose_gold_ingot').id('atlanabyss:haunting_rose_gold_quartz')//玫瑰石英
+	haunting('botania:fertilizer', 'minecraft:bone_meal',).id('atlanabyss:haunting_fertilizer')//花肥
+	haunting('thermal:lightning_charge', 'thermal:blitz_powder').id('atlanabyss:haunting_lightning_charge')//鸣雷弹
+	haunting('thermal:ice_charge', 'thermal:blizz_powder').id('atlanabyss:haunting_ice_charge')//瀑冰弹
+	haunting('thermal:earth_charge', 'thermal:basalz_powder').id('atlanabyss:haunting_earth_charge')//裂岩弹
+	haunting('minecraft:fire_charge', 'minecraft:blaze_powder').id('atlanabyss:haunting_fire_charge')//火焰弹
+	haunting('minecraft:twisting_vines', 'minecraft:vine').id('atlanabyss:haunting_vine')//缠怨藤
 
+	event.blasting('minecraft:weeping_vines', 'minecraft:vine').id('atlanabyss:blasting_vine')//垂泪藤
 	//管道升级
 	deploying('pipez:basic_upgrade', [
 		'pneumaticcraft:printed_circuit_board',
@@ -2818,11 +2816,9 @@ onEvent('recipes', event => {
 		'kubejs:alchemy_2',
 		5000,
 		'alchemy_2')
-	event.custom({
-		type: 'create:haunting',
-		ingredients: [Ingredient.of('kubejs:alchemy_2').toJson()],
-		results: [Item.of('kubejs:alchemy_3').toResultJson()]
-	}).id("atlanabyss:alchemy_3");
+	haunting('kubejs:alchemy_3', [
+		'kubejs:alchemy_2'
+	]).id("atlanabyss:alchemy_3");
 	event.custom({
 		type: 'botania:pure_daisy',
 		input: {
@@ -2866,7 +2862,7 @@ onEvent('recipes', event => {
 		Item.of('kubejs:treasure_box').withChance(1 / 1000),
 		Item.of('kubejs:alchemy_0').withChance(3 / 4),
 		Item.of('farmersdelight:roast_chicken_block', 1).withChance(1 / 16),
-		Item.of('minecraft:barrel', "{RepairCost:0,display:{Name:'{\"text\":\"耐心之桶\"}'}}").enchant('minecraft:looting', 2).withChance(1 / 2)
+		//Item.of('minecraft:barrel', "{BlockEntityTag:{LootTable:\"kubejs:lucky\"},display:{Name:'{\"text\":\"耐心之桶\"}'}}").enchant('minecraft:looting', 2).withChance(1 / 2)
 	], [
 		'kubejs:alchemy_9',
 		'kubejs:tungsten_nugget'

@@ -105,7 +105,7 @@
         "minecraft:shipwreck",
         "minecraft:mineshaft",
         "minecraft:fortress",
-        "betteroceanmonuments:ocean_monument",
+        "minecraft:monument",
         "integrated_api:underground_structure",
         "integrated_stronghold:stronghold"
       ]

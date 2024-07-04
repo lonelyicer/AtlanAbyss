@@ -284,23 +284,9 @@
 			hide: true
 			id: "13627E6F08A8CB2D"
 			tasks: [{
-				id: "55645D91BE8BACC9"
+				id: "0E698BBBD9A6ADAA"
 				type: "item"
 				title: "任意背包"
-				icon: {
-					id: "sophisticatedbackpacks:backpack"
-					Count: 1b
-					tag: {
-						inventorySlots: 27
-						upgradeSlots: 1
-						contentsUuid: [I;
-							-1844206996
-							-664973661
-							-1977918144
-							737068954
-						]
-					}
-				}
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b
@@ -308,7 +294,6 @@
 						value: "curios:back"
 					}
 				}
-				match_nbt: false
 			}]
 			rewards: [{
 				id: "41B399335485DFBA"

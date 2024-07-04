@@ -5,6 +5,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
+                    "weight": 2,
                     "name": "ae2:controller",
                     "functions": [
                         {
@@ -18,6 +19,7 @@
                 },
                 {
                     "type": "minecraft:item",
+                    "weight": 2,
                     "name": "ae2:fluix_glass_cable",
                     "functions": [
                         {
@@ -31,45 +33,33 @@
                 },
                 {
                     "type": "minecraft:item",
+                    "weight": 1,
                     "name": "ae2:item_storage_cell_1k"
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "ae2:cell_component_1k"
+                    "weight": 1,
+                    "name": "ae2:interface"
                 },
                 {
                     "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "ae2:pattern_provider"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
                     "name": "ae2:molecular_assembler"
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "ae2:annihilation_core",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 4,
-                                "max": 12
-                            }
-                        }
-                    ]
+                    "weight": 3,
+                    "name": "ae2:chest"
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "ae2:formation_core",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 4,
-                                "max": 12
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "name": "ae2:molecular_assembler"
+                    "weight": 2,
+                    "name": "ae2:terminal"
                 }
             ]
         }

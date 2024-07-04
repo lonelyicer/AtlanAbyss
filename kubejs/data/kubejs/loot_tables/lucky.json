@@ -27,6 +27,11 @@
                 },
                 {
                     "type": "minecraft:loot_table",
+                    "weight": 2,
+                    "name": "kubejs:lucky/ammo"
+                },
+                {
+                    "type": "minecraft:loot_table",
                     "weight": 1,
                     "name": "kubejs:lucky/discs"
                 },
@@ -77,8 +82,30 @@
                 },
                 {
                     "type": "minecraft:loot_table",
+                    "weight": 1,
+                    "name": "kubejs:lucky/spawn_eggs"
+                },
+                {
+                    "type": "minecraft:loot_table",
                     "weight": 3,
                     "name": "kubejs:lucky/toy"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.1
+                        }
+                    ],
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{BlockEntityTag:{LootTable:\"kubejs:umapyoi\"},display:{Name:'{\"text\":\"马娘宝箱\"}'}}"
+                        }
+                    ],
+                    "name": "minecraft:green_shulker_box"
                 }
             ]
         }

@@ -1,26 +1,25 @@
 {
-  "ammo": "tacz:50ae",
+  "ammo": "tacz:rpg_rocket",
   "rpm": 150,
   "bullet": {
-    "life": 0.7,
+    "life": 6,
     "bullet_amount": 1,
-    "damage": 80,
+    "damage": 18,
     "tracer_count_interval": 0,
     "extra_damage": {
-      "armor_ignore": 1.0,
-      "head_shot_multiplier": 1.75,
-      "damage_adjust": [
-        {"distance": 0.5, "damage": 100},
-        {"distance": 49.5, "damage": 80},
-        {"distance": "infinite", "damage": 60}
-      ]
+      "armor_ignore": 0.0,
+      "head_shot_multiplier": 1.75
     },
-    "speed": 170,
-    "gravity": 0.0245,
+    "speed": 42,
+    "gravity": 0.01,
     "knockback": 0,
-    "friction": 0.012,
+    "friction": 0.005,
     "ignite": false,
-    "pierce": 1
+    "pierce": 0,
+    "explosion": {
+      "damage": 114,
+      "radius": 5
+    }
   },
   "ammo_amount": 7,
   "extended_mag_ammo_amount": [

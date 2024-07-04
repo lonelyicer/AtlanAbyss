@@ -2,6 +2,15 @@
   "pack.atlanabyss.atlanabyss.name": "AtlanAbyss枪械包",
   "pack.atlanabyss.atlanabyss.desc": "AtlanAbyss枪械包：整合包特供。",
 
-  "atlanabyss.gun.deagle_pink.name": ".50 粉红沙鹰",
-  "atlanabyss.gun.deagle_gold.name": ".50 黄金沙鹰"
+  "atlanabyss.gun.deagle_pink.name": "粉红沙漠之鹰",
+  "atlanabyss.gun.deagle_gold.name": "黄金沙漠之鹰",
+  "atlanabyss.gun.deagle_red.name": "赤红沙漠之鹰",
+  "atlanabyss.gun.deagle_black.name": "炭黑沙漠之鹰",
+
+  "atlanabyss.ammo.magnum_ammo.name":"通用马格南弹药",
+  "atlanabyss.ammo.pistol_ammo.name":"通用手枪弹药",
+  "atlanabyss.ammo.rifle_ammo.name":"通用步枪弹药",
+  "atlanabyss.ammo.shotgun_ammo.name":"通用霰弹枪弹药",
+  "atlanabyss.ammo.smg_ammo.name":"通用冲锋枪弹药",
+  "atlanabyss.ammo.sniper_ammo.name":"通用大口径步枪弹药"
 }

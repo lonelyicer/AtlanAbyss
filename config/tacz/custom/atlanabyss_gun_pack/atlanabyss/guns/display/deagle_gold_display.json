@@ -1,5 +1,5 @@
 {
-  "model": "atlanabyss:gun/deagle_geo",
+  "model": "tacz:gun/deagle_geo",
   "texture": "atlanabyss:gun/uv/deagle_gold",
   "lod": {
     "model": "atlanabyss:gun/lod/deagle",

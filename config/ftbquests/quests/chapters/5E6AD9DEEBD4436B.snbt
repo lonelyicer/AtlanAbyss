@@ -828,6 +828,115 @@
 				xp: 10
 			}]
 		}
+		{
+			disable_toast: true
+			x: 4.5d
+			y: 1.0d
+			shape: "hexagon"
+			dependencies: ["10699AD6804D40DD"]
+			id: "7FE9B02A291406B4"
+			tasks: [{
+				id: "01546B354F16A03E"
+				type: "item"
+				item: "pneumaticcraft:spawner_core_shell"
+			}]
+			rewards: [{
+				id: "4F793FCBACD4EBED"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 5.0d
+			y: 2.5d
+			shape: "hexagon"
+			dependencies: ["7FE9B02A291406B4"]
+			id: "49DB7B61EAC7AAE3"
+			tasks: [{
+				id: "730830412258FE0B"
+				type: "item"
+				item: "pneumaticcraft:spawner_core"
+			}]
+			rewards: [{
+				id: "6EEF422A7FCDF2BA"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 5.0d
+			y: 5.0d
+			shape: "hexagon"
+			dependencies: ["49DB7B61EAC7AAE3"]
+			id: "186EE137DD1F06ED"
+			tasks: [{
+				id: "1CD7AC82CF69A6EB"
+				type: "item"
+				item: "pneumaticcraft:vacuum_trap"
+			}]
+			rewards: [{
+				id: "5DF3D93AE058949C"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 4.5d
+			y: 6.0d
+			shape: "hexagon"
+			dependencies: ["474FD08A21970A69"]
+			id: "05E3B13A96357AFB"
+			tasks: [{
+				id: "66DD220250E8538A"
+				type: "item"
+				item: "pneumaticcraft:pressurized_spawner"
+			}]
+			rewards: [{
+				id: "0F44FD880266C4CA"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -3.5d
+			y: 2.0d
+			description: ["使用切石机可切成各种各样的升级模块"]
+			dependencies: ["360AF22B07FFD5D7"]
+			id: "181212E6BAAE10E2"
+			tasks: [{
+				id: "24D3B6F28E426281"
+				type: "item"
+				item: "pneumaticcraft:upgrade_matrix"
+			}]
+			rewards: [{
+				id: "4FBBE6F77C1F9CA1"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -4.5d
+			y: 0.0d
+			shape: "hexagon"
+			dependencies: ["0F5A93488A644D11"]
+			hide: true
+			id: "7C036FF59EE71F39"
+			tasks: [{
+				id: "44736E27856AB03B"
+				type: "item"
+				item: "pneumaticcraft:thermal_lagging"
+			}]
+			rewards: [{
+				id: "74206506B4B9B946"
+				type: "xp"
+				xp: 10
+			}]
+		}
 	]
 	quest_links: [ ]
 }

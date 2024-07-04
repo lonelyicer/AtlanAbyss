@@ -689,67 +689,67 @@ onEvent('player.logged_in', event => {
 
 
 
-onEvent('block.break', event => {
-  let { server, level, block } = event;
+// onEvent('block.break', event => {
+//   let { server, level, block } = event;
 
-  if (block !== 'kubejs:lucky_block') return;
+//   if (block !== 'kubejs:lucky_block') return;
 
-  let random = () => Utils.random.nextInt(summon.length);
-  let randomIndex = [random(), random()];
-  let randomSummon = summon[randomIndex[0]];
+//   let random = () => Utils.random.nextInt(summon.length);
+//   let randomIndex = [random(), random()];
+//   let randomSummon = summon[randomIndex[0]];
 
-  if (level.dimension != 'minecraft:the_nether') {
-    if (randomIndex[1] <= summon.length / 6) {
-      luckSummon(randomSummon);
-    }
-  } else if (randomIndex[1] >= summon.length * 9 / 10) {
-    badSummon();
-  } else {
-    luckSummon(randomSummon);
-  }
+//   if (level.dimension != 'minecraft:the_nether') {
+//     if (randomIndex[1] <= summon.length / 6) {
+//       luckSummon(randomSummon);
+//     }
+//   } else if (randomIndex[1] >= summon.length * 9 / 10) {
+//     badSummon();
+//   } else {
+//     luckSummon(randomSummon);
+//   }
 
-  function luckSummon(randomSummon) {
-    server.runCommandSilent(`execute in ${level.dimension} run summon ${randomSummon} ${block.x} ${block.y} ${block.z}`);
-    server.runCommandSilent(`execute in ${level.dimension} run playsound minecraft:entity.turtle.lay_egg block @a ${block.x} ${block.y} ${block.z}`)
-    server.runCommandSilent(`execute in ${level.dimension} run particle minecraft:firework ${block.x} ${block.y + 0.5} ${block.z} .1 0 .1 .07 20`);
-  }
-  function badSummon() {
-    server.runCommandSilent(`execute in ${level.dimension} run summon thermal:nuke_tnt ${block.x} ${block.y} ${block.z}`);
-  }
+//   function luckSummon(randomSummon) {
+//     server.runCommandSilent(`execute in ${level.dimension} run summon ${randomSummon} ${block.x} ${block.y} ${block.z}`);
+//     server.runCommandSilent(`execute in ${level.dimension} run playsound minecraft:entity.turtle.lay_egg block @a ${block.x} ${block.y} ${block.z}`)
+//     server.runCommandSilent(`execute in ${level.dimension} run particle minecraft:firework ${block.x} ${block.y + 0.5} ${block.z} .1 0 .1 .07 20`);
+//   }
+//   function badSummon() {
+//     server.runCommandSilent(`execute in ${level.dimension} run summon thermal:nuke_tnt ${block.x} ${block.y} ${block.z}`);
+//   }
 
 
-  // if (level.worldBorder.getSize() >= 59999860) {
-  //   worldBorderSet(event)
-  // }
-})
-//幸运方块数组
-const summon = [
-  'minecraft:villager',//从0开始算
-  'minecraft:cat',
-  'minecraft:cow',
-  'minecraft:pig',
-  'minecraft:fox',
-  'minecraft:wolf',
-  'minecraft:goat',
-  'minecraft:llama',
-  'minecraft:panda',
-  'minecraft:parrot',
-  'minecraft:rabbit',
-  'minecraft:sheep',
-  'minecraft:chicken',
-  'minecraft:turtle',
-  'minecraft:mooshroom',
-  'minecraft:creeper',
-  'minecraft:zombie',
-  'minecraft:zombie_villager',
-  'minecraft:skeleton',
-  'minecraft:wither_skeleton',
-  'minecraft:piglin',
-  'minecraft:pillager',
-  'minecraft:vindicator',
-  'minecraft:shulker',
-  'minecraft:slime',
-  'minecraft:witch',
-  'minecraft:spider',
-  'minecraft:strider'
-];
+//   if (level.worldBorder.getSize() >= 59999860) {
+//     worldBorderSet(event)
+//   }
+// })
+// //幸运方块数组
+// const summon = [
+//   'minecraft:villager',//从0开始算
+//   'minecraft:cat',
+//   'minecraft:cow',
+//   'minecraft:pig',
+//   'minecraft:fox',
+//   'minecraft:wolf',
+//   'minecraft:goat',
+//   'minecraft:llama',
+//   'minecraft:panda',
+//   'minecraft:parrot',
+//   'minecraft:rabbit',
+//   'minecraft:sheep',
+//   'minecraft:chicken',
+//   'minecraft:turtle',
+//   'minecraft:mooshroom',
+//   'minecraft:creeper',
+//   'minecraft:zombie',
+//   'minecraft:zombie_villager',
+//   'minecraft:skeleton',
+//   'minecraft:wither_skeleton',
+//   'minecraft:piglin',
+//   'minecraft:pillager',
+//   'minecraft:vindicator',
+//   'minecraft:shulker',
+//   'minecraft:slime',
+//   'minecraft:witch',
+//   'minecraft:spider',
+//   'minecraft:strider'
+// ];

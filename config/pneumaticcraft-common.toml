@@ -51,7 +51,7 @@
 	crop_sticks_growth_boost_chance = 0.002
 	#Changing this value will alter the pressurized air production of the Electric Compressor. The input, EU, will stay the same
 	#Range: > 0
-	electric_compressor_efficiency = 40
+	electric_compressor_efficiency = 100
 	#Base chance (1/x) per tick of a lightning strike on/around the Electrostatic Generator
 	#Range: > 0
 	electrostatic_lightning_chance = 100000
@@ -60,7 +60,7 @@
 	elevator_base_blocks_per_base = 6
 	#The amount of air produced by using 100 FE (Forge Energy) in the flux compressor
 	#Range: > 0
-	flux_compressor_efficiency = 40
+	flux_compressor_efficiency = 100
 	#Can the Kerosene Lamp burn any kind of fuel?  If false, only Kerosene can be burnt
 	kerosene_lamp_can_use_any_fuel = true
 	#Kerosene Lamp fuel efficiency: higher values mean fuel will last longer in the lamp
@@ -68,7 +68,7 @@
 	kerosene_lamp_fuel_efficiency = 1.0
 	#The amount of air produced by using 100 MJ (Minecraft Joules) in the flux compressor
 	#Range: > 0
-	kinetic_compressor_efficiency = 40
+	kinetic_compressor_efficiency = 100
 	#Can the Liquid Hopper absorb/dispense fluids into the world with a Dispenser Upgrade?
 	liquid_hopper_dispenser = true
 	#Can the Omnidirectional Hopper dispense items into the world with a Dispenser Upgrade?
@@ -77,16 +77,16 @@
 	security_station_creative_players_exempt = false
 	#The amount of FE (Forge Energy) produced by using 100mL of air in the Pneumatic Dynamo
 	#Range: > 0
-	pneumatic_dynamo_efficiency = 40
+	pneumatic_dynamo_efficiency = 100
 	#The amount of MJ (Minecraft Joules) produced by using 100mL of air in the Pneumatic Dynamo
 	#Range: > 0
-	pneumatic_engine_efficiency = 40
+	pneumatic_engine_efficiency = 100
 	#Changing this value will alter the pressurized air usage of the Pneumatic Generator. The output, EU, will stay the same.
 	#Range: > 0
-	pneumatic_generator_efficiency = 40
+	pneumatic_generator_efficiency = 100
 	#Changing this value will alter the hydraulic bar production of the Pneumatic Pump. The input, air, will stay the same
 	#Range: > 0
-	pneumatic_pump_efficiency = 40
+	pneumatic_pump_efficiency = 100
 	#Speed multiplier per speed upgrade: speed mult = speedUpgradeSpeedMultiplier ^ num_of_speed_upgrades
 	#Range: 1.0 ~ 2.0
 	speed_upgrade_speed_multiplier = 1.5

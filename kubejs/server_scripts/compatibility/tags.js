@@ -241,6 +241,8 @@ onEvent('tags.items', event => {
 		//唱片
 		['minecraft:music_discs', 'integrated_stronghold:music_disc_forlorn'],
 		['minecraft:music_discs', 'integrated_stronghold:music_disc_sight'],
+		//烈焰粉
+		['forge:dusts/blaze', 'minecraft:blaze_powder'],
 		//塑料片
 		['forge:plastic', 'pneumaticcraft:plastic']
 	];
@@ -312,6 +314,10 @@ onEvent('tags.items', event => {
 		'atmospheric:rosewood_sapling', 'atmospheric:morado_sapling',
 		'atmospheric:yucca_sapling', 'atmospheric:aspen_sapling'
 	]);
+	//刷怪蛋
+	event.add('atlanabyss:spawn_eggs', [
+		/.*spawn_egg$/
+	])
 
 	//喝！
 	let drinkable = (name) => {
@@ -374,6 +380,8 @@ onEvent('tags.blocks', event => {
 })
 
 onEvent('tags.fluids', event => {
+	//event.remove('forge:experience', 'industrialforegoing:essence')//精华液
+	//event.remove('forge:experience', 'pneumaticcraft:memory_essence')//记忆源质
 	event.remove('forge:crude_oil', 'pneumaticcraft:oil')//石油
 	event.remove('forge:ender', 'thermal:ender')//谐振末影
 	event.remove('forge:honey', 'cofh_core:honey')//蜂蜜

@@ -1,0 +1,36 @@
+{
+    "mob_id": "minecraft:skeleton",
+    "equipment": {
+        "main_hand": {
+            "override": true,
+            "items": [
+                {
+                    "id": "minecraft:bow",
+                    "enchantments": [
+                        {
+                            "id": "minecraft:power",
+                            "level": 20,
+                            "chance": {
+                                "value": 0.5
+                            }
+                        },
+                        {
+                            "id": "minecraft:punch",
+                            "level": 5,
+                            "chance": {
+                                "value": 0.5
+                            }
+                        },
+                        {
+                            "id": "minecraft:flame",
+                            "level": 1,
+                            "chance": {
+                                "value": 0.5
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
