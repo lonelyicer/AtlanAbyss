@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "lightmanscurrency:block/block2_2",
 	"texture_size": [64, 64],
-	"textures": { "particle": "#exterior" },
+	"textures": { "particle": "create:block/brass_casing" },
 	"elements": [
 		{
 			"name": "Base",

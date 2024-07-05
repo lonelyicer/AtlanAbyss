@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
     "render_type": "cutout",
 	"textures": {
-		"particle": "lightmanscurrency:block/vendingmachine2/largebase_white",
+		"particle": "create:block/brass_casing",
 		"base": "lightmanscurrency:block/vendingmachine2/largebase_white",
 		"shelves": "lightmanscurrency:block/vendingmachine2/largeshelves"
 	},

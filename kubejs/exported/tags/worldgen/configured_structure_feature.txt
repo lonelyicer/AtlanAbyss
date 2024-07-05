@@ -1,4 +1,4 @@
-To refresh this file, delete it and run /reload command again! Last updated: Dec 25, 2023, 10:02:33 PM
+To refresh this file, delete it and run /reload command again! Last updated: Jul 5, 2024, 11:40:36 PM
 
 #minecraft:end_city
 - minecraft:end_city
@@ -39,6 +39,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 
 #minecraft:bastion_remnant
 - minecraft:bastion_remnant
+
+#quark:soul_bead_target
+- minecraft:fortress
 
 #minecraft:fortress
 - minecraft:fortress
@@ -85,7 +88,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - minecraft:buried_treasure
 
 #minecraft:eye_of_ender_located
-- minecraft:stronghold
+- integrated_stronghold:stronghold
 
 #minecraft:ruined_portal
 - minecraft:ruined_portal_desert

@@ -1,4 +1,4 @@
-To refresh this file, delete it and run /reload command again! Last updated: Dec 25, 2023, 10:02:33 PM
+To refresh this file, delete it and run /reload command again! Last updated: Jul 5, 2024, 11:40:36 PM
 
 #tconstruct:modifier_like/reflecting
 - parry:rebound?
@@ -14,10 +14,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 #tconstruct:modifier_like/reach
 - cyclic:reach?
 - ensorcellation:reach?
-
-#twilightforest:phantom_armor_banned_enchants
-- minecraft:vanishing_curse
-- minecraft:binding_curse
 
 #tconstruct:modifier_like/knockback_resistance
 - cyclic:steady?

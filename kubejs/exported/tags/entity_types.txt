@@ -1,4 +1,4 @@
-To refresh this file, delete it and run /reload command again! Last updated: Dec 25, 2023, 10:02:33 PM
+To refresh this file, delete it and run /reload command again! Last updated: Jul 5, 2024, 11:40:36 PM
 
 #supplementaries:cage_baby_catchable
 - minecraft:cow
@@ -19,9 +19,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - eanimod:enhanced_pig?
 - eanimod:enhanced_mooshroom?
 
-#immersiveengineering:shaderbag/blacklist
-- #twilightforest:bosses
-
 #tconstruct:rare_mobs
 - minecraft:wither
 - minecraft:ender_dragon
@@ -36,30 +33,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - minecraft:rabbit
 - minecraft:sheep
 
-#twilightforest:lich_poppables
-- #minecraft:skeletons
-- minecraft:zombie
-- minecraft:enderman
-- minecraft:spider
-- minecraft:creeper
-- twilightforest:swarm_spider
-
-#artifacts:creepers
-- minecraft:creeper
-- creeperoverhaul:jungle_creeper?
-- creeperoverhaul:bamboo_creeper?
-- creeperoverhaul:desert_creeper?
-- creeperoverhaul:badlands_creeper?
-- creeperoverhaul:hills_creeper?
-- creeperoverhaul:savannah_creeper?
-- creeperoverhaul:mushroom_creeper?
-- creeperoverhaul:swamp_creeper?
-- creeperoverhaul:dripstone_creeper?
-- creeperoverhaul:cave_creeper?
-- creeperoverhaul:dark_oak_creeper?
-- creeperoverhaul:spruce_creeper?
-- creeperoverhaul:beach_creeper?
-- creeperoverhaul:snowy_creeper?
+#tacz:interact_key/blacklist
 
 #botania:cocoon/rare_aquatic
 - minecraft:dolphin
@@ -100,6 +74,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 #forge:small_armor
 - #forge:slimes
 
+#industrialforegoing:mob_duplicator_blacklist
+
 #botania:shaded_mesa_blacklist
 - minecraft:ender_dragon
 - minecraft:wither
@@ -127,29 +103,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - minecraft:endermite
 - minecraft:silverfish
 - minecraft:fox
-- twilightforest:penguin
-- twilightforest:stable_ice_core
-- twilightforest:unstable_ice_core
-- twilightforest:snow_guardian
-- twilightforest:ice_crystal
-- twilightforest:raven
-- twilightforest:squirrel
-- twilightforest:dwarf_rabbit
-- twilightforest:tiny_bird
-- twilightforest:kobold
-- twilightforest:death_tome
-- twilightforest:mosquito_swarm
-- twilightforest:towerwood_borer
 - thermal:blizz
 
 #industrialforegoing:mob_imprisonment_tool_blacklist
-- artifacts:mimic
 
 #farmersdelight:dog_food_users
 - minecraft:wolf
-
-#domesticationinnovation:petstore_fishtank
-- minecraft:tropical_fish
 
 #botania:cocoon/common_aquatic
 - minecraft:cod
@@ -158,6 +117,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - minecraft:pufferfish
 - minecraft:squid
 - quark:crab?
+
+#industrialforegoing:mob_crusher_blacklist
+- minecraft:ender_dragon
 
 #minecraft:impact_projectiles
 - #minecraft:arrows
@@ -168,26 +130,30 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - minecraft:trident
 - minecraft:dragon_fireball
 - minecraft:wither_skull
-- twilightforest:nature_bolt
-- twilightforest:lich_bolt
-- twilightforest:wand_bolt
-- twilightforest:lich_bomb
-- twilightforest:cicada_shot
-- twilightforest:moonworm_shot
-- twilightforest:slime_blob
-- twilightforest:thrown_wep
-- twilightforest:thrown_ice
-- twilightforest:falling_ice
-- twilightforest:ice_snowball
-- supplementaries:rope_arrow
-- supplementaries:brick_projectile
 - thermal:basalz_projectile
 - thermal:blitz_projectile
 - thermal:blizz_projectile
+- supplementaries:rope_arrow
+- supplementaries:brick_projectile
 - atmospheric:passionfruit_seed
 
 #minecraft:beehive_inhabitors
 - minecraft:bee
+
+#tacz:interact_key/whitelist
+- touhou_little_maid:maid
+- touhou_little_maid:chair
+- touhou_little_maid:tombstone
+- touhou_little_maid:broom
+- minecraft:minecart
+- minecraft:chest_minecart
+- minecraft:item_frame
+- minecraft:glow_item_frame
+- minecraft:boat
+- minecraft:mule
+- minecraft:villager
+- minecraft:wandering_trader
+- minecraft:horse
 
 #forge:creepers
 - minecraft:creeper
@@ -196,7 +162,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - minecraft:skeleton
 - minecraft:stray
 - minecraft:wither_skeleton
-- twilightforest:skeleton_druid
 
 #ars_nouveau:drygmy_blacklist
 - minecraft:iron_golem
@@ -204,8 +169,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 #minecraft:arrows
 - minecraft:arrow
 - minecraft:spectral_arrow
-- twilightforest:ice_arrow
-- twilightforest:seeker_arrow
 - neapolitan:bananarrow
 - supplementaries:rope_arrow
 
@@ -252,34 +215,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - minecraft:ender_dragon
 - minecraft:wither
 
-#twilightforest:rides_obstruct_snatching
-- twilightforest:pinch_beetle
-- twilightforest:yeti
-- twilightforest:alpha_yeti
-
 #beyond_earth:entities/venus_rain
 - beyond_earth:pygro
 - beyond_earth:pygro_brute
 - beyond_earth:mogler
-
-#twilightforest:lifedrain_drops_no_flesh
-- #minecraft:skeletons
-- minecraft:iron_golem
-- minecraft:shulker
-- minecraft:skeleton_horse
-- minecraft:slime
-- minecraft:snow_golem
-- twilightforest:carminite_golem
-- twilightforest:death_tome
-- twilightforest:ice_crystal
-- twilightforest:knight_phantom
-- twilightforest:lich
-- twilightforest:maze_slime
-- twilightforest:mosquito_swarm
-- twilightforest:snow_guardian
-- twilightforest:stable_ice_core
-- twilightforest:unstable_ice_core
-- twilightforest:wraith
 
 #minecraft:axolotl_always_hostiles
 - minecraft:drowned
@@ -291,34 +230,16 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - minecraft:polar_bear
 - minecraft:snow_golem
 - minecraft:wither
-- twilightforest:penguin
-- twilightforest:stable_ice_core
-- twilightforest:unstable_ice_core
-- twilightforest:snow_guardian
-- twilightforest:ice_crystal
-- twilightforest:wraith
-- twilightforest:knight_phantom
-- twilightforest:winter_wolf
-- twilightforest:yeti
-- #twilightforest:bosses
 - thermal:blizz
-
-#twilightforest:bosses
-- twilightforest:naga
-- twilightforest:lich
-- twilightforest:minoshroom
-- twilightforest:hydra
-- twilightforest:knight_phantom
-- twilightforest:ur_ghast
-- twilightforest:alpha_yeti
-- twilightforest:snow_queen
-- twilightforest:plateau_boss
 
 #ars_nouveau:spell_can_hit
 
 #neapolitan:unaffected_by_slipping
 - neapolitan:chimpanzee
 - neapolitan:plantain_spider
+
+#create:blaze_burner_capturable
+- minecraft:blaze
 
 #neapolitan:scares_chimpanzees
 - minecraft:dragon_fireball
@@ -331,6 +252,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - minecraft:wither_skull
 
 #neapolitan:unaffected_by_harmony
+
+#create:ignore_seat
 
 #ars_nouveau:portal_blacklisted
 
@@ -452,38 +375,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - minecraft:iron_golem
 - minecraft:ravager
 
-#domesticationinnovation:infamy_target_attracted
-- minecraft:drowned
-- minecraft:husk
-- minecraft:zombie_villager
-- minecraft:zombie
-- minecraft:vex
-- minecraft:spider
-- minecraft:slime
-- minecraft:ghast
-- minecraft:cave_spider
-- minecraft:silverfish
-- minecraft:blaze
-- minecraft:magma_cube
-- minecraft:wither
-- minecraft:endermite
-- minecraft:shulker
-- minecraft:phantom
-- #minecraft:raiders
-- #minecraft:skeletons
-
-#twilightforest:sortable_entities
-- minecraft:chest_minecart
-- minecraft:hopper_minecart
-- minecraft:llama
-- minecraft:trader_llama
-- minecraft:donkey
-- minecraft:mule
-
 #forge:reflecting/blacklist
-
-#domesticationinnovation:petstore_cage_3
-- minecraft:parrot
 
 #supplementaries:jar_catchable
 - minecraft:slime?
@@ -534,9 +426,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - unusualend:ender_firefly?
 - naturalist:caterpillar?
 
-#domesticationinnovation:petstore_cage_2
-- minecraft:fox
-
 #ftbquests:no_loot_crates
 
 #supplementaries:jar_baby_catchable
@@ -546,7 +435,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - minecraft:strider
 - minecraft:blaze
 - minecraft:magma_cube
-- twilightforest:fire_beetle
 
 #carryon:entity_blacklist
 - beyond_earth:rocket_t1
@@ -560,21 +448,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - ars_nouveau:familiar_bookwyrm
 - ars_nouveau:wilden_boss
 - ars_nouveau:familiar_starbuncle
-
-#twilightforest:dont_kill_bugs
-- twilightforest:cicada_shot
-- twilightforest:moonworm_shot
-- twilightforest:cicada_slingshot?
-- twilightforest:firefly_slingshot?
-- twilightforest:moonworm_slingshot?
-
-#domesticationinnovation:petstore_cage_1
-- minecraft:rabbit
-
-#domesticationinnovation:petstore_cage_0
-- minecraft:wolf
-- minecraft:cat
-- minecraft:rabbit
 
 #pneumaticcraft:omnihopper_blacklisted
 - minecraft:villager

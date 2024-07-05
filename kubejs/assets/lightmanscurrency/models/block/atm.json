@@ -3,7 +3,7 @@
 	"parent": "lightmanscurrency:block/block1_2",
 	"textures": {
 		"base": "lightmanscurrency:block/atm",
-        "particle": "lightmanscurrency:block/atm"
+        "particle": "create:block/brass_casing"
 	},
 	"elements": [
 		{

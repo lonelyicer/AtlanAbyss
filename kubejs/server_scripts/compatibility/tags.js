@@ -372,7 +372,8 @@ onEvent('tags.blocks', event => {
 		/^thermal:fluid_cell/,
 		'thermal:charge_bench',
 		'thermal:tinker_bench',
-		/^sophisticatedstorage:/,
+		/^functionalstorage:/,
+		/^lightmanscurrency:/,
 		/^kubejs:alchemy_/,
 		'#kubejs:substrates',
 		'minecraft:bone_block'

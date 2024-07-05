@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"particle": "lightmanscurrency:block/atm",
-		"base": "lightmanscurrency:block/atm"
+		"base": "create:block/brass_casing"
 	},
 	"elements": [
 		{

@@ -4,7 +4,7 @@
 	"texture_size": [64, 64],
 	"textures": {
 		"main": "lightmanscurrency:block/ticket_machine",
-		"particle": "#main"
+		"particle": "create:block/brass_casing"
 	},
 	"elements": [
 		{

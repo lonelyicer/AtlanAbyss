@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
-    "parent": "lightmanscurrency:block/block",
+	"parent": "lightmanscurrency:block/block",
 	"textures": {
 		"main": "lightmanscurrency:block/item_trader_interface",
-		"particle": "#main"
+		"particle": "create:block/brass_casing"
 	},
 	"elements": [
 		{
@@ -44,10 +44,10 @@
 			"from": [0, 4, 0],
 			"to": [4, 16, 4],
 			"faces": {
-				"north": {"uv": [14, 0, 16, 8], "texture": "#main"},
-				"east": {"uv": [14, 0, 16, 8], "texture": "#main"},
-				"south": {"uv": [8, 0, 10, 8], "texture": "#main"},
-				"west": {"uv": [8, 0, 10, 8], "texture": "#main"},
+				"north": {"uv": [14, 0, 16, 6], "texture": "#main"},
+				"east": {"uv": [14, 0, 16, 6], "texture": "#main"},
+				"south": {"uv": [8, 0, 10, 6], "texture": "#main"},
+				"west": {"uv": [8, 0, 10, 6], "texture": "#main"},
 				"up": {"uv": [0, 8, 2, 10], "texture": "#main"},
 				"down": {"uv": [8, 14, 10, 16], "texture": "#main"}
 			}
@@ -57,10 +57,10 @@
 			"from": [12, 4, 0],
 			"to": [16, 16, 4],
 			"faces": {
-				"north": {"uv": [8, 0, 10, 8], "texture": "#main"},
-				"east": {"uv": [14, 0, 16, 8], "texture": "#main"},
-				"south": {"uv": [14, 0, 16, 8], "texture": "#main"},
-				"west": {"uv": [8, 0, 10, 8], "texture": "#main"},
+				"north": {"uv": [8, 0, 10, 6], "texture": "#main"},
+				"east": {"uv": [14, 0, 16, 6], "texture": "#main"},
+				"south": {"uv": [14, 0, 16, 6], "texture": "#main"},
+				"west": {"uv": [8, 0, 10, 6], "texture": "#main"},
 				"up": {"uv": [6, 8, 8, 10], "texture": "#main"},
 				"down": {"uv": [14, 14, 16, 16], "texture": "#main"}
 			}
@@ -68,14 +68,14 @@
 		{
 			"name": "Front",
 			"from": [0, 0, 12],
-			"to": [16, 16, 16],
+			"to": [16, 16, 15],
 			"faces": {
 				"north": {"uv": [8, 0, 10, 8], "texture": "#main"},
-				"east": {"uv": [8, 0, 10, 8], "texture": "#main"},
+				"east": {"uv": [8.5, 0, 10, 8], "texture": "#main"},
 				"south": {"uv": [0, 0, 8, 8], "texture": "#main"},
-				"west": {"uv": [14, 0, 16, 8], "texture": "#main"},
-				"up": {"uv": [0, 14, 8, 16], "texture": "#main"},
-				"down": {"uv": [8, 8, 16, 10], "texture": "#main"}
+				"west": {"uv": [14, 0, 15.5, 8], "texture": "#main"},
+				"up": {"uv": [0, 14, 8, 15.5], "texture": "#main"},
+				"down": {"uv": [8, 8.5, 16, 10], "texture": "#main"}
 			}
 		},
 		{
@@ -101,6 +101,70 @@
 				"west": {"uv": [8.5, 0.5, 14, 6], "texture": "#main"},
 				"up": {"uv": [0.5, 8.5, 7.5, 14], "texture": "#main"}
 			}
+		},
+		{
+			"name": "1",
+			"from": [0, 0, 15],
+			"to": [2, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, 15]},
+			"faces": {
+				"east": {"uv": [0.5, 0, 1, 8], "texture": "#main"},
+				"south": {"uv": [0, 0, 1, 8], "texture": "#main"},
+				"west": {"uv": [15.5, 0, 16, 8], "texture": "#main"},
+				"up": {"uv": [0, 15.5, 1, 16], "texture": "#main"},
+				"down": {"uv": [7.5, 15.5, 8.5, 16], "texture": "#main"}
+			}
+		},
+		{
+			"name": "2",
+			"from": [14, 0, 15],
+			"to": [16, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [14, 0, 15]},
+			"faces": {
+				"east": {"uv": [8, 0, 8.5, 8], "texture": "#main"},
+				"south": {"uv": [7, 0, 8, 8], "texture": "#main"},
+				"west": {"uv": [7, 0, 7.5, 8], "texture": "#main"},
+				"up": {"uv": [7.5, 15.5, 8.5, 16], "texture": "#main"},
+				"down": {"uv": [15, 15.5, 16, 16], "texture": "#main"}
+			}
+		},
+		{
+			"name": "3",
+			"from": [2, 14, 15],
+			"to": [14, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [2, 0, 15]},
+			"faces": {
+				"south": {"uv": [1, 0, 7, 1], "texture": "#main"},
+				"up": {"uv": [1, 15.5, 7.5, 16], "texture": "#main"},
+				"down": {"uv": [1, 0.5, 7, 1], "texture": "#main"}
+			}
+		},
+		{
+			"name": "4",
+			"from": [2, 0, 15],
+			"to": [14, 5, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [2, -11, 15]},
+			"faces": {
+				"south": {"uv": [1, 5.5, 7, 8], "texture": "#main"},
+				"up": {"uv": [1, 5.5, 7, 6], "texture": "#main"},
+				"down": {"uv": [9, 15.5, 15, 16], "texture": "#main"}
+			}
+		}
+	],
+	"groups": [
+		0,
+		1,
+		2,
+		3,
+		4,
+		5,
+		6,
+		7,
+		{
+			"name": "face",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [8, 9, 10, 11]
 		}
 	]
 }
