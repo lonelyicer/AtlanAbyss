@@ -541,7 +541,6 @@
 			disable_toast: true
 			x: -6.0d
 			y: 2.0d
-			shape: "hexagon"
 			dependencies: ["0EA2F9720106F822"]
 			id: "79DE813508ECE200"
 			tasks: [{
@@ -861,7 +860,6 @@
 		{
 			x: -2.0d
 			y: 3.0d
-			shape: "octagon"
 			description: [
 				"钢，一种碳与铁的合金，比铁更为坚固可靠。"
 				"您需要提前把煤炭处理为焦炭，并把焦炭与铁加热混合搅拌即可获得。"
@@ -875,6 +873,236 @@
 			}]
 			rewards: [{
 				id: "01DFDCFC35A2C235"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -6.0d
+			y: 3.0d
+			dependencies: ["79DE813508ECE200"]
+			id: "4556B9E8057C5F44"
+			tasks: [{
+				id: "4100F7BFB7D052C6"
+				type: "item"
+				item: "createdieselgenerators:distillation_controller"
+			}]
+			rewards: [{
+				id: "6AC7E30C792F65D8"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "抽油机"
+			x: -4.0d
+			y: 3.0d
+			description: ["按住 [W] 思索"]
+			dependencies: ["4C2C16BA5796BFD0"]
+			id: "371F801CBEA09EA1"
+			tasks: [
+				{
+					id: "0C47823EC9527B90"
+					type: "item"
+					item: "createdieselgenerators:pumpjack_bearing"
+				}
+				{
+					id: "647CE1F023BD042B"
+					type: "item"
+					item: "createdieselgenerators:pumpjack_head"
+				}
+				{
+					id: "1C6ACD505413EB1C"
+					type: "item"
+					item: "createdieselgenerators:pumpjack_crank"
+				}
+			]
+			rewards: [{
+				id: "5606AE6744327F1B"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "石油，哪里有石油？"
+			disable_toast: true
+			x: -4.0d
+			y: 1.5d
+			description: ["这个世界上遍地都是石油，但大部分的石油肉眼并不可见，或许在炎热的沙漠地区会有少量的沥青沙，又或许实在找不到沙漠而打算使用血液人工合成石油，但这些并不是最优选择，您需要探矿杖，有了它，世界上所有的石油都将会被您窥探的一干二净。"]
+			dependencies: ["371F801CBEA09EA1"]
+			hide: true
+			id: "0BC087D2D6933F9C"
+			tasks: [{
+				id: "7D3F3E2C0A397DA3"
+				type: "item"
+				item: "thermal:crude_oil_bucket"
+			}]
+			rewards: [{
+				id: "67A4C146FBE5E2F0"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -5.0d
+			y: 6.0d
+			dependencies: ["6993ED17CD46ACA5"]
+			id: "3909A2788335AB22"
+			tasks: [{
+				id: "7506E9BEABEB8369"
+				type: "item"
+				item: "pneumaticcraft:plastic"
+			}]
+			rewards: [{
+				id: "78FEE0A977C0D359"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -5.0d
+			y: 4.5d
+			dependencies: [
+				"4556B9E8057C5F44"
+				"371F801CBEA09EA1"
+				"101644FFFD0476B7"
+			]
+			id: "6993ED17CD46ACA5"
+			tasks: [{
+				id: "1C88D8F74BD9025E"
+				type: "item"
+				item: "industrialforegoing:tinydryrubber"
+			}]
+			rewards: [{
+				id: "73B031631F492978"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -5.0d
+			y: 2.0d
+			description: ["使用分液池从沙子中过滤出细沙，并使用辊压机压缩细沙获得。"]
+			dependencies: ["07835D33A0BA9FD1"]
+			hide: true
+			id: "0BB8CB7E2D58A3DB"
+			tasks: [{
+				id: "40F1D4E0B5565FDB"
+				type: "item"
+				item: "thermal:blitz_rod"
+			}]
+			rewards: [{
+				id: "47D6871E7BDC4A9E"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -5.0d
+			y: 3.0d
+			description: ["一种能召唤闪电的催化物，合成塑料的必备配料。"]
+			dependencies: ["0BB8CB7E2D58A3DB"]
+			id: "101644FFFD0476B7"
+			tasks: [{
+				id: "01E27DFB90BAD145"
+				type: "item"
+				item: "thermal:lightning_charge"
+			}]
+			rewards: [{
+				id: "6E0C4E1114A727F2"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -5.0d
+			y: 7.5d
+			shape: "octagon"
+			dependencies: [
+				"3909A2788335AB22"
+				"449654DC7648F05B"
+			]
+			id: "2896AD9C74EA52FF"
+			tasks: [{
+				id: "06AC0FF9EA50EAF3"
+				type: "item"
+				item: "kubejs:thermal_mechanism"
+			}]
+			rewards: [{
+				id: "3C41E10150190BB3"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -7.0d
+			y: 6.0d
+			dependencies: ["4172CB4FD4825D49"]
+			id: "449654DC7648F05B"
+			tasks: [{
+				id: "643B24FAAF7DC5F3"
+				type: "item"
+				item: "kubejs:aluminum_sheet"
+			}]
+			rewards: [{
+				id: "3066578DC30B5670"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -7.0d
+			y: 4.5d
+			description: ["一种又轻又软的金属。"]
+			dependencies: ["0A056C2098731282"]
+			id: "4172CB4FD4825D49"
+			tasks: [{
+				id: "43007E4A52F24896"
+				type: "item"
+				item: "kubejs:aluminum_ingot"
+			}]
+			rewards: [{
+				id: "52DDB273ED948BA9"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -7.0d
+			y: 3.0d
+			dependencies: ["0F39A47561B38A32"]
+			id: "0A056C2098731282"
+			tasks: [{
+				id: "04D4E493A53A5FCE"
+				type: "item"
+				item: "kubejs:aluminium_chip"
+			}]
+			rewards: [{
+				id: "334AD73460AC626B"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -7.0d
+			y: 2.0d
+			dependencies: ["07835D33A0BA9FD1"]
+			hide: true
+			id: "0F39A47561B38A32"
+			tasks: [{
+				id: "5A8B91C55E7ECAD2"
+				type: "item"
+				item: "create:crushed_raw_aluminum"
+			}]
+			rewards: [{
+				id: "1DFF90AF6246ADA4"
 				type: "xp"
 				xp: 10
 			}]

@@ -76,6 +76,11 @@ onEvent('item.registry', event => {
 	event.create('plutonium_core').displayName('Plutonium Core');
 	event.create('graphite_rod').displayName('Graphite Rod');
 	event.create('depleted_uranium').displayName('Depleted Uranium');
+
+	//空电路板
+	event.create('empty_pcb').displayName('Empty Pcb');
+	//集成电路
+	event.create('integrated_circuit').displayName('Integrated Circuit').rarity(RARITY_COMMON);
 	event.create('circuit_scrap').displayName('Circuit Scrap');
 	event.create('candy_electron_tube').displayName('Candy Electron Tube');
 	event.create('sulfur_electron_tube').displayName('Sulfur Electron Tube');

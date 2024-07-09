@@ -10,6 +10,7 @@ onEvent('recipes', event => {
 		mixing,
 		haunting,
 		filling,
+		cutting,
 		emptying,
 		splashing,
 		compacting,
@@ -246,6 +247,33 @@ onEvent('recipes', event => {
 		B: 'tconstruct:pattern',
 		C: 'minecraft:book'
 	}).id('atlanabyss:music_player')
+
+	//龙蛋
+	event.shaped('2x minecraft:dragon_egg', [
+		'ABA',
+		'ACA',
+		'AAA'
+	], {
+		A: 'minecraft:diamond',
+		B: 'minecraft:dragon_egg',
+		C: 'minecraft:crying_obsidian'
+	}).id('atlanabyss:dragon_egg')
+
+	splashing('minecraft:crying_obsidian', [
+		'minecraft:obsidian'
+	]).id('atlanabyss:splashing_obsidian')
+
+	//鞘翅
+	event.shaped('2x minecraft:elytra', [
+		'ABA',
+		'ACA',
+		'A A'
+	], {
+		A: 'minecraft:phantom_membrane',
+		B: 'minecraft:elytra',
+		C: 'minecraft:popped_chorus_fruit'
+	}).id('atlanabyss:elytra')
+
 
 
 	//修复下界合金粒
@@ -824,6 +852,29 @@ onEvent('recipes', event => {
 		B: 'minecraft:blaze_powder',
 		C: 'minecraft:glass_pane'
 	}).id("atlanabyss:dreadlamp")
+	//自然罗盘
+	remove('naturescompass:natures_compass')
+	event.shaped('naturescompass:naturescompass', [
+		'ABA',
+		'BCB',
+		'ABA'
+	], {
+		A: 'minecraft:moss_block',
+		B: '#minecraft:logs',
+		C: 'minecraft:compass'
+	}).id("atlanabyss:naturescompass")
+
+	//结构罗盘
+	remove('explorerscompass:explorers_compass')
+	event.shaped('explorerscompass:explorerscompass', [
+		'ABA',
+		'BCB',
+		'ABA'
+	], {
+		A: 'minecraft:ender_eye',
+		B: '#forge:stone',
+		C: 'minecraft:compass'
+	}).id("atlanabyss:explorerscompass")
 
 	//pipez管道
 	event.shaped('4x pipez:universal_pipe', [
@@ -862,7 +913,7 @@ onEvent('recipes', event => {
 		'ABA',
 		' A '
 	], {
-		A: 'pneumaticcraft:compressed_iron_block',
+		A: 'thermal:steel_plate',
 		B: 'kubejs:vibration_mechanism'
 	}).id("atlanabyss:basic_chunk_loader")
 	//5x5
@@ -1666,7 +1717,7 @@ onEvent('recipes', event => {
 	event.blasting('minecraft:weeping_vines', 'minecraft:vine').id('atlanabyss:blasting_vine')//垂泪藤
 	//管道升级
 	deploying('pipez:basic_upgrade', [
-		'pneumaticcraft:printed_circuit_board',
+		'industrialforegoing:plastic',
 		'thermal:nickel_nugget'
 	]).id('atlanabyss:deploying_basic_upgrade')//基础管道升级
 	deploying('pipez:improved_upgrade', [
@@ -1706,6 +1757,86 @@ onEvent('recipes', event => {
 		'4x minecraft:prismarine_shard'
 	], 'minecraft:prismarine').id("atlanabyss:milling_prismarine")
 
+	//炼油
+	remove('createdieselgenerators:distillation/crude_oil')
+	event.custom({
+		type: 'createdieselgenerators:distillation',
+		ingredients: [
+			{
+				fluidTag: 'forge:crude_oil',
+				amount: 100
+			}
+		],
+		heatRequirement: 'heated',
+		processingTime: 100,
+		results: [
+			{
+				fluid: 'thermal:heavy_oil',
+				amount: 25
+			},
+			{
+				fluid: 'createdieselgenerators:diesel',
+				amount: 25
+			},
+			{
+				fluid: 'thermal:light_oil',
+				amount: 25
+			},
+			{
+				fluid: 'createdieselgenerators:gasoline',
+				amount: 25
+			}
+		]
+	}).id("atlanabyss:distillation_crude_oil")
+
+	//汽油处理
+	mixing(['thermal:bitumen', Fluid.of('createdieselgenerators:gasoline', 250)], [
+		Fluid.of('thermal:redstone', 180),
+		Fluid.of('thermal:heavy_oil', 250)
+	]).heated().id('atlanabyss:mixing_heated_heavy_oil');
+
+	//干塑胶
+	mixing('industrialforegoing:tinydryrubber', [
+		'thermal:lightning_charge',
+		Fluid.of('createdieselgenerators:gasoline', 100)
+	]).heated().id('atlanabyss:mixing_heated_gasoline');
+
+	let epcb = 'industrialforegoing:plastic';
+	//空PCB
+	sequenced_assembly([
+		'3x kubejs:empty_pcb'
+	], epcb, [
+		filling(epcb, [epcb, Fluid.of('tconstruct:molten_gold', 500)]),
+		filling(epcb, [epcb, Fluid.of('tconstruct:molten_copper', 500)]),
+		cutting(epcb, epcb)
+	]).transitionalItem(epcb).loops(1).id("atlanabyss:empty_pcb_3")
+	//空PCB2
+	sequenced_assembly([
+		'9x kubejs:empty_pcb'
+	], epcb, [
+		filling(epcb, [epcb, Fluid.of('tconstruct:molten_silver', 500)]),
+		filling(epcb, [epcb, Fluid.of('tconstruct:molten_copper', 500)]),
+		cutting(epcb, epcb)
+	]).transitionalItem(epcb).loops(1).id("atlanabyss:empty_pcb_9")
+
+	let pcb = 'kubejs:empty_pcb';
+	//PCB
+	sequenced_assembly([
+		'kubejs:integrated_circuit',
+	], pcb, [
+		deploying(pcb, [pcb, 'create:brass_nugget']),
+		deploying(pcb, [pcb, 'createaddition:capacitor']),
+		deploying(pcb, [pcb, 'create:brass_nugget'])
+	]).transitionalItem(pcb).loops(10).id("atlanabyss:printed_circuit_board")
+	//PCB2
+	sequenced_assembly([
+		'kubejs:integrated_circuit',
+	], pcb, [
+		deploying(pcb, [pcb, 'botania:terrasteel_nugget']),
+		deploying(pcb, [pcb, 'createaddition:capacitor']),
+		deploying(pcb, [pcb, 'botania:terrasteel_nugget'])
+	]).transitionalItem(pcb).loops(3).id("atlanabyss:printed_circuit_board_3")
+
 	//压力部件
 	let pm = ('kubejs:incomplete_pressure_mechanism')
 	sequenced_assembly([
@@ -1714,7 +1845,7 @@ onEvent('recipes', event => {
 		Item.of('create:shaft').withChance(0.03)
 	],
 		'thermal:steel_plate', [
-		deploying(pm, [pm, 'pneumaticcraft:compressed_stone']),
+		deploying(pm, [pm, 'createdieselgenerators:asphalt_block']),
 		deploying(pm, [pm, 'create:electron_tube']),
 		deploying(pm, [pm, 'create:powdered_obsidian'])
 	]).transitionalItem(pm).loops(5).id("atlanabyss:pressure_mechanism")
@@ -1724,7 +1855,7 @@ onEvent('recipes', event => {
 		'kubejs:thermal_mechanism'
 	],
 		'kubejs:aluminum_sheet', [
-		deploying(tm, [tm, 'pneumaticcraft:plastic']),
+		deploying(tm, [tm, 'industrialforegoing:plastic']),
 		deploying(tm, [tm, 'kubejs:sulfur_electron_tube']),
 		filling(tm, [tm, Fluid.of('thermal:creosote', 500)])
 	]).transitionalItem(tm).loops(3).id("atlanabyss:thermal_mechanism")
@@ -1734,9 +1865,9 @@ onEvent('recipes', event => {
 		'kubejs:computer_mechanism'
 	],
 		'kubejs:meteosteel_sheet', [
-		deploying(cm, [cm, 'pneumaticcraft:printed_circuit_board']),
+		deploying(cm, [cm, 'kubejs:integrated_circuit']),
 		deploying(cm, [cm, 'kubejs:charged_electron_tube']),
-		filling(tm, [tm, Fluid.of('pneumaticcraft:lubricant', 250)])
+		deploying(tm, [tm, 'ae2:singularity'])
 	]).transitionalItem(cm).loops(1).id("atlanabyss:computer_mechanism")
 	//引力构件
 	let gm = ('kubejs:incomplete_gravitation_mechanism')
@@ -1883,18 +2014,9 @@ onEvent('recipes', event => {
 		Fluid.of('kubejs:fine_sand', 100)
 	], 'minecraft:sand').id("atlanabyss:rough_sand")
 	//沙球
-	event.custom({
-		type: 'pneumaticcraft:pressure_chamber',
-		inputs: [
-			{
-				type: 'pneumaticcraft:stacked_item',
-				item: 'kubejs:rough_sand',
-				count: 8
-			}
-		],
-		results: [Item.of('kubejs:sand_ball')],
-		pressure: 2.0
-	}).id("atlanabyss:sand_ball");
+	compacting('kubejs:sand_ball', [
+		'8x kubejs:rough_sand'
+	]).id("atlanabyss:sand_ball")
 	//含硅化合物
 	event.custom({
 		type: 'thermal:smelter',
@@ -2094,198 +2216,6 @@ onEvent('recipes', event => {
 		'kubejs:raw_osmium_block'
 	]).id("atlanabyss:raw_osmium")
 
-	//蓝晶
-	remove('biggerreactors:crafting/uranium_to_cyanite')
-	remove('thermal:machine/biggerreactors/pulverizer_mod_cyanite_ingot')
-	remove('biggerreactors:crafting/cyanite_block')
-	remove('biggerreactors:smelting/cyanite_ingot')
-	remove('biggerreactors:crafting/cyanite_ingot')
-	//钚
-	remove('thermal:machine/biggerreactors/pulverizer_mod_blutonium_ingot')
-	remove('biggerreactors:crafting/blutonium_block')
-	remove('biggerreactors:smelting/blutonium_ingot')
-	remove('biggerreactors:crafting/blutonium_ingot')
-	//铀
-	remove('biggerreactors:smelting/uranium_ore')
-	remove('thermal:machine/biggerreactors/pulverizer_mod_uranium_ore')
-	//铀粉
-	remove('thermal:machine/biggerreactors/pulverizer_mod_uranium_ingot')
-	remove('biggerreactors:smelting/uranium_ingot')
-	event.custom({
-		type: 'thermal:pulverizer',
-		ingredient: {
-			item: 'kubejs:uranium_ingot'
-		},
-		result: [
-			{
-				item: 'biggerreactors:uranium_dust',
-				count: 1
-			}
-		],
-		energy_mod: 0.5
-	}).id("atlanabyss:pulverizer_uranium_dust");
-	event.custom({
-		type: 'thermal:pulverizer',
-		ingredient: {
-			tag: 'forge:raw_materials/uranium'
-		},
-		result: [
-			{
-				item: 'biggerreactors:uranium_dust',
-				chance: 1.5
-			}
-		],
-		experience: 0.1
-	}).id("atlanabyss:pulverizer_raw_uranium")
-	event.custom({
-		type: 'thermal:pulverizer',
-		ingredient: {
-			tag: 'forge:ores/uranium'
-		},
-		result: [
-			{
-				item: 'biggerreactors:uranium_dust',
-				chance: 3.5
-			},
-			{
-				item: 'minecraft:gravel',
-				chance: 0.2
-			}
-		],
-		experience: 0.5
-	}).id("atlanabyss:pulverizer_uranium_ore")
-	//铀块
-	remove('biggerreactors:crafting/uranium_block')
-	remove('biggerreactors:crafting/uranium_ingot')
-	event.shaped('biggerreactors:uranium_block', [
-		'AAA',
-		'AAA',
-		'AAA'
-	], {
-		A: 'kubejs:uranium_ingot'
-	}).id("atlanabyss:uranium_block_from_ingot")
-	event.shapeless('9x kubejs:uranium_ingot', [
-		'biggerreactors:uranium_block'
-	]).id("atlanabyss:uranium_ingot_from_block")
-	//熔融铀
-	mixing(Fluid.of('tconstruct:molten_uranium', 125), [
-		'create:crushed_raw_uranium',
-		'thermal:sulfur_dust'
-	]).superheated().id("atlanabyss:molten_uranium")
-	//铀核心
-	let uc = ('kubejs:incomplete_core_container')
-	sequenced_assembly(['kubejs:uranium_core'
-	], 'thermal:lead_plate', [
-		deploying(uc, [uc, 'thermal:cured_rubber']),
-		deploying(uc, [uc, 'kubejs:tungsten_ingot']),
-		filling(uc, [uc, Fluid.of('tconstruct:molten_uranium', 125)])
-	]).transitionalItem(uc).loops(1).id("atlanabyss:uranium_core")
-	//铀燃料棒
-	mechanical_crafting('biggerreactors:uranium_ingot', [
-		'AA',
-		'AA',
-		'AA',
-		'AA'
-	], {
-		A: 'kubejs:uranium_core'
-	}).id("atlanabyss:uranium_fuel_rod")
-	//贫铀
-	mixing('4x kubejs:depleted_uranium', [
-		'biggerreactors:cyanite_ingot',
-		'thermal:sulfur_dust',
-		'thermal:niter_dust',
-		'create:crushed_raw_uranium'
-	]).id("atlanabyss:depleted_uranium")
-	//熔融钚
-	mixing(Fluid.of('kubejs:molten_plutonium', 5), [
-		'biggerreactors:cyanite_ingot',
-		'4x kubejs:depleted_uranium'
-	]).superheated().id("atlanabyss:molten_plutonium")
-	//钚核心
-	let pc = ('kubejs:incomplete_core_container')
-	sequenced_assembly([
-		'kubejs:plutonium_core'
-	], 'thermal:lead_plate', [
-		deploying(pc, [pc, 'pneumaticcraft:heat_sink']),
-		deploying(pc, [pc, 'kubejs:tungsten_ingot']),
-		filling(pc, [pc, Fluid.of('kubejs:molten_plutonium', 80)])
-	]).transitionalItem(pc).loops(1).id("atlanabyss:plutonium_core")
-	//钚燃料棒
-	mechanical_crafting('biggerreactors:blutonium_ingot', [
-		'AA',
-		'AA',
-		'AA',
-		'AA'
-	], {
-		A: 'kubejs:plutonium_core'
-	}).id("atlanabyss:plutonium_fuel_rod")
-	//钚粒
-	event.custom({
-		type: 'tconstruct:casting_table',
-		cast: { tag: 'tconstruct:casts/multi_use/nugget' },
-		fluid: { tag: 'forge:molten_plutonium', amount: 10 },
-		result: { item: 'kubejs:plutonium_nugget' },
-		cooling_time: 60
-	}).id("atlanabyss:plutonium_nugget_gold_cast")
-	event.custom({
-		type: 'tconstruct:casting_table',
-		cast: { tag: 'tconstruct:casts/single_use/nugget' },
-		cast_consumed: true,
-		fluid: { tag: 'forge:molten_plutonium', amount: 10 },
-		result: { item: 'kubejs:plutonium_nugget' },
-		cooling_time: 60
-	}).id("atlanabyss:plutonium_nugget_sand_cast")
-	//钚锭
-	mechanical_crafting('kubejs:plutonium_ingot', [
-		'AAAAA',
-		'AABAA',
-	], {
-		A: 'kubejs:plutonium_nugget',
-		B: 'botania:terrasteel_nugget'
-	}).id("atlanabyss:plutonium_ingot")
-	//钚块
-	event.shaped('kubejs:plutonium_block', [
-		'AAA',
-		'AAA',
-		'AAA'
-	], {
-		A: 'kubejs:plutonium_ingot'
-	}).id("atlanabyss:plutonium_block_from_ingot")
-	event.shapeless('9x kubejs:plutonium_ingot', [
-		'kubejs:plutonium_block'
-	]).id("atlanabyss:plutonium_ingot_from_block")
-
-	//镥锭
-	event.custom({
-		type: 'pneumaticcraft:pressure_chamber',
-		inputs: [
-			{
-				type: 'pneumaticcraft:stacked_item',
-				item: 'biggerreactors:cyanite_ingot',
-				count: 16
-			},
-			{
-				type: 'pneumaticcraft:stacked_item',
-				item: 'kubejs:plutonium_ingot',
-				count: 1
-			}
-		],
-		results: [Item.of('kubejs:lutetium_ingot')],
-		pressure: 2.33
-	}).id("atlanabyss:lutetium_ingot");
-
-	//石墨棒
-	event.custom({
-		type: 'createaddition:rolling',
-		input: {
-			item: 'biggerreactors:graphite_ingot'
-		},
-		result: {
-			item: 'kubejs:graphite_rod',
-			count: 2
-		}
-	}).id("atlanabyss:graphite_rod")
-
 	//电动马达
 	remove('createaddition:mechanical_crafting/electric_motor')
 	mechanical_crafting('createaddition:electric_motor', [
@@ -2338,264 +2268,6 @@ onEvent('recipes', event => {
 		B: 'create:brass_block',
 		C: 'createaddition:zinc_sheet'
 	}).id("atlanabyss:modular_accumulator")
-
-
-	//镀锇机壳
-	filling('kubejs:osmium_casing', [
-		'pneumaticcraft:compressed_stone',
-		Fluid.of('tconstruct:molten_osmium', 360)
-	]).id("atlanabyss:osmium_casing")
-
-	//反应堆外壳
-	remove('biggerreactors:crafting/reactor/reactor_casing')
-	item_application('biggerreactors:reactor_casing', [
-		'kubejs:osmium_casing',
-		'kubejs:zirconium_alloy_ingot'
-	]).id("atlanabyss:item_application_reactor_casing")
-
-	//反应堆玻璃
-	remove('biggerreactors:crafting/reactor/reactor_glass')
-	event.custom({
-		type: 'tconstruct:casting_basin',
-		cast: {
-			item: 'biggerreactors:reactor_casing'
-		},
-		cast_consumed: true,
-		fluid: {
-			tag: "tconstruct:molten_glass",
-			amount: 1000
-		},
-		result: 'biggerreactors:reactor_glass',
-		cooling_time: 100
-	}).id("atlanabyss:reactor_glass")
-	//反应堆燃料棒
-	remove('biggerreactors:crafting/reactor/reactor_fuel_rod')
-	event.shaped('4x biggerreactors:reactor_fuel_rod', [
-		'ABA',
-		'A A',
-		'A A'
-	], {
-		A: 'kubejs:graphite_rod',
-		B: 'thermal:lead_plate'
-	}).id("atlanabyss:reactor_fuel_rod")
-	//反应堆控制棒
-	remove('biggerreactors:crafting/reactor/reactor_control_rod')
-	event.shapeless('biggerreactors:reactor_control_rod', [
-		'biggerreactors:reactor_casing',
-		'biggerreactors:reactor_fuel_rod',
-		'pneumaticcraft:printed_circuit_board'
-	]).id("atlanabyss:reactor_control_rod")
-	//反应堆终端
-	remove('biggerreactors:crafting/reactor/reactor_terminal')
-	event.shaped('biggerreactors:reactor_terminal', [
-		' C ',
-		'BAB'
-	], {
-		A: 'biggerreactors:reactor_casing',
-		B: 'pneumaticcraft:printed_circuit_board',
-		C: 'minecraft:black_stained_glass_pane'
-	}).id("atlanabyss:reactor_terminal")
-	//反应堆红石接口
-	remove('biggerreactors:crafting/reactor/reactor_redstone_port')
-	event.shaped('biggerreactors:reactor_redstone_port', [
-		' B ',
-		'BAB',
-		' B '
-	], {
-		A: 'biggerreactors:reactor_casing',
-		B: 'minecraft:redstone'
-	}).id("atlanabyss:reactor_redstone_port")
-	//反应堆电脑接口
-	remove('biggerreactors:crafting/reactor/reactor_computer_port')
-	//反应堆能量接口
-	remove('biggerreactors:crafting/reactor/reactor_power_tap')
-	event.shaped('biggerreactors:reactor_power_tap', [
-		' B ',
-		'BAB',
-		' B '
-	], {
-		A: 'biggerreactors:reactor_casing',
-		B: '#forge:wires'
-	}).id("atlanabyss:reactor_power_tap")
-	//反应堆访问接口
-	remove('biggerreactors:crafting/reactor/reactor_access_port')
-	event.shapeless('biggerreactors:reactor_access_port', [
-		'biggerreactors:reactor_casing',
-		'create:chute'
-	]).id("atlanabyss:reactor_access_port")
-	//反应堆冷却接口
-	remove('biggerreactors:crafting/reactor/reactor_coolant_port')
-	event.shapeless('biggerreactors:reactor_coolant_port', [
-		'biggerreactors:reactor_casing',
-		'create:fluid_pipe'
-	]).id("atlanabyss:reactor_coolant_port")
-	//反应堆冷却液棒
-	remove('biggerreactors:crafting/reactor/reactor_manifold')
-	event.shaped('4x biggerreactors:reactor_manifold', [
-		'ABA',
-		'B B',
-		'ABA'
-	], {
-		A: 'createaddition:iron_rod',
-		B: 'kubejs:aluminum_sheet'
-	}).id("atlanabyss:reactor_manifold")
-
-	//涡轮机外壳
-	remove('biggerreactors:crafting/turbine/turbine_casing')
-	item_application('biggerreactors:turbine_casing', [
-		'kubejs:osmium_casing',
-		'kubejs:aluminium_alloy_ingot'
-	]).id("atlanabyss:item_application_turbine_casing")
-
-	//涡轮机玻璃
-	remove('biggerreactors:crafting/turbine/turbine_glass')
-	event.custom({
-		type: 'tconstruct:casting_basin',
-		cast: {
-			item: 'biggerreactors:turbine_casing'
-		},
-		cast_consumed: true,
-		fluid: {
-			tag: "tconstruct:molten_glass",
-			amount: 1000
-		},
-		result: 'biggerreactors:turbine_glass',
-		cooling_time: 100
-	}).id("atlanabyss:turbine_glass")
-	//涡轮机终端
-	remove('biggerreactors:crafting/turbine/turbine_terminal')
-	event.shaped('biggerreactors:turbine_terminal', [
-		' C ',
-		'BAB'
-	], {
-		A: 'biggerreactors:turbine_casing',
-		B: 'pneumaticcraft:printed_circuit_board',
-		C: 'minecraft:black_stained_glass_pane'
-	}).id("atlanabyss:turbine_terminal")
-	//涡轮机电脑接口
-	remove('biggerreactors:crafting/turbine/turbine_computer_port')
-	//涡轮机能量接口
-	remove('biggerreactors:crafting/turbine/turbine_power_tap')
-	event.shaped('biggerreactors:turbine_power_tap', [
-		' B ',
-		'BAB',
-		' B '
-	], {
-		A: 'biggerreactors:turbine_casing',
-		B: '#forge:wires'
-	}).id("atlanabyss:turbine_power_tap")
-	//反应堆冷却接口
-	remove('biggerreactors:crafting/turbine/turbine_fluid_port')
-	event.shapeless('biggerreactors:turbine_fluid_port', [
-		'biggerreactors:turbine_casing',
-		'create:fluid_pipe'
-	]).id("atlanabyss:turbine_fluid_port")
-	//涡轮机叶片
-	remove('biggerreactors:crafting/turbine/turbine_rotor_blade')
-	event.shaped('4x biggerreactors:turbine_rotor_blade', [
-		'A',
-		'A',
-		'A'
-	], {
-		A: 'thermal:steel_plate'
-	}).id("atlanabyss:turbine_rotor_blade")
-	//涡轮机转轴
-	remove('biggerreactors:crafting/turbine/turbine_rotor_shaft')
-	event.shaped('biggerreactors:turbine_rotor_shaft', [
-		' A ',
-		'ABA',
-		' A '
-	], {
-		A: 'thermal:steel_plate',
-		B: 'thermal:steel_ingot'
-	}).id("atlanabyss:turbine_rotor_shaft")
-	//涡轮转子轴承
-	remove('biggerreactors:crafting/turbine/turbine_rotor_bearing')
-	event.shapeless('biggerreactors:turbine_rotor_bearing', [
-		'biggerreactors:turbine_casing',
-		'biggerreactors:turbine_rotor_shaft'
-	]).id("atlanabyss:turbine_rotor_bearing")
-	//涡轮机发电模块(镥块)
-	remove('thermal:machine/biggerreactors/pulverizer_mod_luducrute_ingot')
-
-	remove('biggerreactors:crafting/ludicrite_ingot')
-	remove('biggerreactors:smelting/ludicrite_ingot')
-
-	remove('biggerreactors:crafting/ludicrite_block')
-	remove('biggerreactors:crafting/ludicrite_block_nether_star')
-	remove('biggerreactors:crafting/ludicrite_block_enderium')
-	event.custom({
-		type: 'tconstruct:casting_basin',
-		cast: {
-			item: 'biggerreactors:turbine_casing'
-		},
-		cast_consumed: true,
-		fluid: {
-			tag: "tconstruct:molten_copper",
-			amount: 810
-		},
-		result: 'biggerreactors:ludicrite_block',
-		cooling_time: 200
-	}).id("atlanabyss:turbine_power")
-
-	//热交换器外壳
-	remove('biggerreactors:crafting/heat_exchanger/casing')
-	item_application('biggerreactors:heat_exchanger_casing', [
-		'kubejs:osmium_casing',
-		'kubejs:lutetium_ingot'
-	]).id("atlanabyss:item_application_heat_exchanger_casing")
-
-	//热交换器玻璃
-	remove('biggerreactors:crafting/heat_exchanger/glass')
-	event.custom({
-		type: 'tconstruct:casting_basin',
-		cast: {
-			item: 'biggerreactors:heat_exchanger_casing'
-		},
-		cast_consumed: true,
-		fluid: {
-			tag: "tconstruct:molten_glass",
-			amount: 1000
-		},
-		result: 'biggerreactors:heat_exchanger_glass',
-		cooling_time: 100
-	}).id("atlanabyss:heat_exchanger_glass")
-	//热交换器终端
-	remove('biggerreactors:crafting/heat_exchanger/terminal')
-	event.shaped('biggerreactors:heat_exchanger_terminal', [
-		' C ',
-		'BAB'
-	], {
-		A: 'biggerreactors:heat_exchanger_casing',
-		B: 'pneumaticcraft:printed_circuit_board',
-		C: 'minecraft:black_stained_glass_pane'
-	}).id("atlanabyss:heat_exchanger_terminal")
-	//热交换器电脑接口
-	remove('biggerreactors:crafting/heat_exchanger/computer_port')
-	//热交换器冷却接口
-	remove('biggerreactors:crafting/heat_exchanger/fluid_port')
-	event.shapeless('biggerreactors:heat_exchanger_fluid_port', [
-		'biggerreactors:heat_exchanger_casing',
-		'create:fluid_pipe'
-	]).id("atlanabyss:heat_exchanger_fluid_port")
-	//热交换器气化通道
-	remove('biggerreactors:crafting/heat_exchanger/evaporator_channel')
-	event.shaped('biggerreactors:heat_exchanger_evaporator_channel', [
-		'A A',
-		'A A',
-		'A A'
-	], {
-		A: 'createaddition:copper_rod'
-	}).id("atlanabyss:heat_exchanger_evaporator_channel")
-	//热交换器冷凝通道
-	remove('biggerreactors:crafting/heat_exchanger/condenser_channel_alt')
-	event.shapeless('biggerreactors:heat_exchanger_condenser_channel', [
-		'biggerreactors:heat_exchanger_evaporator_channel',
-	]).id("atlanabyss:heat_exchanger_condenser_from_evaporator")
-	remove('biggerreactors:crafting/heat_exchanger/evaporator_channel_alt')
-	event.shapeless('biggerreactors:heat_exchanger_evaporator_channel', [
-		'biggerreactors:heat_exchanger_condenser_channel',
-	]).id("atlanabyss:heat_exchanger_evaporator_from_condenser")
 
 	//锌粒
 	crushing([
@@ -2840,24 +2512,6 @@ onEvent('recipes', event => {
 		source: 1000,
 		pedestalItems: []
 	}).id("atlanabyss:alchemy_6")
-	event.custom({
-		type: 'pneumaticcraft:pressure_chamber',
-		inputs: [Ingredient.of('kubejs:alchemy_6')],
-		results: [Item.of('kubejs:alchemy_7')],
-		pressure: 2.5
-	}).id("atlanabyss:alchemy_7")
-	event.custom({
-		type: 'pneumaticcraft:assembly_drill',
-		input: { item: 'kubejs:alchemy_7', },
-		result: { item: 'kubejs:alchemy_8', },
-		program: 'drill'
-	}).id("atlanabyss:alchemy_8")
-	event.custom({
-		type: 'pneumaticcraft:assembly_laser',
-		input: { item: 'kubejs:alchemy_8', },
-		result: { item: 'kubejs:alchemy_9', },
-		program: 'laser'
-	}).id("atlanabyss:alchemy_9")
 	deploying([
 		Item.of('kubejs:treasure_box').withChance(1 / 1000),
 		Item.of('kubejs:alchemy_0').withChance(3 / 4),
@@ -2867,7 +2521,72 @@ onEvent('recipes', event => {
 		'kubejs:alchemy_9',
 		'kubejs:tungsten_nugget'
 	]).id("atlanabyss:treasure_box")
+
+	//扣墙
+	event.custom({
+		type: 'lychee:block_clicking',
+		item_in: {
+			item: 'air'
+		},
+		block_in: 'compactmachines:wall',
+		post: [
+			{
+				type: 'random',
+				rolls: {
+					min: 1,
+					max: 5
+				},
+				entries: [
+					{
+						weight: 50,
+						type: 'prevent_default'
+					},
+					{
+						weight: 13,
+						type: 'drop_item',
+						item: 'minecraft:raw_iron'
+					},
+					{
+						weight: 10,
+						type: 'drop_item',
+						item: 'minecraft:raw_copper'
+					},
+					{
+						weight: 9,
+						type: 'drop_item',
+						item: 'create:raw_zinc'
+					},
+					{
+						weight: 8,
+						type: 'drop_item',
+						item: 'thermal:raw_nickel'
+					},
+					{
+						weight: 7,
+						type: 'drop_item',
+						item: 'thermal:raw_tin'
+					},
+					{
+						weight: 2,
+						type: 'drop_item',
+						item: 'minecraft:raw_gold'
+					},
+					{
+						weight: 1,
+						type: 'drop_item',
+						item: 'thermal:raw_silver'
+					}
+				]
+			},
+			{
+				type: 'hurt',
+				source: 'fall',
+				damage: 1
+			}
+		]
+	})
 })
+
 //堆肥桶
 onEvent('recipes.compostables', event => {
 	event.add('kubejs:cottons_seed', 0.3);

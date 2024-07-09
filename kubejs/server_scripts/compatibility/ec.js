@@ -84,7 +84,7 @@ onEvent('recipes', event => {
         'ABA',
         'AAA'
     ], {
-        A: 'pneumaticcraft:pressure_chamber_wall',
+        A: 'industrialforegoing:plastic',
         B: 'extendedcrafting:frame'
     }).id('atlanabyss:extendedcrafting_compressor')
 

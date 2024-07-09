@@ -1103,6 +1103,48 @@
 				xp: 10
 			}]
 		}
+		{
+			disable_toast: true
+			x: 5.0d
+			y: 1.0d
+			shape: "hexagon"
+			id: "30B3228566B22321"
+			tasks: [{
+				id: "61C6876F7313A5A4"
+				type: "item"
+				item: {
+					id: "explorerscompass:explorerscompass"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "4AEF09141B91420A"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 4.0d
+			y: 1.0d
+			shape: "hexagon"
+			id: "0920AAF0EBB3735F"
+			tasks: [{
+				id: "336106CF9E4CDC70"
+				type: "item"
+				item: {
+					id: "naturescompass:naturescompass"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "659CF89B5559EFF2"
+				type: "xp"
+				xp: 10
+			}]
+		}
 	]
 	quest_links: [ ]
 }

@@ -561,15 +561,6 @@ onEvent('recipes', event => {
     superheated: true,
   }).id("atlanabyss:liquid_burning_refined_fuel")
 
-  //烈焰人煤油
-  event.custom({
-    type: 'createaddition:liquid_burning',
-    input: {
-      fluid: 'pneumaticcraft:kerosene',
-      amount: 1000
-    },
-    burnTime: 12000,
-  }).id("atlanabyss:liquid_burning_kerosene")
 
 
   //机械熔岩炉
@@ -1087,9 +1078,7 @@ onEvent('recipes', event => {
   compressionFuel('createaddition:seed_oil', 80000);
   compressionFuel('createaddition:bioethanol', 500000);
   compressionFuel('thermal:heavy_oil', 40000);
-  compressionFuel('pneumaticcraft:kerosene', 60000);
   compressionFuel('thermal:light_oil', 80000);
-  compressionFuel('pneumaticcraft:lpg', 100000);
 
   function compressionFuel(fluid, energy) {
     event.custom({

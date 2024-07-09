@@ -139,9 +139,9 @@ onEvent('recipes', event => {
   //电路废料额外
   create.milling([
     Item.of('kubejs:circuit_scrap').withChance(6 / 9),
-    Item.of('pneumaticcraft:failed_pcb').withChance(3 / 9),
+    Item.of('kubejs:integrated_circuit').withChance(3 / 9),
   ],
-    'pneumaticcraft:printed_circuit_board'
+    'kubejs:integrated_circuit'
   ).id("atlanabyss:circuit_scrap")
   //逻辑电路板
   remove('ae2:inscriber/logic_processor_print')

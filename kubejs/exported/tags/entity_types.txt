@@ -1,4 +1,4 @@
-To refresh this file, delete it and run /reload command again! Last updated: Jul 5, 2024, 11:40:36 PM
+To refresh this file, delete it and run /reload command again! Last updated: Jul 9, 2024, 4:59:54 AM
 
 #supplementaries:cage_baby_catchable
 - minecraft:cow
@@ -285,8 +285,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - minecraft:wandering_trader
 - minecraft:zombie_villager
 
-#pneumaticcraft:vacuum_trap_blacklisted
-
 #tconstruct:melting/hide_in_default
 - minecraft:giant
 
@@ -448,9 +446,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - ars_nouveau:familiar_bookwyrm
 - ars_nouveau:wilden_boss
 - ars_nouveau:familiar_starbuncle
-
-#pneumaticcraft:omnihopper_blacklisted
-- minecraft:villager
 
 #ars_nouveau:disintegration_blacklist
 

@@ -57,6 +57,8 @@
     "item.kubejs.plutonium_ingot": "§b钚锭",
     "item.kubejs.plutonium_nugget": "§b钚粒",
     "item.kubejs.circuit_scrap": "电路废料",
+    "item.kubejs.integrated_circuit": "集成电路",
+    "item.kubejs.empty_pcb": "空电路板",
 
     "item.kubejs.organic_scrap": "有机碎片",
     "item.kubejs.deep_scrap": "深邃碎片",
@@ -463,5 +465,16 @@
     "gateways.wither_skeleton_gate":"凋零骷髅传送门",
     "gateways.wither_skeleton_gate_large":"[大型]凋零骷髅传送门",
     "gateways.wither_skeleton_gate_small":"[小型]凋零骷髅传送门",
-    "gateways.zombie_gate_ultra":"[超大型]僵尸传送门"
+    "gateways.zombie_gate_ultra":"[超大型]僵尸传送门",
+
+    "postAction.lychee.prevent_default": "啥也没有",
+
+    "block.mm.compact_machine_controller": "压缩机控制器",
+    "block.mm.create_1_port": "应力输入接口",
+    "block.mm.item_input_slot1_port": "物品输入接口",
+    "block.mm.item_output_slot1_port": "物品输出接口",
+    "container.masterfulmachinery.mm:basic_controller_controller.name": "基础控制器",
+    "gui.mm.compact_machine_machine":"压缩机",
+    "gui.mm.compact_wall_recipe": "压缩空间墙配方",
+    "gui.mm.compact_diamond_recipe": "人工钻石配方"
 }

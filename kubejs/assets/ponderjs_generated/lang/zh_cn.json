@@ -1,0 +1,11 @@
+{
+    "kubejs.ponder.tag.compact_controller": "压缩机",
+    "kubejs.ponder.tag.compact_controller.description": "功能强大的压缩机",
+    "kubejs.ponder.compact_machine.header": "搭建压缩机多方块结构",
+    "kubejs.ponder.compact_machine.text_1": "压缩空间实心墙",
+    "kubejs.ponder.compact_machine.text_2": "工业铁块",
+    "kubejs.ponder.compact_machine.text_3": "ME控制器",
+    "kubejs.ponder.compact_machine.text_4": "物品输出接口",
+    "kubejs.ponder.compact_machine.text_5": "压缩机控制器",
+    "kubejs.ponder.compact_machine.text_6": "物品输入接口"
+}

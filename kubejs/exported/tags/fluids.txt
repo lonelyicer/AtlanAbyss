@@ -1,4 +1,4 @@
-To refresh this file, delete it and run /reload command again! Last updated: Jul 5, 2024, 11:40:37 PM
+To refresh this file, delete it and run /reload command again! Last updated: Jul 9, 2024, 4:59:54 AM
 
 #tconstruct:molten_manyullyn
 - tconstruct:molten_manyullyn
@@ -43,7 +43,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - tconstruct:flowing_molten_porcelain
 
 #forge:biodiesel
-- pneumaticcraft:biodiesel
 - createdieselgenerators:biodiesel
 - createdieselgenerators:flowing_biodiesel
 
@@ -148,9 +147,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 #forge:magma
 - #tconstruct:magma
 
-#pneumaticcraft:plastic
-- pneumaticcraft:plastic
-
 #forge:molten_manyullyn
 - #tconstruct:molten_manyullyn
 
@@ -182,7 +178,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - lightmeals:caramel
 
 #forge:crude_oil
-- pneumaticcraft:oil
 - thermal:crude_oil
 - createdieselgenerators:crude_oil
 
@@ -246,9 +241,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - #forge:molten_refined_glowstone
 - #forge:molten_refined_obsidian
 
-#pneumaticcraft:seismic_sensor_interesting
-- #forge:crude_oil
-
 #forge:molten_steel
 - #tconstruct:molten_steel
 
@@ -264,7 +256,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - minecraft:flowing_lava
 
 #forge:ethanol
-- pneumaticcraft:ethanol
 - createdieselgenerators:ethanol
 - createdieselgenerators:flowing_ethanol
 
@@ -327,9 +318,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - tconstruct:flowing_molten_enderium
 
 #create:fan_processing_catalysts/haunting
-
-#pneumaticcraft:yeast_culture
-- pneumaticcraft:yeast_culture
 
 #tconstruct:molten_nickel
 - tconstruct:molten_nickel
@@ -446,7 +434,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 
 #forge:experience
 - industrialforegoing:essence
-- pneumaticcraft:memory_essence
 - cofh_core:experience
 - sophisticatedcore:xp_still
 
@@ -458,7 +445,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - minecraft:flowing_water
 
 #forge:diesel
-- pneumaticcraft:diesel
 - createdieselgenerators:diesel
 - createdieselgenerators:flowing_diesel
 
@@ -491,12 +477,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 #forge:molten_gold
 - #tconstruct:molten_gold
 
-#pneumaticcraft:etching_acid
-- pneumaticcraft:etching_acid
-
-#forge:kerosene
-- pneumaticcraft:kerosene
-
 #forge:molten_lead
 - #tconstruct:molten_lead
 
@@ -509,9 +489,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 #tconstruct:molten_netherite
 - tconstruct:molten_netherite
 - tconstruct:flowing_molten_netherite
-
-#forge:lpg
-- pneumaticcraft:lpg
 
 #tconstruct:molten_pig_iron
 - tconstruct:molten_pig_iron
@@ -527,9 +504,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 
 #forge:molten_hepatizon
 - #tconstruct:molten_hepatizon
-
-#forge:lubricant
-- pneumaticcraft:lubricant
 
 #tconstruct:venom
 - tconstruct:venom
@@ -554,7 +528,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - createaddition:bioethanol
 
 #forge:plantoil
-- pneumaticcraft:vegetable_oil
 - createdieselgenerators:plant_oil
 - createdieselgenerators:flowing_plant_oil
 - createaddition:flowing_seed_oil
@@ -622,7 +595,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - tconstruct:potion
 
 #forge:gasoline
-- pneumaticcraft:gasoline
 - createdieselgenerators:gasoline
 - createdieselgenerators:flowing_gasoline
 

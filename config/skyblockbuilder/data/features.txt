@@ -196,7 +196,6 @@ thermal:nickel_ore
 thermal:apatite_ore
 thermal:cinnabar_ore
 thermal:oil_sand
-pneumaticcraft:lake_oil_underground
 beyond_earth:mars_rock
 beyond_earth:venus_deltas_small
 beyond_earth:venus_deltas_large

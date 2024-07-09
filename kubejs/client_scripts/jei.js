@@ -4,133 +4,6 @@
 onEvent('jei.hide.items', event => {
 	const hideId = (name) => event.hide(name);
 	const nameId = [
-		//PNC
-		'pneumaticcraft:wheat_flour',
-		'pneumaticcraft:ethanol_bucket',
-		'pneumaticcraft:oil_bucket',
-		'pneumaticcraft:diesel_bucket',
-		'pneumaticcraft:gasoline_bucket',
-		'pneumaticcraft:biodiesel_bucket',
-		'pneumaticcraft:vegetable_oil_bucket',
-		//多余的
-		'pneumaticcraft:pneumatic_wrench',//气动扳手
-		Item.of('patchouli:guide_book', '{"patchouli:book":"pneumaticcraft:book"}'),//pnc手册
-		'pneumaticcraft:ingot_iron_compressed',//压缩铁锭
-		'pneumaticcraft:logistics_configurator',//物流配置器
-		Item.of('pneumaticcraft:logistics_configurator', '{"pneumaticcraft:air":30000}'),//物流配置器
-		'pneumaticcraft:pressure_chamber/turbine_blade',//轮机扇叶
-		'pneumaticcraft:turbine_rotor',//轮机转子
-		'pneumaticcraft:programming_puzzle',//编程拼图
-		'pneumaticcraft:gps_tool',//定位工具
-		'pneumaticcraft:gps_area_tool',//区域定位工具
-		'pneumaticcraft:remote',//远程终端
-		'pneumaticcraft:programmer',//编程器
-		'pneumaticcraft:security_station',//安全站
-		'pneumaticcraft:programmable_controller',//可编程控制器
-		'pneumaticcraft:tag_workbench',//标签工作台
-		'pneumaticcraft:transfer_gadget',//传输装置
-		'pneumaticcraft:reinforced_chest',//强化箱子
-		'pneumaticcraft:reinforced_chest_kit',//强化箱子升级
-		'pneumaticcraft:smart_chest',//智能箱子
-		'pneumaticcraft:smart_chest_kit',//智能箱子升级
-		'pneumaticcraft:seismic_sensor',//地下石油探测器
-		'pneumaticcraft:crop_support',//作物架
-		'pneumaticcraft:gas_lift',//气举
-		'pneumaticcraft:drill_pipe',//气举钻管
-		'pneumaticcraft:universal_sensor',//万能传感器
-		'pneumaticcraft:aphorism_tile',//格言瓷砖
-		'pneumaticcraft:stone_base',//石质基座
-		'pneumaticcraft:cannon_barrel',//炮管
-		'pneumaticcraft:air_cannon',//空气炮
-		'pneumaticcraft:compressed_iron_gear',//压缩铁齿轮
-		'pneumaticcraft:flux_compressor',//通量压缩机
-		'pneumaticcraft:pneumatic_dynamo',//气动能源炉
-		'pneumaticcraft:elevator_frame',//电梯框架
-		'pneumaticcraft:elevator_caller',//电梯呼叫机
-		'pneumaticcraft:elevator_base',//电梯基座
-		'pneumaticcraft:compressed_iron_helmet',//头盔
-		'pneumaticcraft:compressed_iron_chestplate',//胸甲
-		'pneumaticcraft:compressed_iron_leggings',//裤子
-		'pneumaticcraft:compressed_iron_boots',//鞋子
-		'pneumaticcraft:pneumatic_helmet',//气动头盔
-		'pneumaticcraft:pneumatic_chestplate',//气动胸甲
-		'pneumaticcraft:pneumatic_leggings',//气动裤子
-		'pneumaticcraft:pneumatic_boots',//气动鞋子
-		'pneumaticcraft:minigun',//机枪
-		Item.of('pneumaticcraft:minigun', '{"pneumaticcraft:air":30000}'),
-		'pneumaticcraft:sentry_turret',//机枪塔
-		'pneumaticcraft:gun_ammo',//机枪弹药
-		'pneumaticcraft:gun_ammo_incendiary',//机枪弹药/烧
-		'pneumaticcraft:gun_ammo_weighted',//机枪弹药/重
-		'pneumaticcraft:gun_ammo_ap',//机枪弹药/破
-		'pneumaticcraft:gun_ammo_explosive',//机枪弹药/炸
-		'pneumaticcraft:gun_ammo_freezing',//机枪弹药/冰
-		'pneumaticcraft:transistor',//晶体管
-		'pneumaticcraft:capacitor',//电容
-		//升级
-		'pneumaticcraft:minigun_upgrade',//机枪升级
-		'pneumaticcraft:item_life_upgrade',//寿命升级
-		'pneumaticcraft:armor_upgrade',//护甲升级
-		'pneumaticcraft:inventory_upgrade',//物品栏升级
-		'pneumaticcraft:block_tracker_upgrade',//方块追踪升级
-		'pneumaticcraft:standby_upgrade',//备用升级
-		'pneumaticcraft:search_upgrade',//物品搜寻升级
-		'pneumaticcraft:coordinate_tracker_upgrade',//坐标追踪升级
-		'pneumaticcraft:charging_upgrade',//充气升级
-		'pneumaticcraft:jet_boots_upgrade_1',//喷射鞋升级1
-		'pneumaticcraft:jet_boots_upgrade_2',//喷射鞋升级2
-		'pneumaticcraft:jet_boots_upgrade_3',//喷射鞋升级3
-		'pneumaticcraft:jet_boots_upgrade_4',//喷射鞋升级4
-		'pneumaticcraft:jet_boots_upgrade_5',//喷射鞋升级5
-		'pneumaticcraft:night_vision_upgrade',//夜视升级
-		'pneumaticcraft:scuba_upgrade',//水肺升级
-		'pneumaticcraft:creative_upgrade',//创造升级
-		'pneumaticcraft:jumping_upgrade_1',//跳跃升级1
-		'pneumaticcraft:jumping_upgrade_2',//跳跃升级2
-		'pneumaticcraft:jumping_upgrade_3',//跳跃升级3
-		'pneumaticcraft:jumping_upgrade_4',//跳跃升级4
-		'pneumaticcraft:flippers_upgrade',//脚蹼升级
-		'pneumaticcraft:radiation_shielding_upgrade',//辐射升级
-		'pneumaticcraft:gilded_upgrade',//G升级
-		'pneumaticcraft:ender_visor_upgrade',//EV升级
-		'pneumaticcraft:stomp_upgrade',//S升级
-		'pneumaticcraft:elytra_upgrade',//E升级
-		'pneumaticcraft:thaumcraft_upgrade',//神秘时代升级
-		'pneumaticcraft:air_conditioning_upgrade',//空调升级
-		//物流框架
-		/pneumaticcraft:logistics_frame_/,
-		'pneumaticcraft:logistics_core',
-		'pneumaticcraft:logistics_module',
-		'pneumaticcraft:tag_filter',
-		'pneumaticcraft:classify_filter',
-		//无人机
-		'pneumaticcraft:drone',
-		Item.of('pneumaticcraft:drone', '{"pneumaticcraft:air":120000}'),
-		'pneumaticcraft:logistics_drone',
-		Item.of('pneumaticcraft:logistics_drone', '{"pneumaticcraft:air":120000}'),
-		'pneumaticcraft:harvesting_drone',
-		Item.of('pneumaticcraft:harvesting_drone', '{"pneumaticcraft:air":120000}'),
-		'pneumaticcraft:guard_drone',
-		Item.of('pneumaticcraft:guard_drone', '{"pneumaticcraft:air":120000}'),
-		'pneumaticcraft:collector_drone',
-		Item.of('pneumaticcraft:collector_drone', '{"pneumaticcraft:air":120000}'),
-		//网络程序
-		'pneumaticcraft:diagnostic_subroutine',
-		'pneumaticcraft:network_api',
-		'pneumaticcraft:network_data_storage',
-		'pneumaticcraft:network_io_port',
-		'pneumaticcraft:network_registry',
-		'pneumaticcraft:network_node',
-		//储罐
-		'pneumaticcraft:small_tank',
-		'pneumaticcraft:medium_tank',
-		'pneumaticcraft:large_tank',
-		'pneumaticcraft:huge_tank',
-		//强化石
-		/pneumaticcraft:reinforced_stone/,
-		/pneumaticcraft:reinforced_brick/,
-		//导热框架
-		'pneumaticcraft:heat_frame',
 		//                              分割线                              // 
 		//                              分割线                              // 
 		//                              分割线                              //  
@@ -330,8 +203,6 @@ onEvent('jei.remove.categories', event => {
 		'thermal:stirling_fuel',//斯特林能源炉
 		'thermal:disenchantment_fuel',//祛魔能源炉
 		'thermal:gourmand_fuel',//饕餮能源炉
-		//导热框架
-		'pneumaticcraft:heat_frame_cooling',
 		//拆解台
 		'twilightforest:uncrafting',
 		'twilightforest:uncrafting_table',
@@ -344,13 +215,6 @@ onEvent('jei.remove.categories', event => {
 onEvent('jei.hide.fluids', event => {
 	[
 		//'industrialforegoing:essence',//精华液
-		//'pneumaticcraft:memory_essence',//记忆源质
-		'pneumaticcraft:oil',
-		'pneumaticcraft:ethanol',
-		'pneumaticcraft:biodiesel',
-		'pneumaticcraft:diesel',
-		'pneumaticcraft:gasoline',
-		'pneumaticcraft:vegetable_oil',
 		'thermal:sap',
 		'thermal:syrup',
 		'thermal:resin',
@@ -367,6 +231,14 @@ onEvent('jei.hide.fluids', event => {
 });
 
 onEvent('jei.information', event => {
-	event.addItem('biggerreactors:cyanite_ingot', 'Waste', ['可通过裂变反应堆的产出获得。']);
-	event.addItem('kubejs:osmium_scrap', 'Osmium Scrap', ['守卫者死亡时概率掉落。', '（也许你需要设计建造一个守卫者农场）'])
+	event.add('biggerreactors:cyanite_ingot', ['核废料', '可通过裂变反应堆的产出获得。'])
+	event.add('kubejs:osmium_scrap', ['守卫者死亡时概率掉落。', '（也许你需要设计建造一个守卫者农场）'])
 })
+
+onEvent('jei.add.items', event => {
+	event.add('thermal:nuke_tnt');
+	event.add('thermal:nuke_grenade');
+	event.add('minecraft:dragon_egg');
+})
+
+

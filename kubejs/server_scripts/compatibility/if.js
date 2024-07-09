@@ -18,8 +18,8 @@ onEvent('recipes', event => {
     remove('industrialforegoing:pitiful_generator')
 
     //塑料
-    remove('industrialforegoing:plastic')
-    event.smelting('pneumaticcraft:plastic', 'industrialforegoing:dryrubber').xp(.3).id("atlanabyss:smelting_dryrubber")
+    //remove('industrialforegoing:plastic')
+    
     //肉汤注射器
     remove('industrialforegoing:meat_feeder')
     event.shaped('industrialforegoing:meat_feeder', [
@@ -27,7 +27,7 @@ onEvent('recipes', event => {
         'CBC',
         ' B '
     ], {
-        A: 'pneumaticcraft:plastic',
+        A: 'industrialforegoing:plastic',
         B: 'minecraft:iron_ingot',
         C: 'minecraft:glass_bottle'
     }).id("atlanabyss:meat_feeder")

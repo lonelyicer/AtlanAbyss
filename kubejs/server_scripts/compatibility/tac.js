@@ -271,7 +271,7 @@ onEvent('recipes', event => {
 		'BCB',
 		'ABA'
 	], {
-		A: 'pneumaticcraft:plastic',
+		A: 'industrialforegoing:plastic',
 		B: 'create:sturdy_sheet',
 		C: 'kubejs:rare_material'
 	}).id('atlanabyss:epic_material')

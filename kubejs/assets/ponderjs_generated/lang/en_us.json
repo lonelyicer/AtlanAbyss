@@ -1,0 +1,11 @@
+{
+  "kubejs.ponder.tag.compact_controller": "Compact Machine",
+  "kubejs.ponder.tag.compact_controller.description": "The Compact Machine",
+  "kubejs.ponder.compact_machine.header": "Build the Compact Machine",
+  "kubejs.ponder.compact_machine.text_1": "compactmachines:solid_wall",
+  "kubejs.ponder.compact_machine.text_2": "compactmachines:solid_wall",
+  "kubejs.ponder.compact_machine.text_3": "ae2:controller",
+  "kubejs.ponder.compact_machine.text_4": "mm:item_output_slot1_port",
+  "kubejs.ponder.compact_machine.text_5": "mm:compact_machine_controller",
+  "kubejs.ponder.compact_machine.text_6": "mm:item_input_slot1_port"
+}

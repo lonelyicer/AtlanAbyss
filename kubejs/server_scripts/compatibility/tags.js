@@ -20,8 +20,6 @@ onEvent('tags.items', event => {
 		['curios:back', 'thermal:potion_quiver'],
 		//下界合金粒
 		['forge:nuggets/netherite', 'tconstruct:netherite_nugget'],
-		//pnc钢
-		['forge:ingots/compressed_iron', 'pneumaticcraft:ingot_iron_compressed'],
 		//byd钢
 		['forge:ingots/steel', 'beyond_earth:steel_ingot'],
 		['forge:nuggets/steel', 'beyond_earth:steel_nugget'],
@@ -151,16 +149,11 @@ onEvent('tags.items', event => {
 		['forge:ingots', 'biggerreactors:ludicrite_ingot'],
 		['forge:ingots/ludicrite', 'biggerreactors:ludicrite_ingot'],
 		['forge:dusts', 'biggerreactors:ludicrite_dust'],
-		['forge:dusts/ludicrite', 'biggerreactors:ludicrite_dust'],
-		//塑料片
-		['forge:plastic', 'industrialforegoing:plastic']
+		['forge:dusts/ludicrite', 'biggerreactors:ludicrite_dust']
 	];
 	for (const [tag, item] of tagsToRemove) {
 		event.remove(tag, item);
 	}
-	//移除气动工艺强化石台阶的标签
-	event.remove('pneumaticcraft:slabs', ['pneumaticcraft:reinforced_brick_slab', 'pneumaticcraft:reinforced_stone_slab']);
-
 
 
 
@@ -178,8 +171,8 @@ onEvent('tags.items', event => {
 		['forge:fuels', 'createaddition:biomass'],
 		['forge:fuels/bio', 'createaddition:biomass'],
 		//替身是个好东西之电路板
-		['forge:circuits', 'pneumaticcraft:printed_circuit_board'],
-		['forge:circuits/basic', 'pneumaticcraft:printed_circuit_board'],
+		['forge:circuits', 'kubejs:integrated_circuit'],
+		['forge:circuits/basic', 'kubejs:integrated_circuit'],
 		// //九头蛇肉
 		// ['kubejs:hydra_meat', 'kubejs:hydra_piece'],
 		// ['kubejs:hydra_meat', 'twilightforest:hydra_chop'],
@@ -242,9 +235,7 @@ onEvent('tags.items', event => {
 		['minecraft:music_discs', 'integrated_stronghold:music_disc_forlorn'],
 		['minecraft:music_discs', 'integrated_stronghold:music_disc_sight'],
 		//烈焰粉
-		['forge:dusts/blaze', 'minecraft:blaze_powder'],
-		//塑料片
-		['forge:plastic', 'pneumaticcraft:plastic']
+		['forge:dusts/blaze', 'minecraft:blaze_powder']
 	];
 	for (const [tag, item] of tagToAdd) {
 		event.add(tag, item);
@@ -382,8 +373,6 @@ onEvent('tags.blocks', event => {
 
 onEvent('tags.fluids', event => {
 	//event.remove('forge:experience', 'industrialforegoing:essence')//精华液
-	//event.remove('forge:experience', 'pneumaticcraft:memory_essence')//记忆源质
-	event.remove('forge:crude_oil', 'pneumaticcraft:oil')//石油
 	event.remove('forge:ender', 'thermal:ender')//谐振末影
 	event.remove('forge:honey', 'cofh_core:honey')//蜂蜜
 	event.remove('tconstruct:honey', 'tconstruct:honey')//蜂蜜

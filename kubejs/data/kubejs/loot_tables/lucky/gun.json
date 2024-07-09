@@ -10,7 +10,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{GunFireMode:\"SEMI\",GunId:\"tacz:glock_17\"}"
+                            "tag": "{GunCurrentAmmoCount:17,GunFireMode:\"SEMI\",GunId:\"tacz:glock_17\"}"
                         }
                     ]
                 },
@@ -21,7 +21,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{GunFireMode:\"BURST\",GunId:\"tacz:db_short\"}"
+                            "tag": "{GunCurrentAmmoCount:2,GunFireMode:\"BURST\",GunId:\"tacz:db_short\"}"
                         }
                     ]
                 },
@@ -32,7 +32,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{GunFireMode:\"AUTO\",GunId:\"tacz:uzi\"}"
+                            "tag": "{GunCurrentAmmoCount:20,GunFireMode:\"AUTO\",GunId:\"tacz:uzi\"}"
                         }
                     ]
                 },
@@ -43,7 +43,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{GunFireMode:\"AUTO\",GunId:\"tacz:ak47\"}"
+                            "tag": "{GunCurrentAmmoCount:30,GunFireMode:\"AUTO\",GunId:\"tacz:ak47\"}"
                         }
                     ]
                 },
@@ -54,7 +54,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{GunFireMode:\"AUTO\",GunId:\"tacz:rpg7\"}"
+                            "tag": "{GunCurrentAmmoCount:1,GunFireMode:\"AUTO\",GunId:\"tacz:rpg7\"}"
                         }
                     ]
                 }
