@@ -1,0 +1,47 @@
+{
+  "replace": false,
+  "trades": [
+    {
+      "type": "goblintraders:basic",
+      "offer_item": {
+        "item": "lightmanscurrency:coin_gold",
+        "count": 1
+      },
+      "payment_item": {
+        "item": "minecraft:emerald",
+        "count": 1
+      },
+      "price_multiplier": 0.0,
+      "max_trades": 128,
+      "experience": 4
+    },
+    {
+      "type": "goblintraders:basic",
+      "offer_item": {
+        "item": "ars_creo:starbuncle_wheel",
+        "count": 1
+      },
+      "payment_item": {
+        "item": "lightmanscurrency:coin_gold",
+        "count": 2
+      },
+      "price_multiplier": 0.0,
+      "max_trades": 24,
+      "experience": 10
+    },
+    {
+      "type": "goblintraders:basic",
+      "offer_item": {
+        "item": "immersive_paintings:painting",
+        "count": 2
+      },
+      "payment_item": {
+        "item": "lightmanscurrency:coin_copper",
+        "count": 5
+      },
+      "price_multiplier": 0.0,
+      "max_trades": 32,
+      "experience": 4
+    }
+  ]
+}

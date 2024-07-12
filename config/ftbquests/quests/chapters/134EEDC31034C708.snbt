@@ -1108,6 +1108,8 @@
 			x: 5.0d
 			y: 1.0d
 			shape: "hexagon"
+			dependencies: ["51118EFF5866B6D3"]
+			hide: true
 			id: "30B3228566B22321"
 			tasks: [{
 				id: "61C6876F7313A5A4"
@@ -1129,6 +1131,8 @@
 			x: 4.0d
 			y: 1.0d
 			shape: "hexagon"
+			dependencies: ["51118EFF5866B6D3"]
+			hide: true
 			id: "0920AAF0EBB3735F"
 			tasks: [{
 				id: "336106CF9E4CDC70"

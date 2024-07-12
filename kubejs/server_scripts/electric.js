@@ -23,6 +23,7 @@ onEvent('recipes', event => {
   let remove = (name) => {
     event.remove({ id: name })
   }
+  //删除类型配方
   event.remove({ type: 'thermal:sawmill' })
   event.remove({ type: 'thermal:press' })
   //多余的
@@ -648,7 +649,7 @@ onEvent('recipes', event => {
     { input: 'minecraft:amethyst_block', output: 'machine_crystallizer' },//结晶器
     { input: 'create:blaze_burner', output: 'machine_crucible' },//熔岩炉
     { input: 'thermal:electrum_block', output: 'charge_bench' },//能量灌注机
-    { input: 'minecraft:emerald', output: 'machine_press' },//贸易站
+    { input: 'create:mechanical_press', output: 'machine_press' },//压板机
     { input: 'kubejs:charged_electron_tube', output: 'machine_sawmill' }//反应物提取机
   ];
   for (const machine of machines) {

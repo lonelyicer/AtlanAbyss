@@ -9,6 +9,66 @@
         {
           "TradeType": "PURCHASE",
           "SellItem": {
+            "ID": "minecraft:diorite",
+            "Count": 8
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_copper",
+                "Amount": 38
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "minecraft:diorite",
+            "Count": 8
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_copper",
+                "Amount": 42
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:andesite",
+            "Count": 8
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_copper",
+                "Amount": 38
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "minecraft:andesite",
+            "Count": 8
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_copper",
+                "Amount": 42
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
             "ID": "minecraft:cobblestone",
             "Count": 24
           },
@@ -16,7 +76,7 @@
             "Value": [
               {
                 "Coin": "lightmanscurrency:coin_copper",
-                "Amount": 1
+                "Amount": 10
               }
             ]
           }
@@ -31,7 +91,277 @@
             "Value": [
               {
                 "Coin": "lightmanscurrency:coin_copper",
+                "Amount": 10
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:tuff",
+            "Count": 4
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
                 "Amount": 1
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "minecraft:tuff",
+            "Count": 4
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 1
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:basalt",
+            "Count": 16
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_copper",
+                "Amount": 20
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "minecraft:basalt",
+            "Count": 12
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_copper",
+                "Amount": 24
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:cobbled_deepslate",
+            "Count": 16
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_copper",
+                "Amount": 20
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "minecraft:cobbled_deepslate",
+            "Count": 12
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_copper",
+                "Amount": 24
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:blackstone",
+            "Count": 8
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_copper",
+                "Amount": 38
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "minecraft:blackstone",
+            "Count": 8
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_copper",
+                "Amount": 42
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:dripstone_block",
+            "Count": 4
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_copper",
+                "Amount": 38
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "minecraft:dripstone_block",
+            "Count": 4
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_copper",
+                "Amount": 42
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:granite",
+            "Count": 8
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_copper",
+                "Amount": 38
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "minecraft:granite",
+            "Count": 8
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_copper",
+                "Amount": 42
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "quark:jasper",
+            "Count": 8
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_copper",
+                "Amount": 38
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "quark:jasper",
+            "Count": 8
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_copper",
+                "Amount": 42
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "quark:shale",
+            "Count": 8
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_copper",
+                "Amount": 38
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "quark:shale",
+            "Count": 8
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_copper",
+                "Amount": 42
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "quark:limestone",
+            "Count": 8
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_copper",
+                "Amount": 38
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "quark:limestone",
+            "Count": 8
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_copper",
+                "Amount": 42
               }
             ]
           }
@@ -53,7 +383,7 @@
           "Price": {
             "Value": [
               {
-                "Coin": "lightmanscurrency:coin_copper",
+                "Coin": "lightmanscurrency:coin_iron",
                 "Amount": 1
               }
             ]
@@ -68,7 +398,7 @@
           "Price": {
             "Value": [
               {
-                "Coin": "lightmanscurrency:coin_copper",
+                "Coin": "lightmanscurrency:coin_iron",
                 "Amount": 1
               }
             ]
@@ -83,7 +413,7 @@
           "Price": {
             "Value": [
               {
-                "Coin": "lightmanscurrency:coin_copper",
+                "Coin": "lightmanscurrency:coin_iron",
                 "Amount": 1
               }
             ]
@@ -98,7 +428,7 @@
           "Price": {
             "Value": [
               {
-                "Coin": "lightmanscurrency:coin_copper",
+                "Coin": "lightmanscurrency:coin_iron",
                 "Amount": 1
               }
             ]
@@ -113,7 +443,7 @@
           "Price": {
             "Value": [
               {
-                "Coin": "lightmanscurrency:coin_copper",
+                "Coin": "lightmanscurrency:coin_iron",
                 "Amount": 1
               }
             ]
@@ -128,7 +458,7 @@
           "Price": {
             "Value": [
               {
-                "Coin": "lightmanscurrency:coin_copper",
+                "Coin": "lightmanscurrency:coin_iron",
                 "Amount": 1
               }
             ]
@@ -143,7 +473,7 @@
           "Price": {
             "Value": [
               {
-                "Coin": "lightmanscurrency:coin_copper",
+                "Coin": "lightmanscurrency:coin_iron",
                 "Amount": 1
               }
             ]
@@ -158,7 +488,7 @@
           "Price": {
             "Value": [
               {
-                "Coin": "lightmanscurrency:coin_copper",
+                "Coin": "lightmanscurrency:coin_iron",
                 "Amount": 1
               }
             ]
@@ -173,7 +503,7 @@
           "Price": {
             "Value": [
               {
-                "Coin": "lightmanscurrency:coin_copper",
+                "Coin": "lightmanscurrency:coin_iron",
                 "Amount": 1
               }
             ]
@@ -188,7 +518,7 @@
           "Price": {
             "Value": [
               {
-                "Coin": "lightmanscurrency:coin_copper",
+                "Coin": "lightmanscurrency:coin_iron",
                 "Amount": 1
               }
             ]
@@ -203,7 +533,7 @@
           "Price": {
             "Value": [
               {
-                "Coin": "lightmanscurrency:coin_copper",
+                "Coin": "lightmanscurrency:coin_iron",
                 "Amount": 1
               }
             ]
@@ -218,7 +548,7 @@
           "Price": {
             "Value": [
               {
-                "Coin": "lightmanscurrency:coin_copper",
+                "Coin": "lightmanscurrency:coin_iron",
                 "Amount": 1
               }
             ]
@@ -233,8 +563,8 @@
           "Price": {
             "Value": [
               {
-                "Coin": "lightmanscurrency:coin_copper",
-                "Amount": 2
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 10
               }
             ]
           }
@@ -248,8 +578,8 @@
           "Price": {
             "Value": [
               {
-                "Coin": "lightmanscurrency:coin_copper",
-                "Amount": 2
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 10
               }
             ]
           }
@@ -263,8 +593,8 @@
           "Price": {
             "Value": [
               {
-                "Coin": "lightmanscurrency:coin_copper",
-                "Amount": 2
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 10
               }
             ]
           }
@@ -278,8 +608,8 @@
           "Price": {
             "Value": [
               {
-                "Coin": "lightmanscurrency:coin_copper",
-                "Amount": 2
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 10
               }
             ]
           }
@@ -293,7 +623,7 @@
           "Price": {
             "Value": [
               {
-                "Coin": "lightmanscurrency:coin_iron",
+                "Coin": "lightmanscurrency:coin_gold",
                 "Amount": 1
               }
             ]
@@ -308,237 +638,8 @@
           "Price": {
             "Value": [
               {
-                "Coin": "lightmanscurrency:coin_iron",
-                "Amount": 1
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "Type": "lightmanscurrency:item_trader",
-      "ID": "functional_trade",
-      "Name": "功能道具交易",
-      "OwnerName": "五维村庄",
-      "Rules": [
-        {
-          "Duration": 86400000,
-          "Fluctuation": 10,
-          "Type": "lightmanscurrency:price_fluctuation"
-        }
-      ],
-      "Trades": [
-        {
-          "TradeType": "SALE",
-          "SellItem": {
-            "ID": "kubejs:lucky_block",
-            "Count": 1
-          },
-          "Price": {
-            "Value": [
-              {
-                "Coin": "lightmanscurrency:coin_emerald",
-                "Amount": 1
-              }
-            ]
-          }
-        },
-        {
-          "TradeType": "SALE",
-          "SellItem": {
-            "ID": "minecraft:spawner",
-            "Count": 1
-          },
-          "Price": {
-            "Value": [
-              {
-                "Coin": "lightmanscurrency:coin_diamond",
-                "Amount": 1
-              }
-            ]
-          }
-        },
-        {
-          "TradeType": "SALE",
-          "SellItem": {
-            "ID": "kubejs:halo_gashapon",
-            "Count": 1
-          },
-          "Price": {
-            "Value": [
-              {
-                "Coin": "lightmanscurrency:coin_netherite",
-                "Amount": 2
-              }
-            ]
-          }
-        },
-        {
-          "TradeType": "SALE",
-          "SellItem": {
-            "ID": "yuushya:bismuth_crystal",
-            "Count": 8
-          },
-          "Price": {
-            "Value": [
-              {
-                "Coin": "lightmanscurrency:coin_iron",
-                "Amount": 8
-              }
-            ]
-          }
-        },
-        {
-          "TradeType": "SALE",
-          "SellItem": {
-            "ID": "torchmaster:megatorch",
-            "Count": 1
-          },
-          "Price": {
-            "Value": [
-              {
-                "Coin": "lightmanscurrency:coin_iron",
-                "Amount": 8
-              }
-            ]
-          }
-        },
-        {
-          "TradeType": "SALE",
-          "SellItem": {
-            "ID": "torchmaster:feral_flare_lantern",
-            "Count": 1
-          },
-          "Price": {
-            "Value": [
-              {
-                "Coin": "lightmanscurrency:coin_iron",
-                "Amount": 9
-              }
-            ]
-          }
-        },
-        {
-          "TradeType": "SALE",
-          "SellItem": {
-            "ID": "pipez:universal_pipe",
-            "Count": 1
-          },
-          "Price": {
-            "Value": [
-              {
                 "Coin": "lightmanscurrency:coin_gold",
-                "Amount": 9
-              }
-            ]
-          }
-        },
-        {
-          "TradeType": "SALE",
-          "SellItem": {
-            "ID": "itemcollectors:basic_collector",
-            "Count": 1
-          },
-          "Price": {
-            "Value": [
-              {
-                "Coin": "lightmanscurrency:coin_emerald",
                 "Amount": 1
-              }
-            ]
-          }
-        },
-        {
-          "TradeType": "SALE",
-          "SellItem": {
-            "ID": "chunkloaders:single_chunk_loader",
-            "Count": 1
-          },
-          "Price": {
-            "Value": [
-              {
-                "Coin": "lightmanscurrency:coin_diamond",
-                "Amount": 1
-              }
-            ]
-          }
-        },
-        {
-          "TradeType": "SALE",
-          "SellItem": {
-            "ID": "entangled:block",
-            "Count": 1
-          },
-          "Price": {
-            "Value": [
-              {
-                "Coin": "lightmanscurrency:coin_netherite",
-                "Amount": 1
-              },
-              {
-                "Coin": "lightmanscurrency:coin_diamond",
-                "Amount": 5
-              }
-            ]
-          }
-        },
-        {
-          "TradeType": "SALE",
-          "SellItem": {
-            "ID": "ars_creo:starbuncle_wheel",
-            "Count": 1
-          },
-          "Price": {
-            "Value": [
-              {
-                "Coin": "lightmanscurrency:coin_gold",
-                "Amount": 2
-              }
-            ]
-          }
-        },
-        {
-          "TradeType": "SALE",
-          "SellItem": {
-            "ID": "dimdungeons:block_key_charger",
-            "Count": 1
-          },
-          "Price": {
-            "Value": [
-              {
-                "Coin": "lightmanscurrency:coin_diamond",
-                "Amount": 2
-              }
-            ]
-          }
-        },
-        {
-          "TradeType": "SALE",
-          "SellItem": {
-            "ID": "immersive_paintings:painting",
-            "Count": 2
-          },
-          "Price": {
-            "Value": [
-              {
-                "Coin": "lightmanscurrency:coin_copper",
-                "Amount": 5
-              }
-            ]
-          }
-        },
-        {
-          "TradeType": "SALE",
-          "SellItem": {
-            "ID": "minecraft:nether_star",
-            "Count": 1
-          },
-          "Price": {
-            "Value": [
-              {
-                "Coin": "lightmanscurrency:coin_emerald",
-                "Amount": 5
               }
             ]
           }

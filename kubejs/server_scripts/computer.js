@@ -139,7 +139,7 @@ onEvent('recipes', event => {
   //电路废料额外
   create.milling([
     Item.of('kubejs:circuit_scrap').withChance(6 / 9),
-    Item.of('kubejs:integrated_circuit').withChance(3 / 9),
+    Item.of('kubejs:empty_pcb').withChance(3 / 9),
   ],
     'kubejs:integrated_circuit'
   ).id("atlanabyss:circuit_scrap")

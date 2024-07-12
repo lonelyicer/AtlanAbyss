@@ -1,0 +1,89 @@
+{
+  "replace": false,
+  "trades": [
+    {
+      "type": "goblintraders:basic",
+      "offer_item": {
+        "item": "kubejs:lucky_block",
+        "count": 1
+      },
+      "payment_item": {
+        "item": "lightmanscurrency:coin_emerald",
+        "count": 1
+      },
+      "price_multiplier": 0.0,
+      "max_trades": 24,
+      "experience": 20
+    },
+    {
+      "type": "goblintraders:basic",
+      "offer_item": {
+        "item": "minecraft:spawner",
+        "count": 1
+      },
+      "payment_item": {
+        "item": "lightmanscurrency:coin_diamond",
+        "count": 1
+      },
+      "price_multiplier": 0.0,
+      "max_trades": 4,
+      "experience": 50
+    },
+    {
+      "type": "goblintraders:basic",
+      "offer_item": {
+        "item": "pipez:universal_pipe",
+        "count": 1
+      },
+      "payment_item": {
+        "item": "lightmanscurrency:coin_gold",
+        "count": 9
+      },
+      "price_multiplier": 0.0,
+      "max_trades": 64,
+      "experience": 10
+    },
+    {
+      "type": "goblintraders:basic",
+      "offer_item": {
+        "item": "itemcollectors:basic_collector",
+        "count": 1
+      },
+      "payment_item": {
+        "item": "lightmanscurrency:coin_emerald",
+        "count": 1
+      },
+      "price_multiplier": 0.0,
+      "max_trades": 24,
+      "experience": 20
+    },
+    {
+      "type": "goblintraders:basic",
+      "offer_item": {
+        "item": "chunkloaders:single_chunk_loader",
+        "count": 1
+      },
+      "payment_item": {
+        "item": "lightmanscurrency:coin_diamond",
+        "count": 1
+      },
+      "price_multiplier": 0.0,
+      "max_trades": 9,
+      "experience": 50
+    },
+    {
+      "type": "goblintraders:basic",
+      "offer_item": {
+        "item": "dimdungeons:block_key_charger",
+        "count": 1
+      },
+      "payment_item": {
+        "item": "lightmanscurrency:coin_diamond",
+        "count": 2
+      },
+      "price_multiplier": 0.0,
+      "max_trades": 4,
+      "experience": 100
+    }
+  ]
+}

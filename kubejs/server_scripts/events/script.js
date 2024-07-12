@@ -100,6 +100,7 @@ onEvent('item.right_click', event => {
   lootbag('kubejs:album_kessoku_band', 'kubejs:album/kessoku_band', true)//专辑
   lootbag('kubejs:album_mameyudoufu', 'kubejs:album/mameyudoufu', true)//专辑
   lootbag('kubejs:album_adventure', 'kubejs:album/adventure', true)//专辑
+  lootbag('kubejs:album_made_in_abyss', 'kubejs:album/abyss', true)//专辑
 
   hoshino('minecraft:clock');// 时钟
   hoshino('tiab:time_in_a_bottle');// 时间之瓶
@@ -662,13 +663,6 @@ onEvent('item.food_eaten', event => {
   bowl('kubejs:glacier_ice_tea', 'minecraft:glass_bottle')
   bowl('kubejs:twilight_spring', 'minecraft:glass_bottle')
   bowl('kubejs:tear_drink', 'minecraft:glass_bottle')
-})
-
-
-
-onEvent('recipes', event => {
-  alchemyRecipes(event)
-  trading(event)
 })
 
 

@@ -934,9 +934,9 @@
 			hide: true
 			id: "0BC087D2D6933F9C"
 			tasks: [{
-				id: "7D3F3E2C0A397DA3"
+				id: "74639BC8ACEA451C"
 				type: "item"
-				item: "thermal:crude_oil_bucket"
+				item: "createdieselgenerators:oil_scanner"
 			}]
 			rewards: [{
 				id: "67A4C146FBE5E2F0"
@@ -952,7 +952,7 @@
 			tasks: [{
 				id: "7506E9BEABEB8369"
 				type: "item"
-				item: "pneumaticcraft:plastic"
+				item: "industrialforegoing:plastic"
 			}]
 			rewards: [{
 				id: "78FEE0A977C0D359"

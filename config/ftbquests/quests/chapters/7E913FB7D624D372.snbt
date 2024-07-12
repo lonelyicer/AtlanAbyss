@@ -49,8 +49,8 @@
 		}
 		{
 			title: "太空时代！"
-			x: -3.0d
-			y: 0.0d
+			x: 0.0d
+			y: -4.0d
 			description: ["为了超级地球！"]
 			dependencies: [
 				"55645B086F62FED6"
@@ -73,8 +73,8 @@
 			title: "登上月球"
 			icon: "beyond_earth:moon_stone"
 			disable_toast: true
-			x: -2.5d
-			y: -2.0d
+			x: 4.0d
+			y: 0.0d
 			description: ["注：如果你的装备有减重力词条，建议脱下，不然会螺旋†升天†"]
 			dependencies: ["07B81B403E4B0D1A"]
 			hide: true
@@ -96,8 +96,8 @@
 			title: "抵达火星"
 			icon: "beyond_earth:mars_stone"
 			disable_toast: true
-			x: -2.0d
-			y: -4.0d
+			x: 0.0d
+			y: 4.0d
 			dependencies: ["616E289D48FA5E59"]
 			hide: true
 			id: "2E5A338D1CB13F1C"
@@ -118,8 +118,8 @@
 			title: "飞往水星"
 			icon: "beyond_earth:mercury_stone"
 			disable_toast: true
-			x: -1.0d
-			y: -5.0d
+			x: -4.0d
+			y: 0.0d
 			dependencies: ["2E5A338D1CB13F1C"]
 			hide: true
 			id: "0E10C2F87B227A9B"
@@ -141,7 +141,7 @@
 			icon: "beyond_earth:venus_stone"
 			disable_toast: true
 			x: 0.0d
-			y: -6.0d
+			y: -5.0d
 			dependencies: ["0E10C2F87B227A9B"]
 			hide: true
 			id: "22A51008EEC6EA3F"
@@ -180,32 +180,12 @@
 			}]
 		}
 		{
-			title: "压力时代！"
-			x: 2.0d
-			y: 2.0d
-			dependencies: [
-				"2E033A75E93E8F02"
-				"4C2C16BA5796BFD0"
-			]
-			id: "439461ECA3B5BD7A"
-			tasks: [{
-				id: "232555AA49F9AB31"
-				type: "item"
-				item: "pneumaticcraft:compressed_iron_block"
-			}]
-			rewards: [{
-				id: "02C2F34CA0870CC1"
-				type: "xp_levels"
-				xp_levels: 20
-			}]
-		}
-		{
 			title: "电力时代！"
 			x: 0.0d
 			y: 3.0d
 			description: ["从您破坏的第一颗原木开始......到应力时代的嗡嗡作响......再到压力时代的气体泄漏，你已经历许多。现在，开启你最伟大的探索吧：从早期生产力的革命到浩瀚星宇！"]
 			dependencies: [
-				"439461ECA3B5BD7A"
+				"2E033A75E93E8F02"
 				"2896AD9C74EA52FF"
 			]
 			id: "59974DE38BB77A44"
@@ -222,8 +202,8 @@
 		}
 		{
 			title: "算力时代！"
-			x: -2.0d
-			y: 2.0d
+			x: -3.0d
+			y: 0.0d
 			dependencies: [
 				"59974DE38BB77A44"
 				"0995E7B507258131"

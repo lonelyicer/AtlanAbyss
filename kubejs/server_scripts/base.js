@@ -99,17 +99,6 @@ onEvent('recipes', event => {
 	}).id("atlanabyss:mechanical_crafting_drilling_machine")
 	//流体钻井
 	remove('createoreexcavation:extractor')
-	mechanical_crafting('createoreexcavation:extractor', [
-		'BDADB',
-		'BEDEB',
-		'BEEEB',
-		'B   B',
-	], {
-		A: 'create:copper_casing',
-		B: 'create:metal_girder',
-		D: 'create:fluid_pipe',
-		E: 'kubejs:pressure_mechanism'
-	}).id("atlanabyss:mechanical_crafting_extractor")
 
 	//有机碎片
 	mixing('kubejs:organic_scrap', [
@@ -1837,6 +1826,18 @@ onEvent('recipes', event => {
 		deploying(pcb, [pcb, 'botania:terrasteel_nugget'])
 	]).transitionalItem(pcb).loops(3).id("atlanabyss:printed_circuit_board_3")
 
+	//奇点
+	event.custom({
+		type: 'createdieselgenerators:basin_fermenting',
+		ingredients: [
+			{ item: 'create:crushing_wheel' }
+		],
+		processingTime: 200,
+		results: [
+			{ item: 'ae2:singularity' }
+		]
+	}).id("atlanabyss:basin_fermenting_crushing_wheel")
+
 	//压力部件
 	let pm = ('kubejs:incomplete_pressure_mechanism')
 	sequenced_assembly([
@@ -2542,39 +2543,14 @@ onEvent('recipes', event => {
 						type: 'prevent_default'
 					},
 					{
-						weight: 13,
+						weight: 15,
 						type: 'drop_item',
-						item: 'minecraft:raw_iron'
+						item: 'kubejs:fragment_dirt'
 					},
 					{
-						weight: 10,
+						weight: 35,
 						type: 'drop_item',
-						item: 'minecraft:raw_copper'
-					},
-					{
-						weight: 9,
-						type: 'drop_item',
-						item: 'create:raw_zinc'
-					},
-					{
-						weight: 8,
-						type: 'drop_item',
-						item: 'thermal:raw_nickel'
-					},
-					{
-						weight: 7,
-						type: 'drop_item',
-						item: 'thermal:raw_tin'
-					},
-					{
-						weight: 2,
-						type: 'drop_item',
-						item: 'minecraft:raw_gold'
-					},
-					{
-						weight: 1,
-						type: 'drop_item',
-						item: 'thermal:raw_silver'
+						item: 'kubejs:fragment_stone'
 					}
 				]
 			},

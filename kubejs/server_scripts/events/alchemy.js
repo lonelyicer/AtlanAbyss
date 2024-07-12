@@ -1,4 +1,4 @@
-function alchemyRecipes(event) {
+onEvent('recipes', event => {
 	let alchemy_mix = (output, catalyst, r1, r2, amount) => {
 		event.recipes.create.mixing([
 			Item.of("kubejs:substrate_" + output, amount ? amount : 1),
@@ -119,4 +119,4 @@ function alchemyRecipes(event) {
 	catalyst('kubejs:substrate_herbal', '#atlanabyss:substrate_herbal', 'herbal');
 	catalyst('kubejs:substrate_crystal', '#atlanabyss:substrate_crystal', 'crystal');
 	catalyst('kubejs:substrate_gem', '#atlanabyss:substrate_gem', 'gem');
-};
+})

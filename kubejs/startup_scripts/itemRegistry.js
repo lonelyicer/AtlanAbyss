@@ -66,6 +66,8 @@ onEvent('item.registry', event => {
 	event.create('mass_scrap').displayName('Mass Scrap');
 	event.create('misery_scrap').displayName('Misery Scrap');
 	event.create('void_scrap').displayName('Void Scrap');
+	event.create('fragment_dirt').displayName('Fragment Dirt');
+	event.create('fragment_stone').displayName('Fragment Stone');
 	//光环扭蛋
 	event.create('halo_gashapon').displayName('Halo Gashapon');
 	//晶核
@@ -108,6 +110,7 @@ onEvent('item.registry', event => {
 	event.create('album_kessoku_band').displayName('Album').rarity(RARITY_RARE).unstackable();
 	event.create('album_mameyudoufu').displayName('Album').rarity(RARITY_RARE).unstackable();
 	event.create('album_adventure').displayName('Album').rarity(RARITY_RARE).unstackable();
+	event.create('album_made_in_abyss').displayName('Album').rarity(RARITY_RARE).unstackable();
 	event.create('treasure_box').displayName('Treasure Box').glow(true).rarity(RARITY_EPIC).unstackable();
 
 	event.create('uncommon_material').displayName('Uncommon Material').glow(true);

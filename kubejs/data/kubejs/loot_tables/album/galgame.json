@@ -1,0 +1,189 @@
+﻿{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"藍月なくる\"],name:\"§eこれくらいで\",time:214,trans_name:\"就这样\",url:\"https://music.163.com/song/media/outer/url?id=1350447904.mp3\"}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"中恵光城\"],name:\"§eレイル・ロマネスク\",time:262,trans_name:\"铁路浪漫谭\",url:\"https://music.163.com/song/media/outer/url?id=1459692474.mp3\"}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"桐谷華\"],name:\"§eレイル・ロマネスク ハチロクver\",time:264,trans_name:\"铁路浪漫谭\",url:\"https://music.163.com/song/media/outer/url?id=1459691556.mp3\"}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"桐谷華\"],name:\"sweet treasure\",time:273,url:\"https://music.163.com/song/media/outer/url?id=29724906.mp3\"}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"神代あみ\"],name:\"Re:Start ～君とまた出逢えて～\",time:245,url:\"https://music.163.com/song/media/outer/url?id=34324528.mp3\"}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Famishin\"],name:\"恋せよ乙女！<Piano Version>\",time:168,url:\"https://music.163.com/song/media/outer/url?id=34324519.mp3\"}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Angel Note\",\"日の当たる场所\"],name:\"sweet treasure<instrument Version>\",time:209,url:\"https://music.163.com/song/media/outer/url?id=34324507.mp3\"}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Famishin\",\"Angel Note\"],name:\"恋ひ恋ふ縁＜Piano Version＞\",time:157,url:\"https://music.163.com/song/media/outer/url?id=473403174.mp3\"}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Famishin\",\"Angel Note\"],name:\"恋ひ恋ふ縁＜Koto Version＞\",time:215,url:\"https://music.163.com/song/media/outer/url?id=473403170.mp3\"}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Angel Note\",\"ゆずひこ\"],name:\"とおりゃんせ～甘美風来 <Quiet Version>\",time:99,url:\"https://music.163.com/song/media/outer/url?id=473403164.mp3\"}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Angel Note\",\"ゆずひこ\"],name:\"とおりゃんせ～甘美風来 <Instrument Version>\",time:156,url:\"https://music.163.com/song/media/outer/url?id=473403158.mp3\"}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Angel Note\",\"井ノ原智\"],name:\"良日\",time:185,url:\"https://music.163.com/song/media/outer/url?id=473403151.mp3\"}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Famishin\",\"Angel Note\"],name:\"本日は晴天なり\",time:327,trans_name:\"今日万里无云\",url:\"https://music.163.com/song/media/outer/url?id=473403145.mp3\"}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Angel Note\",\"井ノ原智\"],name:\"くつろぎの間\",time:163,url:\"https://music.163.com/song/media/outer/url?id=473403144.mp3\"}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Angel Note\",\"井ノ原智\"],name:\"ひとときの安息\",time:183,url:\"https://music.163.com/song/media/outer/url?id=473403143.mp3\"}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Angel Note\",\"井ノ原智\"],name:\"花鳥風月\",time:187,url:\"https://music.163.com/song/media/outer/url?id=473403139.mp3\"}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Famishin\",\"井ノ原智\"],name:\"恋ひ恋ふ縁 (Title Version)\",time:235,url:\"https://music.163.com/song/media/outer/url?id=473403127.mp3\"}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Famishin\",\"榊原ゆい\"],name:\"§e愛しさと感謝の気持ち\",time:342,trans_name:\"献予你的爱意与谢意\",url:\"https://music.163.com/song/media/outer/url?id=473403183.mp3\"}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        }
+      ]
+    }
+  ]
+}

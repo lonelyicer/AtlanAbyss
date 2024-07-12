@@ -1,0 +1,47 @@
+{
+  "replace": false,
+  "trades": [
+    {
+      "type": "goblintraders:basic",
+      "offer_item": {
+        "item": "yuushya:bismuth_crystal",
+        "count": 8
+      },
+      "payment_item": {
+        "item": "lightmanscurrency:coin_iron",
+        "count": 8
+      },
+      "price_multiplier": 0.0,
+      "max_trades": 32,
+      "experience": 4
+    },
+    {
+      "type": "goblintraders:basic",
+      "offer_item": {
+        "item": "torchmaster:megatorch",
+        "count": 1
+      },
+      "payment_item": {
+        "item": "lightmanscurrency:coin_iron",
+        "count": 8
+      },
+      "price_multiplier": 0.0,
+      "max_trades": 12,
+      "experience": 4
+    },
+    {
+      "type": "goblintraders:basic",
+      "offer_item": {
+        "item": "torchmaster:feral_flare_lantern",
+        "count": 1
+      },
+      "payment_item": {
+        "item": "lightmanscurrency:coin_iron",
+        "count": 9
+      },
+      "price_multiplier": 0.0,
+      "max_trades": 12,
+      "experience": 4
+    }
+  ]
+}

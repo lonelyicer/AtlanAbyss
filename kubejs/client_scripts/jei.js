@@ -116,6 +116,7 @@ onEvent('jei.hide.items', event => {
 		'createoreexcavation:raw_diamond',
 		'createoreexcavation:raw_emerald',
 		'createoreexcavation:raw_redstone',
+		'createoreexcavation:extractor',
 		//phosphophyllite
 		'phosphophyllite:fluid_white_hole',
 		'phosphophyllite:fluid_black_hole',

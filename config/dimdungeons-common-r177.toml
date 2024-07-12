@@ -20,14 +20,14 @@
 
 #Enemy Sets for Dungeons
 [enemySets]
-	basicEnemySet1 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	basicEnemySet1 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:stray"]
 	basicEnemySet2 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
-	advancedEnemySet1 = ["minecraft:pillager", "minecraft:skeleton", "minecraft:stray", "minecraft:blaze"]
+	advancedEnemySet1 = ["minecraft:pillager", "minecraft:skeleton", "minecraft:wither_skeleton", "minecraft:blaze"]
 	advancedEnemySet2 = ["minecraft:wither_skeleton", "minecraft:hoglin", "minecraft:vindicator", "minecraft:witch"]
-	basicEnemyHealthScaling = 1.0
-	advancedEnemyHealthScaling = 2.0
-	basicDamageMultiplier = 1.0
-	advancedDamageMultiplier = 1.5
+	basicEnemyHealthScaling = 2.0
+	advancedEnemyHealthScaling = 5.0
+	basicDamageMultiplier = 2.0
+	advancedDamageMultiplier = 3.5
 	#The number of themes to expect in the common config.
 	numberOfThemes = 3
 
@@ -42,7 +42,7 @@
 	themeEnemySet1_1 = ["minecraft:skeleton", "minecraft:piglin", "minecraft:blaze"]
 	themeEnemySet2_1 = ["minecraft:wither_skeleton", "minecraft:blaze", "minecraft:wither_skeleton", "minecraft:blaze", "minecraft:hoglin", "minecraft:piglin_brute"]
 	themeEnemyHealthScaling1 = 1.0
-	themeDungeonSize1 = 14
+	themeDungeonSize1 = 42
 
 #Settings for Theme 2
 [dungeonTheme2]
@@ -55,7 +55,7 @@
 	themeEnemySet1_2 = ["minecraft:husk", "minecraft:pillager", "minecraft:magma_cube"]
 	themeEnemySet2_2 = ["minecraft:wither_skeleton", "minecraft:blaze", "minecraft:wither_skeleton", "minecraft:blaze"]
 	themeEnemyHealthScaling2 = 1.0
-	themeDungeonSize2 = 14
+	themeDungeonSize2 = 42
 
 #Settings for Theme 3
 [dungeonTheme3]
@@ -68,7 +68,7 @@
 	themeEnemySet1_3 = ["minecraft:zombie", "minecraft:husk", "minecraft:zombie_villager"]
 	themeEnemySet2_3 = ["minecraft:slime"]
 	themeEnemyHealthScaling3 = 1.0
-	themeDungeonSize3 = 14
+	themeDungeonSize3 = 42
 
 #Settings for Theme 4
 [dungeonTheme4]

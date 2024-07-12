@@ -42,6 +42,10 @@
                 {
                     "type": "minecraft:item",
                     "name": "kubejs:album_adventure"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "kubejs:album_made_in_abyss"
                 }
             ]
         }

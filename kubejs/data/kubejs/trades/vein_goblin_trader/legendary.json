@@ -1,0 +1,51 @@
+{
+  "replace": false,
+  "trades": [
+    {
+      "type": "goblintraders:basic",
+      "offer_item": {
+        "item": "kubejs:halo_gashapon",
+        "count": 1
+      },
+      "payment_item": {
+        "item": "lightmanscurrency:coin_netherite",
+        "count": 2
+      },
+      "price_multiplier": 0.0,
+      "max_trades": 1,
+      "experience": 1000
+    },
+    {
+      "type": "goblintraders:basic",
+      "offer_item": {
+        "item": "entangled:block",
+        "count": 1
+      },
+      "payment_item": {
+        "item": "lightmanscurrency:coin_netherite",
+        "count": 1
+      },
+      "secondary_payment_item": {
+        "item": "lightmanscurrency:coin_diamond",
+        "count": 5
+      },
+      "price_multiplier": 0.0,
+      "max_trades": 2,
+      "experience": 500
+    },
+    {
+      "type": "goblintraders:basic",
+      "offer_item": {
+        "item": "minecraft:nether_star",
+        "count": 1
+      },
+      "payment_item": {
+        "item": "lightmanscurrency:coin_emerald",
+        "count": 5
+      },
+      "price_multiplier": 0.0,
+      "max_trades": 24,
+      "experience": 500
+    }
+  ]
+}
