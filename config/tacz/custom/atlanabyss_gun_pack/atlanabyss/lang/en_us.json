@@ -3,9 +3,12 @@
   "pack.atlanabyss.atlanabyss.desc": "AtlanAbyss Pack",
   
   "atlanabyss.gun.deagle_pink.name": "Deagle Gold",
-  "atlanabyss.gun.deagle_gold.name": "Deagle Pink",
   "atlanabyss.gun.deagle_red.name": "Deagle Red",
   "atlanabyss.gun.deagle_black.name": "Deagle Black",
+
+  "atlanabyss.gun.deagle_pink.desc": "RPG!",
+  "atlanabyss.gun.deagle_red.desc": "ShotGun!",
+  "atlanabyss.gun.deagle_black.desc": "plus++",
 
   "atlanabyss.ammo.magnum_ammo.name":"Universal Magnum Ammo",
   "atlanabyss.ammo.pistol_ammo.name":"Universal Pistol Ammo",

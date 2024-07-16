@@ -1,9 +1,0 @@
-{
-  "slot": "atlanabyss:ammo/slot/magnum_ammo",
-  "shell": {
-    "model": "tacz:shell/50ae_shell",
-    "texture": "tacz:shell/50ae_shell"
-  },
-  "tracer_color": "#FF9999"
-}
-    

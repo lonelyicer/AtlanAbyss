@@ -1838,6 +1838,102 @@ onEvent('recipes', event => {
 		]
 	}).id("atlanabyss:basin_fermenting_crushing_wheel")
 
+	//幸运方块流体
+	event.custom({
+		type: 'createdieselgenerators:basin_fermenting',
+		ingredients: [
+			{ item: 'kubejs:lucky_block' }
+		],
+		processingTime: 200,
+		results: [{
+			fluid: 'kubejs:lucky_fluid',
+			amount: 10
+		}],
+		heatRequirement: 'superheated'
+	}).id("atlanabyss:basin_fermenting_lucky_block")
+
+	//幸运物质
+	compacting('minecraft:iron_block', [
+		'minecraft:iron_ingot',
+		Fluid.of('kubejs:lucky_fluid', 80)]
+	).id("atlanabyss:compacting_iron_from_lucky")
+
+	compacting('minecraft:copper_block', [
+		'minecraft:copper_ingot',
+		Fluid.of('kubejs:lucky_fluid', 50)]
+	).id("atlanabyss:compacting_copper_from_lucky")
+
+	compacting('minecraft:gold_block', [
+		'minecraft:gold_ingot',
+		Fluid.of('kubejs:lucky_fluid', 150)]
+	).id("atlanabyss:compacting_gold_from_lucky")
+
+	compacting('minecraft:diamond_block', [
+		'minecraft:diamond',
+		Fluid.of('kubejs:lucky_fluid', 420)]
+	).id("atlanabyss:compacting_diamond_from_lucky")
+
+	compacting('minecraft:netherite_block', [
+		'minecraft:netherite_ingot',
+		Fluid.of('kubejs:lucky_fluid', 1000)]
+	).id("atlanabyss:compacting_netherite_from_lucky")
+
+	compacting('minecraft:amethyst_block', [
+		'minecraft:amethyst_shard',
+		Fluid.of('kubejs:lucky_fluid', 100)]
+	).id("atlanabyss:compacting_amethyst_from_lucky")
+
+	compacting('create:zinc_block', [
+		'create:zinc_ingot',
+		Fluid.of('kubejs:lucky_fluid', 80)]
+	).id("atlanabyss:compacting_zinc_from_lucky")
+
+	compacting('thermal:tin_block', [
+		'thermal:tin_ingot',
+		Fluid.of('kubejs:lucky_fluid', 100)]
+	).id("atlanabyss:compacting_tin_from_lucky")
+
+	compacting('thermal:lead_block', [
+		'thermal:lead_ingot',
+		Fluid.of('kubejs:lucky_fluid', 250)]
+	).id("atlanabyss:compacting_lead_from_lucky")
+
+	compacting('thermal:silver_block', [
+		'thermal:silver_ingot',
+		Fluid.of('kubejs:lucky_fluid', 180)]
+	).id("atlanabyss:compacting_silver_from_lucky")
+
+	compacting('thermal:nickel_block', [
+		'thermal:nickel_ingot',
+		Fluid.of('kubejs:lucky_fluid', 100)]
+	).id("atlanabyss:compacting_nickel_from_lucky")
+
+	compacting('kubejs:aluminum_block', [
+		'kubejs:aluminum_ingot',
+		Fluid.of('kubejs:lucky_fluid', 200)]
+	).id("atlanabyss:compacting_aluminum_from_lucky")
+
+	compacting('kubejs:platinum_block', [
+		'kubejs:platinum_ingot',
+		Fluid.of('kubejs:lucky_fluid', 300)]
+	).id("atlanabyss:compacting_platinum_from_lucky")
+
+	compacting('kubejs:tungsten_block', [
+		'kubejs:tungsten_ingot',
+		Fluid.of('kubejs:lucky_fluid', 500)]
+	).id("atlanabyss:compacting_tungsten_from_lucky")
+
+	compacting('kubejs:bismuth_block', [
+		'kubejs:bismuth_ingot',
+		Fluid.of('kubejs:lucky_fluid', 800)]
+	).id("atlanabyss:compacting_bismuth_from_lucky")
+
+	compacting('biggerreactors:uranium_block', [
+		'kubejs:uranium_ingot',
+		Fluid.of('kubejs:lucky_fluid', 1000)]
+	).id("atlanabyss:compacting_uranium_from_lucky")
+
+
 	//压力部件
 	let pm = ('kubejs:incomplete_pressure_mechanism')
 	sequenced_assembly([
@@ -2485,41 +2581,32 @@ onEvent('recipes', event => {
 	splashing('kubejs:alchemy_1',
 		'#atlanabyss:alchemy_substrate'
 	).id("atlanabyss:alchemy_1")
-	teslaCharging('kubejs:alchemy_1',
-		'kubejs:alchemy_2',
-		5000,
-		'alchemy_2')
-	haunting('kubejs:alchemy_3', [
-		'kubejs:alchemy_2'
-	]).id("atlanabyss:alchemy_3");
-	event.custom({
-		type: 'botania:pure_daisy',
-		input: {
-			type: 'block',
-			block: 'kubejs:alchemy_3'
-		},
-		output: { name: 'kubejs:alchemy_4' }
-	}).id("atlanabyss:alchemy_4")
+	haunting('kubejs:alchemy_2', [
+		'kubejs:alchemy_1'
+	]).id("atlanabyss:alchemy_2");
+	teslaCharging('kubejs:alchemy_2',
+		'kubejs:alchemy_3',
+		1000,
+		'alchemy_3')
 	event.custom({
 		type: 'botania:elven_trade',
-		ingredients: [{ item: 'kubejs:alchemy_4' }],
-		output: [{ item: 'kubejs:alchemy_5' }]
-	}).id("atlanabyss:alchemy_5")
+		ingredients: [{ item: 'kubejs:alchemy_3' }],
+		output: [{ item: 'kubejs:alchemy_4' }]
+	}).id("atlanabyss:alchemy_4")
 	event.custom({
 		type: 'ars_nouveau:imbuement',
-		input: { item: 'kubejs:alchemy_5' },
-		output: 'kubejs:alchemy_6',
+		input: { item: 'kubejs:alchemy_4' },
+		output: 'kubejs:alchemy_5',
 		count: 1,
 		source: 1000,
 		pedestalItems: []
-	}).id("atlanabyss:alchemy_6")
+	}).id("atlanabyss:alchemy_5")
 	deploying([
 		Item.of('kubejs:treasure_box').withChance(1 / 1000),
-		Item.of('kubejs:alchemy_0').withChance(3 / 4),
-		Item.of('farmersdelight:roast_chicken_block', 1).withChance(1 / 16),
+		Item.of('kubejs:alchemy_0').withChance(3 / 4)
 		//Item.of('minecraft:barrel', "{BlockEntityTag:{LootTable:\"kubejs:lucky\"},display:{Name:'{\"text\":\"耐心之桶\"}'}}").enchant('minecraft:looting', 2).withChance(1 / 2)
 	], [
-		'kubejs:alchemy_9',
+		'kubejs:alchemy_5',
 		'kubejs:tungsten_nugget'
 	]).id("atlanabyss:treasure_box")
 
@@ -2560,7 +2647,20 @@ onEvent('recipes', event => {
 				damage: 1
 			}
 		]
-	})
+	}).id("atlanabyss:block_clicking_wall")
+
+	event.shaped('minecraft:dirt', [
+		'AA',
+		'AA'
+	], {
+		A: 'kubejs:fragment_dirt'
+	}).id("atlanabyss:dirt_from_fragment")
+	event.shaped('minecraft:cobblestone', [
+		'AA',
+		'AA'
+	], {
+		A: 'kubejs:fragment_stone'
+	}).id("atlanabyss:stone_from_fragment")
 })
 
 //堆肥桶

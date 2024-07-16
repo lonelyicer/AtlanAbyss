@@ -308,6 +308,7 @@
 			}]
 		}
 		{
+			disable_toast: true
 			x: -2.0d
 			y: 1.0d
 			shape: "rsquare"
@@ -329,6 +330,7 @@
 			}]
 		}
 		{
+			disable_toast: true
 			x: -2.0d
 			y: 2.0d
 			shape: "rsquare"
@@ -1024,6 +1026,7 @@
 			dependencies: [
 				"3909A2788335AB22"
 				"449654DC7648F05B"
+				"635EE46CA66A246D"
 			]
 			id: "2896AD9C74EA52FF"
 			tasks: [{
@@ -1105,6 +1108,19 @@
 				id: "1DFF90AF6246ADA4"
 				type: "xp"
 				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -3.0d
+			y: 6.0d
+			dependencies: ["07835D33A0BA9FD1"]
+			hide: true
+			id: "635EE46CA66A246D"
+			tasks: [{
+				id: "54143DD344CEB605"
+				type: "item"
+				item: "kubejs:sulfur_electron_tube"
 			}]
 		}
 	]

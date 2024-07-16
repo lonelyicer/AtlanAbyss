@@ -239,7 +239,6 @@ onEvent('block.registry', event => {
         .hardness(0.2)
         .tagBlock('create:wrench_pickup')
         .tagBlock('minecraft:mineable/pickaxe')
-        .item(e => e.rarity(RARITY_RARE))
         .displayName('Lucky Block');
 
     //机器
@@ -261,7 +260,7 @@ onEvent('block.registry', event => {
 
 
     //炼金
-    for (let i = 0; i < 9; i++)
+    for (let i = 0; i < 5; i++)
         event.create(`alchemy_${i + 1}`)
             .material("glass")
             .color(0, 0x394867)
@@ -269,7 +268,7 @@ onEvent('block.registry', event => {
             .hardness(0.1)
             .box(.25, 0, .25, .75, 14.0 / 16.0, .75, false)
             .model("kubejs:block/mundane_substrate")
-            .displayName(`§b炼金混合物 §6阶段:${i + 1}/9`)
+            .displayName(`§b炼金混合物 §6阶段:${i + 1}/5`)
             .renderType("cutout")
             .item(e => e.color(0, 0x394867).color(1, 0x072348))
             .tagBlock("minecraft:mineable/pickaxe")

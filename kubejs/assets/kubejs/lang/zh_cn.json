@@ -233,6 +233,8 @@
     "fluid.kubejs.number_8": "超流体逻辑（8）",
     "fluid.kubejs.number_9": "超流体逻辑（9）",
     "fluid.kubejs.matrix": "§d液态智能矩阵",
+    "fluid.kubejs.lucky_fluid": "§d幸运方块流体",
+
     "item.kubejs.alumina_solution_bucket": "氧化铝溶液桶",
     "item.kubejs.fine_sand_bucket": "细沙桶",
     "item.kubejs.molten_plutonium_bucket": "§b熔融钚桶",
@@ -248,6 +250,7 @@
     "item.kubejs.number_8_bucket": "超流体逻辑桶（8）",
     "item.kubejs.number_9_bucket": "超流体逻辑桶（9）",
     "item.kubejs.matrix_bucket": "§d液态智能矩阵桶",
+    "item.kubejs.lucky_fluid_bucket": "§d幸运方块流体",
 
     "item.kubejs.sponge_gemmule": "海绵芽球",
     "item.kubejs.cotton": "棉花",
@@ -276,7 +279,7 @@
     "block.kubejs.osmium_casing": "§3镀锇机壳",
     "block.kubejs.plutonium_block": "§b钚块",
     "block.kubejs.compressed_coal_block": "压缩煤块",
-    "block.kubejs.lucky_block": "幸运方块",
+    "block.kubejs.lucky_block": "§d幸运方块",
 
     "block.kubejs.andesite_machine": "安山机器",
     "block.kubejs.brass_machine": "黄铜机器",

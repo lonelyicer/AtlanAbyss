@@ -157,8 +157,7 @@ onEvent('jei.hide.items', event => {
 		//industrialforegoing
 		'industrialforegoing:pitiful_generator',//发电机
 		'industrialforegoing:plastic',//塑料片
-		//tac
-
+		'industrialforegoing:fluid_extractor',//液体提取机
 		//ae2
 		'ae2:ender_dust',
 		'ae2:vibration_chamber',
@@ -170,8 +169,6 @@ onEvent('jei.hide.items', event => {
 		'neapolitan:milk_bottle',
 		//kitchenkarrot
 		'kitchenkarrot:ice_cubes',
-		//twilightforest
-		'twilightforest:uncrafting_table',
 		//tconstruct
 		'tconstruct:netherite_nugget',//下界合金粒
 		'tconstruct:copper_nugget',//铜粒
@@ -204,9 +201,8 @@ onEvent('jei.remove.categories', event => {
 		'thermal:stirling_fuel',//斯特林能源炉
 		'thermal:disenchantment_fuel',//祛魔能源炉
 		'thermal:gourmand_fuel',//饕餮能源炉
-		//拆解台
-		'twilightforest:uncrafting',
-		'twilightforest:uncrafting_table',
+		//液体提取机
+		'industrialforegoing:fluid_extractor'
 	].forEach(cat => {
 		event.remove(cat)
 	})

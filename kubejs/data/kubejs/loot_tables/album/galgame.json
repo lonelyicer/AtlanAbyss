@@ -182,6 +182,196 @@
             }
           ],
           "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Lia\"],name:\"§eTORCH\",read_only:0b,time:305,url:\"https://music.163.com/song/media/outer/url?id=608669.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Lia\"],name:\"§e時を刻む唄\",read_only:0b,time:291,trans_name:\"铭刻时间之歌\",url:\"https://music.163.com/song/media/outer/url?id=608667.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"茶太\",\"真理絵\",\"くない瓜\",\"Rio\",\"Morrigan\",\"藤枝あかね\",\"たくまる\"],name:\"§eだんご大家族\",read_only:0b,time:273,trans_name:\"团子大家族\",url:\"https://music.163.com/song/media/outer/url?id=760533.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"eufonius\"],name:\"§eメグメル ~cuckool mix 2007~\",read_only:0b,time:282,url:\"https://music.163.com/song/media/outer/url?id=760528.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"戸越まごめ\"],name:\"汐\",read_only:0b,time:68,url:\"https://music.163.com/song/media/outer/url?id=22706979.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"riya\"],name:\"メグメル\",read_only:0b,time:292,url:\"https://music.163.com/song/media/outer/url?id=22706981.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"折戸伸治\"],name:\"町、時の流れ、人\",read_only:0b,time:268,trans_name:\"小镇，流逝的时光，人\",url:\"https://music.163.com/song/media/outer/url?id=22706983.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"麻枝准\",\"Key Sounds Label\"],name:\"渚\",read_only:0b,time:250,url:\"https://music.163.com/song/media/outer/url?id=22706980.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"折戸伸治\"],name:\"馬鹿ふたり\",read_only:0b,time:148,trans_name:\"两个笨蛋\",url:\"https://music.163.com/song/media/outer/url?id=22706994.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"折戸伸治\"],name:\"雪野原\",read_only:0b,time:311,url:\"https://music.163.com/song/media/outer/url?id=22706993.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"折戸伸治\"],name:\"潮鳴り\",read_only:0b,time:157,trans_name:\"潮鸣\",url:\"https://music.163.com/song/media/outer/url?id=22707008.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"折戸伸治\"],name:\"潮鳴りII\",read_only:0b,time:255,trans_name:\"潮鸣 II\",url:\"https://music.163.com/song/media/outer/url?id=22706999.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"麻枝准\"],name:\"同じ高みへ\",read_only:0b,time:119,trans_name:\"相同的高度\",url:\"https://music.163.com/song/media/outer/url?id=22706997.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"麻枝准\"],name:\"願いが叶う場所\",read_only:0b,time:169,trans_name:\"实现愿望的地方\",url:\"https://music.163.com/song/media/outer/url?id=22707012.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"戸越まごめ\"],name:\"空に光る\",read_only:0b,time:308,trans_name:\"空之光\",url:\"https://music.163.com/song/media/outer/url?id=22707003.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"麻枝准\"],name:\"願いが叶う場所 II\",read_only:0b,time:248,trans_name:\"愿望实现的地方 II\",url:\"https://music.163.com/song/media/outer/url?id=22707020.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"麻枝准\"],name:\"渚～坂の下の別れ\",read_only:0b,time:234,trans_name:\"渚~坡道下的离别\",url:\"https://music.163.com/song/media/outer/url?id=22707014.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"riya\"],name:\"小さなてのひら\",read_only:0b,time:285,trans_name:\"小小的手心\",url:\"https://music.163.com/song/media/outer/url?id=22707009.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"折戸伸治\"],name:\"東風-piano-\",read_only:0b,time:105,url:\"https://music.163.com/song/media/outer/url?id=22707013.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
         }
       ]
     }

@@ -327,6 +327,7 @@
 			x: 1.0d
 			y: 2.0d
 			shape: "hexagon"
+			description: ["网络音乐机，只能播放本模组的唱片，原版唱片需用原版唱片机播放。"]
 			dependencies: ["58D3EC802A6FBD27"]
 			hide: true
 			id: "399B746233C77AFD"

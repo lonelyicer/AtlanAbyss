@@ -4,6 +4,7 @@ onEvent("lootjs", event => {
   //溺尸击杀铁傀儡掉落鹦鹉螺壳(改成数据包了)
   //溺尸击杀鸡掉落海洋之心，概率为25%(改成数据包了)
   //玩家击杀苦力怕，骷髅，僵尸，尸壳掉落幸运方块(改成数据包了)
+
   //替换箱子战利品
   event
     .addLootTypeModifier(LootType.CHEST)
@@ -40,19 +41,23 @@ onEvent("lootjs", event => {
   //幸运方块
   event.addLootTypeModifier(LootType.ENTITY)
     .killedByPlayer()
-    .randomChance(0.025)
+    .randomChance(0.01)
     .addLoot('kubejs:lucky_block');
   //火力之环
   event.addLootTypeModifier(LootType.ENTITY)
     .matchEquip(EquipmentSlot.HEAD, Item.of('yuushya:wriggle_nightbug', '{CustomModelData:11821909}').weakNBT())
     .removeLoot(Ingredient.getAll())
     .addWeightedLoot([
-      Item.of('kubejs:pistol_ammo', 4).withChance(20),
-      Item.of('kubejs:smg_ammo', 4).withChance(10),
-      Item.of('kubejs:rifle_ammo', 4).withChance(5),
-      Item.of('kubejs:shotgun_ammo', 2).withChance(3),
-      Item.of('kubejs:sniper_ammo', 4).withChance(2),
-      Item.of('kubejs:magnum_ammo').withChance(1)
+      Item.of('10x tacz:ammo', '{AmmoId:"tacz:9mm"}').withChance(30),
+      Item.of('10x tacz:ammo', '{AmmoId:"tacz:45acp"}').withChance(25),
+      Item.of('10x tacz:ammo', '{AmmoId:"tacz:556x45"}').withChance(15),
+      Item.of('10x tacz:ammo', '{AmmoId:"tacz:762x39"}').withChance(12),
+      Item.of('10x tacz:ammo', '{AmmoId:"tacz:308"}').withChance(10),
+      Item.of('5x tacz:ammo', '{AmmoId:"tacz:12g"}').withChance(8),
+      Item.of('5x tacz:ammo', '{AmmoId:"tacz:357mag"}').withChance(4),
+      Item.of('5x tacz:ammo', '{AmmoId:"tacz:50ae"}').withChance(3),
+      Item.of('tacz:ammo', '{AmmoId:"tacz:338"}').withChance(2),
+      Item.of('tacz:ammo', '{AmmoId:"tacz:50bmg"}').withChance(1)
     ])
   //幸运之环
   event.addLootTypeModifier(LootType.ENTITY)

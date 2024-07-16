@@ -645,6 +645,862 @@
           }
         }
       ]
+    },
+    {
+      "Type": "lightmanscurrency:item_trader",
+      "ID": "farm_trade",
+      "Name": "农产交易",
+      "OwnerName": "五维村庄",
+      "Trades": [
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "kubejs:cotton_crate",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 10
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "kubejs:baked_potato_crate",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 15
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "kubejs:egg_crate",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 20
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "farmersdelight:straw_bale",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 16
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "thermal:sugar_cane_block",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 10
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "thermal:bamboo_block",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 10
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "farmersdelight:carrot_crate",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 10
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "farmersdelight:potato_crate",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 11
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "farmersdelight:beetroot_crate",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 9
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "farmersdelight:cabbage_crate",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 12
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "farmersdelight:tomato_crate",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 12
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "farmersdelight:onion_crate",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 12
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "farmersdelight:rice_bale",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 12
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "farmersdelight:rice_bag",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 13
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:hay_block",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 10
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:melon",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 5
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:pumpkin",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 5
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:honey_block",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 30
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:nether_wart_block",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 10
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:warped_wart_block",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 10
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:cactus",
+            "Count": 4
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 10
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:kelp",
+            "Count": 8
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 10
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:tube_coral_block",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 20
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:brain_coral_block",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 20
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:bubble_coral_block",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 20
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:fire_coral_block",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 20
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:horn_coral_block",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 20
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:sunflower",
+            "Count": 4
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 10
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:brown_mushroom",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 5
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:red_mushroom",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 5
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "Type": "lightmanscurrency:item_trader",
+      "ID": "food_trade",
+      "Name": "食物交易",
+      "OwnerName": "五维村庄",
+      "Trades": [
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "kubejs:purin",
+            "Count": 2
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 20
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "umapyoi:royal_bitter",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 30
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "umapyoi:hachimi_mid",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 20
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "umapyoi:hachimi_big",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 30
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "umapyoi:cupcake",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 20
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "umapyoi:sweet_cupcake",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 30
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "farmersdelight:egg_sandwich",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 20
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "farmersdelight:chicken_sandwich",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 25
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "farmersdelight:hamburger",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 35
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "farmersdelight:bacon_sandwich",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 30
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "farmersdelight:mutton_wrap",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 30
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "farmersdelight:dumplings",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 35
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "farmersdelight:kelp_roll",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 32
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "farmersdelight:rice_roll_medley_block",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 3
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:cake",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 42
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "peculiars:yucca_cake",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "peculiars:aloe_cake",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "peculiars:passionfruit_cake",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "neapolitan:chocolate_cake",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "neapolitan:strawberry_cake",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "neapolitan:vanilla_cake",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "neapolitan:banana_cake",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "neapolitan:mint_cake",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "neapolitan:adzuki_cake",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "exquisito:chorus_cake",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "atmospheric:yucca_gateau",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ]
+          }
+        }
+      ]
     }
   ],
   "Auctions": []

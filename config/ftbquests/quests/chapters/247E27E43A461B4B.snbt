@@ -9,6 +9,7 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
+			disable_toast: true
 			x: 0.0d
 			y: 0.0d
 			dependencies: ["2896AD9C74EA52FF"]
@@ -866,7 +867,11 @@
 			x: 0.0d
 			y: -8.0d
 			shape: "octagon"
-			dependencies: ["688C5FEF6695C5A4"]
+			dependencies: [
+				"688C5FEF6695C5A4"
+				"68E785E7CF6A5ACF"
+				"47F9477F374CB325"
+			]
 			id: "0995E7B507258131"
 			tasks: [{
 				id: "07BA3419E64CB3D1"
@@ -892,6 +897,42 @@
 			}]
 			rewards: [{
 				id: "0FA9D19DC27D0ED5"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -1.5d
+			y: -8.0d
+			dependencies: ["2896AD9C74EA52FF"]
+			hide: true
+			id: "68E785E7CF6A5ACF"
+			tasks: [{
+				id: "3DAADF135EF426FA"
+				type: "item"
+				item: "kubejs:integrated_circuit"
+			}]
+			rewards: [{
+				id: "2FDA63C68BDC801F"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 1.5d
+			y: -8.0d
+			dependencies: ["2896AD9C74EA52FF"]
+			hide: true
+			id: "47F9477F374CB325"
+			tasks: [{
+				id: "30CC2EEC887A235D"
+				type: "item"
+				item: "ae2:singularity"
+			}]
+			rewards: [{
+				id: "1FC0C34E004845AF"
 				type: "xp"
 				xp: 10
 			}]

@@ -8,11 +8,11 @@
         "count": 1
       },
       "payment_item": {
-        "item": "lightmanscurrency:coin_netherite",
-        "count": 2
+        "item": "lightmanscurrency:coin_diamond",
+        "count": 1
       },
       "price_multiplier": 0.0,
-      "max_trades": 1,
+      "max_trades": 10,
       "experience": 1000
     },
     {

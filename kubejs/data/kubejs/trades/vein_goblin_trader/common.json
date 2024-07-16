@@ -4,6 +4,20 @@
     {
       "type": "goblintraders:basic",
       "offer_item": {
+        "item": "kubejs:halo_gashapon",
+        "count": 1
+      },
+      "payment_item": {
+        "item": "lightmanscurrency:coin_netherite",
+        "count": 1
+      },
+      "price_multiplier": 0.0,
+      "max_trades": 50,
+      "experience": 1000
+    },
+    {
+      "type": "goblintraders:basic",
+      "offer_item": {
         "item": "lightmanscurrency:coin_gold",
         "count": 1
       },

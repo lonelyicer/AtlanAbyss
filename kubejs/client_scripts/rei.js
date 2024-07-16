@@ -296,8 +296,6 @@
 // 		'neapolitan:milk_bottle',
 // 		//kitchenkarrot
 // 		'kitchenkarrot:ice_cubes',
-// 		//twilightforest
-// 		'twilightforest:uncrafting_table',
 // 		//tconstruct
 // 		'tconstruct:netherite_nugget',//下界合金粒
 // 		'tconstruct:copper_nugget',//铜粒
@@ -331,10 +329,7 @@
 // 		'thermal:disenchantment_fuel',//祛魔能源炉
 // 		'thermal:gourmand_fuel',//饕餮能源炉
 // 		//导热框架
-// 		'pneumaticcraft:heat_frame_cooling',
-// 		//拆解台
-// 		'twilightforest:uncrafting',
-// 		'twilightforest:uncrafting_table',
+// 		'pneumaticcraft:heat_frame_cooling'
 // 	].forEach(cat => {
 // 		event.remove(cat)
 // 	})
@@ -754,9 +749,6 @@
 // 		'create_enchantment_industry:hyper_experience',
 // 		'createaddition:seed_oil',
 // 		'createaddition:bioethanol',
-// 		'twilightforest:molten_knightmetal',
-// 		'twilightforest:molten_fiery',
-// 		'twilightforest:fiery_essence',
 // 		'beyond_earth:fuel',
 // 		'beyond_earth:molten_desh',
 // 		'beyond_earth:molten_ostrum',

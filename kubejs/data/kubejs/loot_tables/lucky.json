@@ -27,11 +27,6 @@
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 2,
-                    "name": "kubejs:lucky/ammo"
-                },
-                {
-                    "type": "minecraft:loot_table",
                     "weight": 1,
                     "name": "kubejs:lucky/discs"
                 },
@@ -89,6 +84,40 @@
                     "type": "minecraft:loot_table",
                     "weight": 3,
                     "name": "kubejs:lucky/toy"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.1
+                        }
+                    ],
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{BlockEntityTag:{LootTable:\"kubejs:ammo\"},display:{Name:'{\"text\":\"枪械弹药补给\"}'}}"
+                        }
+                    ],
+                    "name": "minecraft:gray_shulker_box"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.1
+                        }
+                    ],
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{BlockEntityTag:{LootTable:\"kubejs:attachment\"},display:{Name:'{\"text\":\"枪械配件补给\"}'}}"
+                        }
+                    ],
+                    "name": "minecraft:light_gray_shulker_box"
                 },
                 {
                     "type": "minecraft:item",
