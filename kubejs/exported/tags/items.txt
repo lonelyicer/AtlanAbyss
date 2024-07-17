@@ -1,4 +1,4 @@
-To refresh this file, delete it and run /reload command again! Last updated: Jul 9, 2024, 4:59:55 AM
+To refresh this file, delete it and run /reload command again! Last updated: Jul 17, 2024, 12:06:10 PM
 
 #forge:glass/tinted
 - minecraft:tinted_glass
@@ -1531,6 +1531,13 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - botania:floating_thermalily
 - botania:floating_tigerseye
 - botania:floating_vinculotus
+- mythicbotany:exoblaze_floating
+- mythicbotany:wither_aconite_floating
+- mythicbotany:aquapanthus_floating
+- mythicbotany:hellebore_floating
+- mythicbotany:raindeletia_floating
+- mythicbotany:feysythia_floating
+- mythicbotany:petrunia_floating
 
 #forge:coins/electrum
 - thermal:electrum_coin
@@ -1674,6 +1681,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 
 #minecraft:ignored_by_piglin_babies
 - minecraft:leather
+
+#minecraft:swords
+- minecraft:diamond_sword
+- minecraft:stone_sword
+- minecraft:golden_sword
+- minecraft:netherite_sword
+- minecraft:wooden_sword
+- minecraft:iron_sword
 
 #botania:dreamwood_logs
 - botania:dreamwood_log
@@ -1914,6 +1929,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - #forge:raw_materials/copper
 - #forge:raw_materials/gold
 - #forge:raw_materials/iron
+- mythicbotany:raw_elementium
 - #forge:raw_materials/lead
 - #forge:raw_materials/nickel
 - #forge:raw_materials/silver
@@ -2665,6 +2681,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - minecraft:gold_ore
 - minecraft:nether_gold_ore
 - minecraft:deepslate_gold_ore
+- mythicbotany:gold_ore
 
 #tconstruct:smeltery
 - #tconstruct:seared_blocks
@@ -3616,6 +3633,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - botania:aura_ring_greater
 - botania:terrasteel_helmet
 - botania:spark
+- mythicbotany:aura_ring_greatest
+- mythicbotany:alfsteel_helmet
 
 #atmospheric:yucca_logs
 - atmospheric:yucca_log
@@ -3733,6 +3752,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 
 #forge:ingots/netherite_scrap
 - minecraft:netherite_scrap
+
+#minecraft:pickaxes
+- minecraft:diamond_pickaxe
+- minecraft:stone_pickaxe
+- minecraft:golden_pickaxe
+- minecraft:netherite_pickaxe
+- minecraft:wooden_pickaxe
+- minecraft:iron_pickaxe
 
 #beyond_earth:compresseds/calorite
 - beyond_earth:compressed_calorite
@@ -4270,6 +4297,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - tconstruct:skyroot_planks
 - tconstruct:bloodshroom_planks
 
+#minecraft:hoes
+- minecraft:diamond_hoe
+- minecraft:stone_hoe
+- minecraft:golden_hoe
+- minecraft:netherite_hoe
+- minecraft:wooden_hoe
+- minecraft:iron_hoe
+
 #forge:fruits/strawberry
 - neapolitan:strawberries
 
@@ -4503,6 +4538,11 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - minecraft:stripped_spruce_wood
 - decorative_blocks:spruce_beam
 
+#mythicbotany:alfheim_ores
+- mythicbotany:elementium_ore
+- mythicbotany:dragonstone_ore
+- mythicbotany:gold_ore
+
 #tconstruct:modifiable/unarmed
 - #tconstruct:modifiable/armor/chestplate
 
@@ -4578,6 +4618,15 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - botania:rune_wrath
 - botania:rune_envy
 - botania:rune_pride
+- mythicbotany:asgard_rune
+- mythicbotany:vanaheim_rune
+- mythicbotany:alfheim_rune
+- mythicbotany:midgard_rune
+- mythicbotany:joetunheim_rune
+- mythicbotany:muspelheim_rune
+- mythicbotany:niflheim_rune
+- mythicbotany:nidavellir_rune
+- mythicbotany:helheim_rune
 
 #sereneseasons:spring_crops
 - farmersdelight:onion
@@ -4665,6 +4714,13 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - #botania:misc_special_flowers
 - #botania:generating_special_flowers
 - #botania:functional_special_flowers
+- mythicbotany:exoblaze
+- mythicbotany:wither_aconite
+- mythicbotany:aquapanthus
+- mythicbotany:hellebore
+- mythicbotany:raindeletia
+- mythicbotany:feysythia
+- mythicbotany:petrunia
 
 #forge:seeds/strawberry
 - neapolitan:strawberry_pips
@@ -4709,6 +4765,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - botania:tangleberrie_chibi
 - botania:tigerseye
 - botania:vinculotus
+- mythicbotany:exoblaze
+- mythicbotany:aquapanthus
+- mythicbotany:hellebore
+- mythicbotany:petrunia
 
 #minecraft:diamond_ores
 - minecraft:diamond_ore
@@ -4795,6 +4855,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - #forge:ores/redstone
 - #forge:ores/quartz
 - #forge:ores/netherite_scrap
+- #mythicbotany:alfheim_ores
 - #forge:ores/apatite
 - #forge:ores/cinnabar
 - #forge:ores/niter
@@ -5213,6 +5274,13 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 #botania:floating_flowers
 - #botania:mundane_floating_flowers
 - #botania:special_floating_flowers
+- mythicbotany:exoblaze_floating
+- mythicbotany:wither_aconite_floating
+- mythicbotany:aquapanthus_floating
+- mythicbotany:hellebore_floating
+- mythicbotany:raindeletia_floating
+- mythicbotany:feysythia_floating
+- mythicbotany:petrunia_floating
 
 #yuushya:vanilla_wool_carpets
 - minecraft:white_carpet
@@ -7387,6 +7455,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - botania:swap_ring
 - botania:thor_ring
 - botania:water_ring
+- mythicbotany:mana_ring_greatest
+- mythicbotany:aura_ring_greatest
+- mythicbotany:fire_ring
+- mythicbotany:ice_ring
+- mythicbotany:cursed_andwari_ring
+- mythicbotany:andwari_ring
 - ars_nouveau:ring_of_lesser_discount
 - ars_nouveau:ring_of_greater_discount
 
@@ -8338,28 +8412,28 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - supplementaries:sign_post_birch?
 - supplementaries:sign_post_crimson?
 - supplementaries:sign_post_warped?
-- supplementaries:sign_post_jungle
+- supplementaries:atmospheric/sign_post_kousa
 - supplementaries:tconstruct/sign_post_bloodshroom
-- supplementaries:botania/sign_post_dreamwood
-- supplementaries:sign_post_birch
-- supplementaries:quark/sign_post_azalea
-- supplementaries:tconstruct/sign_post_skyroot
-- supplementaries:tconstruct/sign_post_greenheart
 - supplementaries:atmospheric/sign_post_yucca
-- supplementaries:botania/sign_post_livingwood
+- supplementaries:quark/sign_post_blossom
 - supplementaries:atmospheric/sign_post_grimwood
-- supplementaries:createdieselgenerators/sign_post_chip_wood
-- supplementaries:sign_post_acacia
+- supplementaries:sign_post_dark_oak
 - supplementaries:atmospheric/sign_post_morado
+- supplementaries:sign_post_acacia
+- supplementaries:botania/sign_post_livingwood
+- supplementaries:sign_post_oak
+- supplementaries:sign_post_birch
+- supplementaries:botania/sign_post_dreamwood
+- supplementaries:atmospheric/sign_post_aspen
+- supplementaries:sign_post_spruce
+- supplementaries:tconstruct/sign_post_greenheart
+- supplementaries:sign_post_jungle
+- supplementaries:sign_post_warped
+- supplementaries:tconstruct/sign_post_skyroot
+- supplementaries:createdieselgenerators/sign_post_chip_wood
+- supplementaries:quark/sign_post_azalea
 - supplementaries:atmospheric/sign_post_rosewood
 - supplementaries:sign_post_crimson
-- supplementaries:atmospheric/sign_post_aspen
-- supplementaries:sign_post_oak
-- supplementaries:quark/sign_post_blossom
-- supplementaries:atmospheric/sign_post_kousa
-- supplementaries:sign_post_dark_oak
-- supplementaries:sign_post_spruce
-- supplementaries:sign_post_warped
 
 #tconstruct:casts/single_use/broad_axe_head
 - tconstruct:broad_axe_head_sand_cast
@@ -9496,6 +9570,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 #forge:coins/bronze
 - thermal:bronze_coin
 
+#minecraft:tools
+- #minecraft:swords
+- #minecraft:axes
+- #minecraft:pickaxes
+- #minecraft:shovels
+- #minecraft:hoes
+- minecraft:trident
+
 #compactmachines:room_upgrade
 - compactmachines:chunkloader_upgrade
 
@@ -9607,6 +9689,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - pipez:ultimate_upgrade
 - pipez:infinity_upgrade
 
+#mythicbotany:ritual_runes
+- #botania:runes
+- mythicbotany:fimbultyr_tablet
+
 #forge:plates/brass
 - create:brass_sheet
 
@@ -9634,6 +9720,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - botania:shulk_me_not
 - botania:spectrolus
 - botania:thermalily
+- mythicbotany:wither_aconite
+- mythicbotany:raindeletia
+- mythicbotany:feysythia
 
 #forge:plates/obsidian
 - create:sturdy_sheet
@@ -9715,6 +9804,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 
 #bookshelf:boots
 - #forge:boots
+
+#minecraft:axes
+- minecraft:diamond_axe
+- minecraft:stone_axe
+- minecraft:golden_axe
+- minecraft:netherite_axe
+- minecraft:wooden_axe
+- minecraft:iron_axe
 
 #forge:ingots/amethyst_bronze
 - tconstruct:amethyst_bronze_ingot
@@ -9932,6 +10029,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 
 #forge:basalt
 - minecraft:basalt
+
+#minecraft:shovels
+- minecraft:diamond_shovel
+- minecraft:stone_shovel
+- minecraft:golden_shovel
+- minecraft:netherite_shovel
+- minecraft:wooden_shovel
+- minecraft:iron_shovel
 
 #forge:storage_blocks/manyullyn
 - tconstruct:manyullyn_block

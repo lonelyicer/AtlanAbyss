@@ -68,4 +68,45 @@ onEvent('recipes', event => {
         '#minecraft:dirt',
         'createsifter:string_mesh'
     ]).processingTime(500).id('atlanabyss:string_mesh_dirt')
+
+    //线筛网
+    remove('createsifter:string_mesh')
+    event.shaped('createsifter:string_mesh', [
+        'ABA',
+        'BBB',
+        'ABA'
+    ], {
+        A: 'minecraft:stick',
+        B: 'minecraft:string'
+    }).id("atlanabyss:string_mesh")
+    //安山筛网
+    remove('createsifter:andesite_mesh')
+    event.shaped('createsifter:andesite_mesh', [
+        'AAA',
+        'ABA',
+        'AAA'
+    ], {
+        A: 'create:andesite_alloy',
+        B: 'createsifter:string_mesh'
+    }).id("atlanabyss:andesite_mesh")
+    //锌筛网
+    remove('createsifter:zinc_mesh')
+    event.shaped('createsifter:zinc_mesh', [
+        'AAA',
+        'ABA',
+        'AAA'
+    ], {
+        A: 'create:zinc_ingot',
+        B: 'createsifter:andesite_mesh'
+    }).id("atlanabyss:zinc_mesh")
+    //锌筛网
+    remove('createsifter:brass_mesh')
+    event.shaped('createsifter:brass_mesh', [
+        'AAA',
+        'ABA',
+        'AAA'
+    ], {
+        A: 'create:brass_ingot',
+        B: 'createsifter:zinc_mesh'
+    }).id("atlanabyss:brass_mesh")
 })

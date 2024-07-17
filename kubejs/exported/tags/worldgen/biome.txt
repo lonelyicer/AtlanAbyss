@@ -1,4 +1,4 @@
-To refresh this file, delete it and run /reload command again! Last updated: Jul 9, 2024, 4:59:54 AM
+To refresh this file, delete it and run /reload command again! Last updated: Jul 17, 2024, 12:06:09 PM
 
 #minecraft:has_structure/nether_fortress
 - #minecraft:is_nether
@@ -13,6 +13,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 #minecraft:is_river
 - minecraft:river
 - minecraft:frozen_river
+
+#mythicbotany:andwari_cave
+- mythicbotany:golden_fields
 
 #minecraft:has_structure/mineshaft
 - #minecraft:is_ocean
@@ -627,6 +630,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - minecraft:snowy_beach
 - minecraft:stony_shore
 - minecraft:mushroom_fields
+- mythicbotany:alfheim_plains
+- mythicbotany:alfheim_hills
+- mythicbotany:dreamwood_forest
+- mythicbotany:golden_fields
 - atmospheric:dunes
 - atmospheric:flourishing_dunes
 - atmospheric:rocky_dunes

@@ -1,5 +1,5 @@
 {
-    "duration": 600,
+    "duration": 2400,
     "name": {
         "translation": "gui.mm.compact_wall_recipe"
     },
@@ -10,7 +10,7 @@
             "ingredient": {
                 "type": "mm:item",
                 "item": "minecraft:stone_bricks",
-                "count": 8
+                "count": 64
             }
         }
     ],

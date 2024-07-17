@@ -31,6 +31,8 @@
 /WailaErrorOutput.txt
 /skyblock_exports
 /o_prof
+/servers.dat_old
+/servers.essential.dat
 
 config/roughlyenoughitems
 config/worldedit
@@ -39,6 +41,7 @@ config/titanium
 config/yes_steve_model
 config/tacz/custom/tacz_default_gun
 config/tacz/custom/Suffuse GunSmoke-Beta1.0.1Pack.zip
+config/tacz/custom/the_division_pack_ver.0.2.6.zip
 
 resourcepacks/Deep Fried 1.18 Final.zip
 resourcepacks/AtlanAbyss Music Pack v0.9.zip

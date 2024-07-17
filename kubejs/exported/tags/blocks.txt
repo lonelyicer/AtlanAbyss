@@ -1,4 +1,4 @@
-To refresh this file, delete it and run /reload command again! Last updated: Jul 9, 2024, 4:59:54 AM
+To refresh this file, delete it and run /reload command again! Last updated: Jul 17, 2024, 12:06:10 PM
 
 #abnormals_delight:drops_adzuki_cake_slice
 - neapolitan:adzuki_cake
@@ -3474,6 +3474,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - lightmanscurrency:coinblock_emerald
 - lightmanscurrency:coinblock_diamond
 - lightmanscurrency:coinblock_netherite
+- mythicbotany:alfsteel_block
 - thermal:signalum_block
 - thermal:lumium_block
 - thermal:enderium_block
@@ -4683,6 +4684,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - minecraft:gold_ore
 - minecraft:nether_gold_ore
 - minecraft:deepslate_gold_ore
+- mythicbotany:gold_ore
 
 #abnormals_delight:drops_chocolate_cake_slice
 - neapolitan:chocolate_cake
@@ -5078,6 +5080,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - minecraft:lever
 - minecraft:trapped_chest
 - tacz:gun_smith_table
+- tacz:statue
 
 #tconstruct:slime_spawn/ender
 - tconstruct:ender_slime_crystal_block
@@ -6620,6 +6623,15 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - botanypots:red_concrete_hopper_botany_pot
 - botanypots:black_concrete_botany_pot
 - botanypots:black_concrete_hopper_botany_pot
+- mythicbotany:mana_infuser
+- mythicbotany:alfsteel_block
+- mythicbotany:alfsteel_pylon
+- mythicbotany:elementium_ore
+- mythicbotany:dragonstone_ore
+- mythicbotany:gold_ore
+- mythicbotany:raw_elementium_block
+- mythicbotany:rune_holder
+- mythicbotany:central_rune_holder
 - thermal:charcoal_block
 - thermal:signalum_block
 - thermal:lumium_block
@@ -7491,7 +7503,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - create:veridium_pillar
 - createsifter:sifter
 - create_central_kitchen:blaze_stove?
-- create_mechanical_extruder:mechanical_extruder
 - ars_creo:starbuncle_wheel
 - waystones:black_sharestone
 - waystones:blue_sharestone
@@ -8314,6 +8325,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - copycats:copycat_fence_gate
 - copycats:wrapped_copycat_fence_gate
 
+#mythicbotany:alfheim_leaves
+- mythicbotany:dreamwood_leaves
+
 #minecraft:enderman_holdable
 - #minecraft:small_flowers
 - #minecraft:dirt
@@ -8575,6 +8589,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - minecraft:netherite_block
 - minecraft:respawn_anchor
 - minecraft:ancient_debris
+- mythicbotany:dragonstone_ore
 - supplementaries:netherite_trapdoor
 - supplementaries:netherite_door
 - supplementaries:safe
@@ -8874,6 +8889,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - minecraft:birch_leaves
 - minecraft:azalea_leaves
 - minecraft:flowering_azalea_leaves
+- #mythicbotany:alfheim_leaves
 - ars_nouveau:purple_archwood_leaves
 - ars_nouveau:blue_archwood_leaves
 - ars_nouveau:red_archwood_leaves
@@ -9227,6 +9243,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - compactmachines:machine_maximum
 - compactmachines:machine_normal
 - compactmachines:machine_small
+- mythicbotany:alfsteel_block
+- mythicbotany:elementium_ore
+- mythicbotany:gold_ore
+- mythicbotany:raw_elementium_block
 - thermal:enderium_block
 - thermal:lead_ore
 - thermal:silver_ore
@@ -10121,6 +10141,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - decorative_blocks:soul_brazier
 - decorative_blocks:soul_bonfire
 
+#mythicbotany:alfheim_logs
+- botania:dreamwood
+
 #minecraft:oak_logs
 - minecraft:oak_log
 - minecraft:oak_wood
@@ -10211,11 +10234,26 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 #forge:chests/ender
 - minecraft:ender_chest
 
+#mythicbotany:base_stone_alfheim
+- botania:livingrock
+- botania:metamorphic_forest_stone
+- botania:metamorphic_mountain_stone
+- botania:metamorphic_fungal_stone
+- botania:metamorphic_swamp_stone
+- botania:metamorphic_desert_stone
+- botania:metamorphic_taiga_stone
+- botania:metamorphic_mesa_stone
+
 #minecraft:spruce_logs
 - minecraft:spruce_log
 - minecraft:spruce_wood
 - minecraft:stripped_spruce_log
 - minecraft:stripped_spruce_wood
+
+#mythicbotany:alfheim_ores
+- mythicbotany:elementium_ore
+- mythicbotany:dragonstone_ore
+- mythicbotany:gold_ore
 
 #forge:ores/desh
 - beyond_earth:moon_desh_ore
@@ -10647,6 +10685,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - lightmanscurrency:auction_stand_byg_sythian?
 - lightmanscurrency:auction_stand_byg_embur?
 - lightmanscurrency:auction_stand_byg_withering_oak?
+- mythicbotany:mana_collector
+- mythicbotany:yggdrasil_branch
 - thermal:bamboo_block
 - thermal:apple_block
 - thermal:carrot_block
@@ -11512,6 +11552,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - #forge:ores/redstone
 - #forge:ores/quartz
 - #forge:ores/netherite_scrap
+- #mythicbotany:alfheim_ores
 - #forge:ores/apatite
 - #forge:ores/cinnabar
 - #forge:ores/niter

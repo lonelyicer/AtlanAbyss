@@ -292,7 +292,7 @@
 		{
 			disable_toast: true
 			x: -1.0d
-			y: 1.0d
+			y: 2.0d
 			dependencies: ["0D3B950AFB6E6BC2"]
 			hide: true
 			id: "14A8E7E37136FB5C"
@@ -691,7 +691,7 @@
 		}
 		{
 			disable_toast: true
-			x: 1.0d
+			x: -1.0d
 			y: 1.0d
 			dependencies: ["0F1CD1C8804008B7"]
 			id: "3AA4506D8BD9B1CE"
@@ -699,6 +699,11 @@
 				id: "01D119602AC108D7"
 				type: "item"
 				item: "create:rope_pulley"
+			}]
+			rewards: [{
+				id: "60C6C31BE03FF6EE"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -1121,6 +1126,193 @@
 				id: "54143DD344CEB605"
 				type: "item"
 				item: "kubejs:sulfur_electron_tube"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 1.0d
+			y: 1.0d
+			shape: "hexagon"
+			description: ["即可用于建筑，也可用作材料"]
+			dependencies: ["0F1CD1C8804008B7"]
+			id: "37B5919B712CD6A4"
+			tasks: [{
+				id: "646448690CE77E2B"
+				type: "item"
+				item: "create:industrial_iron_block"
+			}]
+			rewards: [{
+				id: "5BD2538DE57D8487"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 3.0d
+			y: 1.0d
+			shape: "hexagon"
+			description: ["如果你没有第一个压缩空间，也许可以去找哥布林商人购买！"]
+			dependencies: ["68A8270CB408D0C4"]
+			id: "35D86FA0E2A3DE6C"
+			tasks: [{
+				id: "2607816C3DDC3A60"
+				type: "item"
+				item: "compactmachines:machine_tiny"
+			}]
+			rewards: [{
+				id: "2FF05DFD0B97E88B"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 4.0d
+			y: 1.0d
+			shape: "hexagon"
+			dependencies: ["35D86FA0E2A3DE6C"]
+			id: "02F3F5931C9559C0"
+			tasks: [{
+				id: "419912C79B166B23"
+				type: "item"
+				item: "compactmachines:machine_small"
+			}]
+			rewards: [{
+				id: "63AEAE4C88E40374"
+				type: "xp"
+				xp: 20
+			}]
+		}
+		{
+			disable_toast: true
+			x: 5.0d
+			y: 0.5d
+			shape: "hexagon"
+			dependencies: ["02F3F5931C9559C0"]
+			id: "5864B322952E1173"
+			tasks: [{
+				id: "2A8973328BAF4AC2"
+				type: "item"
+				item: "compactmachines:machine_normal"
+			}]
+			rewards: [{
+				id: "08CAA1CA132ACFA3"
+				type: "xp"
+				xp: 40
+			}]
+		}
+		{
+			disable_toast: true
+			x: 5.5d
+			y: -0.5d
+			shape: "hexagon"
+			dependencies: ["5864B322952E1173"]
+			id: "695EFBF6A5F4885F"
+			tasks: [{
+				id: "7CB7DEA233796FC5"
+				type: "item"
+				item: "compactmachines:machine_large"
+			}]
+			rewards: [{
+				id: "33B4030B99E4AAA5"
+				type: "xp"
+				xp: 80
+			}]
+		}
+		{
+			disable_toast: true
+			x: 5.0d
+			y: -1.5d
+			shape: "hexagon"
+			dependencies: ["695EFBF6A5F4885F"]
+			id: "68C27DF015F841B8"
+			tasks: [{
+				id: "0F660C89F45BBF5A"
+				type: "item"
+				item: "compactmachines:machine_giant"
+			}]
+			rewards: [{
+				id: "3CC9B60AE6DFDD54"
+				type: "xp"
+				xp: 160
+			}]
+		}
+		{
+			disable_toast: true
+			x: 4.0d
+			y: -2.0d
+			shape: "hexagon"
+			dependencies: ["68C27DF015F841B8"]
+			id: "19FD7037ADE1912D"
+			tasks: [{
+				id: "433F899A0A2698B0"
+				type: "item"
+				item: "compactmachines:machine_maximum"
+			}]
+			rewards: [{
+				id: "637FCAD0F23B0E83"
+				type: "xp"
+				xp: 320
+			}]
+		}
+		{
+			disable_toast: true
+			x: 2.0d
+			y: 1.0d
+			shape: "hexagon"
+			description: [
+				"一个多方块机器，按住[W]可查看搭建方法。"
+				"机器最下面一层为实心压缩墙。"
+			]
+			dependencies: ["37B5919B712CD6A4"]
+			hide: true
+			id: "68A8270CB408D0C4"
+			tasks: [{
+				id: "4B1316D613A37FA6"
+				type: "item"
+				item: "mm:compact_machine_controller"
+			}]
+			rewards: [{
+				id: "618985B82EA5B06E"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 3.0d
+			y: 0.0d
+			shape: "hexagon"
+			dependencies: ["68A8270CB408D0C4"]
+			id: "70C298504CCD9872"
+			tasks: [{
+				id: "36FA5FED787D0200"
+				type: "item"
+				item: "mm:item_input_slot1_port"
+			}]
+			rewards: [{
+				id: "3E4E89126BB1958E"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 3.0d
+			y: 2.0d
+			shape: "hexagon"
+			dependencies: ["68A8270CB408D0C4"]
+			id: "44F5E332AF2BAC83"
+			tasks: [{
+				id: "3016C16FAC2E16E5"
+				type: "item"
+				item: "mm:item_output_slot1_port"
+			}]
+			rewards: [{
+				id: "6E52024BB03621A5"
+				type: "xp"
+				xp: 10
 			}]
 		}
 	]
