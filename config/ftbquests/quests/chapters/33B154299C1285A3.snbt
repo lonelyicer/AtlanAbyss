@@ -883,6 +883,7 @@
 		{
 			x: 0.0d
 			y: -10.5d
+			shape: "rsquare"
 			dependencies: [
 				"4A1CFC8966CA0784"
 				"5054A94D72277F83"

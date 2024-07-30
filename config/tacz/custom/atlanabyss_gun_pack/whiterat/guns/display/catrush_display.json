@@ -1,0 +1,36 @@
+{
+  "model": "whiterat:gun/catrush_geo",
+  "texture": "whiterat:gun/uv/catrush",
+  "lod": {
+    "model": "whiterat:gun/lod/catrush",
+    "texture": "whiterat:gun/lod/catrush"
+  },
+  "hud": "whiterat:gun/hud/catrush",
+  "slot": "whiterat:gun/slot/catrush",
+  "animation": "whiterat:catrush",
+  "use_default_animation": "rifle",
+  "third_person_animation": "default",
+  "transform": {
+    "scale": {
+      "thirdperson": [0.6, 0.6, 0.6],
+      "ground": [0.6, 0.6, 0.6],
+      "fixed": [1.2, 1.2, 1.2]
+    }
+  },
+  "sounds": {
+    "shoot": "whiterat:catrush/catrush_shoot",
+    "shoot_3p": "whiterat:catrush/catrush_shoot"
+  },
+  "offhand_show": {
+    "pos": [4, 13, -1],
+    "rotate": [-90, -35, 90],
+    "scale": [0.5, 0.5, 0.5]
+  },
+  "hotbar_show": {
+    "0": {
+      "pos": [0, 20, 3],
+      "rotate": [-180, 0, 120],
+      "scale": [0.5, 0.5, 0.5]
+    }
+  }
+}

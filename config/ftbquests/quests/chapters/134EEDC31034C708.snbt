@@ -78,8 +78,8 @@
 			title: "锄树叶"
 			icon: "minecraft:oak_leaves"
 			disable_toast: true
-			x: 0.0d
-			y: -1.5d
+			x: -1.0d
+			y: -1.0d
 			shape: "hexagon"
 			description: ["很可惜，在当前的Forge版无法使用原版的刷线机特性，但别灰心，为了弥补这个问题，您可以使用锄头类的工具破坏树叶，会有75%的概率会掉落线！"]
 			dependencies: ["36943F6B7F336DF2"]
@@ -99,8 +99,8 @@
 		{
 			title: "种棉花"
 			disable_toast: true
-			x: -1.0d
-			y: -1.0d
+			x: 0.0d
+			y: -1.5d
 			shape: "hexagon"
 			description: [
 				"在破坏草时你也许会发现，除了会掉落原版的小麦种子以外，还会有棉花种子。"
@@ -476,7 +476,6 @@
 			x: 2.0d
 			y: 3.5d
 			dependencies: ["137563E84BDBF0CC"]
-			hide: true
 			id: "31C9BD74CDB26F64"
 			tasks: [{
 				id: "02A8F47BE70987F9"
@@ -499,7 +498,6 @@
 				"进入方法：\\n1.在主世界的基岩上方食用紫颂果\\n2.在下界往上超过360格"
 			]
 			dependencies: ["31C9BD74CDB26F64"]
-			hide: true
 			id: "7DE7DA29AEE73C26"
 			tasks: [{
 				id: "1A5C2BBC58D64D5F"
@@ -1146,6 +1144,50 @@
 			}]
 			rewards: [{
 				id: "659CF89B5559EFF2"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -2.0d
+			y: -1.0d
+			shape: "hexagon"
+			description: ["另外，本整合包禁止了蜘蛛的生成，线可以通过种棉花获得，而蜘蛛眼可以洗涤烂番茄获得。"]
+			dependencies: ["519403A46F37EB4D"]
+			id: "58222C50FFF28E7F"
+			tasks: [{
+				id: "45FA184ECF895F06"
+				type: "item"
+				item: "farmersdelight:rotten_tomato"
+			}]
+			rewards: [{
+				id: "4063EA5ADEF847F2"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 3.0d
+			y: 2.0d
+			shape: "hexagon"
+			dependencies: ["71BE14B442164268"]
+			id: "13BF7536A68A64A9"
+			tasks: [{
+				id: "318701D6754E9400"
+				type: "item"
+				title: "任意盆栽"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "botanypots:basic_botany_pots"
+					}
+				}
+			}]
+			rewards: [{
+				id: "36CB57058450F578"
 				type: "xp"
 				xp: 10
 			}]

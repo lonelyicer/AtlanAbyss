@@ -76,8 +76,10 @@ onEvent('item.registry', event => {
 	event.create('incomplete_core_container', 'create:sequenced_assembly').displayName('Incomplete Core Container');
 	event.create('uranium_core').displayName('Uranium Core');
 	event.create('plutonium_core').displayName('Plutonium Core');
-	event.create('graphite_rod').displayName('Graphite Rod');
 	event.create('depleted_uranium').displayName('Depleted Uranium');
+	event.create('graphite_rod').displayName('Graphite Rod');
+	event.create('enderium_rod').displayName('Enderium Rod');
+	event.create('brass_gear').displayName('Brass Gear');
 
 	//空电路板
 	event.create('empty_pcb').displayName('Empty Pcb');

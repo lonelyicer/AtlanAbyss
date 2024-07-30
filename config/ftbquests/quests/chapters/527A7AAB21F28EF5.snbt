@@ -221,181 +221,8 @@
 		}
 		{
 			disable_toast: true
-			x: 6.5d
-			y: -1.0d
-			shape: "hexagon"
-			dependencies: ["369202E8265D6C29"]
-			hide: true
-			id: "04DCFE84E46C96A4"
-			tasks: [{
-				id: "648BB13EFA2E5F86"
-				type: "item"
-				item: "botania:mana_pearl"
-			}]
-			rewards: [{
-				id: "292FE0113FD0EFDE"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
-			disable_toast: true
-			x: 6.5d
-			y: -2.5d
-			shape: "hexagon"
-			dependencies: ["04DCFE84E46C96A4"]
-			id: "55065B7AAA3269E6"
-			tasks: [
-				{
-					id: "64B0BCA46CE1BF54"
-					type: "item"
-					item: {
-						id: "gateways:gate_pearl"
-						Count: 1b
-						tag: {
-							gateway: "gateways:blaze_gate_small"
-						}
-					}
-				}
-				{
-					id: "586F42371F56A3DA"
-					type: "item"
-					item: {
-						id: "gateways:gate_pearl"
-						Count: 1b
-						tag: {
-							gateway: "gateways:creeper_gate_small"
-						}
-					}
-				}
-				{
-					id: "313AC5DA54FEAEC8"
-					type: "item"
-					item: {
-						id: "gateways:gate_pearl"
-						Count: 1b
-						tag: {
-							gateway: "gateways:enderman_gate_small"
-						}
-					}
-				}
-				{
-					id: "17259A3051788C97"
-					type: "item"
-					item: {
-						id: "gateways:gate_pearl"
-						Count: 1b
-						tag: {
-							gateway: "gateways:ghast_gate_small"
-						}
-					}
-				}
-				{
-					id: "79CA806E2091A88E"
-					type: "item"
-					item: {
-						id: "gateways:gate_pearl"
-						Count: 1b
-						tag: {
-							gateway: "gateways:magma_cube_gate_small"
-						}
-					}
-				}
-				{
-					id: "4A64059DE46FBBBA"
-					type: "item"
-					item: {
-						id: "gateways:gate_pearl"
-						Count: 1b
-						tag: {
-							gateway: "gateways:shulker_gate_small"
-						}
-					}
-				}
-				{
-					id: "38D6A78168DC79A7"
-					type: "item"
-					item: {
-						id: "gateways:gate_pearl"
-						Count: 1b
-						tag: {
-							gateway: "gateways:skeleton_gate_small"
-						}
-					}
-				}
-				{
-					id: "4FDA4D645604F3C4"
-					type: "item"
-					item: {
-						id: "gateways:gate_pearl"
-						Count: 1b
-						tag: {
-							gateway: "gateways:slime_gate_small"
-						}
-					}
-				}
-				{
-					id: "05E678DF2C9650D4"
-					type: "item"
-					item: {
-						id: "gateways:gate_pearl"
-						Count: 1b
-						tag: {
-							gateway: "gateways:spider_gate_small"
-						}
-					}
-				}
-				{
-					id: "564AC9BCE6415590"
-					type: "item"
-					item: {
-						id: "gateways:gate_pearl"
-						Count: 1b
-						tag: {
-							gateway: "gateways:witch_gate_small"
-						}
-					}
-				}
-				{
-					id: "3511FCA6EFD58C33"
-					type: "item"
-					item: {
-						id: "gateways:gate_pearl"
-						Count: 1b
-						tag: {
-							gateway: "gateways:wither_skeleton_gate_small"
-						}
-					}
-				}
-				{
-					id: "003E8CCFD69B2CD5"
-					type: "item"
-					item: {
-						id: "gateways:gate_pearl"
-						Count: 1b
-						tag: {
-							gateway: "gateways:zombie_gate_small"
-						}
-					}
-				}
-			]
-			rewards: [{
-				id: "0FB9D6FDB6EACB85"
-				type: "item"
-				item: {
-					id: "gateways:gate_pearl"
-					Count: 1b
-					tag: {
-						gateway: "apotheosis:boss_gate_small"
-					}
-				}
-				count: 4
-			}]
-		}
-		{
-			disable_toast: true
-			x: 3.5d
-			y: 2.0d
+			x: 3.0d
+			y: 1.0d
 			dependencies: ["5764D7F29A9A31E0"]
 			hide: true
 			id: "176873F1E61B607A"
@@ -411,8 +238,8 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: 3.0d
+			x: 1.0d
+			y: 1.0d
 			dependencies: ["176873F1E61B607A"]
 			id: "5D1503960882D059"
 			tasks: [{
@@ -428,8 +255,8 @@
 		}
 		{
 			disable_toast: true
-			x: 2.0d
-			y: 1.5d
+			x: -1.0d
+			y: 1.0d
 			dependencies: ["5D1503960882D059"]
 			hide: true
 			id: "18AFCA7D6F0B5F8E"
@@ -467,7 +294,7 @@
 		{
 			disable_toast: true
 			x: 0.0d
-			y: 1.5d
+			y: 2.0d
 			shape: "hexagon"
 			dependencies: ["18AFCA7D6F0B5F8E"]
 			hide: true
@@ -492,8 +319,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 1.5d
+			x: 2.0d
+			y: 2.0d
 			shape: "hexagon"
 			dependencies: ["414CFD78FA59E5C8"]
 			hide: true
@@ -511,341 +338,8 @@
 		}
 		{
 			disable_toast: true
-			x: -2.0d
-			y: 3.0d
-			shape: "hexagon"
-			dependencies: ["5B1752815667A780"]
-			hide: true
-			id: "302C177B15F46E99"
-			tasks: [{
-				id: "59680E3FAB79EF46"
-				type: "item"
-				item: {
-					id: "gateways:gate_pearl"
-					Count: 1b
-					tag: {
-						gateway: "gateways:zombie_gate_ultra"
-					}
-				}
-			}]
-			rewards: [{
-				id: "135CB243D42C9FFC"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
-			disable_toast: true
-			x: 8.0d
-			y: 1.0d
-			shape: "hexagon"
-			dependencies: ["4E9CE72466ABDEE1"]
-			id: "45F764796881AD67"
-			tasks: [
-				{
-					id: "2EB846B1880E19F5"
-					type: "item"
-					item: {
-						id: "gateways:gate_pearl"
-						Count: 1b
-						tag: {
-							gateway: "gateways:blaze_gate"
-						}
-					}
-				}
-				{
-					id: "2D7902878D044D38"
-					type: "item"
-					item: {
-						id: "gateways:gate_pearl"
-						Count: 1b
-						tag: {
-							gateway: "gateways:creeper_gate"
-						}
-					}
-				}
-				{
-					id: "147DD6775E92D103"
-					type: "item"
-					item: {
-						id: "gateways:gate_pearl"
-						Count: 1b
-						tag: {
-							gateway: "gateways:enderman_gate"
-						}
-					}
-				}
-				{
-					id: "62DEF92452F26666"
-					type: "item"
-					item: {
-						id: "gateways:gate_pearl"
-						Count: 1b
-						tag: {
-							gateway: "gateways:ghast_gate"
-						}
-					}
-				}
-				{
-					id: "05A127DF6E9454B0"
-					type: "item"
-					item: {
-						id: "gateways:gate_pearl"
-						Count: 1b
-						tag: {
-							gateway: "gateways:magma_cube_gate"
-						}
-					}
-				}
-				{
-					id: "5B639746EFAFAB37"
-					type: "item"
-					item: {
-						id: "gateways:gate_pearl"
-						Count: 1b
-						tag: {
-							gateway: "gateways:shulker_gate"
-						}
-					}
-				}
-				{
-					id: "18623C69AE747AFD"
-					type: "item"
-					item: {
-						id: "gateways:gate_pearl"
-						Count: 1b
-						tag: {
-							gateway: "gateways:skeleton_gate"
-						}
-					}
-				}
-				{
-					id: "3503D493BB3AC0A1"
-					type: "item"
-					item: {
-						id: "gateways:gate_pearl"
-						Count: 1b
-						tag: {
-							gateway: "gateways:slime_gate"
-						}
-					}
-				}
-				{
-					id: "1D6ACF7C006041B0"
-					type: "item"
-					item: {
-						id: "gateways:gate_pearl"
-						Count: 1b
-						tag: {
-							gateway: "gateways:spider_gate"
-						}
-					}
-				}
-				{
-					id: "1717160E182F5021"
-					type: "item"
-					item: {
-						id: "gateways:gate_pearl"
-						Count: 1b
-						tag: {
-							gateway: "gateways:witch_gate"
-						}
-					}
-				}
-				{
-					id: "2993E9926D60F080"
-					type: "item"
-					item: {
-						id: "gateways:gate_pearl"
-						Count: 1b
-						tag: {
-							gateway: "gateways:wither_skeleton_gate"
-						}
-					}
-				}
-				{
-					id: "10AF2B2247B1F16E"
-					type: "item"
-					item: {
-						id: "gateways:gate_pearl"
-						Count: 1b
-						tag: {
-							gateway: "gateways:zombie_gate"
-						}
-					}
-				}
-			]
-			rewards: [{
-				id: "7958291B39DF9AA0"
-				type: "item"
-				item: {
-					id: "gateways:gate_pearl"
-					Count: 1b
-					tag: {
-						gateway: "apotheosis:boss_gate_small"
-					}
-				}
-				count: 12
-			}]
-		}
-		{
-			disable_toast: true
-			x: 9.0d
-			y: 2.0d
-			shape: "hexagon"
-			dependencies: ["5BC33FD3FC5795B5"]
-			id: "0D6A0E5952280704"
-			tasks: [
-				{
-					id: "3A8B7DCDB40FC138"
-					type: "item"
-					item: {
-						id: "gateways:gate_pearl"
-						Count: 1b
-						tag: {
-							gateway: "gateways:blaze_gate_large"
-						}
-					}
-				}
-				{
-					id: "199EB82CA036A2BC"
-					type: "item"
-					item: {
-						id: "gateways:gate_pearl"
-						Count: 1b
-						tag: {
-							gateway: "gateways:creeper_gate_large"
-						}
-					}
-				}
-				{
-					id: "75DD4C9A1C605251"
-					type: "item"
-					item: {
-						id: "gateways:gate_pearl"
-						Count: 1b
-						tag: {
-							gateway: "gateways:enderman_gate_large"
-						}
-					}
-				}
-				{
-					id: "51F804C555AA26AB"
-					type: "item"
-					item: {
-						id: "gateways:gate_pearl"
-						Count: 1b
-						tag: {
-							gateway: "gateways:ghast_gate_large"
-						}
-					}
-				}
-				{
-					id: "7D7DB06AF7E91E2A"
-					type: "item"
-					item: {
-						id: "gateways:gate_pearl"
-						Count: 1b
-						tag: {
-							gateway: "gateways:magma_cube_gate_large"
-						}
-					}
-				}
-				{
-					id: "58CF6358F415362B"
-					type: "item"
-					item: {
-						id: "gateways:gate_pearl"
-						Count: 1b
-						tag: {
-							gateway: "gateways:shulker_gate_large"
-						}
-					}
-				}
-				{
-					id: "3676998382D97FF2"
-					type: "item"
-					item: {
-						id: "gateways:gate_pearl"
-						Count: 1b
-						tag: {
-							gateway: "gateways:skeleton_gate_large"
-						}
-					}
-				}
-				{
-					id: "0C8131676ED5B241"
-					type: "item"
-					item: {
-						id: "gateways:gate_pearl"
-						Count: 1b
-						tag: {
-							gateway: "gateways:slime_gate_large"
-						}
-					}
-				}
-				{
-					id: "0143E2DEC57307B5"
-					type: "item"
-					item: {
-						id: "gateways:gate_pearl"
-						Count: 1b
-						tag: {
-							gateway: "gateways:spider_gate_large"
-						}
-					}
-				}
-				{
-					id: "6C31534EED1034A2"
-					type: "item"
-					item: {
-						id: "gateways:gate_pearl"
-						Count: 1b
-						tag: {
-							gateway: "gateways:witch_gate_large"
-						}
-					}
-				}
-				{
-					id: "722A82931DE6AFF0"
-					type: "item"
-					item: {
-						id: "gateways:gate_pearl"
-						Count: 1b
-						tag: {
-							gateway: "gateways:wither_skeleton_gate_large"
-						}
-					}
-				}
-				{
-					id: "73FD527D77760E26"
-					type: "item"
-					item: {
-						id: "gateways:gate_pearl"
-						Count: 1b
-						tag: {
-							gateway: "gateways:zombie_gate_large"
-						}
-					}
-				}
-			]
-			rewards: [{
-				id: "4EAD81E59EBC61D2"
-				type: "item"
-				item: {
-					id: "gateways:gate_pearl"
-					Count: 1b
-					tag: {
-						gateway: "apotheosis:boss_gate_small"
-					}
-				}
-				count: 36
-			}]
-		}
-		{
-			disable_toast: true
-			x: 7.5d
-			y: 2.0d
+			x: 5.5d
+			y: 3.5d
 			shape: "hexagon"
 			dependencies: ["4E9CE72466ABDEE1"]
 			id: "5BC33FD3FC5795B5"
@@ -862,8 +356,8 @@
 		}
 		{
 			disable_toast: true
-			x: 6.5d
-			y: 1.0d
+			x: 5.5d
+			y: 2.5d
 			shape: "hexagon"
 			dependencies: ["41DCA36A2F09C523"]
 			hide: true
@@ -888,7 +382,7 @@
 		{
 			disable_toast: true
 			x: 6.5d
-			y: 2.0d
+			y: 2.5d
 			shape: "hexagon"
 			dependencies: ["4E9CE72466ABDEE1"]
 			id: "311FF8EB13D08D2D"
@@ -905,8 +399,8 @@
 		}
 		{
 			disable_toast: true
-			x: 5.5d
-			y: 2.5d
+			x: 6.5d
+			y: 1.5d
 			shape: "hexagon"
 			dependencies: ["41DCA36A2F09C523"]
 			id: "72345E661D191FB1"

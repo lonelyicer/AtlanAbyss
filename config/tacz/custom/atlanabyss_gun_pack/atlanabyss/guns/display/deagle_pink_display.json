@@ -7,7 +7,7 @@
   },
   "hud": "atlanabyss:gun/hud/deagle",
   "slot": "atlanabyss:gun/slot/deagle_pink",
-  "animation": "tacz:deagle",
+  "animation": "tacz:deagle_golden",
   "use_default_animation": "pistol",
   "transform": {
     "scale": {

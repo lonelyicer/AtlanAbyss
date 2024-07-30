@@ -1,0 +1,35 @@
+{
+    "mob_id": "minecraft:husk",
+    "attributes": [
+        {
+            "id": "minecraft:generic.attack_damage",
+            "modifier_name": "attack_damage for Husks",
+            "amount": {
+                "min": 15,
+                "max": 45,
+                "difficulty_modifier": {
+                    "operation": "add",
+                    "easy": -5,
+                    "normal": 0,
+                    "hard": 5
+                }
+            },
+            "operation": "addition"
+        },
+        {
+            "id": "minecraft:generic.max_health",
+            "modifier_name": "max_health for Husks",
+            "amount": -10,
+            "operation": "addition"
+        }
+    ],
+    "potion_effects": [
+        {
+            "id": "minecraft:speed",
+            "chance": 0.7,
+            "amplifier": {
+                "min": 1
+            }
+        }
+    ]
+}

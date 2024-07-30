@@ -27,6 +27,8 @@ onEvent('tags.items', event => {
 		//byd铁
 		['forge:plates/iron', 'beyond_earth:iron_plate'],
 		['forge:rods/iron', 'beyond_earth:iron_stick'],
+		//byd戴斯
+		['forge:plates/desh', 'beyond_earth:desh_plate'],
 		//粉
 		['forge:dusts/diamond', 'createaddition:diamond_grit'],
 		['forge:dusts', 'createaddition:diamond_grit'],
@@ -149,7 +151,12 @@ onEvent('tags.items', event => {
 		['forge:ingots', 'biggerreactors:ludicrite_ingot'],
 		['forge:ingots/ludicrite', 'biggerreactors:ludicrite_ingot'],
 		['forge:dusts', 'biggerreactors:ludicrite_dust'],
-		['forge:dusts/ludicrite', 'biggerreactors:ludicrite_dust']
+		['forge:dusts/ludicrite', 'biggerreactors:ludicrite_dust'],
+		//框架tag
+		['industrialforegoing:machine_frame/pity', 'industrialforegoing:machine_frame_pity'],
+		['industrialforegoing:machine_frame/simple', 'industrialforegoing:machine_frame_simple'],
+		['industrialforegoing:machine_frame/advanced', 'industrialforegoing:machine_frame_advanced'],
+		['industrialforegoing:machine_frame/supreme', 'industrialforegoing:machine_frame_supreme']
 	];
 	for (const [tag, item] of tagsToRemove) {
 		event.remove(tag, item);
@@ -231,6 +238,11 @@ onEvent('tags.items', event => {
 		['forge:materials/epic', 'kubejs:epic_material'],
 		['forge:materials/legendary', 'kubejs:legendary_material'],
 		['forge:materials/ultimate', 'kubejs:ultimate_material'],
+		//框架tag
+		['industrialforegoing:machine_frame/pity', 'kubejs:steel_machine_frame'],
+		['industrialforegoing:machine_frame/simple', 'kubejs:desh_machine_frame'],
+		['industrialforegoing:machine_frame/advanced', 'kubejs:ostrum_machine_frame'],
+		['industrialforegoing:machine_frame/supreme', 'kubejs:calorite_machine_frame'],
 		//唱片
 		['minecraft:music_discs', 'integrated_stronghold:music_disc_forlorn'],
 		['minecraft:music_discs', 'integrated_stronghold:music_disc_sight'],

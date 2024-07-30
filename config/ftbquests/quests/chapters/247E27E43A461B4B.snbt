@@ -364,15 +364,23 @@
 			}]
 		}
 		{
+			icon: "createaddition:tesla_coil"
 			x: 0.0d
 			y: -2.0d
 			dependencies: ["04B534A53F398C7A"]
 			id: "61CDC9A969C09267"
-			tasks: [{
-				id: "1E9C221A2397303F"
-				type: "item"
-				item: "createaddition:tesla_coil"
-			}]
+			tasks: [
+				{
+					id: "1E9C221A2397303F"
+					type: "item"
+					item: "createaddition:tesla_coil"
+				}
+				{
+					id: "3D6725A876EC520D"
+					type: "item"
+					item: "createaddition:modular_accumulator"
+				}
+			]
 			rewards: [{
 				id: "69466015DAA1A8F0"
 				type: "xp"
@@ -626,6 +634,7 @@
 		{
 			x: -2.0d
 			y: 1.0d
+			description: ["电力盆栽"]
 			dependencies: ["04B534A53F398C7A"]
 			id: "65161712E8643D11"
 			tasks: [{
@@ -741,8 +750,8 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: 2.0d
+			x: 2.0d
+			y: -2.0d
 			shape: "hexagon"
 			dependencies: ["04B534A53F398C7A"]
 			id: "53FA04C57406C5C4"
@@ -804,23 +813,6 @@
 			}]
 			rewards: [{
 				id: "61F7E768B7BCAB60"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
-			x: 2.0d
-			y: -2.0d
-			shape: "hexagon"
-			dependencies: ["04B534A53F398C7A"]
-			id: "303AC9C73C10DC81"
-			tasks: [{
-				id: "6718B70C1F83D70D"
-				type: "item"
-				item: "createaddition:modular_accumulator"
-			}]
-			rewards: [{
-				id: "23567CA2B81498E1"
 				type: "xp"
 				xp: 10
 			}]
@@ -935,6 +927,24 @@
 				id: "1FC0C34E004845AF"
 				type: "xp"
 				xp: 10
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			shape: "octagon"
+			description: ["解锁更多的电力设备"]
+			dependencies: ["04B534A53F398C7A"]
+			id: "4F36B2977E7F356A"
+			tasks: [{
+				id: "28D8B14331D3D66F"
+				type: "item"
+				item: "industrialforegoing:dissolution_chamber"
+			}]
+			rewards: [{
+				id: "3E46466C998D0AAB"
+				type: "xp"
+				xp: 20
 			}]
 		}
 	]

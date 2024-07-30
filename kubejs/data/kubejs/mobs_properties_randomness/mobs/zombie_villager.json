@@ -1,0 +1,27 @@
+{
+    "mob_id": "minecraft:zombie_villager",
+    "attributes": [
+        {
+            "id": "minecraft:generic.attack_damage",
+            "modifier_name": "attack_damage for ZombieVillagers",
+            "amount": {
+                "min": 5,
+                "difficulty_modifier": {
+                    "operation": "add",
+                    "easy": -5,
+                    "normal": 0,
+                    "hard": 5
+                }
+            },
+            "operation": "addition"
+        }
+    ],
+    "potion_effects": [
+        {
+            "id": "minecraft:speed",
+            "amplifier": {
+                "min": 1
+            }
+        }
+    ]
+}

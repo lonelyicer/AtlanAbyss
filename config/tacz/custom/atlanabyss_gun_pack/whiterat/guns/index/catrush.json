@@ -1,0 +1,7 @@
+{
+  "name": "whiterat.gun.catrush.name",
+  "display": "whiterat:catrush_display",
+  "data": "whiterat:catrush_data",
+  "tooltip": "whiterat.gun.catrush.desc",
+  "type": "rpg"
+}

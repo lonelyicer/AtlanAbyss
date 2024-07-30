@@ -73,7 +73,6 @@ onEvent('recipes', event => {
     event.remove({ id: 'tconstruct:smeltery/casting/metal/' + name + '/gear_gold_cast' });
     event.remove({ id: 'tconstruct:smeltery/casting/metal/' + name + '/gear_sand_cast' });
   }
-  gear('iron');
   gear('gold');
   gear('copper');
   gear('netherite');
@@ -91,7 +90,6 @@ onEvent('recipes', event => {
   gear('constantan');
   gear('signalum');
   gear('lumium');
-  gear('enderium');
   gear('steel');
   //蜂蜜
   remove('thermal:machines/centrifuge/centrifuge_syrup_bottle')
@@ -635,21 +633,42 @@ onEvent('recipes', event => {
     'thermal:coal_coke'
   ]).heated().id("atlanabyss:steel_ingot")
 
+  //钻头
+  remove('thermal:drill_head')
+  event.shaped('thermal:drill_head', [
+    ' A ',
+    'ABA',
+    'AAA'
+  ], {
+    A: 'thermal:steel_plate',
+    B: 'createaddition:copper_rod'
+  }).id("atlanabyss:drill_head")
+  //锯片
+  remove('thermal:saw_blade')
+  event.shaped('thermal:saw_blade', [
+    'AA ',
+    'ABA',
+    ' AA'
+  ], {
+    A: 'thermal:steel_plate',
+    B: 'createaddition:copper_rod'
+  }).id("atlanabyss:saw_blade")
+
   //机器框架
   remove('thermal:machine_frame')
   event.shaped('thermal:machine_frame', [
-    'ACA',
-    'CBC',
-    'ACA'
+    'AAA',
+    'ABA',
+    'AAA'
   ], {
     A: 'thermal:invar_plate',
-    B: 'kubejs:thermal_mechanism',
-    C: 'minecraft:glass'
+    B: 'kubejs:thermal_mechanism'
   }).id("atlanabyss:machine_frame")
 
   //机器
   const machines = [
     { input: 'create:millstone', output: 'machine_pulverizer' },//磨粉机
+    { input: 'minecraft:furnace', output: 'machine_furnace' },//熔炉
     { input: 'minecraft:blast_furnace', output: 'machine_smelter' },//感应炉
     { input: 'farmersdelight:rich_soil', output: 'machine_insolator' },//有机灌注器
     { input: 'create:cogwheel', output: 'machine_centrifuge' },//离心机

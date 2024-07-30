@@ -17,7 +17,7 @@ onEvent('jei.hide.items', event => {
 		'thermal:carrot_block',//箱装胡萝卜
 		'thermal:potato_block',//箱装马铃薯
 		'thermal:beetroot_block',//箱装甜菜根
-		'thermal:machine_furnace',//熔炉
+		//'thermal:machine_furnace',//熔炉
 		//'thermal:machine_sawmill',//锯木机
 		//'thermal:machine_press',//冲压机
 		'thermal:machine_bottler',//罐装机
@@ -49,7 +49,6 @@ onEvent('jei.hide.items', event => {
 		'thermal:dynamo_gourmand',
 		'thermal:dynamo_disenchantment',
 		//齿轮
-		'thermal:iron_gear',
 		'thermal:gold_gear',
 		'thermal:copper_gear',
 		'thermal:netherite_gear',
@@ -67,7 +66,6 @@ onEvent('jei.hide.items', event => {
 		'thermal:constantan_gear',
 		'thermal:signalum_gear',
 		'thermal:lumium_gear',
-		'thermal:enderium_gear',
 		'thermal:steel_gear',
 		//模具
 		'thermal:press_coin_die',
@@ -99,6 +97,9 @@ onEvent('jei.hide.items', event => {
 		'thermal:lumium_coin',
 		'thermal:enderium_coin',
 		'thermal:steel_coin',
+		'thermal:gold_coin',
+		'thermal:copper_coin',
+		'thermal:silver_coin',
 		//矿
 		'thermal:sulfur_ore',
 		'thermal:deepslate_sulfur_ore',
@@ -158,6 +159,13 @@ onEvent('jei.hide.items', event => {
 		'industrialforegoing:pitiful_generator',//发电机
 		'industrialforegoing:plastic',//塑料片
 		'industrialforegoing:fluid_extractor',//液体提取机
+		'industrialforegoing:iron_gear',
+		'industrialforegoing:iron_gear',
+		'industrialforegoing:diamond_gear',
+		'industrialforegoing:machine_frame_pity',
+		'industrialforegoing:machine_frame_simple',
+		'industrialforegoing:machine_frame_advanced',
+		'industrialforegoing:machine_frame_advanced',
 		//ae2
 		'ae2:ender_dust',
 		'ae2:vibration_chamber',
@@ -174,8 +182,20 @@ onEvent('jei.hide.items', event => {
 		'tconstruct:copper_nugget',//铜粒
 		'tconstruct:honey_bucket',
 		'tconstruct:grout',//砖泥
+		'tconstruct:coin_cast',//币模具
+		'tconstruct:round_plate_sand_cast',
+		'tconstruct:round_plate_red_sand_cast',
+		'tconstruct:gear_cast',//齿轮模具
+		'tconstruct:gear_sand_cast',
+		'tconstruct:gear_red_sand_cast',
 		//beyond_earth
 		'beyond_earth:steel_ingot',
+		'beyond_earth:steel_nugget',
+		'beyond_earth:steel_block',
+		'beyond_earth:coal_generator',
+		'beyond_earth:water_pump',
+		'beyond_earth:iron_plate',
+		'beyond_earth:desh_plate',
 		//黑紫方块
 		'citadel:fancy_item',
 		'decorative_blocks:blockstate_copy_item',
@@ -189,7 +209,7 @@ onEvent('jei.hide.items', event => {
 //隐藏jei类别
 onEvent('jei.remove.categories', event => {
 	[
-		'thermal:furnace', //热力熔炉
+		//'thermal:furnace', //热力熔炉
 		//'thermal:sawmill', //热力锯木机
 		//'thermal:press',//冲压机
 		'thermal:brewer',//罐装机
@@ -201,6 +221,8 @@ onEvent('jei.remove.categories', event => {
 		'thermal:stirling_fuel',//斯特林能源炉
 		'thermal:disenchantment_fuel',//祛魔能源炉
 		'thermal:gourmand_fuel',//饕餮能源炉
+		//发电机
+		'beyond_earth:coal_generator',
 		//液体提取机
 		'industrialforegoing:fluid_extractor'
 	].forEach(cat => {
@@ -229,6 +251,7 @@ onEvent('jei.hide.fluids', event => {
 
 onEvent('jei.information', event => {
 	event.add('biggerreactors:cyanite_ingot', ['核废料', '可通过裂变反应堆的产出获得。'])
+	event.add('kubejs:divine_ore', ['颠倒维度特产品', '使用带时运的稿子破坏深板岩概率掉落。'])
 	event.add('kubejs:osmium_scrap', ['守卫者死亡时概率掉落。', '（也许你需要设计建造一个守卫者农场）'])
 })
 

@@ -10,6 +10,10 @@ onEvent('recipes', event => {
   remove('tconstruct:smeltery/casts/gold_casts/gears')
   remove('tconstruct:smeltery/casts/red_sand_casts/gears')
   remove('tconstruct:smeltery/casts/sand_casts/gears')
+  //币铸模
+  remove('tconstruct:smeltery/casts/gold_casts/coins')
+  remove('tconstruct:smeltery/casts/sand_casts/coins')
+  remove('tconstruct:smeltery/casts/red_sand_casts/coins')
   //浇筑合成板
   remove(/^tconstruct:smeltery.*plate_gold_cast$/)
   remove(/^tconstruct:smeltery.*plate_sand_cast$/)
@@ -334,6 +338,38 @@ onEvent('recipes', event => {
   event.shapeless('9x tconstruct:soulsteel_nugget', [
     'tconstruct:soulsteel_ingot'
   ]).id('atlanabyss:soulsteel_nugget_from_ingot')
+
+  //紫水晶黄铜
+  remove('createaddition:compat/tconstruct/amethyst_bronze')
+  create.mixing('4x tconstruct:amethyst_bronze_ingot', [
+    '3x minecraft:copper_ingot',
+    'thermal:tin_ingot',
+    'minecraft:amethyst_shard'
+  ]).heated().id('atlanabyss:mixing_amethyst_bronze_ingot');
+
+  remove('thermal:compat/tconstruct/smelter_alloy_tconstruct_amethyst_bronze_ingot')
+  thermal.smelter('4x tconstruct:amethyst_bronze_ingot', [
+    '3x minecraft:copper_ingot',
+    'thermal:tin_ingot',
+    'minecraft:amethyst_shard'
+  ]).energy(4000).id('atlanabyss:smelter_amethyst_bronze_ingot');
+
+  remove('tconstruct:smeltery/alloys/molten_amethyst_bronze')
+  event.custom({
+    "type": "tconstruct:alloy",
+    "inputs": [
+      { "tag": "forge:molten_copper", "amount": 90 },
+      { "tag": "forge:molten_tin", "amount": 270 },
+      { "tag": "tconstruct:molten_amethyst", "amount": 100 }
+    ],
+    "result": {
+      "fluid": "tconstruct:molten_amethyst_bronze",
+      "amount": 360
+    },
+    "temperature": 820
+  }).id('atlanabyss:alloy_molten_amethyst_bronze');
+
+
 
   //燃料
   remove('twilightforest:smeltery/melting/fuel/fiery_essence')

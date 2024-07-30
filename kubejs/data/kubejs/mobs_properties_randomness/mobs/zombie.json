@@ -15,5 +15,14 @@
             },
             "operation": "addition"
         }
+    ],
+    "potion_effects": [
+        {
+            "id": "minecraft:speed",
+            "chance": 0.7,
+            "amplifier": {
+                "min": 1
+            }
+        }
     ]
 }

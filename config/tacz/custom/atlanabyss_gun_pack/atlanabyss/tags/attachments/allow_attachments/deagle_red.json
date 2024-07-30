@@ -1,7 +1,5 @@
 [
-  "tacz:rmr_dot",
-  "tacz:sight_sro_dot",
-  "tacz:t1",
-  "tacz:muzzle_silence_phantom_s1",
-  "#tacz:light_extended_mag"
+  "#tacz:deagle_exclusive",
+  "#tacz:light_extended_mag",
+  "tacz:muzzle_silence_phantom_s1"
 ]

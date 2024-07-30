@@ -1,23 +1,14 @@
 onEvent('recipes', event => {
-    let {
-        mixing,
-        cutting,
-        filling,
-        emptying,
-        splashing,
-        compacting,
-        deploying,
-        milling,
-        crushing,
-        pressing,
-        item_application,
-        sequenced_assembly,
-        mechanical_crafting
-    } = event.recipes.create;
+    const { create } = event.recipes;
 
     let remove = (name) => {
         event.remove({ id: name })
     }
+    remove('beyond_earth:coal_generator')//燃煤发电机
+    remove('beyond_earth:water_pump')//水泵
+    //戴斯板
+    remove('beyond_earth:desh_plate')
+    remove('beyond_earth:smeltery/casting/metal/desh/plate_gold_cast')
 
     //纠缠箱子
     remove('entangled:block')
@@ -27,7 +18,7 @@ onEvent('recipes', event => {
         'AAA'
     ], {
         A: 'kubejs:gravitation_mechanism'
-    }).id("atlanabyss:entangled_block")
+    }).id('atlanabyss:entangled_block')
     //纠缠绑定器
     remove('entangled:item')
     event.shaped('entangled:item', [
@@ -37,12 +28,12 @@ onEvent('recipes', event => {
     ], {
         A: 'kubejs:magbismuth_sheet',
         B: 'minecraft:stick'
-    }).id("atlanabyss:entangled_item")
+    }).id('atlanabyss:entangled_item')
 
 
     //nasa工作台
     remove('beyond_earth:nasa_workbench')
-    mechanical_crafting('beyond_earth:nasa_workbench', [
+    create.mechanical_crafting('beyond_earth:nasa_workbench', [
         'ABA',
         'DDD',
         'DED',
@@ -67,4 +58,216 @@ onEvent('recipes', event => {
             "amount": 1
         }
     }).id('atlanabyss:rocket_fuel_refinery')
+
+    //压缩钢板
+    remove('beyond_earth:compressing/compressed_steel')
+    event.custom({
+        "type": "beyond_earth:compressor",
+        "input": {
+            "tag": "forge:storage_blocks/steel"
+        },
+        "output": {
+            "item": "beyond_earth:compressed_steel",
+            "count": 1
+        },
+        "cookTime": 200
+    }).id('atlanabyss:compressor_steel_block')
+    //压缩戴斯板
+    remove('beyond_earth:compressing/compressed_desh')
+    event.custom({
+        "type": "beyond_earth:compressor",
+        "input": {
+            "tag": "forge:storage_blocks/desh"
+        },
+        "output": {
+            "item": "beyond_earth:compressed_desh",
+            "count": 1
+        },
+        "cookTime": 300
+    }).id('atlanabyss:compressor_desh_block')
+    //压缩紫金板
+    remove('beyond_earth:compressing/compressed_ostrum')
+    event.custom({
+        "type": "beyond_earth:compressor",
+        "input": {
+            "tag": "forge:storage_blocks/ostrum"
+        },
+        "output": {
+            "item": "beyond_earth:compressed_ostrum",
+            "count": 1
+        },
+        "cookTime": 400
+    }).id('atlanabyss:compressor_ostrum_block')
+    //压缩耐热金属板
+    remove('beyond_earth:compressing/compressed_calorite')
+    event.custom({
+        "type": "beyond_earth:compressor",
+        "input": {
+            "tag": "forge:storage_blocks/calorite"
+        },
+        "output": {
+            "item": "beyond_earth:compressed_calorite",
+            "count": 1
+        },
+        "cookTime": 600
+    }).id('atlanabyss:compressor_calorite_block')
+
+    //太阳能
+    remove('beyond_earth:solar_panel')
+    event.smithing('beyond_earth:solar_panel',
+        'thermal:machine_frame',
+        'minecraft:daylight_detector'
+    ).id('atlanabyss:smithing_byd_solar_panel')
+    //压缩机
+    remove('beyond_earth:compressor')
+    event.smithing('beyond_earth:compressor',
+        'thermal:machine_frame',
+        'compactmachines:wall'
+    ).id('atlanabyss:smithing_byd_compressor')
+    //精炼机
+    remove('beyond_earth:fuel_refinery')
+    event.smithing('beyond_earth:fuel_refinery',
+        'thermal:machine_frame',
+        'createdieselgenerators:oil_barrel'
+    ).id('atlanabyss:smithing_byd_fuel_refinery')
+    //氧气机
+    remove('beyond_earth:oxygen_loader')
+    event.smithing('beyond_earth:oxygen_loader',
+        'thermal:machine_frame',
+        'beyond_earth:oxygen_tank'
+    ).id('atlanabyss:smithing_byd_oxygen_loader')
+    //氧气瓶
+    remove('beyond_earth:oxygen_tank')
+    event.shaped('beyond_earth:oxygen_tank', [
+        'A',
+        'B',
+        'B'
+    ], {
+        A: 'thermal:signalum_plate',
+        B: 'kubejs:aluminium_alloy_ingot'
+    }).id('atlanabyss:byd_oxygen_tank')
+    //供氧设备
+    remove('beyond_earth:oxygen_gear')
+    event.shaped('beyond_earth:oxygen_gear', [
+        ' A ',
+        'CBC',
+        'CBC'
+    ], {
+        A: 'minecraft:redstone_torch',
+        B: 'createaddition:iron_rod',
+        C: 'thermal:steel_plate'
+    }).id('atlanabyss:byd_oxygen_gear')
+    //车轮
+    remove('beyond_earth:wheel')
+    event.shaped('beyond_earth:wheel', [
+        'AAA',
+        'ABA',
+        'AAA'
+    ], {
+        A: 'thermal:cured_rubber',
+        B: 'kubejs:aluminium_alloy_ingot'
+    }).id('atlanabyss:byd_wheel')
+    //引擎框架
+    remove('beyond_earth:engine_frame')
+    event.shaped('beyond_earth:engine_frame', [
+        'ABA',
+        'B B',
+        'ABA'
+    ], {
+        A: 'thermal:steel_plate',
+        B: 'createaddition:iron_rod'
+    }).id('atlanabyss:byd_engine_frame')
+    //引擎扇叶
+    remove('beyond_earth:engine_fan')
+    event.shaped('beyond_earth:engine_fan', [
+        ' A ',
+        'ABA',
+        ' A '
+    ], {
+        A: 'thermal:steel_plate',
+        B: 'kubejs:aluminium_alloy_ingot'
+    }).id('atlanabyss:byd_engine_fan')
+
+    //氧气面罩
+    remove('beyond_earth:oxygen_mask')
+    event.shaped('beyond_earth:oxygen_mask', [
+        'AAA',
+        'A A'
+    ], {
+        A: 'kubejs:aluminium_alloy_ingot'
+    }).id('atlanabyss:byd_oxygen_mask')
+    //航天服
+    remove('beyond_earth:space_suit')
+    event.shaped('beyond_earth:space_suit', [
+        'A A',
+        'BCB',
+        'AAA'
+    ], {
+        A: 'kubejs:aluminium_alloy_ingot',
+        B: 'beyond_earth:oxygen_tank',
+        C: 'beyond_earth:oxygen_gear'
+    }).id('atlanabyss:byd_space_suit')
+    //航天裤
+    remove('beyond_earth:space_leggings')
+    event.shaped('beyond_earth:space_pants', [
+        'AAA',
+        'A A',
+        'A A'
+    ], {
+        A: 'kubejs:aluminium_alloy_ingot'
+    }).id('atlanabyss:byd_space_leggings')
+    //航天靴
+    remove('beyond_earth:space_boots')
+    event.shaped('beyond_earth:space_boots', [
+        'A A',
+        'A A'
+    ], {
+        A: 'kubejs:aluminium_alloy_ingot'
+    }).id('atlanabyss:byd_space_boots')
+
+    //戴斯引擎
+    remove('beyond_earth:gold_engine')
+    event.shaped('beyond_earth:desh_engine', [
+        'ABC',
+        'DEF',
+        'ABG'
+    ], {
+        A: 'beyond_earth:desh_ingot',
+        B: 'minecraft:redstone_block',
+        C: 'beyond_earth:compressed_steel',
+        D: 'create:iron_sheet',
+        E: 'beyond_earth:engine_fan',
+        F: 'beyond_earth:engine_frame',
+        G: 'beyond_earth:compressed_desh'
+    }).id('atlanabyss:byd_desh_engine')
+    //紫金引擎
+    remove('beyond_earth:diamond_engine')
+    event.shaped('beyond_earth:ostrum_engine', [
+        'ABC',
+        'DEF',
+        'ABG'
+    ], {
+        A: 'beyond_earth:ostrum_ingot',
+        B: 'minecraft:redstone_block',
+        C: 'beyond_earth:compressed_steel',
+        D: 'create:iron_sheet',
+        E: 'beyond_earth:engine_fan',
+        F: 'beyond_earth:engine_frame',
+        G: 'beyond_earth:compressed_ostrum'
+    }).id('atlanabyss:byd_ostrum_engine')
+    //耐热引擎
+    remove('beyond_earth:calorite_engine')
+    event.shaped('beyond_earth:calorite_engine', [
+        'ABC',
+        'DEF',
+        'ABG'
+    ], {
+        A: 'beyond_earth:calorite_ingot',
+        B: 'minecraft:redstone_block',
+        C: 'beyond_earth:compressed_steel',
+        D: 'create:iron_sheet',
+        E: 'beyond_earth:engine_fan',
+        F: 'beyond_earth:engine_frame',
+        G: 'beyond_earth:compressed_calorite'
+    }).id('atlanabyss:byd_calorite_engine')
 })

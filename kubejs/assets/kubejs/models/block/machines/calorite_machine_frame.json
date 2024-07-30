@@ -1,0 +1,73 @@
+{
+	"credit": "Made with LLMION",
+	"parent": "minecraft:block/block",
+	"textures": {
+		"north": "kubejs:block/machines/calorite_machine_top",
+		"up": "kubejs:block/machines/calorite_machine_top",
+		"down": "kubejs:block/machines/calorite_machine_top",
+		"inner": "kubejs:block/machines/calorite_machine_inner",
+		"particle": "kubejs:block/machines/calorite_machine_top"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#north", "cullface": "north"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#north", "cullface": "east"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#north", "cullface": "south"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#north", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#up", "cullface": "up"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#down", "cullface": "down"}
+			}
+		},
+		{
+			"from": [0, 3.9375, 0],
+			"to": [16, 12.0625, 16],
+			"faces": {
+				"up": {"uv": [0, 0, 16, 16], "texture": "#inner"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#inner"}
+			}
+		},
+		{
+			"from": [0, 0, 3.9375],
+			"to": [16, 16, 12.0625],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#inner"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#inner"}
+			}
+		},
+		{
+			"from": [3.9375, 0, 0],
+			"to": [12.0625, 16, 16],
+			"faces": {
+				"east": {"uv": [0, 0, 16, 16], "texture": "#inner"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#inner"}
+			}
+		},
+		{
+			"from": [16, 12.0625, 16],
+			"to": [0, 3.9375, 0],
+			"faces": {
+				"up": {"uv": [16, 16, 0, 0], "texture": "#inner"},
+				"down": {"uv": [16, 16, 0, 0], "texture": "#inner"}
+			}
+		},
+		{
+			"from": [16, 16, 12.0625],
+			"to": [0, 0, 3.9375],
+			"faces": {
+				"north": {"uv": [16, 16, 0, 0], "texture": "#inner"},
+				"south": {"uv": [16, 16, 0, 0], "texture": "#inner"}
+			}
+		},
+		{
+			"from": [12.0625, 16, 16],
+			"to": [3.9375, 0, 0],
+			"faces": {
+				"east": {"uv": [16, 16, 0, 0], "texture": "#inner"},
+				"west": {"uv": [16, 16, 0, 0], "texture": "#inner"}
+			}
+		}
+	]
+}

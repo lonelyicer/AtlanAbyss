@@ -21,11 +21,11 @@
       "radius": 5
     }
   },
-  "ammo_amount": 7,
+  "ammo_amount": 3,
   "extended_mag_ammo_amount": [
-    8,
-    10,
-    12
+    5,
+    7,
+    9
   ],
   "bolt": "closed_bolt",
   "reload": {
@@ -44,8 +44,15 @@
   "aim_time": 0.2,
   "sprint_time": 0.2,
   "fire_mode": [
-    "semi"
+    "semi",
+    "burst"
   ],
+  "burst_data": {
+    "continuous_shoot": true,
+    "count": 2,
+    "bpm": 600,
+    "min_interval": 0.3
+  },
   "allow_attachment_types": [
     "scope",
     "muzzle",
@@ -53,8 +60,8 @@
   ],
   "recoil": {
     "pitch": [
-      {"time": 0, "value": [3.80, 3.80]},
-      {"time": 0.4, "value": [3.80, 3.80]},
+      {"time": 0, "value": [0.35, 0.35]},
+      {"time": 0.4, "value": [0.35, 0.35]},
       {"time": 0.65, "value": [-0.225, -0.225]},
       {"time": 0.85, "value": [0.125, 0.125]},
       {"time": 1.1, "value": [0, 0]},

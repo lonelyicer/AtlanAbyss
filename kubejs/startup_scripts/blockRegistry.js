@@ -241,6 +241,46 @@ onEvent('block.registry', event => {
         .tagBlock('minecraft:mineable/pickaxe')
         .displayName('Lucky Block');
 
+    //钢机器框架
+    event.create('steel_machine_frame')
+        .model('kubejs:block/machines/steel_machine_frame')
+        .material('lantern')
+        .hardness(2.0)
+        .renderType('cutout')
+        .tagBlock('create:wrench_pickup')
+        .tagBlock('minecraft:mineable/pickaxe')
+        .displayName('Steel Machine Frame');
+
+    //戴斯机器框架
+    event.create('desh_machine_frame')
+        .model('kubejs:block/machines/desh_machine_frame')
+        .material('lantern')
+        .hardness(2.5)
+        .renderType('cutout')
+        .tagBlock('create:wrench_pickup')
+        .tagBlock('minecraft:mineable/pickaxe')
+        .displayName('Desh Machine Frame');
+
+    //紫金机器框架
+    event.create('ostrum_machine_frame')
+        .model('kubejs:block/machines/ostrum_machine_frame')
+        .material('lantern')
+        .hardness(3.0)
+        .renderType('cutout')
+        .tagBlock('create:wrench_pickup')
+        .tagBlock('minecraft:mineable/pickaxe')
+        .displayName('Ostruml Machine Frame');
+
+    //耐热机器框架
+    event.create('calorite_machine_frame')
+        .model('kubejs:block/machines/calorite_machine_frame')
+        .material('lantern')
+        .hardness(3.5)
+        .renderType('cutout')
+        .tagBlock('create:wrench_pickup')
+        .tagBlock('minecraft:mineable/pickaxe')
+        .displayName('Calorite Machine Frame');
+
     //机器
     // let registerMachine = (name, layer) => {
     //     let id = name.toLowerCase() + "_machine"

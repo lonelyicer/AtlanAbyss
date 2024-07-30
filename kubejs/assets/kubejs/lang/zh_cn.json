@@ -54,6 +54,8 @@
     "item.kubejs.plutonium_core": "§b钚核心",
     "item.kubejs.depleted_uranium": "§e贫铀",
     "item.kubejs.graphite_rod": "§8石墨棒",
+    "item.kubejs.enderium_rod": "§e末影棒",
+    "item.kubejs.brass_gear": "黄铜齿轮",
     "item.kubejs.plutonium_ingot": "§b钚锭",
     "item.kubejs.plutonium_nugget": "§b钚粒",
     "item.kubejs.circuit_scrap": "电路废料",
@@ -280,6 +282,11 @@
     "block.kubejs.plutonium_block": "§b钚块",
     "block.kubejs.compressed_coal_block": "压缩煤块",
     "block.kubejs.lucky_block": "§d幸运方块",
+
+    "block.kubejs.steel_machine_frame": "§e钢机器框架",
+    "block.kubejs.desh_machine_frame": "§6戴斯机器框架",
+    "block.kubejs.ostrum_machine_frame": "§5紫金机器框架",
+    "block.kubejs.calorite_machine_frame": "§4耐热机器框架",
 
     "block.kubejs.andesite_machine": "安山机器",
     "block.kubejs.brass_machine": "黄铜机器",

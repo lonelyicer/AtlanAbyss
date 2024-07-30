@@ -61,6 +61,7 @@ onEvent('recipes', event => {
 	//重复配方
 	remove('neapolitan:cake')
 	remove('minecraft:cake')
+	remove('create_enchantment_industry:compat/sophisticatedcore/mixing/experience_conversion')
 	//矿石开凿
 	remove('createoreexcavation:cutting/diamond_cutting')
 	remove('createoreexcavation:cutting/emerald_cutting')
@@ -262,6 +263,11 @@ onEvent('recipes', event => {
 		B: 'minecraft:elytra',
 		C: 'minecraft:popped_chorus_fruit'
 	}).id('atlanabyss:elytra')
+
+	//蜘蛛眼
+	splashing('minecraft:spider_eye',
+		'farmersdelight:rotten_tomato'
+	).id("atlanabyss:spider_eye")
 
 
 
@@ -1685,10 +1691,6 @@ onEvent('recipes', event => {
 		'kubejs:osmium_sheet',
 		'kubejs:osmium_ingot'
 	).id('atlanabyss:pressing_osmium_sheet')//锇板
-	pressing(
-		'beyond_earth:desh_plate',
-		'beyond_earth:desh_ingot'
-	).id('atlanabyss:pressing_desh_sheet')//戴斯板
 
 	//缠魂
 	haunting('ars_nouveau:wilden_spike', 'minecraft:prismarine_shard').id('atlanabyss:haunting_wilden_spike');//新生魔艺掉落物
@@ -1821,10 +1823,10 @@ onEvent('recipes', event => {
 	sequenced_assembly([
 		'kubejs:integrated_circuit',
 	], pcb, [
-		deploying(pcb, [pcb, 'botania:terrasteel_nugget']),
+		deploying(pcb, [pcb, 'ae2:certus_quartz_crystal']),
 		deploying(pcb, [pcb, 'createaddition:capacitor']),
-		deploying(pcb, [pcb, 'botania:terrasteel_nugget'])
-	]).transitionalItem(pcb).loops(3).id("atlanabyss:printed_circuit_board_3")
+		deploying(pcb, [pcb, 'ae2:certus_quartz_crystal'])
+	]).transitionalItem(pcb).loops(1).id("atlanabyss:printed_circuit_board_3")
 
 	//奇点
 	event.custom({
@@ -2142,7 +2144,7 @@ onEvent('recipes', event => {
 	teslaCharging('kubejs:silicon_compound', 'ae2:silicon', 32000, 'silicon')
 
 	//铝合金锭
-	mixing('3x kubejs:aluminium_alloy_ingot', [
+	mixing('2x kubejs:aluminium_alloy_ingot', [
 		'ae2:silicon',
 		'2x kubejs:aluminum_ingot'
 	]).superheated().id("atlanabyss:aluminium_alloy_ingot")
@@ -2272,8 +2274,8 @@ onEvent('recipes', event => {
 	],
 		'kubejs:osmium_scrap',
 		[
-			deploying(oc, [oc, 'ae2:certus_quartz_dust']),
 			filling(oc, [oc, Fluid.of('minecraft:lava', 500)]),
+			deploying(oc, [oc, 'ae2:certus_quartz_dust']),
 			pressing(oc, oc),
 			pressing(oc, oc)
 		]).transitionalItem(oc).loops(1).id("atlanabyss:osmium_ingot")

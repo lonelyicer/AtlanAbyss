@@ -96,46 +96,19 @@ onEvent('recipes', event => {
     '#ae2:memory_cards', 'supplementaries:soap'
   ]).id('atlanabyss:splash_memory_card')
 
-
-
   //石英纤维
   remove('ae2:network/parts/quartz_fiber_part')
-  event.custom({
-    type: 'thermal:smelter',
-    ingredients: [
-      {
-        value: [Ingredient.of('tconstruct:clear_glass').toJson()],
-        count: 1
-      },
-      {
-        value: [Ingredient.of('thermal:quartz_dust').toJson()],
-        count: 1
-      }
-    ],
-    result: [
-      Item.of('ae2:quartz_fiber').toResultJson()
-    ],
-    energy: 1200
-  }).id("atlanabyss:smelter_quartz_fiber")
+  event.recipes.thermal.smelter('ae2:quartz_fiber', [
+    'tconstruct:clear_glass',
+    'thermal:quartz_dust'
+  ]).energy(1200).id("atlanabyss:smelter_quartz_fiber")
   //石英玻璃
   remove('ae2:decorative/quartz_glass')
-  event.custom({
-    type: 'thermal:smelter',
-    ingredients: [
-      {
-        value: [Ingredient.of('minecraft:sand').toJson()],
-        count: 1
-      },
-      {
-        value: [Ingredient.of('thermal:quartz_dust').toJson()],
-        count: 2
-      }
-    ],
-    result: [
-      Item.of('ae2:quartz_glass', 2).toResultJson()
-    ],
-    energy: 3600
-  }).id("atlanabyss:smelter_quartz_glass")
+  event.recipes.thermal.smelter('2x ae2:quartz_glass', [
+    '#forge:sand',
+    '2x thermal:quartz_dust'
+  ]).energy(3600).id("atlanabyss:smelter_quartz_glass")
+
   //电路废料额外
   create.milling([
     Item.of('kubejs:circuit_scrap').withChance(6 / 9),
@@ -394,4 +367,199 @@ onEvent('recipes', event => {
     B: 'ae2:fluix_crystal',
     C: 'waystones:warp_stone'
   }).id('atlanabyss:ae_fluix_pearl');
+
+
+
+  //物品外壳
+  remove('ae2:network/cells/item_cell_housing')
+  event.shaped('ae2:item_cell_housing', [
+    'ABA',
+    'C C',
+    'DDD'
+  ], {
+    A: 'ae2:quartz_glass',
+    B: 'minecraft:redstone_block',
+    C: 'kubejs:integrated_circuit',
+    D: 'thermal:invar_plate'
+  }).id('atlanabyss:ae_item_cell_housing');
+  //物品1k
+  remove('ae2:network/cells/item_storage_cell_1k')
+  event.shaped('ae2:item_storage_cell_1k', [
+    'ABA',
+    'CEC',
+    'DDD'
+  ], {
+    A: 'ae2:quartz_glass',
+    B: 'minecraft:redstone_block',
+    C: 'kubejs:integrated_circuit',
+    D: 'thermal:invar_plate',
+    E: 'ae2:cell_component_1k'
+  }).id('atlanabyss:ae_item_storage_cell_1k');
+  //物品4k
+  remove('ae2:network/cells/item_storage_cell_4k')
+  event.shaped('ae2:item_storage_cell_4k', [
+    'ABA',
+    'CEC',
+    'DDD'
+  ], {
+    A: 'ae2:quartz_glass',
+    B: 'minecraft:redstone_block',
+    C: 'kubejs:integrated_circuit',
+    D: 'thermal:invar_plate',
+    E: 'ae2:cell_component_4k'
+  }).id('atlanabyss:ae_item_storage_cell_4k');
+  //物品16k
+  remove('ae2:network/cells/item_storage_cell_16k')
+  event.shaped('ae2:item_storage_cell_16k', [
+    'ABA',
+    'CEC',
+    'DDD'
+  ], {
+    A: 'ae2:quartz_glass',
+    B: 'minecraft:redstone_block',
+    C: 'kubejs:integrated_circuit',
+    D: 'thermal:invar_plate',
+    E: 'ae2:cell_component_16k'
+  }).id('atlanabyss:ae_item_storage_cell_16k');
+  //物品64k
+  remove('ae2:network/cells/item_storage_cell_64k')
+  event.shaped('ae2:item_storage_cell_64k', [
+    'ABA',
+    'CEC',
+    'DDD'
+  ], {
+    A: 'ae2:quartz_glass',
+    B: 'minecraft:redstone_block',
+    C: 'kubejs:integrated_circuit',
+    D: 'thermal:invar_plate',
+    E: 'ae2:cell_component_64k'
+  }).id('atlanabyss:ae_item_storage_cell_64k');
+  //物品256k
+  remove('ae2:network/cells/item_storage_cell_256k')
+  event.shaped('ae2:item_storage_cell_256k', [
+    'ABA',
+    'CEC',
+    'DDD'
+  ], {
+    A: 'ae2:quartz_glass',
+    B: 'minecraft:redstone_block',
+    C: 'kubejs:integrated_circuit',
+    D: 'thermal:invar_plate',
+    E: 'ae2:cell_component_256k'
+  }).id('atlanabyss:ae_item_storage_cell_256k');
+
+  //流体外壳
+  remove('ae2:network/cells/fluid_cell_housing')
+  event.shaped('ae2:fluid_cell_housing', [
+    'ABA',
+    'C C',
+    'DDD'
+  ], {
+    A: 'ae2:quartz_glass',
+    B: 'minecraft:redstone_block',
+    C: 'kubejs:integrated_circuit',
+    D: 'thermal:nickel_plate'
+  }).id('atlanabyss:ae_fluid_cell_housing');
+  //流体1k
+  remove('ae2:network/cells/fluid_storage_cell_1k')
+  event.shaped('ae2:fluid_storage_cell_1k', [
+    'ABA',
+    'CEC',
+    'DDD'
+  ], {
+    A: 'ae2:quartz_glass',
+    B: 'minecraft:redstone_block',
+    C: 'kubejs:integrated_circuit',
+    D: 'thermal:nickel_plate',
+    E: 'ae2:cell_component_1k'
+  }).id('atlanabyss:ae_fluid_storage_cell_1k');
+  //流体4k
+  remove('ae2:network/cells/fluid_storage_cell_4k')
+  event.shaped('ae2:fluid_storage_cell_4k', [
+    'ABA',
+    'CEC',
+    'DDD'
+  ], {
+    A: 'ae2:quartz_glass',
+    B: 'minecraft:redstone_block',
+    C: 'kubejs:integrated_circuit',
+    D: 'thermal:nickel_plate',
+    E: 'ae2:cell_component_4k'
+  }).id('atlanabyss:ae_fluid_storage_cell_4k');
+  //流体16k
+  remove('ae2:network/cells/fluid_storage_cell_16k')
+  event.shaped('ae2:fluid_storage_cell_16k', [
+    'ABA',
+    'CEC',
+    'DDD'
+  ], {
+    A: 'ae2:quartz_glass',
+    B: 'minecraft:redstone_block',
+    C: 'kubejs:integrated_circuit',
+    D: 'thermal:nickel_plate',
+    E: 'ae2:cell_component_16k'
+  }).id('atlanabyss:ae_fluid_storage_cell_16k');
+  //流体64k
+  remove('ae2:network/cells/fluid_storage_cell_64k')
+  event.shaped('ae2:fluid_storage_cell_64k', [
+    'ABA',
+    'CEC',
+    'DDD'
+  ], {
+    A: 'ae2:quartz_glass',
+    B: 'minecraft:redstone_block',
+    C: 'kubejs:integrated_circuit',
+    D: 'thermal:nickel_plate',
+    E: 'ae2:cell_component_64k'
+  }).id('atlanabyss:ae_fluid_storage_cell_64k');
+  //流体256k
+  remove('ae2:network/cells/fluid_storage_cell_256k')
+  event.shaped('ae2:fluid_storage_cell_256k', [
+    'ABA',
+    'CEC',
+    'DDD'
+  ], {
+    A: 'ae2:quartz_glass',
+    B: 'minecraft:redstone_block',
+    C: 'kubejs:integrated_circuit',
+    D: 'thermal:nickel_plate',
+    E: 'ae2:cell_component_256k'
+  }).id('atlanabyss:ae_fluid_storage_cell_256k');
+
+
+
+  let dissolution_chamber = (inputs, outputItem, outputCount, fluid, fluidAmount, time) => {
+    let inputList = []
+
+    inputs.forEach(list => {
+      let input = { item: list }
+      inputList.push(input)
+    })
+    event.custom({
+      type: 'industrialforegoing:dissolution_chamber',
+      input: inputList,
+      inputFluid: `{FluidName:\"${fluid}\",Amount:${fluidAmount}}`,
+      output: {
+        item: outputItem,
+        count: outputCount
+      },
+      processingTime: time
+    }).id('atlanabyss:dissolution_chamber_' + outputItem.replace(':', '_'))
+  }
+
+  //空白样板
+  remove('ae2:network/crafting/patterns_blank')
+  dissolution_chamber([
+    'ae2:quartz_glass',
+    'ae2:quartz_glass',
+    'thermal:cured_rubber',
+    'thermal:cured_rubber',
+    'kubejs:integrated_circuit',
+    'kubejs:aluminum_sheet',
+    'kubejs:aluminum_sheet',
+    'kubejs:aluminum_sheet'
+  ],
+    'ae2:blank_pattern', 1,
+    'minecraft:milk', 1000,
+    50)
 })
