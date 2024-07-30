@@ -65,7 +65,7 @@ onEvent('recipes', event => {
         Item.of('minecraft:cocoa_beans').withChance(0.02),
         Item.of('minecraft:beetroot_seeds').withChance(0.01),
     ], [
-        '#minecraft:dirt',
+        'minecraft:moss_block',
         'createsifter:string_mesh'
     ]).processingTime(500).id('atlanabyss:string_mesh_dirt')
 

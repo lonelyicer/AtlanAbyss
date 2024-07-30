@@ -526,50 +526,10 @@
 			}]
 		}
 		{
-			icon: "kubejs:end_bismuth_ore"
-			disable_toast: true
-			x: 3.0d
-			y: 0.0d
-			description: [
-				"一种只出现在末地的矿石，并且不会裸露在表面。"
-				"但是，随着时间的推移，铋矿石会向周围生长（周围必须是末地石）。"
-			]
-			dependencies: ["0995E7B507258131"]
-			hide: true
-			id: "6A286B39EC88CF35"
-			tasks: [{
-				id: "37AEEFC423437531"
-				type: "item"
-				item: "kubejs:raw_bismuth"
-			}]
-			rewards: [{
-				id: "7CEAD6A41B78B004"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
-			disable_toast: true
-			x: 4.0d
-			y: 0.0d
-			dependencies: ["6A286B39EC88CF35"]
-			id: "726DF7A5F10D04C1"
-			tasks: [{
-				id: "1ED86A3152917F01"
-				type: "item"
-				item: "kubejs:bismuth_ingot"
-			}]
-			rewards: [{
-				id: "285C421CB4DA2814"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
 			disable_toast: true
 			x: 3.5d
 			y: -1.0d
-			dependencies: ["726DF7A5F10D04C1"]
+			dependencies: ["0995E7B507258131"]
 			hide: true
 			id: "5366B3798112EA39"
 			tasks: [{
@@ -579,26 +539,6 @@
 			}]
 			rewards: [{
 				id: "72C9FDF5210C9D02"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
-			disable_toast: true
-			x: 5.0d
-			y: 0.0d
-			shape: "hexagon"
-			description: ["一种建筑材料。"]
-			dependencies: ["726DF7A5F10D04C1"]
-			hide: true
-			id: "3C90F024AAB8DABB"
-			tasks: [{
-				id: "3E1FF510BC7B0270"
-				type: "item"
-				item: "yuushya:bismuth_crystal"
-			}]
-			rewards: [{
-				id: "0599C5B5258609AD"
 				type: "xp"
 				xp: 10
 			}]
@@ -884,6 +824,7 @@
 			x: 0.0d
 			y: -10.5d
 			shape: "rsquare"
+			description: ["开启最终试炼。"]
 			dependencies: [
 				"4A1CFC8966CA0784"
 				"5054A94D72277F83"

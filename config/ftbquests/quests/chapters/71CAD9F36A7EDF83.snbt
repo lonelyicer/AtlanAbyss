@@ -54,6 +54,7 @@
 			x: 0.0d
 			y: -3.0d
 			shape: "rsquare"
+			description: ["开启枪械之路。"]
 			dependencies: ["27A398EC39DC9F94"]
 			id: "62ABD67CFC26F88E"
 			tasks: [{
@@ -124,8 +125,8 @@
 		}
 		{
 			disable_toast: true
-			x: -3.0d
-			y: 0.0d
+			x: -2.0d
+			y: -1.0d
 			shape: "hexagon"
 			description: [
 				"不像让家周围刷怪但又不想一个一个插火把？您需要：超级火把！"
@@ -184,6 +185,7 @@
 			}]
 		}
 		{
+			disable_toast: true
 			x: 0.0d
 			y: 1.5d
 			description: [
@@ -294,7 +296,6 @@
 			x: -1.0d
 			y: 2.0d
 			dependencies: ["0D3B950AFB6E6BC2"]
-			hide: true
 			id: "14A8E7E37136FB5C"
 			tasks: [{
 				id: "1FF2B98F37958438"
@@ -354,7 +355,7 @@
 		{
 			disable_toast: true
 			x: 2.0d
-			y: 3.0d
+			y: 6.0d
 			dependencies: ["1814D0684AAB4731"]
 			id: "529FFF3330B1F7EC"
 			tasks: [{
@@ -388,7 +389,7 @@
 		{
 			disable_toast: true
 			x: 2.0d
-			y: 2.0d
+			y: 7.0d
 			dependencies: ["529FFF3330B1F7EC"]
 			id: "3C4BF44C30626F05"
 			tasks: [{
@@ -674,7 +675,7 @@
 		{
 			disable_toast: true
 			x: 2.0d
-			y: 6.0d
+			y: 3.0d
 			shape: "hexagon"
 			dependencies: ["1814D0684AAB4731"]
 			id: "6D070E7955546249"
@@ -811,7 +812,7 @@
 		{
 			disable_toast: true
 			x: 2.0d
-			y: 7.0d
+			y: 2.0d
 			shape: "hexagon"
 			dependencies: ["6D070E7955546249"]
 			hide: true
@@ -924,6 +925,11 @@
 					type: "item"
 					item: "createdieselgenerators:pumpjack_crank"
 				}
+				{
+					id: "4202A9FA28F2CDBF"
+					type: "item"
+					item: "createdieselgenerators:pumpjack_hole"
+				}
 			]
 			rewards: [{
 				id: "5606AE6744327F1B"
@@ -936,7 +942,7 @@
 			disable_toast: true
 			x: -4.0d
 			y: 1.5d
-			description: ["这个世界上遍地都是石油，但大部分的石油肉眼并不可见，或许在炎热的沙漠地区会有少量的沥青沙，又或许实在找不到沙漠而打算使用血液人工合成石油，但这些并不是最优选择，您需要探矿杖，有了它，世界上所有的石油都将会被您窥探的一干二净。"]
+			description: ["这个世界上遍地都是石油，但大部分的石油肉眼并不可见，或许在炎热的沙漠地区会有少量的沥青沙，如果实在找不到沙漠也可以使用血液人工合成石油，但这些并不是最优选择，您需要原油探测器，有了它，世界上所有的石油都将会被您窥探的一干二净。"]
 			dependencies: ["371F801CBEA09EA1"]
 			hide: true
 			id: "0BC087D2D6933F9C"
@@ -1119,13 +1125,17 @@
 			disable_toast: true
 			x: -3.0d
 			y: 6.0d
-			dependencies: ["07835D33A0BA9FD1"]
-			hide: true
+			dependencies: ["62FA4371C8E11B0E"]
 			id: "635EE46CA66A246D"
 			tasks: [{
 				id: "54143DD344CEB605"
 				type: "item"
 				item: "kubejs:sulfur_electron_tube"
+			}]
+			rewards: [{
+				id: "4B3344C7CE45CCB7"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -1133,7 +1143,7 @@
 			x: 1.0d
 			y: 1.0d
 			shape: "hexagon"
-			description: ["即可用于建筑，也可用作材料"]
+			description: ["即可用于建筑，也可用作材料。"]
 			dependencies: ["0F1CD1C8804008B7"]
 			id: "37B5919B712CD6A4"
 			tasks: [{
@@ -1262,7 +1272,7 @@
 			y: 1.0d
 			shape: "hexagon"
 			description: [
-				"一个多方块机器，按住[W]可查看搭建方法。"
+				"一个多方块机器，按住 [W] 可查看搭建方法。"
 				"机器最下面一层为实心压缩墙。"
 			]
 			dependencies: ["37B5919B712CD6A4"]
@@ -1311,6 +1321,88 @@
 			}]
 			rewards: [{
 				id: "6E52024BB03621A5"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -6.0d
+			y: 4.5d
+			shape: "hexagon"
+			dependencies: ["4556B9E8057C5F44"]
+			hide: true
+			id: "1B9310941CEF73C2"
+			tasks: [{
+				id: "621A3D33388C51FF"
+				type: "item"
+				item: "createdieselgenerators:huge_diesel_engine"
+			}]
+			rewards: [{
+				id: "5F61536EFF80C06A"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -2.5d
+			y: 0.0d
+			shape: "hexagon"
+			description: ["无中生有！"]
+			dependencies: ["0F1CD1C8804008B7"]
+			id: "2CE707DA6F33E4D4"
+			tasks: [{
+				id: "03A6D41DFB614163"
+				type: "item"
+				item: "createsifter:sifter"
+			}]
+			rewards: [{
+				id: "5E4CD46C1052C9D3"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 1.0d
+			y: 6.0d
+			shape: "hexagon"
+			description: ["虚空挖矿！"]
+			dependencies: ["529FFF3330B1F7EC"]
+			id: "2A2AAA1D018C93E6"
+			tasks: [
+				{
+					id: "6C028225B48F4BA9"
+					type: "item"
+					item: "createoreexcavation:drilling_machine"
+				}
+				{
+					id: "0316BFDB2B686105"
+					type: "item"
+					item: "createoreexcavation:vein_finder"
+				}
+			]
+			rewards: [{
+				id: "52ED9AA5965D7574"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -3.0d
+			y: 2.0d
+			dependencies: ["07835D33A0BA9FD1"]
+			hide: true
+			id: "62FA4371C8E11B0E"
+			tasks: [{
+				id: "0B2F4A3E5472B5D4"
+				type: "item"
+				item: "kubejs:polished_sulfur"
+			}]
+			rewards: [{
+				id: "3315FD2715577E4E"
 				type: "xp"
 				xp: 10
 			}]

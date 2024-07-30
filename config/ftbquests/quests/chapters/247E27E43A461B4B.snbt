@@ -599,10 +599,7 @@
 			x: 0.0d
 			y: -3.5d
 			description: ["使用特斯拉线圈对赛特斯石英水晶充能即可获得。"]
-			dependencies: [
-				"61CDC9A969C09267"
-				"4CE70B356739CDA2"
-			]
+			dependencies: ["61CDC9A969C09267"]
 			id: "77AACF5ABE3BB465"
 			tasks: [{
 				id: "29B51CD87C1A0106"
@@ -813,27 +810,6 @@
 			}]
 			rewards: [{
 				id: "61F7E768B7BCAB60"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
-			title: "赛特斯石英"
-			icon: "ae2:deepslate_quartz_ore"
-			disable_toast: true
-			x: -2.0d
-			y: -3.5d
-			description: ["一种只出现在末地的矿石，并且不会暴露在表面。"]
-			dependencies: ["2896AD9C74EA52FF"]
-			hide: true
-			id: "4CE70B356739CDA2"
-			tasks: [{
-				id: "35302A300907D826"
-				type: "item"
-				item: "ae2:certus_quartz_dust"
-			}]
-			rewards: [{
-				id: "0D7139956CAA07A2"
 				type: "xp"
 				xp: 10
 			}]

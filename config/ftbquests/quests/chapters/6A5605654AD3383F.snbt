@@ -26,6 +26,12 @@
 				type: "item"
 				item: "kubejs:infinity_ingot"
 			}]
+			rewards: [{
+				id: "49373BD1F31D15D3"
+				type: "item"
+				item: "kubejs:halo_gashapon"
+				count: 64
+			}]
 		}
 		{
 			x: -2.5d
@@ -42,6 +48,11 @@
 						Id: "extendedcrafting:magbismuth"
 					}
 				}
+			}]
+			rewards: [{
+				id: "31DA1405C51FBD18"
+				type: "item"
+				item: "kubejs:halo_gashapon"
 			}]
 		}
 		{
@@ -60,6 +71,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "414F6C28CC5E3F12"
+				type: "item"
+				item: "kubejs:halo_gashapon"
+			}]
 		}
 		{
 			x: -1.5d
@@ -76,6 +92,11 @@
 						Id: "extendedcrafting:zirconium"
 					}
 				}
+			}]
+			rewards: [{
+				id: "58899DE1959B8A4E"
+				type: "item"
+				item: "kubejs:halo_gashapon"
 			}]
 		}
 		{
@@ -94,6 +115,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "5954CB9249BB2E6A"
+				type: "item"
+				item: "kubejs:halo_gashapon"
+			}]
 		}
 		{
 			x: 3.0d
@@ -110,6 +136,11 @@
 						Id: "extendedcrafting:lutetium"
 					}
 				}
+			}]
+			rewards: [{
+				id: "4873A862F47CF342"
+				type: "item"
+				item: "kubejs:halo_gashapon"
 			}]
 		}
 		{
@@ -128,6 +159,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "2DB899B1A4BA74A6"
+				type: "item"
+				item: "kubejs:halo_gashapon"
+			}]
 		}
 		{
 			x: 0.0d
@@ -145,6 +181,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "567B4A6B6DF25E1B"
+				type: "item"
+				item: "kubejs:halo_gashapon"
+			}]
 		}
 		{
 			disable_toast: true
@@ -157,6 +198,12 @@
 				id: "104698EA9C6752B2"
 				type: "item"
 				item: "kubejs:virgin_ingot"
+			}]
+			rewards: [{
+				id: "6F951CA29C927676"
+				type: "item"
+				item: "lightmanscurrency:coinpile_emerald"
+				count: 10
 			}]
 		}
 		{
@@ -171,6 +218,12 @@
 				type: "item"
 				item: "kubejs:aluminium_alloy_ingot"
 			}]
+			rewards: [{
+				id: "2A69D62541A6CD8C"
+				type: "item"
+				item: "lightmanscurrency:coinpile_gold"
+				count: 20
+			}]
 		}
 		{
 			disable_toast: true
@@ -183,6 +236,12 @@
 				id: "51B5839F50C6426F"
 				type: "item"
 				item: "kubejs:lutetium_ingot"
+			}]
+			rewards: [{
+				id: "622AFE6F925E7A5B"
+				type: "item"
+				item: "lightmanscurrency:coinpile_netherite"
+				count: 10
 			}]
 		}
 		{
@@ -197,6 +256,12 @@
 				type: "item"
 				item: "kubejs:elemental_ingot"
 			}]
+			rewards: [{
+				id: "564EBDA77B628B2B"
+				type: "item"
+				item: "lightmanscurrency:coinpile_diamond"
+				count: 10
+			}]
 		}
 		{
 			disable_toast: true
@@ -209,6 +274,12 @@
 				id: "460EEFCFD89B4383"
 				type: "item"
 				item: "kubejs:zirconium_alloy_ingot"
+			}]
+			rewards: [{
+				id: "55EB76C6928BBFAC"
+				type: "item"
+				item: "lightmanscurrency:coinpile_emerald"
+				count: 10
 			}]
 		}
 		{
@@ -223,6 +294,12 @@
 				type: "item"
 				item: "kubejs:meteosteel_ingot"
 			}]
+			rewards: [{
+				id: "53017DCAE1F716E3"
+				type: "item"
+				item: "lightmanscurrency:coinpile_gold"
+				count: 10
+			}]
 		}
 		{
 			disable_toast: true
@@ -235,6 +312,12 @@
 				id: "4675E27AC7ED2D1C"
 				type: "item"
 				item: "kubejs:magbismuth_ingot"
+			}]
+			rewards: [{
+				id: "790BFE27EC858F83"
+				type: "item"
+				item: "lightmanscurrency:coinpile_diamond"
+				count: 10
 			}]
 		}
 	]

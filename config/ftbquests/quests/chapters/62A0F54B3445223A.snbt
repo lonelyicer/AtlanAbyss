@@ -1,9 +1,9 @@
 {
 	id: "62A0F54B3445223A"
-	group: "19B6F72CD7C78A04"
-	order_index: 0
+	group: "03B4E601CC5A5BFE"
+	order_index: 6
 	filename: "62A0F54B3445223A"
-	title: "现代火力"
+	title: "铳之力"
 	icon: "tacz:target"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false

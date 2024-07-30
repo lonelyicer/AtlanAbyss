@@ -1,5 +1,5 @@
 onEvent('recipes', event => {
-	let { create } = event.recipes;
+	const { create } = event.recipes;
 	let remove = (name) => {
 		event.remove({ id: name })
 	}
@@ -379,7 +379,7 @@ onEvent('recipes', event => {
 	}).id('atlanabyss:gun_smith_table')
 
 	//扭蛋
-	event.shaped('kubejs:halo_gashapon', [
+	event.shaped('10x kubejs:halo_gashapon', [
 		' A ',
 		'ACA',
 		' B '
