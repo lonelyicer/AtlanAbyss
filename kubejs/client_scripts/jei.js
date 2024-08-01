@@ -196,6 +196,9 @@ onEvent('jei.hide.items', event => {
 		'beyond_earth:water_pump',
 		'beyond_earth:iron_plate',
 		'beyond_earth:desh_plate',
+		'beyond_earth:moon_cheese_ore',
+		'beyond_earth:cheese',
+		'beyond_earth:mars_diamond_ore',
 		//黑紫方块
 		'citadel:fancy_item',
 		'decorative_blocks:blockstate_copy_item',

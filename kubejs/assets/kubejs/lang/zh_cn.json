@@ -459,6 +459,8 @@
     "ore.kubejs.enriched_redstone":"§4富集红石矿脉",
     "ore.kubejs.enriched_lazuli":"§9富集青金石矿脉",
     "ore.kubejs.enriched_certus_quartz":"§b富集赛特斯石英矿脉",
+    "ore.kubejs.enriched_gold":"§e富集金矿脉",
+    "ore.kubejs.enriched_ice_shard":"§b富集寒冰碎片矿脉",
 
     "singularity.extendedcrafting.aluminium":"铝",
     "singularity.extendedcrafting.meteosteel":"陨钢",

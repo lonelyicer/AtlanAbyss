@@ -28,6 +28,8 @@ const tagsToRemove = [
 	['forge:rods/iron', 'beyond_earth:iron_stick'],
 	//byd戴斯
 	['forge:plates/desh', 'beyond_earth:desh_plate'],
+	//byd钻石矿
+	['forge:ores/diamond', 'beyond_earth:mars_diamond_ore'],
 	//粉
 	['forge:dusts/diamond', 'createaddition:diamond_grit'],
 	['forge:dusts', 'createaddition:diamond_grit'],

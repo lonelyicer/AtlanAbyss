@@ -78,6 +78,7 @@
 			x: -2.0d
 			y: 2.0d
 			shape: "hexagon"
+			description: ["更廉价的超级加热燃料。"]
 			dependencies: ["0D0A33A915B6FC00"]
 			id: "094B37AF9F9349D3"
 			tasks: [{
@@ -129,6 +130,7 @@
 			x: 1.0d
 			y: 2.5d
 			shape: "hexagon"
+			description: ["近距离的物品管道（可加插件）。"]
 			dependencies: ["0D0A33A915B6FC00"]
 			id: "45B16CA8A47B0DC9"
 			tasks: [{
@@ -146,6 +148,7 @@
 			x: 2.0d
 			y: 2.0d
 			shape: "hexagon"
+			description: ["粉红史莱姆的来源。"]
 			dependencies: ["0D0A33A915B6FC00"]
 			id: "5373BE1441BD5240"
 			tasks: [{
@@ -180,6 +183,7 @@
 			x: 0.0d
 			y: 2.5d
 			shape: "hexagon"
+			description: ["类似于溜槽（可加插件）。"]
 			dependencies: ["0D0A33A915B6FC00"]
 			id: "10F8DF79A5AA3C61"
 			tasks: [{
@@ -266,6 +270,7 @@
 			x: -1.0d
 			y: 2.5d
 			shape: "hexagon"
+			description: ["近距离的流体管道（可加插件）。"]
 			dependencies: ["0D0A33A915B6FC00"]
 			id: "39EBF62DFDA3F9BE"
 			tasks: [{
@@ -386,7 +391,7 @@
 			x: -1.0d
 			y: -4.0d
 			shape: "hexagon"
-			description: ["实体版的侦测器"]
+			description: ["实体版的侦测器。"]
 			dependencies: ["2EFFA5A31201BC0C"]
 			id: "507C8969478FA094"
 			tasks: [{
@@ -557,6 +562,7 @@
 			x: -1.0d
 			y: -2.0d
 			shape: "hexagon"
+			description: ["以太气体的来源。"]
 			dependencies: ["2EFFA5A31201BC0C"]
 			id: "08EACA9732771DAD"
 			tasks: [{

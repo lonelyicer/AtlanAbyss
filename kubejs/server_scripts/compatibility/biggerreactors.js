@@ -193,6 +193,25 @@ onEvent('recipes', (event) => {
         },
         processingTime: 400
     }).id('atlanabyss:dissolution_chamber_lutetium_ingot')
+    event.custom({
+        type: 'industrialforegoing:dissolution_chamber',
+        input: [
+            { item: 'biggerreactors:cyanite_ingot' },
+            { item: 'beyond_earth:ice_shard' },
+            { item: 'biggerreactors:cyanite_ingot' },
+            { item: 'beyond_earth:ice_shard' },
+            { item: 'beyond_earth:ice_shard' },
+            { item: 'biggerreactors:cyanite_ingot' },
+            { item: 'beyond_earth:ice_shard' },
+            { item: 'biggerreactors:cyanite_ingot' }
+        ],
+        inputFluid: '{FluidName:\"industrialforegoing:ether_gas\",Amount:1000}',
+        output: {
+            item: 'kubejs:lutetium_ingot',
+            count: 1
+        },
+        processingTime: 400
+    }).id('atlanabyss:dissolution_chamber_lutetium_ingot2')
 
     //石墨棒
     event.custom({

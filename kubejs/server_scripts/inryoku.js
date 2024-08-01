@@ -9,6 +9,9 @@ onEvent('recipes', event => {
     //戴斯板
     remove('beyond_earth:desh_plate')
     remove('beyond_earth:smeltery/casting/metal/desh/plate_gold_cast')
+    //奶酪
+    remove('beyond_earth:cheese')
+    remove('beyond_earth:blasting/cheese_from_moon_ore')
 
     //纠缠箱子
     remove('entangled:block')
