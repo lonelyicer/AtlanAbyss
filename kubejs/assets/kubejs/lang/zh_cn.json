@@ -484,6 +484,9 @@
     "gateways.zombie_gate_ultra":"[超大型]僵尸传送门",
 
     "postAction.lychee.prevent_default": "啥也没有",
+    "item.minecraft.tipped_arrow.effect.haste": "急迫之箭",
+    "item.minecraft.tipped_arrow.effect.absorption": "伤害吸收之箭",
+    "item.minecraft.tipped_arrow.effect.dolphins_grace": "海豚的恩惠之箭",
 
     "block.mm.compact_machine_controller": "压缩机控制器",
     "block.mm.create_1_port": "应力输入接口",

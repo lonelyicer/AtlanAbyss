@@ -24,7 +24,6 @@ onEvent('recipes', event => {
 	} = event.recipes.create;
 	let {
 		brew,
-		pure_daisy,
 		elven_trade,
 		mana_infusion
 	} = event.recipes.botania;

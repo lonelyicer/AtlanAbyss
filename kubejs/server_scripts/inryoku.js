@@ -1,5 +1,5 @@
 onEvent('recipes', event => {
-    const { create } = event.recipes;
+    const { create, botania } = event.recipes;
 
     let remove = (name) => {
         event.remove({ id: name })
@@ -273,4 +273,33 @@ onEvent('recipes', event => {
         F: 'beyond_earth:engine_frame',
         G: 'beyond_earth:compressed_calorite'
     }).id('atlanabyss:byd_calorite_engine')
+
+    //月铁
+    botania.pure_daisy('minecraft:iron_block',
+        'beyond_earth:moon_stone',
+        100).id('atlanabyss:pure_daisy_moon_stone')
+    //火铜
+    botania.pure_daisy('minecraft:copper_block',
+        'beyond_earth:mars_stone',
+        100).id('atlanabyss:pure_daisy_mars_stone')
+    //水银
+    botania.pure_daisy('thermal:silver_block',
+        'beyond_earth:mercury_stone',
+        100).id('atlanabyss:pure_daisy_mercury_stone')
+    //金金
+    botania.pure_daisy('minecraft:gold_block',
+        'beyond_earth:venus_stone',
+        100).id('atlanabyss:pure_daisy_venus_stone')
+    //金骸
+    botania.pure_daisy('minecraft:ancient_debris',
+        'beyond_earth:infernal_spire_block',
+        100).id('atlanabyss:pure_daisy_infernal_spire_block')
+    //冻铝
+    botania.pure_daisy('kubejs:aluminum_block',
+        'beyond_earth:permafrost',
+        100).id('atlanabyss:pure_daisy_permafrost')
+    //霜原幸运方块
+    botania.pure_daisy('kubejs:lucky_block',
+        'beyond_earth:glacio_stone',
+        100).id('atlanabyss:pure_daisy_glacio_stone')
 })

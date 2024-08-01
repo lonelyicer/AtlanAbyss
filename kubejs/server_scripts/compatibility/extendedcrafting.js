@@ -106,5 +106,31 @@ onEvent('recipes', event => {
         E: Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:lutetium"}').weakNBT(),
         F: Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:aluminium"}').weakNBT(),
         G: Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:virgin"}').weakNBT()
-    }).id("atlanabyss:infinity_ingot");
+    }).id('atlanabyss:infinity_ingot');
+
+
+    function compressor(output, input, count, power) {
+        event.custom({
+            type: 'extendedcrafting:compressor',
+            powerCost: power,
+            inputCount: count,
+            ingredient: { 'item': input },
+            catalyst: { item: 'kubejs:crystal_matrix_ingot' },
+            result: { item: 'extendedcrafting:singularity', nbt: `{Id:\"extendedcrafting:${output}\"}` }
+        }).id('atlanabyss:compressor_' + output);
+    }
+    //锆奇点
+    compressor('zirconium', 'kubejs:zirconium_alloy_ingot', 8640, 864000)
+    //原初奇点
+    compressor('virgin', 'kubejs:virgin_ingot', 1728, 1728000)
+    //铝合金奇点
+    compressor('aluminium', 'kubejs:aluminium_alloy_ingot', 13824, 1382400)
+    //镥奇点
+    compressor('lutetium', 'kubejs:lutetium_ingot', 3456, 691200)
+    //神铋奇点
+    compressor('magbismuth', 'kubejs:magbismuth_ingot', 5184, 1036800)
+    //陨钢奇点
+    compressor('meteosteel', 'kubejs:meteosteel_ingot', 12096, 1209600)
+    //神铋奇点
+    compressor('elemental', 'kubejs:elemental_ingot', 7210, 721000)
 })
