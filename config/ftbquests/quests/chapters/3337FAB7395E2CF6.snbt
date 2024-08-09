@@ -1,7 +1,7 @@
 {
 	id: "3337FAB7395E2CF6"
 	group: "03B4E601CC5A5BFE"
-	order_index: 0
+	order_index: 2
 	filename: "3337FAB7395E2CF6"
 	title: "存储体"
 	icon: "functionalstorage:spruce_1"
@@ -12,7 +12,6 @@
 			disable_toast: true
 			x: -1.5d
 			y: 1.5d
-			shape: "hexagon"
 			dependencies: ["16CCDD21E5E15818"]
 			hide: true
 			id: "53C4D6F0CFEE17BD"

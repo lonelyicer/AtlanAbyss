@@ -57,6 +57,10 @@ onEvent('item.modification', event => {
 	event.modify('kubejs:infinity_ingot', item => {
 		item.fireResistant = true
 	})
+	event.modify('minecraft:totem_of_undying', item => {
+		item.maxStackSize = 8
+		item.fireResistant = true
+	})
 	event.modify('botania:glass_pickaxe', item => {
 		item.digSpeed = 60
 		item.tier = tier => {

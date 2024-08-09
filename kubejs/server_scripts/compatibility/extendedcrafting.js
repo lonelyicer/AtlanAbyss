@@ -2,6 +2,7 @@ onEvent('recipes', event => {
     let remove = (name) => {
         event.remove({ id: name })
     }
+    const { create, thermal } = event.recipes;
     //删除锭合块配方
     remove('extendedcrafting:luminessence_block')
     remove('extendedcrafting:black_iron_block')
@@ -89,12 +90,12 @@ onEvent('recipes', event => {
     }).id('atlanabyss:extendedcrafting_compressor')
 
     //水晶矩阵锭
-    event.recipes.create.mixing('kubejs:crystal_matrix_ingot', [
+    create.mixing('kubejs:crystal_matrix_ingot', [
         'minecraft:nether_star',
         Fluid.of('thermal:ender', 500)
     ]).id('atlanabyss:crystal_matrix_ingot')
     //无尽之锭
-    event.recipes.create.mechanical_crafting('kubejs:infinity_ingot', [
+    create.mechanical_crafting('kubejs:infinity_ingot', [
         ' AB',
         'CDE',
         'FG '
@@ -114,10 +115,17 @@ onEvent('recipes', event => {
             type: 'extendedcrafting:compressor',
             powerCost: power,
             inputCount: count,
-            ingredient: { 'item': input },
+            ingredient: { item: input },
             catalyst: { item: 'kubejs:crystal_matrix_ingot' },
             result: { item: 'extendedcrafting:singularity', nbt: `{Id:\"extendedcrafting:${output}\"}` }
         }).id('atlanabyss:compressor_' + output);
+
+        thermal.insolator([
+            Item.of('extendedcrafting:singularity', `{Id:"extendedcrafting:${output}"}`),
+            Item.of(input).withChance(0.15)
+        ], [
+            Item.of('extendedcrafting:singularity', `{Id:"extendedcrafting:${output}"}`)
+        ]).energy(300000).id('atlanabyss:insolator_' + output);
     }
     //锆奇点
     compressor('zirconium', 'kubejs:zirconium_alloy_ingot', 8640, 864000)
@@ -133,4 +141,25 @@ onEvent('recipes', event => {
     compressor('meteosteel', 'kubejs:meteosteel_ingot', 12096, 1209600)
     //神铋奇点
     compressor('elemental', 'kubejs:elemental_ingot', 7210, 721000)
+
+
+
+    //创造箱子
+    event.custom({
+        type: 'extendedcrafting:compressor',
+        powerCost: 7210000,
+        inputCount: 100,
+        ingredient: { item: 'kubejs:infinity_ingot' },
+        catalyst: { item: 'minecraft:barrel' },
+        result: { item: 'create:creative_crate' }
+    }).id('atlanabyss:compressor_creative_crate');
+    //创造储罐
+    event.custom({
+        type: 'extendedcrafting:compressor',
+        powerCost: 7210000,
+        inputCount: 10,
+        ingredient: { item: 'kubejs:infinity_ingot' },
+        catalyst: { item: 'create:fluid_tank' },
+        result: { item: 'create:creative_fluid_tank' }
+    }).id('atlanabyss:compressor_creative_fluid_tank');
 })

@@ -1,0 +1,47 @@
+{
+  "model": "whiterat:gun/destroyer_geo",
+  "texture": "whiterat:gun/uv/destroyer",
+  "hud": "whiterat:gun/hud/destroyer",
+  "slot": "whiterat:gun/slot/destroyer",
+  "animation": "whiterat:destroyer",
+  "use_default_animation": "rifle",
+  "third_person_animation": "default",
+  "lod": {
+    "model": "whiterat:gun/lod/destroyer",
+    "texture": "whiterat:gun/lod/destroyer"
+  },
+  "transform": {
+    "scale": {
+      "thirdperson": [0.6, 0.6, 0.6],
+      "ground": [0.6, 0.6, 0.6],
+      "fixed": [1.2, 1.2, 1.2]
+    }
+  },
+  "muzzle_flash": {
+    "texture": "whiterat:flash/destroyer_flash",
+    "scale": 1.5
+  },
+  "shell": {
+    "initial_velocity": [3, -0.5, 0.25],
+    "random_velocity": [3, 0.5, 0.25],
+    "acceleration": [0.0, -10, 0.0],
+    "angular_velocity": [360, -3000, 90],
+    "living_time": 1.0
+  },
+  "sounds": {
+    "shoot": "whiterat:destroyer/destroyer_shoot_1",
+    "shoot_3p": "whiterat:destroyer/destroyer_shoot_1"
+  },
+  "offhand_show": {
+    "pos": [0, 18, 5],
+    "rotate": [-20, 0, 30],
+    "scale": [0.5, 0.5, 0.5]
+  },
+  "hotbar_show": {
+    "0": {
+      "pos": [-4, 24, 4],
+      "rotate": [-90, -5, -90],
+      "scale": [0.5, 0.5, 0.5]
+    }
+  }
+}

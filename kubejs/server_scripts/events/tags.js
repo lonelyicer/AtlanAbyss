@@ -405,5 +405,5 @@ onEvent('tags.fluids', event => {
 	event.remove('forge:potion', 'cofh_core:potion')//药水
 	event.add('forge:ethanol', 'createaddition:bioethanol')//乙醇
 	event.add('forge:molten_plutonium', 'kubejs:molten_plutonium')//钚
-	event.add('atlanabyss:water', 'minecraft:water')//原版水
+	event.add('forge:lucky_fluid', 'kubejs:lucky_fluid')//幸运流体
 })

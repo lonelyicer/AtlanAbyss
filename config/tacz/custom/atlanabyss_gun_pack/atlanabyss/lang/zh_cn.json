@@ -10,6 +10,13 @@
   "atlanabyss.gun.deagle_red.desc": "炽热霰弹枪！",
   "atlanabyss.gun.deagle_black.desc": "爆炸输出模式！",
 
+  "atlanabyss.attachment.extended_mag_4.name":"§6重型弹药扩容弹匣",
+  "atlanabyss.attachment.extended_mag_5.name":"§4重型弹药扩容弹匣",
+  "atlanabyss.attachment.light_extended_mag_4.name":"§6轻型弹药扩容弹匣",
+  "atlanabyss.attachment.light_extended_mag_5.name":"§4轻型弹药扩容弹匣",
+  "atlanabyss.attachment.sniper_extended_mag_4.name":"§6狙击弹药扩容弹匣",
+  "atlanabyss.attachment.sniper_extended_mag_5.name":"§4狙击弹药扩容弹匣",
+
   "atlanabyss.ammo.magnum_ammo.name":"通用马格南弹药",
   "atlanabyss.ammo.pistol_ammo.name":"通用手枪弹药",
   "atlanabyss.ammo.rifle_ammo.name":"通用步枪弹药",

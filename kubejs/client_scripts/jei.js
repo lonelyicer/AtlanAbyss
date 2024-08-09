@@ -73,7 +73,6 @@ onEvent('jei.hide.items', event => {
 		'thermal:press_packing_2x2_die',
 		'thermal:press_packing_3x3_die',
 		'thermal:press_unpacking_die',
-		'thermal:chiller_ball_cast',
 		'thermal:chiller_ingot_cast',
 		'thermal:chiller_rod_cast',
 		//玫瑰金
@@ -188,6 +187,9 @@ onEvent('jei.hide.items', event => {
 		'tconstruct:gear_cast',//齿轮模具
 		'tconstruct:gear_sand_cast',
 		'tconstruct:gear_red_sand_cast',
+		'tconstruct:plate_cast',//板模具
+		'tconstruct:plate_sand_cast',
+		'tconstruct:plate_red_sand_cast',
 		//beyond_earth
 		'beyond_earth:steel_ingot',
 		'beyond_earth:steel_nugget',

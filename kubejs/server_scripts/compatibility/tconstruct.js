@@ -10,6 +10,17 @@ onEvent('recipes', event => {
   remove('tconstruct:smeltery/casts/gold_casts/gears')
   remove('tconstruct:smeltery/casts/red_sand_casts/gears')
   remove('tconstruct:smeltery/casts/sand_casts/gears')
+  //杆
+  remove('tconstruct:smeltery/casting/metal/brass/rod_gold_cast')
+  remove('tconstruct:smeltery/casting/metal/brass/rod_sand_cast')
+  remove('tconstruct:smeltery/casting/metal/copper/rod_gold_cast')
+  remove('tconstruct:smeltery/casting/metal/copper/rod_sand_cast')
+  remove('tconstruct:smeltery/casting/metal/electrum/rod_gold_cast')
+  remove('tconstruct:smeltery/casting/metal/electrum/rod_sand_cast')
+  remove('tconstruct:smeltery/casting/metal/gold/rod_gold_cast')
+  remove('tconstruct:smeltery/casting/metal/gold/rod_sand_cast')
+  remove('tconstruct:smeltery/casting/metal/iron/rod_gold_cast')
+  remove('tconstruct:smeltery/casting/metal/iron/rod_sand_cast')
   //币铸模
   remove('tconstruct:smeltery/casts/gold_casts/coins')
   remove('tconstruct:smeltery/casts/sand_casts/coins')
@@ -17,6 +28,9 @@ onEvent('recipes', event => {
   //浇筑合成板
   remove(/^tconstruct:smeltery.*plate_gold_cast$/)
   remove(/^tconstruct:smeltery.*plate_sand_cast$/)
+  remove('tconstruct:smeltery/casts/gold_casts/plates')
+  remove('tconstruct:smeltery/casts/sand_casts/plates')
+  remove('tconstruct:smeltery/casts/red_sand_casts/plates')
   //浇筑钱币板
   remove(/^tconstruct:smeltery.*coin_gold_cast$/)
   remove(/^tconstruct:smeltery.*coin_sand_cast$/)
@@ -122,12 +136,12 @@ onEvent('recipes', event => {
     },
     cast_consumed: true,
     fluid: {
-      tag: "tconstruct:blood",
+      tag: 'tconstruct:blood',
       amount: 1250
     },
     result: 'minecraft:netherrack',
     cooling_time: 100
-  }).id("atlanabyss:casting_basin_netherrack")
+  }).id('atlanabyss:casting_basin_netherrack')
 
   //魂钢
   event.custom({
@@ -356,17 +370,17 @@ onEvent('recipes', event => {
 
   remove('tconstruct:smeltery/alloys/molten_amethyst_bronze')
   event.custom({
-    "type": "tconstruct:alloy",
-    "inputs": [
-      { "tag": "forge:molten_copper", "amount": 90 },
-      { "tag": "forge:molten_tin", "amount": 270 },
-      { "tag": "tconstruct:molten_amethyst", "amount": 100 }
+    'type': 'tconstruct:alloy',
+    'inputs': [
+      { 'tag': 'forge:molten_copper', 'amount': 90 },
+      { 'tag': 'forge:molten_tin', 'amount': 270 },
+      { 'tag': 'tconstruct:molten_amethyst', 'amount': 100 }
     ],
-    "result": {
-      "fluid": "tconstruct:molten_amethyst_bronze",
-      "amount": 360
+    'result': {
+      'fluid': 'tconstruct:molten_amethyst_bronze',
+      'amount': 360
     },
-    "temperature": 820
+    'temperature': 820
   }).id('atlanabyss:alloy_molten_amethyst_bronze');
 
 
@@ -374,13 +388,13 @@ onEvent('recipes', event => {
   //燃料
   remove('twilightforest:smeltery/melting/fuel/fiery_essence')
   event.custom({
-    "type": "tconstruct:melting_fuel",
-    "fluid": {
-      "name": "kubejs:molten_plutonium",
-      "amount": 50
+    'type': 'tconstruct:melting_fuel',
+    'fluid': {
+      'name': 'kubejs:molten_plutonium',
+      'amount': 50
     },
-    "duration": 50,
-    "temperature": 5000
+    'duration': 50,
+    'temperature': 5000
   }).id('atlanabyss:melting_fuel_molten_plutonium')
 
   //无尽材料
@@ -407,7 +421,7 @@ onEvent('recipes', event => {
     },
     allow_crystal: true,
     result: {
-      name: "kubejs:lutetium",
+      name: 'kubejs:lutetium',
       level: 1
     },
     max_level: 3
@@ -425,9 +439,140 @@ onEvent('recipes', event => {
     },
     allow_crystal: true,
     result: {
-      name: "kubejs:elemental",
+      name: 'kubejs:elemental',
       level: 1
     },
     max_level: 10
   }).id('atlanabyss:modifier_elemental')
+
+
+
+  function casting_table(input, amount) {
+    event.custom({
+      type: 'tconstruct:casting_table',
+      cast: { item: input, type: 'tconstruct:material' },
+      cast_consumed: true,
+      switch_slots: true,
+      fluid: { tag: 'forge:molten_brass', amount: 270 },
+      result: input + '_cast',
+      cooling_time: 57
+    })
+  }
+
+  //黄铜铸模
+  remove('tconstruct:smeltery/casts/gold_casts/bow_grip')
+  remove('tconstruct:smeltery/casts/gold_casts/bow_limb')
+  remove('tconstruct:smeltery/casts/gold_casts/tough_handle')
+  remove('tconstruct:smeltery/casts/gold_casts/tool_handle')
+  remove('tconstruct:smeltery/casts/gold_casts/large_plate')
+  remove('tconstruct:smeltery/casts/gold_casts/round_plate')
+  remove('tconstruct:smeltery/casts/gold_casts/tool_binding')
+  remove('tconstruct:smeltery/casts/gold_casts/broad_axe_head')
+  remove('tconstruct:smeltery/casts/gold_casts/broad_blade')
+  remove('tconstruct:smeltery/casts/gold_casts/hammer_head')
+  remove('tconstruct:smeltery/casts/gold_casts/small_blade')
+  remove('tconstruct:smeltery/casts/gold_casts/small_axe_head')
+  remove('tconstruct:smeltery/casts/gold_casts/pick_head')
+  remove('tconstruct:smeltery/casts/gold_casts/wires')
+  remove('tconstruct:smeltery/casts/gold_casts/repair_kit')
+  remove('tconstruct:smeltery/casts/gold_casts/rods')
+  remove('tconstruct:smeltery/casts/gold_casts/gems')
+  remove('tconstruct:smeltery/casts/gold_casts/nuggets')
+  remove('tconstruct:smeltery/casts/gold_casts/ingots')
+
+  casting_table('tconstruct:bow_grip')
+  casting_table('tconstruct:bow_limb')
+  casting_table('tconstruct:tough_handle')
+  casting_table('tconstruct:tool_handle')
+  casting_table('tconstruct:large_plate')
+  casting_table('tconstruct:round_plate')
+  casting_table('tconstruct:tool_binding')
+  casting_table('tconstruct:broad_axe_head')
+  casting_table('tconstruct:broad_blade')
+  casting_table('tconstruct:hammer_head')
+  casting_table('tconstruct:small_blade')
+  casting_table('tconstruct:small_axe_head')
+  casting_table('tconstruct:pick_head')
+  casting_table('tconstruct:repair_kit')
+
+  remove('thermal:chiller_ball_cast')
+  event.custom({
+    type: 'tconstruct:casting_table',
+    cast: { item: 'minecraft:slime_ball' },
+    cast_consumed: true,
+    switch_slots: true,
+    fluid: { tag: 'forge:molten_brass', amount: 810 },
+    result: 'thermal:chiller_ball_cast',
+    cooling_time: 120
+  })
+  event.custom({
+    type: 'tconstruct:casting_table',
+    cast: { item: 'thermal:chiller_ball_cast' },
+    fluid: { tag: 'forge:lucky_fluid', amount: 1000 },
+    result: 'kubejs:halo_gashapon',
+    cooling_time: 1200
+  })
+  event.custom({
+    type: 'tconstruct:casting_table',
+    cast: { tag: 'forge:wires' },
+    cast_consumed: true,
+    switch_slots: true,
+    fluid: { tag: 'forge:molten_brass', amount: 270 },
+    result: 'tconstruct:wire_cast',
+    cooling_time: 60
+  })
+  event.custom({
+    type: 'tconstruct:casting_table',
+    cast: { tag: 'forge:rods' },
+    cast_consumed: true,
+    switch_slots: true,
+    fluid: { tag: 'forge:molten_brass', amount: 270 },
+    result: 'tconstruct:rod_cast',
+    cooling_time: 60
+  })
+  event.custom({
+    type: 'tconstruct:casting_table',
+    cast: { tag: 'forge:gems' },
+    cast_consumed: true,
+    switch_slots: true,
+    fluid: { tag: 'forge:molten_brass', amount: 270 },
+    result: 'tconstruct:gem_cast',
+    cooling_time: 60
+  })
+  event.custom({
+    type: 'tconstruct:casting_table',
+    cast: { tag: 'forge:nuggets' },
+    cast_consumed: true,
+    switch_slots: true,
+    fluid: { tag: 'forge:molten_brass', amount: 270 },
+    result: 'tconstruct:nugget_cast',
+    cooling_time: 60
+  })
+  event.custom({
+    type: 'tconstruct:casting_table',
+    cast: { tag: 'forge:ingots' },
+    cast_consumed: true,
+    switch_slots: true,
+    fluid: { tag: 'forge:molten_brass', amount: 270 },
+    result: 'tconstruct:ingot_cast',
+    cooling_time: 60
+  })
+
+  //创造升级
+  event.shapeless(Item.of('tconstruct:creative_slot', '{slot:"abilities"}'), [
+    'kubejs:infinity_ingot',
+    'kubejs:polished_candy_crystal'
+  ]).id('atlanabyss:creative_slot_abilities')
+  event.shapeless(Item.of('tconstruct:creative_slot', '{slot:"defense"}'), [
+    'kubejs:infinity_ingot',
+    'kubejs:polished_sulfur'
+  ]).id('atlanabyss:creative_slot_defense')
+  event.shapeless(Item.of('tconstruct:creative_slot', '{slot:"upgrades"}'), [
+    'kubejs:infinity_ingot',
+    'create:polished_rose_quartz'
+  ]).id('atlanabyss:creative_slot_upgrades')
+  event.shapeless(Item.of('tconstruct:creative_slot', '{slot:"souls"}'), [
+    'kubejs:infinity_ingot',
+    'kubejs:polished_charged_certus_quartz'
+  ]).id('atlanabyss:creative_slot_souls')
 })

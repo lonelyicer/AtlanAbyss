@@ -1,8 +1,8 @@
 {
-  "version": "0.1.0",
+  "version": "1.0.0",
   "name": "pack.atlanabyss.atlanabyss.name",
   "desc": "pack.atlanabyss.atlanabyss.desc",
-  "license": "CC BY-NC-ND 4.0",
+  "license": "MIT License",
   "authors": [
     "LLMION"
   ],

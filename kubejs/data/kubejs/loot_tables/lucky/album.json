@@ -5,46 +5,57 @@
             "entries": [
                 {
                     "type": "minecraft:item",
+                    "weight": 1,
                     "name": "kubejs:album_transpain"
                 },
                 {
                     "type": "minecraft:item",
+                    "weight": 1,
                     "name": "kubejs:album_indigrotto"
                 },
                 {
                     "type": "minecraft:item",
+                    "weight": 1,
                     "name": "kubejs:album_growing"
                 },
                 {
                     "type": "minecraft:item",
+                    "weight": 1,
                     "name": "kubejs:album_blurred_mind"
                 },
                 {
                     "type": "minecraft:item",
+                    "weight": 1,
                     "name": "kubejs:album_redraw"
                 },
                 {
                     "type": "minecraft:item",
+                    "weight": 1,
                     "name": "kubejs:album_yelling"
                 },
                 {
                     "type": "minecraft:item",
+                    "weight": 1,
                     "name": "kubejs:album_nacollection4"
                 },
                 {
                     "type": "minecraft:item",
+                    "weight": 1,
                     "name": "kubejs:album_kessoku_band"
                 },
                 {
                     "type": "minecraft:item",
+                    "weight": 1,
                     "name": "kubejs:album_mameyudoufu"
                 },
                 {
                     "type": "minecraft:item",
+                    "weight": 1,
                     "name": "kubejs:album_adventure"
                 },
                 {
                     "type": "minecraft:item",
+                    "weight": 7,
                     "name": "kubejs:album_made_in_abyss"
                 }
             ]

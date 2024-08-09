@@ -78,7 +78,7 @@
 			title: "锄树叶"
 			icon: "minecraft:oak_leaves"
 			disable_toast: true
-			x: -1.0d
+			x: 0.0d
 			y: -1.0d
 			shape: "hexagon"
 			description: ["很可惜，在当前的Forge版无法使用原版的刷线机特性，但别灰心，为了弥补这个问题，您可以使用锄头类的工具破坏树叶，会有75%的概率会掉落线！"]
@@ -99,8 +99,8 @@
 		{
 			title: "种棉花"
 			disable_toast: true
-			x: 0.0d
-			y: -1.5d
+			x: -1.0d
+			y: -1.0d
 			shape: "hexagon"
 			description: [
 				"在破坏草时你也许会发现，除了会掉落原版的小麦种子以外，还会有棉花种子。"
@@ -185,13 +185,10 @@
 		}
 		{
 			disable_toast: true
-			x: 2.0d
-			y: -2.5d
+			x: 3.0d
+			y: -2.0d
 			shape: "hexagon"
-			description: [
-				"整合包限定的幸运方块：只有玩家击杀生物实体时，有2.5%概率掉落，并且免疫抢夺效果。"
-				"注：在下界维度破坏幸运方块时，将百分百出现宝箱怪！但是，会有极低的概率出现小惊喜。"
-			]
+			description: ["整合包限定的幸运方块：只有玩家击杀生物实体时，有1%概率掉落，并且免疫抢夺效果。"]
 			dependencies: ["5A7F67F2BD3327F6"]
 			id: "352BC5448ACDEF10"
 			tasks: [{
@@ -209,7 +206,7 @@
 			title: "溺尸挑战"
 			icon: "tconstruct:drowned_head"
 			disable_toast: true
-			x: 3.0d
+			x: 1.0d
 			y: -2.0d
 			shape: "hexagon"
 			description: [
@@ -236,8 +233,8 @@
 			disable_toast: true
 			x: 3.0d
 			y: -1.0d
-			shape: "hexagon"
-			description: ["想找个东西存一存身上的物品？您或许可以考虑使用箱子，木桶，又或是限类木桶。"]
+			shape: "rsquare"
+			description: ["想找个东西存一存身上的物品？您或许可以考虑使用箱子，木桶。"]
 			dependencies: ["5BC3A59AAD6CEDBE"]
 			hide: true
 			id: "16CCDD21E5E15818"
@@ -408,7 +405,7 @@
 			icon: "minecraft:obsidian"
 			disable_toast: true
 			x: -2.0d
-			y: 1.5d
+			y: 2.0d
 			description: ["你可以选择用传统的钻石镐挖掘黑曜石搭建传送门，也可以选择用岩浆桶浇筑传送门，根据你的偏好决定。"]
 			dependencies: ["58D3EC802A6FBD27"]
 			id: "4E12320C5CF0FE7B"
@@ -425,7 +422,7 @@
 		{
 			disable_toast: true
 			x: -2.0d
-			y: 2.5d
+			y: 1.0d
 			shape: "hexagon"
 			description: ["利用强劲的附魔，战斗！"]
 			dependencies: ["4E12320C5CF0FE7B"]
@@ -444,7 +441,7 @@
 		}
 		{
 			x: -0.5d
-			y: 3.0d
+			y: 3.5d
 			description: ["注：在下界中的敌对生物，生命值会随着距离出生点越远越高。"]
 			dependencies: ["4E12320C5CF0FE7B"]
 			hide: true
@@ -488,7 +485,7 @@
 			title: " 进入末地"
 			disable_toast: true
 			x: 2.0d
-			y: 3.5d
+			y: 4.5d
 			dependencies: ["137563E84BDBF0CC"]
 			id: "31C9BD74CDB26F64"
 			tasks: [{
@@ -506,7 +503,7 @@
 		{
 			title: "颠倒之域"
 			x: 4.5d
-			y: 3.0d
+			y: 3.5d
 			description: [
 				"颠倒之域：夹在在主世界与下界之间的维度"
 				"进入方法：\\n1.在主世界的基岩上方食用紫颂果\\n2.在下界往上超过360格"
@@ -527,7 +524,7 @@
 		}
 		{
 			x: 6.0d
-			y: 1.5d
+			y: 2.0d
 			description: [
 				"恩赐之石：颠倒之域的特产品"
 				"使用带时运的稿子挖掘深板岩可便有概率获得"
@@ -547,90 +544,12 @@
 		}
 		{
 			disable_toast: true
-			x: 1.0d
-			y: -1.0d
-			shape: "hexagon"
-			description: ["帮助您快速扩地的工具。"]
-			dependencies: ["5BC3A59AAD6CEDBE"]
-			hide: true
-			id: "063FEFBBB9895429"
-			tasks: [{
-				id: "30317F9201A6757C"
-				type: "item"
-				item: {
-					id: "constructionwand:stone_wand"
-					Count: 1b
-					tag: {
-						wand_options: { }
-						Damage: 0
-					}
-				}
-			}]
-			rewards: [{
-				id: "37C1703360D03FC0"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
-			disable_toast: true
-			x: 1.0d
-			y: -2.0d
-			shape: "hexagon"
-			dependencies: ["063FEFBBB9895429"]
-			hide: true
-			id: "299751571259A4A3"
-			tasks: [{
-				id: "24247F460CA6F281"
-				type: "item"
-				item: {
-					id: "constructionwand:iron_wand"
-					Count: 1b
-					tag: {
-						wand_options: { }
-						Damage: 0
-					}
-				}
-			}]
-			rewards: [{
-				id: "6B8EF9B28B788B45"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
-			disable_toast: true
-			x: 1.0d
-			y: -3.0d
-			shape: "hexagon"
-			dependencies: ["299751571259A4A3"]
-			hide: true
-			id: "22997BE2D0713170"
-			tasks: [{
-				id: "62852E34D1E95F28"
-				type: "item"
-				item: {
-					id: "constructionwand:diamond_wand"
-					Count: 1b
-					tag: {
-						wand_options: { }
-						Damage: 0
-					}
-				}
-			}]
-			rewards: [{
-				id: "382248D971CBFAE0"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
-			disable_toast: true
 			x: 2.0d
 			y: 2.5d
 			shape: "rsquare"
 			description: ["开启匠魂之路。"]
 			dependencies: ["71BE14B442164268"]
+			hide: true
 			id: "55E15B669198B728"
 			tasks: [{
 				id: "40F74C29A6ED59D7"
@@ -694,7 +613,7 @@
 		{
 			disable_toast: true
 			x: -3.0d
-			y: 1.5d
+			y: 1.0d
 			shape: "hexagon"
 			dependencies: ["7FEC216969A7D841"]
 			id: "629B75A3BB761759"
@@ -711,8 +630,8 @@
 		}
 		{
 			disable_toast: true
-			x: -3.0d
-			y: 0.0d
+			x: -4.0d
+			y: 1.0d
 			shape: "hexagon"
 			dependencies: ["629B75A3BB761759"]
 			hide: true
@@ -730,8 +649,8 @@
 		}
 		{
 			disable_toast: true
-			x: 5.0d
-			y: 1.0d
+			x: 4.0d
+			y: -1.0d
 			shape: "hexagon"
 			dependencies: ["51118EFF5866B6D3"]
 			hide: true
@@ -776,8 +695,8 @@
 		}
 		{
 			disable_toast: true
-			x: -2.0d
-			y: -1.0d
+			x: 0.0d
+			y: -2.0d
 			shape: "hexagon"
 			description: ["另外，本整合包禁止了蜘蛛的生成，线可以通过种棉花获得，而蜘蛛眼可以洗涤烂番茄获得。"]
 			dependencies: ["519403A46F37EB4D"]
@@ -798,7 +717,9 @@
 			x: 3.0d
 			y: 2.0d
 			shape: "hexagon"
+			description: ["迷你种植园。"]
 			dependencies: ["71BE14B442164268"]
+			hide: true
 			id: "13BF7536A68A64A9"
 			tasks: [{
 				id: "318701D6754E9400"
@@ -864,7 +785,7 @@
 		{
 			disable_toast: true
 			x: 2.0d
-			y: 5.0d
+			y: 5.5d
 			shape: "rsquare"
 			description: ["开启建筑之路。"]
 			dependencies: ["1371ABE055E0D70F"]
@@ -883,7 +804,7 @@
 		{
 			disable_toast: true
 			x: 4.0d
-			y: -1.0d
+			y: -2.0d
 			shape: "hexagon"
 			dependencies: ["16CCDD21E5E15818"]
 			id: "3FA564A468ADBFA9"
@@ -894,6 +815,45 @@
 			}]
 			rewards: [{
 				id: "1CF8100D9E78CB9B"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 2.0d
+			y: 3.5d
+			shape: "rsquare"
+			description: ["开启烹饪之路。"]
+			dependencies: ["71BE14B442164268"]
+			hide: true
+			id: "06A7D610877A75D5"
+			tasks: [{
+				id: "75748F108C94F70A"
+				type: "item"
+				item: "minecraft:campfire"
+			}]
+			rewards: [{
+				id: "701CB3D87DFFDF52"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 1.0d
+			y: -1.0d
+			shape: "rsquare"
+			description: ["可实现全自动生物繁殖。"]
+			dependencies: ["5BC3A59AAD6CEDBE"]
+			hide: true
+			id: "16682412E81682D7"
+			tasks: [{
+				id: "7AF042AE848B0A4F"
+				type: "item"
+				item: "quark:feeding_trough"
+			}]
+			rewards: [{
+				id: "3925837FCA2B2520"
 				type: "xp"
 				xp: 10
 			}]

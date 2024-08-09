@@ -70,6 +70,8 @@ onEvent('recipes', event => {
 	remove('createoreexcavation:drilling/hardened_diamond')
 	remove('createoreexcavation:vein_finder')
 
+
+
 	//探矿杖
 	event.shaped('createoreexcavation:vein_finder', [
 		' AB',
@@ -292,10 +294,10 @@ onEvent('recipes', event => {
 		"type": "botanypots:crop",
 		"seed": { "item": "kubejs:cottons_seed" },
 		"categories": ["dirt", "farmland"],
-		"growthTicks": 1200,
+		"growthTicks": 600,
 		"display": {
 			"type": "botanypots:aging",
-			"block": "minecraft:wheat"
+			"block": "kubejs:cottons"
 		},
 		"drops": [{
 			"chance": 1.00,
@@ -313,7 +315,7 @@ onEvent('recipes', event => {
 			"minRolls": 1,
 			"maxRolls": 2
 		}]
-	})
+	}).id("atlanabyss:crop_cottons_seed")
 
 	//书架配方修复
 	function bookshelRecipes(plank, output, id) {
@@ -1940,7 +1942,7 @@ onEvent('recipes', event => {
 	sequenced_assembly([
 		Item.of('kubejs:pressure_mechanism').withChance(0.9),
 		Item.of('create:powdered_obsidian').withChance(0.07),
-		Item.of('create:shaft').withChance(0.03)
+		Item.of('createdieselgenerators:asphalt_block').withChance(0.03)
 	],
 		'thermal:steel_plate', [
 		deploying(pm, [pm, 'createdieselgenerators:asphalt_block']),

@@ -34,7 +34,7 @@
 	#Whether or not to render first person bullet trail
 	FirstPersonBulletTracerEnable = true
 	#Disable the interact hud text in center of the screen
-	DisableInteractHudText = false
+	DisableInteractHudText = true
 	#Max time the damage counter will reset
 	#Range: > 10
 	DamageCounterResetTime = 2000

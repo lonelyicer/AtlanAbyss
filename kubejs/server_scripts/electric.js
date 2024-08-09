@@ -64,7 +64,6 @@ onEvent('recipes', event => {
   remove('thermal:press_packing_2x2_die')
   remove('thermal:press_packing_3x3_die')
   remove('thermal:press_unpacking_die')
-  remove('thermal:chiller_ball_cast')
   remove('thermal:chiller_ingot_cast')
   remove('thermal:chiller_rod_cast')
   //齿轮
@@ -155,6 +154,28 @@ onEvent('recipes', event => {
   press('kubejs:osmium_sheet', 'kubejs:osmium_ingot', 'osmium');
   press('kubejs:charged_constantan_sheet', 'kubejs:charged_constantan_ingot', 'charged_constantan')
   press('kubejs:bismuth_sheet', 'kubejs:bismuth_ingot', 'bismuth');
+
+
+  //红石伺服器
+  remove('thermal:redstone_servo')
+  event.shaped('thermal:redstone_servo', [
+    'ABA',
+    ' B ',
+    'ABA'
+  ], {
+    A: 'minecraft:redstone',
+    B: 'thermal:steel_plate'
+  }).id('atlanabyss:redstone_servo')
+  //红石通量线圈
+  remove('thermal:rf_coil')
+  event.shaped('thermal:rf_coil', [
+    '  A',
+    ' B ',
+    'A  '
+  ], {
+    A: 'create:brass_sheet',
+    B: 'minecraft:redstone'
+  }).id('atlanabyss:rf_coil')
 
   //压缩能源炉
   event.shaped('thermal:dynamo_compression', [
@@ -959,60 +980,73 @@ onEvent('recipes', event => {
   }).id("atlanabyss:pulverizer_aluminum_plate_to_dust")
 
   //有机灌注器
-  function insolatorRecipe(ingredient, result, energy, water, id) {
-    event.custom({
-      type: 'thermal:insolator',
-      ingredient: { item: ingredient },
-      result: result,
-      energy_mod: energy,
-      water_mod: water
-    }).id("atlanabyss:insolator_" + id)
-  }
-  insolatorRecipe('minecraft:tube_coral_block', [
-    { item: 'minecraft:tube_coral_block', chance: 1.5 },
-    { item: 'minecraft:tube_coral_fan', chance: 0.25 },
-    { item: 'minecraft:tube_coral', chance: 0.02 }
-  ], 2, 2, 'tube_coral_block');//蓝珊瑚
-  insolatorRecipe('minecraft:brain_coral_block', [
-    { item: 'minecraft:brain_coral_block', chance: 1.5 },
-    { item: 'minecraft:brain_coral_fan', chance: 0.25 },
-    { item: 'minecraft:brain_coral', chance: 0.02 }
-  ], 2, 2, 'brain_coral_block');//粉珊瑚
-  insolatorRecipe('minecraft:bubble_coral_block', [
-    { item: 'minecraft:bubble_coral_block', chance: 1.5 },
-    { item: 'minecraft:bubble_coral_fan', chance: 0.25 },
-    { item: 'minecraft:bubble_coral', chance: 0.02 }
-  ], 2, 2, 'bubble_coral_block');//紫珊瑚
-  insolatorRecipe('minecraft:fire_coral_block', [
-    { item: 'minecraft:fire_coral_block', chance: 1.5 },
-    { item: 'minecraft:fire_coral_fan', chance: 0.25 },
-    { item: 'minecraft:fire_coral', chance: 0.02 }
-  ], 2, 2, 'fire_coral_block');//红珊瑚
-  insolatorRecipe('minecraft:horn_coral_block', [
-    { item: 'minecraft:horn_coral_block', chance: 1.5 },
-    { item: 'minecraft:horn_coral_fan', chance: 0.25 },
-    { item: 'minecraft:horn_coral', chance: 0.02 }
-  ], 2, 2, 'horn_coral_block');//黄珊瑚
-  insolatorRecipe('ars_nouveau:green_archwood_sapling', [
-    { item: 'ars_nouveau:green_archwood_log', chance: 6.0 },
-    { item: 'ars_nouveau:green_archwood_sapling', chance: 1.1 }
-  ], 4, 3, 'green_archwood_sapling');//绿魔艺树
-  insolatorRecipe('ars_nouveau:blue_archwood_sapling', [
-    { item: 'ars_nouveau:blue_archwood_log', chance: 6.0 },
-    { item: 'ars_nouveau:blue_archwood_sapling', chance: 1.1 }
-  ], 4, 3, 'blue_archwood_sapling');//蓝魔艺树
-  insolatorRecipe('ars_nouveau:purple_archwood_sapling', [
-    { item: 'ars_nouveau:purple_archwood_log', chance: 6.0 },
-    { item: 'ars_nouveau:purple_archwood_sapling', chance: 1.1 }
-  ], 4, 3, 'purple_archwood_sapling');//紫魔艺树
-  insolatorRecipe('ars_nouveau:red_archwood_sapling', [
-    { item: 'ars_nouveau:red_archwood_log', chance: 6.0 },
-    { item: 'ars_nouveau:red_archwood_sapling', chance: 1.1 }
-  ], 4, 3, 'red_archwood_sapling');//红魔艺树
-  insolatorRecipe('kubejs:cottons_seed', [
-    { item: 'kubejs:cotton', chance: 3.5 },
-    { item: 'kubejs:cottons_seed', chance: 0.1 }
-  ], 1, 1, 'cotton');//棉花
+  //蓝珊瑚
+  thermal.insolator([
+    Item.of('minecraft:tube_coral_block').withChance(1.5),
+    Item.of('minecraft:tube_coral_fan').withChance(0.25),
+    Item.of('minecraft:tube_coral').withChance(0.02)
+  ], 'minecraft:tube_coral_block'
+  ).energy(40000).water(1000).id('atlanabyss:insolator_tube_coral_block');
+  //粉珊瑚
+  thermal.insolator([
+    Item.of('minecraft:brain_coral_block').withChance(1.5),
+    Item.of('minecraft:brain_coral_fan').withChance(0.25),
+    Item.of('minecraft:brain_coral').withChance(0.02)
+  ], 'minecraft:brain_coral_block'
+  ).energy(40000).water(1000).id('atlanabyss:insolator_brain_coral_block');
+  //紫珊瑚
+  thermal.insolator([
+    Item.of('minecraft:bubble_coral_block').withChance(1.5),
+    Item.of('minecraft:bubble_coral_fan').withChance(0.25),
+    Item.of('minecraft:bubble_coral').withChance(0.02)
+  ], 'minecraft:bubble_coral_block'
+  ).energy(40000).water(1000).id('atlanabyss:insolator_bubble_coral_block');
+  //红珊瑚
+  thermal.insolator([
+    Item.of('minecraft:fire_coral_block').withChance(1.5),
+    Item.of('minecraft:fire_coral_fan').withChance(0.25),
+    Item.of('minecraft:fire_coral').withChance(0.02)
+  ], 'minecraft:fire_coral_block'
+  ).energy(40000).water(1000).id('atlanabyss:insolator_fire_coral_block');
+  //黄珊瑚
+  thermal.insolator([
+    Item.of('minecraft:horn_coral_block').withChance(1.5),
+    Item.of('minecraft:horn_coral_fan').withChance(0.25),
+    Item.of('minecraft:horn_coral').withChance(0.02)
+  ], 'minecraft:horn_coral_block'
+  ).energy(40000).water(1000).id('atlanabyss:insolator_horn_coral_block');
+  //绿魔艺树
+  thermal.insolator([
+    Item.of('ars_nouveau:green_archwood_log').withChance(6.0),
+    Item.of('ars_nouveau:green_archwood_sapling').withChance(1.1)
+  ], 'ars_nouveau:green_archwood_sapling'
+  ).energy(80000).water(2000).id('atlanabyss:insolator_green_archwood_sapling');
+  //蓝魔艺树
+  thermal.insolator([
+    Item.of('ars_nouveau:blue_archwood_log').withChance(6.0),
+    Item.of('ars_nouveau:blue_archwood_sapling').withChance(1.1)
+  ], 'ars_nouveau:blue_archwood_sapling'
+  ).energy(80000).water(2000).id('atlanabyss:insolator_blue_archwood_sapling');
+  //紫魔艺树
+  thermal.insolator([
+    Item.of('ars_nouveau:purple_archwood_log').withChance(6.0),
+    Item.of('ars_nouveau:purple_archwood_sapling').withChance(1.1)
+  ], 'ars_nouveau:purple_archwood_sapling'
+  ).energy(80000).water(2000).id('atlanabyss:insolator_purple_archwood_sapling');
+  //红魔艺树
+  thermal.insolator([
+    Item.of('ars_nouveau:red_archwood_log').withChance(6.0),
+    Item.of('ars_nouveau:red_archwood_sapling').withChance(1.1)
+  ], 'ars_nouveau:red_archwood_sapling'
+  ).energy(80000).water(2000).id('atlanabyss:insolator_red_archwood_sapling');
+  //棉花
+  thermal.insolator([
+    Item.of('kubejs:cotton').withChance(3.5),
+    Item.of('kubejs:cottons_seed').withChance(1.1)
+  ], 'kubejs:cottons_seed'
+  ).energy(20000).water(500).id('atlanabyss:insolator_cotton');
+
+
 
   //催化剂
   remove('thermal:machines/smelter/smelter_catalyst_calcite')

@@ -10,5 +10,38 @@
   "fluid.tconstruct.molten_osmium": "§3熔融锇",
   "fluid.tconstruct.flowing_molten_osmium": "§3流动的熔融锇",
   "item.tconstruct.molten_osmium_bucket": "§3熔融锇桶",
-  "material.tconstruct.osmium": "§3锇"
+  "material.tconstruct.osmium": "§3锇",
+
+  "item.tconstruct.blank_cast": "空白黄铜铸模",
+  "item.tconstruct.ingot_cast": "锭黄铜铸模",
+  "item.tconstruct.nugget_cast": "粒黄铜铸模",
+  "item.tconstruct.gem_cast": "宝石黄铜铸模",
+  "item.tconstruct.rod_cast": "杆黄铜铸模",
+
+  "item.tconstruct.gear_cast": "齿轮黄铜铸模",
+  "item.tconstruct.plate_cast": "小板黄铜铸模",
+  "item.tconstruct.coin_cast": "币黄铜铸模",
+  "item.tconstruct.wire_cast": "线黄铜铸模",
+
+  "item.tconstruct.repair_kit_cast": "修补件黄铜铸模",
+
+  "item.tconstruct.pick_head_cast": "镐头黄铜铸模",
+  "item.tconstruct.small_axe_head_cast": "小型斧刃黄铜铸模",
+  "item.tconstruct.small_blade_cast": "小型剑刃黄铜铸模",
+  "item.tconstruct.sign_head_cast": "牌板黄铜铸模",
+  "item.tconstruct.bow_limb_cast": "弓臂黄铜铸模",
+  "item.tconstruct.bow_grip_cast": "弓把黄铜铸模",
+
+  "item.tconstruct.hammer_head_cast": "锤头黄铜铸模",
+  "item.tconstruct.broad_axe_head_cast": "板斧刃黄铜铸模",
+  "item.tconstruct.broad_blade_cast": "宽刃黄铜铸模",
+
+  "item.tconstruct.tool_binding_cast": "绑定结黄铜铸模",
+  "item.tconstruct.round_plate_cast": "圆板黄铜铸模",
+  "item.tconstruct.large_plate_cast": "大板黄铜铸模",
+
+  "item.tconstruct.tool_handle_cast": "工具手柄黄铜铸模",
+  "item.tconstruct.tough_handle_cast": "坚韧手柄黄铜铸模",
+
+  "advancements.tconstruct.smeltery.cast_collector.description": "获得每一种黄铜铸模"
 }

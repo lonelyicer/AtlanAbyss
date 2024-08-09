@@ -22,5 +22,7 @@
   "info.thermal.dynamo_numismatic.2": "",
   "block.thermal.dynamo_lapidary.keyword": "引擎 辉光 发电机 能源",
   "block.thermal.dynamo_numismatic.keyword": "金属 引擎 发电机 能源",
-	"msg.fuelingStation.link": "现在从位置链接"
+	"msg.fuelingStation.link": "现在从位置链接",
+
+  "item.thermal.chiller_ball_cast": "球形黄铜铸模"
 }

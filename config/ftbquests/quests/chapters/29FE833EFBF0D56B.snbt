@@ -1,7 +1,7 @@
 {
 	id: "29FE833EFBF0D56B"
 	group: "03B4E601CC5A5BFE"
-	order_index: 3
+	order_index: 6
 	filename: "29FE833EFBF0D56B"
 	title: "树之力"
 	icon: "ars_nouveau:green_archwood_sapling"
@@ -12,9 +12,9 @@
 			disable_toast: true
 			x: 0.0d
 			y: 0.0d
-			shape: "rsquare"
 			dependencies: ["43E93D9FC2ED3F4D"]
 			hide: true
+			size: 1.5d
 			id: "3F1BC198BA9B6A45"
 			tasks: [{
 				id: "4EC236C3788181D8"
@@ -371,6 +371,24 @@
 			}]
 			rewards: [{
 				id: "4FBFD62FC7E816A7"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -2.0d
+			y: 1.5d
+			shape: "rsquare"
+			dependencies: ["3F1BC198BA9B6A45"]
+			hide: true
+			id: "75BA5E928395B13B"
+			tasks: [{
+				id: "0DBE32A16EA11841"
+				type: "item"
+				item: "umapyoi:jewel"
+			}]
+			rewards: [{
+				id: "6928F79E52C62464"
 				type: "xp"
 				xp: 10
 			}]

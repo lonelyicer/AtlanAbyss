@@ -1,0 +1,7 @@
+{
+  "name": "whiterat.gun.destroyer.name",
+  "display": "whiterat:destroyer_display",
+  "data": "whiterat:destroyer_data",
+  "tooltip": "whiterat.gun.destroyer.desc",
+  "type": "mg"
+}

@@ -11,6 +11,7 @@
 		{
 			x: 0.0d
 			y: 0.0d
+			description: ["第一块半价！"]
 			dependencies: [
 				"44A1E0EB5B55A4FA"
 				"30C1658FCB9A8D50"
@@ -27,10 +28,9 @@
 				item: "kubejs:infinity_ingot"
 			}]
 			rewards: [{
-				id: "49373BD1F31D15D3"
+				id: "3DA9D9E3FC9A7174"
 				type: "item"
-				item: "kubejs:halo_gashapon"
-				count: 64
+				item: "kubejs:infinity_ingot"
 			}]
 		}
 		{
@@ -50,9 +50,9 @@
 				}
 			}]
 			rewards: [{
-				id: "31DA1405C51FBD18"
+				id: "55BE52409FCF911D"
 				type: "item"
-				item: "kubejs:halo_gashapon"
+				item: "kubejs:purin"
 			}]
 		}
 		{
@@ -72,9 +72,9 @@
 				}
 			}]
 			rewards: [{
-				id: "414F6C28CC5E3F12"
+				id: "4AA87F702D67E66D"
 				type: "item"
-				item: "kubejs:halo_gashapon"
+				item: "kubejs:purin"
 			}]
 		}
 		{
@@ -94,9 +94,9 @@
 				}
 			}]
 			rewards: [{
-				id: "58899DE1959B8A4E"
+				id: "32128C7A14B4D603"
 				type: "item"
-				item: "kubejs:halo_gashapon"
+				item: "kubejs:purin"
 			}]
 		}
 		{
@@ -116,9 +116,9 @@
 				}
 			}]
 			rewards: [{
-				id: "5954CB9249BB2E6A"
+				id: "220528680CDA0D41"
 				type: "item"
-				item: "kubejs:halo_gashapon"
+				item: "kubejs:purin"
 			}]
 		}
 		{
@@ -138,9 +138,9 @@
 				}
 			}]
 			rewards: [{
-				id: "4873A862F47CF342"
+				id: "7466801D387FAE08"
 				type: "item"
-				item: "kubejs:halo_gashapon"
+				item: "kubejs:purin"
 			}]
 		}
 		{
@@ -160,9 +160,9 @@
 				}
 			}]
 			rewards: [{
-				id: "2DB899B1A4BA74A6"
+				id: "46B8434DFBB8938B"
 				type: "item"
-				item: "kubejs:halo_gashapon"
+				item: "kubejs:purin"
 			}]
 		}
 		{
@@ -182,9 +182,9 @@
 				}
 			}]
 			rewards: [{
-				id: "567B4A6B6DF25E1B"
+				id: "0FAB60483020A6A5"
 				type: "item"
-				item: "kubejs:halo_gashapon"
+				item: "kubejs:purin"
 			}]
 		}
 		{

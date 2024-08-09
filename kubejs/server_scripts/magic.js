@@ -7,25 +7,44 @@ onEvent('recipes', event => {
 
 
 
+    //附魔金苹果
+    event.shaped('minecraft:enchanted_golden_apple', [
+        'AAA',
+        'ABA',
+        'AAA'
+    ], {
+        A: '#forge:storage_blocks/gold',
+        B: 'minecraft:apple'
+    }).id('atlanabyss:enchanted_golden_apple')
+    //不死图腾
+    botania.mana_infusion('minecraft:totem_of_undying', 'minecraft:enchanted_golden_apple', 13500, 'botania:alchemy_catalyst').id('atlanabyss:mana_infusion_totem_of_undying')
+
     //人工煤炭
     event.custom({
         type: 'ars_nouveau:imbuement',
-        input: {
-            item: 'minecraft:charcoal'
-        },
+        input: { item: 'minecraft:charcoal' },
         output: 'minecraft:coal',
         count: 1,
         source: 500,
         pedestalItems: []
     }).id('atlanabyss:imbuement_coal')
 
+    //萝卜宝石
+    remove('umapyoi:jewel')
+    event.custom({
+        type: 'ars_nouveau:imbuement',
+        input: { item: 'minecraft:golden_carrot' },
+        output: 'umapyoi:jewel',
+        count: 1,
+        source: 100,
+        pedestalItems: []
+    }).id('atlanabyss:imbuement_jewel')
+
     remove('thermal:gunpowder_4')
     //魔法火药
     event.custom({
         type: 'ars_nouveau:imbuement',
-        input: {
-            item: 'minecraft:gravel'
-        },
+        input: { item: 'minecraft:gravel' },
         output: 'minecraft:gunpowder',
         count: 1,
         source: 200,
@@ -107,6 +126,21 @@ onEvent('recipes', event => {
         'kubejs:calamity_ingot',
         'kubejs:end_ingot'
     ], 2500000).id('atlanabyss:terra_plate_elemental_ingot')
+    event.custom({
+        type: 'mythicbotany:infusion',
+        group: 'infuser',
+        output: { item: 'kubejs:elemental_ingot', count: 1 },
+        mana: 2500000,
+        ingredients: [
+            { item: 'kubejs:chlorophyll_ingot' },
+            { item: 'kubejs:abyss_ingot' },
+            { item: 'kubejs:planetary_ingot' },
+            { item: 'kubejs:calamity_ingot' },
+            { item: 'kubejs:end_ingot' }
+        ],
+        fromColor: 8388352,
+        toColor: 16740039
+    }).id('atlanabyss:infusion_elemental_ingot')
 
     //铝矿
     botania.orechid_ignem('tconstruct:cobalt_ore', 'minecraft:netherrack',
@@ -209,4 +243,41 @@ onEvent('recipes', event => {
     botania.pure_daisy('botania:livingwood_log', 'ars_nouveau:blue_archwood_log', 30).id("atlanabyss:livingwood_by_blue")
     botania.pure_daisy('botania:livingwood_log', 'ars_nouveau:purple_archwood_log', 30).id("atlanabyss:livingwood_by_purple")
     botania.pure_daisy('botania:livingwood_log', 'ars_nouveau:red_archwood_log', 30).id("atlanabyss:livingwood_by_red")
+
+
+    //创造书
+    event.custom({
+        type: 'ars_nouveau:imbuement',
+        input: {
+            item: 'ars_nouveau:archmage_spell_book'
+        },
+        output: 'ars_nouveau:creative_spell_book',
+        count: 1,
+        source: 5000,
+        pedestalItems: [
+            { item: { item: 'kubejs:infinity_ingot' } },
+            { item: { item: 'kubejs:infinity_ingot' } }
+        ]
+    }).id('atlanabyss:imbuement_creative_spell_book')
+    //创造罐
+    event.custom({
+        type: 'ars_nouveau:enchanting_apparatus',
+        reagent: [{ item: 'ars_nouveau:source_jar' }],
+        pedestalItems: [
+            { item: { item: 'kubejs:infinity_ingot' } },
+            { item: { item: 'kubejs:infinity_ingot' } },
+            { item: { item: 'kubejs:infinity_ingot' } },
+            { item: { item: 'kubejs:infinity_ingot' } }
+        ],
+        output: { item: 'ars_nouveau:creative_source_jar' },
+        sourceCost: 0,
+        keepNbtOfReagent: false
+    }).id('atlanabyss:enchanting_apparatus_creative_source_jar')
+    //创造池
+    botania.runic_altar('botania:creative_pool', [
+        'kubejs:infinity_ingot',
+        'kubejs:infinity_ingot',
+        'kubejs:infinity_ingot',
+        'kubejs:infinity_ingot'
+    ], 200000).id('atlanabyss:runic_altar_time_bottle')
 })

@@ -369,12 +369,12 @@ onEvent('entity.hurt', event => {
   }
   if (actual.isPlayer()) {
     //打一下就红温的苦力怕
-    if (level.dimension == 'minecraft:the_nether' && entity.type == 'minecraft:creeper') {
-      let creeperEffect = entity.potionEffects;
-      creeperEffect.add('minecraft:speed', 200, 4);
-      creeperEffect.add('minecraft:regeneration', 200, 1);
-      creeperEffect.add('minecraft:resistance', 200, 1);
-    }
+    // if (entity.type == 'minecraft:creeper') {
+    //   let creeperEffect = entity.potionEffects;
+    //   creeperEffect.add('minecraft:speed', 200, 4);
+    //   creeperEffect.add('minecraft:regeneration', 200, 1);
+    //   creeperEffect.add('minecraft:resistance', 200, 1);
+    // }
     //时间之瓶偷寿命
     if (actual.mainHandItem === 'tiab:time_in_a_bottle' && entity.type !== 'dummmmmmy:target_dummy') {
       let entityEffect = entity.potionEffects;
@@ -432,7 +432,7 @@ onEvent('entity.hurt', event => {
           let sua = sundering.amplifier + 1;
           let sud = sundering.duration;
           let suTime = Math.round(sud + 20);
-          let suLevel = Math.min(sua, 250);
+          let suLevel = Math.min(sua, 7210);
           let newDamage = damage * mag * suLevel;
 
           entityEffect.add('kubejs:sundering', suTime, suLevel);

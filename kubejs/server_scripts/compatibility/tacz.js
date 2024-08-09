@@ -378,14 +378,12 @@ onEvent('recipes', event => {
 		B: 'minecraft:iron_block'
 	}).id('atlanabyss:gun_smith_table')
 
-	//扭蛋
-	event.shaped('10x kubejs:halo_gashapon', [
-		' A ',
-		'ACA',
-		' B '
+	//创造弹药
+	event.shaped(Item.of('tacz:ammo_box', '{AllTypeCreative:1b}'), [
+		'AAA',
+		'A A',
+		'AAA',
 	], {
-		A: 'ae2:certus_quartz_crystal',
-		B: 'kubejs:ultimate_material',
-		C: 'kubejs:infinity_ingot'
-	}).id('atlanabyss:halo_gashapon')
+		A: 'kubejs:infinity_ingot'
+	}).id('atlanabyss:creative_ammo_box')
 })
