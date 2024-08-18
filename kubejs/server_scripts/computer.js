@@ -417,7 +417,7 @@ onEvent('recipes', event => {
   ], {
     A: 'ae2:quartz_glass',
     B: 'minecraft:redstone_block',
-    C: 'kubejs:integrated_circuit',
+    C: 'kubejs:integrated_circuit_advanced',
     D: 'thermal:invar_plate',
     E: 'ae2:cell_component_16k'
   }).id('atlanabyss:ae_item_storage_cell_16k');
@@ -430,7 +430,7 @@ onEvent('recipes', event => {
   ], {
     A: 'ae2:quartz_glass',
     B: 'minecraft:redstone_block',
-    C: 'kubejs:integrated_circuit',
+    C: 'kubejs:integrated_circuit_elite',
     D: 'thermal:invar_plate',
     E: 'ae2:cell_component_64k'
   }).id('atlanabyss:ae_item_storage_cell_64k');
@@ -443,7 +443,7 @@ onEvent('recipes', event => {
   ], {
     A: 'ae2:quartz_glass',
     B: 'minecraft:redstone_block',
-    C: 'kubejs:integrated_circuit',
+    C: 'kubejs:integrated_circuit_ultimate',
     D: 'thermal:invar_plate',
     E: 'ae2:cell_component_256k'
   }).id('atlanabyss:ae_item_storage_cell_256k');
@@ -495,7 +495,7 @@ onEvent('recipes', event => {
   ], {
     A: 'ae2:quartz_glass',
     B: 'minecraft:redstone_block',
-    C: 'kubejs:integrated_circuit',
+    C: 'kubejs:integrated_circuit_advanced',
     D: 'thermal:nickel_plate',
     E: 'ae2:cell_component_16k'
   }).id('atlanabyss:ae_fluid_storage_cell_16k');
@@ -508,7 +508,7 @@ onEvent('recipes', event => {
   ], {
     A: 'ae2:quartz_glass',
     B: 'minecraft:redstone_block',
-    C: 'kubejs:integrated_circuit',
+    C: 'kubejs:integrated_circuit_elite',
     D: 'thermal:nickel_plate',
     E: 'ae2:cell_component_64k'
   }).id('atlanabyss:ae_fluid_storage_cell_64k');
@@ -521,10 +521,88 @@ onEvent('recipes', event => {
   ], {
     A: 'ae2:quartz_glass',
     B: 'minecraft:redstone_block',
-    C: 'kubejs:integrated_circuit',
+    C: 'kubejs:integrated_circuit_ultimate',
     D: 'thermal:nickel_plate',
     E: 'ae2:cell_component_256k'
   }).id('atlanabyss:ae_fluid_storage_cell_256k');
+
+  //磁盘外壳
+  remove('ae2things:cells/disk_housing')
+  event.shaped('ae2things:disk_housing', [
+    'ABA',
+    'C C',
+    'DDD'
+  ], {
+    A: 'ae2:quartz_glass',
+    B: 'minecraft:redstone_block',
+    C: 'kubejs:integrated_circuit',
+    D: 'thermal:lead_plate'
+  }).id('atlanabyss:ae_disk_housing');
+  //磁盘1k
+  remove('ae2things:cells/disk_drive_1k')
+  event.shaped('ae2things:disk_drive_1k', [
+    'ABA',
+    'CEC',
+    'DDD'
+  ], {
+    A: 'ae2:quartz_glass',
+    B: 'minecraft:redstone_block',
+    C: 'kubejs:integrated_circuit',
+    D: 'thermal:lead_plate',
+    E: 'ae2:cell_component_1k'
+  }).id('atlanabyss:ae_disk_drive_1k');
+  //磁盘4k
+  remove('ae2things:cells/disk_drive_4k')
+  event.shaped('ae2things:disk_drive_4k', [
+    'ABA',
+    'CEC',
+    'DDD'
+  ], {
+    A: 'ae2:quartz_glass',
+    B: 'minecraft:redstone_block',
+    C: 'kubejs:integrated_circuit',
+    D: 'thermal:lead_plate',
+    E: 'ae2:cell_component_4k'
+  }).id('atlanabyss:ae_disk_drive_4k');
+  //磁盘16k
+  remove('ae2things:cells/disk_drive_16k')
+  event.shaped('ae2things:disk_drive_16k', [
+    'ABA',
+    'CEC',
+    'DDD'
+  ], {
+    A: 'ae2:quartz_glass',
+    B: 'minecraft:redstone_block',
+    C: 'kubejs:integrated_circuit_advanced',
+    D: 'thermal:lead_plate',
+    E: 'ae2:cell_component_16k'
+  }).id('atlanabyss:ae_disk_drive_16k');
+  //磁盘64k
+  remove('ae2things:cells/disk_drive_64k')
+  event.shaped('ae2things:disk_drive_64k', [
+    'ABA',
+    'CEC',
+    'DDD'
+  ], {
+    A: 'ae2:quartz_glass',
+    B: 'minecraft:redstone_block',
+    C: 'kubejs:integrated_circuit_elite',
+    D: 'thermal:lead_plate',
+    E: 'ae2:cell_component_64k'
+  }).id('atlanabyss:ae_disk_drive_64k');
+  //磁盘256k
+  remove('ae2things:cells/disk_drive_256k')
+  event.shaped('ae2things:disk_drive_256k', [
+    'ABA',
+    'CEC',
+    'DDD'
+  ], {
+    A: 'ae2:quartz_glass',
+    B: 'minecraft:redstone_block',
+    C: 'kubejs:integrated_circuit_ultimate',
+    D: 'thermal:lead_plate',
+    E: 'ae2:cell_component_256k'
+  }).id('atlanabyss:ae_disk_drive_256k');
 
 
 

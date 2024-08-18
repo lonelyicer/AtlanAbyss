@@ -19,10 +19,7 @@
     "potion_effects": [
         {
             "id": "minecraft:speed",
-            "chance": 0.7,
-            "amplifier": {
-                "min": 1
-            }
+            "chance": 0.5
         }
     ]
 }

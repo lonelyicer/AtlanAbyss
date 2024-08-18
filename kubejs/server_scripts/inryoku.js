@@ -62,6 +62,15 @@ onEvent('recipes', event => {
         }
     }).id('atlanabyss:rocket_fuel_refinery')
 
+    //便宜压缩钢板
+    const sb = 'thermal:steel_block';
+    create.sequenced_assembly([
+        Item.of('beyond_earth:compressed_steel').withChance(0.25),
+        Item.of('thermal:steel_plate').withChance(0.75)
+    ], '#forge:storage_blocks/steel', [
+        create.pressing(sb, sb)
+    ]).transitionalItem(sb).loops(10).id('atlanabyss:sequenced_assembly_steel_block')
+
     //压缩钢板
     remove('beyond_earth:compressing/compressed_steel')
     event.custom({
@@ -115,28 +124,29 @@ onEvent('recipes', event => {
         "cookTime": 600
     }).id('atlanabyss:compressor_calorite_block')
 
+
     //太阳能
     remove('beyond_earth:solar_panel')
     event.smithing('beyond_earth:solar_panel',
-        'thermal:machine_frame',
+        'kubejs:steel_machine_frame',
         'minecraft:daylight_detector'
     ).id('atlanabyss:smithing_byd_solar_panel')
     //压缩机
     remove('beyond_earth:compressor')
     event.smithing('beyond_earth:compressor',
-        'thermal:machine_frame',
+        'kubejs:steel_machine_frame',
         'compactmachines:wall'
     ).id('atlanabyss:smithing_byd_compressor')
     //精炼机
     remove('beyond_earth:fuel_refinery')
     event.smithing('beyond_earth:fuel_refinery',
-        'thermal:machine_frame',
+        'kubejs:steel_machine_frame',
         'createdieselgenerators:oil_barrel'
     ).id('atlanabyss:smithing_byd_fuel_refinery')
     //氧气机
     remove('beyond_earth:oxygen_loader')
     event.smithing('beyond_earth:oxygen_loader',
-        'thermal:machine_frame',
+        'kubejs:steel_machine_frame',
         'beyond_earth:oxygen_tank'
     ).id('atlanabyss:smithing_byd_oxygen_loader')
     //氧气瓶

@@ -76,7 +76,7 @@ onEvent("lootjs", event => {
     })
     .modifyLoot(Ingredient.getAll(), (itemStack) => {
       let distance = Math.hypot(entityX, entityZ); // 计算实体离中心的距离
-      let i = Math.min(128, Math.floor(distance / 128)) + 1; // 计算战利品掉落倍率
+      let i = Math.min(128, Math.floor(distance / 64)) + 1; // 计算战利品掉落倍率
       if (itemStack.isStackable()) {
         itemStack.count += i;
         return itemStack;
@@ -255,13 +255,14 @@ onEvent('entity.spawned', event => {
     entity.heal(newHealth);
     event.cancel();
   }
+
   if (!entity.monster) return;
   if (entity.isLiving() && entity.getFullNBT().KubeJSPersistentData.id != 7210) {
     server.scheduleInTicks(1, () => {
       let health = entity.getMaxHealth();
 
       if (level.dimension === 'minecraft:the_nether') {
-        monsterSpawn(health, 0.05, 16);
+        monsterSpawn(health, 0.05, 8);
       }
     })
   }
@@ -296,6 +297,7 @@ onEvent('entity.check_spawn', event => {
 
 
 onEvent('entity.hurt', event => {
+  /**@type {Internal.ServerJS}*/
   let { level, server, entity, source, damage } = event;
   let allHealth = Math.floor(entity.getHealth());
 

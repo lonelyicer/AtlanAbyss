@@ -1,4 +1,4 @@
-To refresh this file, delete it and run /reload command again! Last updated: Jul 17, 2024, 12:06:10 PM
+To refresh this file, delete it and run /reload command again! Last updated: Aug 10, 2024, 8:06:38 AM
 
 #abnormals_delight:drops_adzuki_cake_slice
 - neapolitan:adzuki_cake
@@ -703,7 +703,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - #forge:fence_gates/wooden
 - ars_nouveau:archwood_fence_gate
 - copycats:copycat_fence_gate
-- copycats:wrapped_copycat_fence_gate
 - quark:azalea_fence_gate
 - quark:blossom_fence_gate
 - quark:nether_brick_fence_gate
@@ -1285,6 +1284,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - beyond_earth:raw_ostrum_block
 
 #create:fan_transparent
+- copycats:copycat_base
 - create:blaze_burner
 - create:lit_blaze_burner
 - create:sail_frame
@@ -1846,7 +1846,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - botania:stripped_livingwood_wall
 - #libx:impl_walls
 - copycats:copycat_wall
-- copycats:wrapped_copycat_wall
 - create:cut_granite_wall
 - create:polished_cut_granite_wall
 - create:cut_granite_brick_wall
@@ -2483,7 +2482,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - #libx:impl_wooden_trapdoors
 - ars_nouveau:archwood_trapdoor
 - copycats:copycat_trapdoor
-- copycats:wrapped_copycat_trapdoor
 - tconstruct:greenheart_trapdoor
 - tconstruct:skyroot_trapdoor
 - tconstruct:bloodshroom_trapdoor
@@ -2495,6 +2493,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - atmospheric:grimwood_trapdoor
 - quark:azalea_trapdoor
 - quark:blossom_trapdoor
+
+#diagonalwalls:non_diagonal_walls
+- copycats:copycat_wall
 
 #create:valve_handles
 - create:copper_valve_handle
@@ -2698,7 +2699,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - ars_nouveau:archwood_stairs
 - copycats:copycat_stairs
 - copycats:copycat_vertical_stairs
-- copycats:wrapped_copycat_stairs
 - create:cut_granite_stairs
 - create:polished_cut_granite_stairs
 - create:cut_granite_brick_stairs
@@ -3946,7 +3946,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - #libx:impl_wooden_buttons
 - ars_nouveau:archwood_button
 - copycats:copycat_wooden_button
-- copycats:wrapped_copycat_wooden_button
 - tconstruct:greenheart_button
 - tconstruct:skyroot_button
 - tconstruct:bloodshroom_button
@@ -4380,8 +4379,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - ars_nouveau:archwood_button
 - copycats:copycat_wooden_button
 - copycats:copycat_stone_button
-- copycats:wrapped_copycat_wooden_button
-- copycats:wrapped_copycat_stone_button
 - quark:azalea_button
 - quark:blossom_button
 - quark:gold_button
@@ -4475,7 +4472,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - minecraft:crimson_pressure_plate
 - minecraft:warped_pressure_plate
 - #libx:impl_wooden_pressure_plates
-- copycats:wrapped_copycat_wooden_pressure_plate
 - copycats:copycat_wooden_pressure_plate
 - tconstruct:greenheart_pressure_plate
 - tconstruct:skyroot_pressure_plate
@@ -4576,7 +4572,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - minecraft:stone_pressure_plate
 - minecraft:polished_blackstone_pressure_plate
 - #libx:impl_stone_pressure_plates
-- copycats:wrapped_copycat_stone_pressure_plate
 - copycats:copycat_stone_pressure_plate
 
 #supplementaries:concrete_powders
@@ -5359,7 +5354,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - yuushya:foldable_ladder_gray_concrete
 - yuushya:foldable_ladder_raw_oak_wood
 - yuushya:foldable_ladder_raw_spruce_wood
-- copycats:wrapped_copycat_ladder
 - copycats:copycat_ladder
 - create:rope
 - create:pulley_magnet
@@ -5452,7 +5446,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 
 #create:movable_empty_collider
 - copycats:copycat_fence_gate
-- copycats:wrapped_copycat_fence_gate
 - minecraft:cobweb
 - minecraft:powder_snow
 - minecraft:tripwire
@@ -5741,7 +5734,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - #libx:impl_fences
 - ars_nouveau:archwood_fence
 - copycats:copycat_fence
-- copycats:wrapped_copycat_fence
 - tconstruct:scorched_bricks_fence
 - tconstruct:nahuatl_fence
 - quark:azalea_fence
@@ -6976,6 +6968,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - biggerreactors:cyanite_block
 - biggerreactors:graphite_block
 - copycats:wrapped_copycat
+- copycats:copycat_base
 - copycats:copycat_block
 - copycats:copycat_beam
 - copycats:copycat_board
@@ -6998,6 +6991,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - copycats:copycat_stairs
 - copycats:copycat_vertical_stairs
 - copycats:copycat_trapdoor
+- copycats:copycat_iron_trapdoor
 - copycats:copycat_vertical_slice
 - copycats:copycat_vertical_step
 - copycats:copycat_wall
@@ -7005,6 +6999,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - copycats:copycat_vertical_slope
 - copycats:copycat_slope_layer
 - copycats:copycat_shaft
+- copycats:copycat_cogwheel
+- copycats:copycat_large_cogwheel
+- copycats:copycat_fluid_pipe
+- copycats:copycat_glass_fluid_pipe
+- copycats:copycat_door
+- copycats:copycat_iron_door
 - create:schematicannon
 - create:schematic_table
 - create:shaft
@@ -8323,7 +8323,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 #minecraft:unstable_bottom_center
 - #minecraft:fence_gates
 - copycats:copycat_fence_gate
-- copycats:wrapped_copycat_fence_gate
 
 #mythicbotany:alfheim_leaves
 - mythicbotany:dreamwood_leaves
@@ -8744,7 +8743,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - #libx:impl_trapdoors
 - ars_nouveau:archwood_trapdoor
 - copycats:copycat_trapdoor
-- copycats:wrapped_copycat_trapdoor
+- copycats:copycat_iron_trapdoor
 - create:train_trapdoor
 - create:framed_glass_trapdoor
 - supplementaries:gold_trapdoor
@@ -9921,7 +9920,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 
 #diagonalfences:non_diagonal_fences
 - copycats:copycat_fence
-- copycats:wrapped_copycat_fence
 
 #minecraft:wart_blocks
 - minecraft:nether_wart_block
@@ -10201,13 +10199,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - #minecraft:wooden_pressure_plates
 - #minecraft:stone_pressure_plates
 - #libx:impl_pressure_plates
-- copycats:wrapped_copycat_wooden_pressure_plate
 - copycats:copycat_wooden_pressure_plate
-- copycats:wrapped_copycat_stone_pressure_plate
 - copycats:copycat_stone_pressure_plate
-- copycats:wrapped_copycat_heavy_weighted_pressure_plate
 - copycats:copycat_heavy_weighted_pressure_plate
-- copycats:wrapped_copycat_light_weighted_pressure_plate
 - copycats:copycat_light_weighted_pressure_plate
 - quark:azalea_pressure_plate
 - quark:blossom_pressure_plate
@@ -10778,6 +10772,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - copycats:copycat_stairs
 - copycats:copycat_vertical_stairs
 - copycats:copycat_trapdoor
+- copycats:copycat_iron_trapdoor
 - copycats:copycat_vertical_slice
 - copycats:copycat_vertical_step
 - copycats:copycat_wall
@@ -10785,6 +10780,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - copycats:copycat_vertical_slope
 - copycats:copycat_slope_layer
 - copycats:copycat_shaft
+- copycats:copycat_cogwheel
+- copycats:copycat_large_cogwheel
+- copycats:copycat_fluid_pipe
+- copycats:copycat_glass_fluid_pipe
+- copycats:copycat_door
+- copycats:copycat_iron_door
 - create:schematic_table
 - create:cogwheel
 - create:large_cogwheel
@@ -11528,7 +11529,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - #libx:impl_fence_gates
 - ars_nouveau:archwood_fence_gate
 - copycats:copycat_fence_gate
-- copycats:wrapped_copycat_fence_gate
 - tconstruct:greenheart_fence_gate
 - tconstruct:skyroot_fence_gate
 - tconstruct:bloodshroom_fence_gate
@@ -11631,7 +11631,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - #forge:fences/wooden
 - ars_nouveau:archwood_fence
 - copycats:copycat_fence
-- copycats:wrapped_copycat_fence
 - quark:azalea_fence
 - quark:blossom_fence
 

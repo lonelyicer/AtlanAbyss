@@ -131,6 +131,34 @@ onEvent('worldgen.add', event => {
   });
 
   event.addOre(ore => {
+    ore.id = 'kubejs:mars_uranium_ore'
+    ore.biomes = {
+      id: 'beyond_earth:mars_desert',
+      id: 'beyond_earth:mars_ice_spikes',
+      id: 'beyond_earth:mars_rocky_plains'
+    }
+
+    ore.addTarget('beyond_earth:mars_stone', 'kubejs:mars_uranium_ore')//火星铀矿
+
+    ore.count([9, 18]).squared().triangleHeight(anchors.aboveBottom(-16), anchors.absolute(70))
+
+    ore.size = 9
+    ore.worldgenLayer = 'underground_ores'
+  });
+
+  event.addOre(ore => {
+    ore.id = 'kubejs:mercury_uranium_ore'
+    ore.biomes = { id: 'beyond_earth:mercury' }
+
+    ore.addTarget('beyond_earth:mercury_stone', 'kubejs:mercury_uranium_ore')//水星铀矿
+
+    ore.count([27, 36]).squared().triangleHeight(anchors.aboveBottom(-59), anchors.absolute(16))
+
+    ore.size = 21
+    ore.worldgenLayer = 'underground_ores'
+  });
+
+  event.addOre(ore => {
     ore.id = 'kubejs:nether_sulfur_ore'
     ore.biomes = '^nether'
 
@@ -151,18 +179,6 @@ onEvent('worldgen.add', event => {
     ore.count([8, 16]).squared().triangleHeight(anchors.aboveBottom(104), anchors.absolute(128))
 
     ore.size = 6
-    ore.worldgenLayer = 'underground_ores'
-  });
-
-  event.addOre(ore => {
-    ore.id = 'kubejs:inversia_uranium_ore'
-    ore.biomes = /^inversia:*/
-
-    ore.addTarget('minecraft:deepslate', 'kubejs:inversia_uranium_ore')//颠倒铀矿
-
-    ore.count([9, 18]).squared().triangleHeight(anchors.aboveBottom(188), anchors.absolute(255))
-
-    ore.size = 15
     ore.worldgenLayer = 'underground_ores'
   });
 
@@ -213,6 +229,18 @@ onEvent('worldgen.add', event => {
 
     ore.size = 12
     ore.noSurface = 1
+    ore.worldgenLayer = 'underground_ores'
+  });
+
+  event.addOre(ore => {
+    ore.id = 'kubejs:deepslate_fluorite_ore'
+    ore.biomes = /^inversia:*/
+
+    ore.addTarget('minecraft:deepslate', 'mekanism:deepslate_fluorite_ore')//颠倒红石矿
+
+    ore.count([8, 12]).squared().triangleHeight(anchors.aboveBottom(188), anchors.absolute(255))
+
+    ore.size = 8
     ore.worldgenLayer = 'underground_ores'
   });
 })

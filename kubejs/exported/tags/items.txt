@@ -1,4 +1,4 @@
-To refresh this file, delete it and run /reload command again! Last updated: Jul 17, 2024, 12:06:10 PM
+To refresh this file, delete it and run /reload command again! Last updated: Aug 10, 2024, 8:06:38 AM
 
 #forge:glass/tinted
 - minecraft:tinted_glass
@@ -6133,6 +6133,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - minecraft:iron_door
 - #libx:impl_doors
 - ars_nouveau:archwood_door
+- copycats:copycat_door
 - create:andesite_door
 - create:brass_door
 - create:copper_door
@@ -8329,6 +8330,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - thermal:constantan_nugget
 
 #create:contraption_controlled
+- copycats:copycat_door
 - create:portable_fluid_interface
 - create:mechanical_drill
 - create:mechanical_saw
@@ -8412,27 +8414,27 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - supplementaries:sign_post_birch?
 - supplementaries:sign_post_crimson?
 - supplementaries:sign_post_warped?
-- supplementaries:atmospheric/sign_post_kousa
-- supplementaries:tconstruct/sign_post_bloodshroom
-- supplementaries:atmospheric/sign_post_yucca
-- supplementaries:quark/sign_post_blossom
-- supplementaries:atmospheric/sign_post_grimwood
-- supplementaries:sign_post_dark_oak
 - supplementaries:atmospheric/sign_post_morado
-- supplementaries:sign_post_acacia
-- supplementaries:botania/sign_post_livingwood
-- supplementaries:sign_post_oak
-- supplementaries:sign_post_birch
-- supplementaries:botania/sign_post_dreamwood
 - supplementaries:atmospheric/sign_post_aspen
 - supplementaries:sign_post_spruce
-- supplementaries:tconstruct/sign_post_greenheart
-- supplementaries:sign_post_jungle
+- supplementaries:atmospheric/sign_post_kousa
+- supplementaries:botania/sign_post_dreamwood
+- supplementaries:atmospheric/sign_post_rosewood
+- supplementaries:sign_post_acacia
 - supplementaries:sign_post_warped
+- supplementaries:quark/sign_post_blossom
+- supplementaries:tconstruct/sign_post_greenheart
+- supplementaries:sign_post_oak
+- supplementaries:quark/sign_post_azalea
+- supplementaries:tconstruct/sign_post_bloodshroom
+- supplementaries:sign_post_jungle
+- supplementaries:sign_post_dark_oak
+- supplementaries:atmospheric/sign_post_yucca
+- supplementaries:botania/sign_post_livingwood
 - supplementaries:tconstruct/sign_post_skyroot
 - supplementaries:createdieselgenerators/sign_post_chip_wood
-- supplementaries:quark/sign_post_azalea
-- supplementaries:atmospheric/sign_post_rosewood
+- supplementaries:atmospheric/sign_post_grimwood
+- supplementaries:sign_post_birch
 - supplementaries:sign_post_crimson
 
 #tconstruct:casts/single_use/broad_axe_head

@@ -1,4 +1,4 @@
-To refresh this file, delete it and run /reload command again! Last updated: Jul 17, 2024, 12:06:09 PM
+To refresh this file, delete it and run /reload command again! Last updated: Aug 10, 2024, 8:06:38 AM
 
 #minecraft:has_structure/nether_fortress
 - #minecraft:is_nether
@@ -502,6 +502,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - minecraft:eroded_badlands
 - minecraft:bamboo_jungle
 
+#kubejs:is_glacio
+- beyond_earth:glacio
+- beyond_earth:glacio_ice_spikes
+
 #forge:is_plateau
 - minecraft:savanna_plateau
 - minecraft:wooded_badlands
@@ -692,6 +696,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 #minecraft:has_structure/ruined_portal_swamp
 - minecraft:swamp
 
+#kubejs:is_venus
+- beyond_earth:venus_desert
+- beyond_earth:infernal_venus_barrens
+
 #kubejs:is_inversia
 - inversia:molten_seeps
 - inversia:geodeial_caverns
@@ -829,9 +837,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jul
 - minecraft:end_midlands
 - minecraft:end_highlands
 - minecraft:end_barrens
-
-#kubejs:is_oil
-- #forge:is_end
 
 #tconstruct:islands/blood
 - #minecraft:is_nether

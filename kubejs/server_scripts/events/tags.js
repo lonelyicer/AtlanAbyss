@@ -153,6 +153,58 @@ const tagsToRemove = [
 	['forge:ingots/ludicrite', 'biggerreactors:ludicrite_ingot'],
 	['forge:dusts', 'biggerreactors:ludicrite_dust'],
 	['forge:dusts/ludicrite', 'biggerreactors:ludicrite_dust'],
+	//MEK
+	['forge:dusts/wood', 'mekanism:sawdust'],//锯末
+	['forge:ingots/osmium', 'mekanism:ingot_osmium'],//锭
+	['forge:ingots/tin', 'mekanism:ingot_tin'],
+	['forge:ingots/lead', 'mekanism:ingot_lead'],
+	['forge:ingots/uranium', 'mekanism:ingot_uranium'],
+	['forge:ingots/steel', 'mekanism:ingot_steel'],
+	['forge:nuggets/osmium', 'mekanism:nugget_osmium'],//粒
+	['forge:nuggets/tin', 'mekanism:nugget_tin'],
+	['forge:nuggets/lead', 'mekanism:nugget_lead'],
+	['forge:nuggets/uranium', 'mekanism:nugget_uranium'],
+	['forge:nuggets/steel', 'mekanism:nugget_steel'],
+	['forge:raw_materials/osmium', 'mekanism:raw_osmium'],//粗
+	['forge:raw_materials/tin', 'mekanism:raw_tin'],
+	['forge:raw_materials/lead', 'mekanism:raw_lead'],
+	['forge:raw_materials/uranium', 'mekanism:raw_uranium'],
+	['forge:storage_blocks/raw_osmium', 'mekanism:block_raw_osmium'],//粗块
+	['forge:storage_blocks/raw_tin', 'mekanism:block_raw_tin'],
+	['forge:storage_blocks/raw_lead', 'mekanism:block_raw_lead'],
+	['forge:storage_blocks/raw_uranium', 'mekanism:block_raw_uranium'],
+	['forge:storage_blocks/tin', 'mekanism:block_tin'],//块
+	['forge:storage_blocks/lead', 'mekanism:block_lead'],
+	['forge:storage_blocks/uranium', 'mekanism:block_uranium'],
+	['forge:storage_blocks/steel', 'mekanism:block_steel'],
+	['forge:storage_blocks/charcoal', 'mekanism:block_charcoal'],
+	['forge:ores/osmium', 'mekanism:osmium_ore'],//矿
+	['forge:ores/osmium', 'mekanism:deepslate_osmium_ore'],
+	['forge:ores/tin', 'mekanism:tin_ore'],
+	['forge:ores/tin', 'mekanism:deepslate_tin_ore'],
+	['forge:ores/lead', 'mekanism:lead_ore'],
+	['forge:ores/lead', 'mekanism:deepslate_lead_ore'],
+	['forge:ores/uranium', 'mekanism:uranium_ore'],
+	['forge:ores/uranium', 'mekanism:deepslate_uranium_ore'],
+	['forge:dusts/iron', 'mekanism:dust_iron'],//粉
+	['forge:dusts/gold', 'mekanism:dust_gold'],
+	['forge:dusts/copper', 'mekanism:dust_copper'],
+	['forge:dusts/tin', 'mekanism:dust_tin'],
+	['forge:dusts/lead', 'mekanism:dust_lead'],
+	['forge:dusts/uranium', 'mekanism:dust_uranium'],
+	['forge:dusts/steel', 'mekanism:dust_steel'],
+	['forge:dusts/osmium', 'mekanism:dust_osmium'],
+	['forge:dusts/sulfur', 'mekanism:dust_sulfur'],
+	['forge:dyes/yellow', 'mekanism:dust_sulfur'],
+	['forge:dusts/obsidian', 'mekanism:dust_obsidian'],
+	['forge:dusts/quartz', 'mekanism:dust_quartz'],
+	['forge:dusts/emerald', 'mekanism:dust_emerald'],
+	['forge:dusts/diamond', 'mekanism:dust_diamond'],
+	['forge:dusts/netherite', 'mekanism:dust_netherite'],
+	['forge:circuits/basic', 'mekanism:basic_control_circuit'],//电路
+	['forge:circuits/advanced', 'mekanism:advanced_control_circuit'],
+	['forge:circuits/elite', 'mekanism:elite_control_circuit'],
+	['forge:circuits/ultimate', 'mekanism:ultimate_control_circuit'],
 	//框架tag
 	['industrialforegoing:machine_frame/pity', 'industrialforegoing:machine_frame_pity'],
 	['industrialforegoing:machine_frame/simple', 'industrialforegoing:machine_frame_simple'],
@@ -178,8 +230,10 @@ const tagToAdd = [
 	['forge:fuels', 'createaddition:biomass'],
 	['forge:fuels/bio', 'createaddition:biomass'],
 	//替身是个好东西之电路板
-	['forge:circuits', 'kubejs:integrated_circuit'],
 	['forge:circuits/basic', 'kubejs:integrated_circuit'],
+	['forge:circuits/advanced', 'kubejs:integrated_circuit_advanced'],
+	['forge:circuits/elite', 'kubejs:integrated_circuit_elite'],
+	['forge:circuits/ultimate', 'kubejs:integrated_circuit_ultimate'],
 	// //九头蛇肉
 	// ['kubejs:hydra_meat', 'kubejs:hydra_piece'],
 	// ['kubejs:hydra_meat', 'twilightforest:hydra_chop'],
@@ -209,10 +263,14 @@ const tagToAdd = [
 	['forge:storage_blocks/raw_bismuth', 'kubejs:raw_bismuth_block'],//粗矿块
 	['forge:ingots/bismuth', 'kubejs:bismuth_ingot'],//锭
 	//铀
-	['forge:ores', 'kubejs:inversia_uranium_ore'],//矿石
-	['forge:ores/uranium', 'kubejs:inversia_uranium_ore'],
+	['forge:ores', 'kubejs:mars_uranium_ore'],//矿石
+	['forge:ores', 'kubejs:mercury_uranium_ore'],
+	['forge:ores/uranium', 'kubejs:mars_uranium_ore'],
+	['forge:ores/uranium', 'kubejs:mercury_uranium_ore'],
 	['forge:raw_materials/uranium', 'kubejs:raw_uranium'],//粗矿
 	['forge:storage_blocks/raw_uranium', 'kubejs:raw_uranium_block'],//粗矿块
+	['forge:nuggets/uranium', 'kubejs:uranium_nugget'],//粒
+	['forge:ingots', 'kubejs:uranium_ingot'],//锭
 	//铂
 	['forge:ingots/platinum', 'kubejs:platinum_ingot'],//锭
 	['forge:nuggets/platinum', 'kubejs:platinum_nugget'],//粒
@@ -229,6 +287,7 @@ const tagToAdd = [
 	['forge:ores/osmium', 'kubejs:moon_osmium_ore'],
 	['forge:raw_materials/osmium', 'kubejs:raw_osmium'],//粗
 	['forge:storage_blocks/raw_osmium', 'kubejs:raw_osmium_block'],
+	['forge:dusts/osmium', 'kubejs:osmium_dust'],//粉
 	//银
 	['forge:ores', 'kubejs:mercury_silver_ore'],//矿石
 	['forge:ores/silver', 'kubejs:mercury_silver_ore'],

@@ -504,14 +504,14 @@ onEvent('recipes', event => {
     fluid: { tag: 'forge:molten_brass', amount: 810 },
     result: 'thermal:chiller_ball_cast',
     cooling_time: 120
-  })
+  }).id('atlanabyss:casting_table_chiller_ball_cast')
   event.custom({
     type: 'tconstruct:casting_table',
     cast: { item: 'thermal:chiller_ball_cast' },
     fluid: { tag: 'forge:lucky_fluid', amount: 1000 },
     result: 'kubejs:halo_gashapon',
     cooling_time: 1200
-  })
+  }).id('atlanabyss:casting_table_halo_gashapon')
   event.custom({
     type: 'tconstruct:casting_table',
     cast: { tag: 'forge:wires' },
@@ -520,7 +520,7 @@ onEvent('recipes', event => {
     fluid: { tag: 'forge:molten_brass', amount: 270 },
     result: 'tconstruct:wire_cast',
     cooling_time: 60
-  })
+  }).id('atlanabyss:casting_table_wire_cast')
   event.custom({
     type: 'tconstruct:casting_table',
     cast: { tag: 'forge:rods' },
@@ -529,7 +529,7 @@ onEvent('recipes', event => {
     fluid: { tag: 'forge:molten_brass', amount: 270 },
     result: 'tconstruct:rod_cast',
     cooling_time: 60
-  })
+  }).id('atlanabyss:casting_table_rod_cast')
   event.custom({
     type: 'tconstruct:casting_table',
     cast: { tag: 'forge:gems' },
@@ -538,7 +538,7 @@ onEvent('recipes', event => {
     fluid: { tag: 'forge:molten_brass', amount: 270 },
     result: 'tconstruct:gem_cast',
     cooling_time: 60
-  })
+  }).id('atlanabyss:casting_table_gem_cast')
   event.custom({
     type: 'tconstruct:casting_table',
     cast: { tag: 'forge:nuggets' },
@@ -547,7 +547,7 @@ onEvent('recipes', event => {
     fluid: { tag: 'forge:molten_brass', amount: 270 },
     result: 'tconstruct:nugget_cast',
     cooling_time: 60
-  })
+  }).id('atlanabyss:casting_table_nugget_cast')
   event.custom({
     type: 'tconstruct:casting_table',
     cast: { tag: 'forge:ingots' },
@@ -556,7 +556,7 @@ onEvent('recipes', event => {
     fluid: { tag: 'forge:molten_brass', amount: 270 },
     result: 'tconstruct:ingot_cast',
     cooling_time: 60
-  })
+  }).id('atlanabyss:casting_table_ingot_cast')
 
   //创造升级
   event.shapeless(Item.of('tconstruct:creative_slot', '{slot:"abilities"}'), [

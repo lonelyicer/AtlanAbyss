@@ -96,9 +96,7 @@ onEvent('recipes', event => {
     ]).id('atlanabyss:crystal_matrix_ingot')
     //无尽之锭
     create.mechanical_crafting('kubejs:infinity_ingot', [
-        ' AB',
-        'CDE',
-        'FG '
+        'ABCDEFG'
     ], {
         A: Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:magbismuth"}').weakNBT(),
         B: Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:meteosteel"}').weakNBT(),

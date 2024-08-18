@@ -52,7 +52,7 @@ onEvent('recipes', event => {
         'createsifter:brass_mesh'
     ]).processingTime(500).id('atlanabyss:brass_mesh_gravel')
 
-    //筛泥土
+    //筛苔藓
     createsifter.sifting([
         Item.of('minecraft:wheat_seeds').withChance(0.1),
         Item.of('kubejs:cottons_seed').withChance(0.09),
@@ -67,7 +67,18 @@ onEvent('recipes', event => {
     ], [
         'minecraft:moss_block',
         'createsifter:string_mesh'
-    ]).processingTime(500).id('atlanabyss:string_mesh_dirt')
+    ]).processingTime(500).id('atlanabyss:string_mesh_moss_block')
+
+    //筛菌丝
+    createsifter.sifting([
+        '5x minecraft:brown_mushroom',
+        '5x minecraft:red_mushroom',
+        Item.of('5x minecraft:brown_mushroom').withChance(0.5),
+        Item.of('5x minecraft:red_mushroom').withChance(0.5)
+    ], [
+        'minecraft:mycelium',
+        'createsifter:string_mesh'
+    ]).processingTime(500).id('atlanabyss:string_mesh_mycelium')
 
     //线筛网
     remove('createsifter:string_mesh')

@@ -39,11 +39,13 @@ onEvent('item.registry', event => {
 	event.create('aluminum_nugget').displayName('Aluminum Nugget');
 	event.create('meteosteel_nugget').displayName('Meteosteel Nugget');
 	event.create('osmium_nugget').displayName('Osmium Nugget');
+	event.create('uranium_nugget').displayName('Uranium Nugget');
 	event.create('plutonium_nugget').displayName('Plutonium Nugget');
 	event.create('platinum_nugget').displayName('Platinum Nugget');
 	event.create('tungsten_nugget').displayName('tungsten Nugget');
 
 	event.create('aluminum_dust').displayName('Aluminum Dust');
+	event.create('osmium_dust').displayName('Osmium Dust');
 
 	event.create('rose_quartz_sheet').displayName('Rose Quartz Sheet');
 	event.create('aluminum_sheet').displayName('Aluminum Sheet');
@@ -85,6 +87,9 @@ onEvent('item.registry', event => {
 	event.create('empty_pcb').displayName('Empty Pcb');
 	//集成电路
 	event.create('integrated_circuit').displayName('Integrated Circuit').rarity(RARITY_COMMON);
+	event.create('integrated_circuit_advanced').displayName('Advanced Integrated Circuit').rarity(RARITY_COMMON);
+	event.create('integrated_circuit_elite').displayName('Elite Integrated Circuit').rarity(RARITY_COMMON);
+	event.create('integrated_circuit_ultimate').displayName('Ultimate Integrated Circuit').rarity(RARITY_COMMON);
 	event.create('circuit_scrap').displayName('Circuit Scrap');
 	event.create('candy_electron_tube').displayName('Candy Electron Tube');
 	event.create('sulfur_electron_tube').displayName('Sulfur Electron Tube');

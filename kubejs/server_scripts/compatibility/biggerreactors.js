@@ -2,9 +2,7 @@ onEvent('recipes', (event) => {
     let remove = (name) => {
         event.remove({ id: name })
     }
-    let {
-        create
-    } = event.recipes;
+    let { create, thermal } = event.recipes;
 
     //蓝晶
     remove('biggerreactors:crafting/uranium_to_cyanite')
@@ -24,55 +22,13 @@ onEvent('recipes', (event) => {
     remove('thermal:machine/biggerreactors/pulverizer_mod_uranium_ingot')
     remove('biggerreactors:smelting/uranium_ingot')
 
-    //镀锇机壳
-    create.filling('kubejs:osmium_casing', [
-        'create:railway_casing',
-        Fluid.of('tconstruct:molten_osmium', 360)
-    ]).id('atlanabyss:osmium_casing')
 
-    event.custom({
-        type: 'thermal:pulverizer',
-        ingredient: {
-            item: 'kubejs:uranium_ingot'
-        },
-        result: [
-            {
-                item: 'biggerreactors:uranium_dust',
-                count: 1
-            }
-        ],
-        energy_mod: 0.5
-    }).id('atlanabyss:pulverizer_uranium_dust');
-    event.custom({
-        type: 'thermal:pulverizer',
-        ingredient: {
-            tag: 'forge:raw_materials/uranium'
-        },
-        result: [
-            {
-                item: 'biggerreactors:uranium_dust',
-                chance: 1.5
-            }
-        ],
-        experience: 0.1
-    }).id('atlanabyss:pulverizer_raw_uranium')
-    event.custom({
-        type: 'thermal:pulverizer',
-        ingredient: {
-            tag: 'forge:ores/uranium'
-        },
-        result: [
-            {
-                item: 'biggerreactors:uranium_dust',
-                chance: 3.5
-            },
-            {
-                item: 'minecraft:gravel',
-                chance: 0.2
-            }
-        ],
-        experience: 0.5
-    }).id('atlanabyss:pulverizer_uranium_ore')
+
+    thermal.pulverizer([
+        'biggerreactors:uranium_dust',
+    ], 'kubejs:uranium_ingot'
+    ).experience(0.5).id('atlanabyss:pulverizer_uranium_dust');
+
     //铀块
     remove('biggerreactors:crafting/uranium_block')
     remove('biggerreactors:crafting/uranium_ingot')
@@ -91,6 +47,10 @@ onEvent('recipes', (event) => {
         'create:crushed_raw_uranium',
         'thermal:sulfur_dust'
     ]).superheated().id('atlanabyss:molten_uranium')
+    thermal.smelter('kubejs:uranium_ingot', [
+        'create:crushed_raw_uranium',
+        'thermal:sulfur_dust'
+    ]).energy(20000).id('atlanabyss:smelter_crushed_raw_uranium')
     //铀核心
     let uc = ('kubejs:incomplete_core_container')
     create.sequenced_assembly(['kubejs:uranium_core'
@@ -116,7 +76,7 @@ onEvent('recipes', (event) => {
         'create:crushed_raw_uranium'
     ]).id('atlanabyss:depleted_uranium')
     //熔融钚
-    create.mixing(Fluid.of('kubejs:molten_plutonium', 5), [
+    create.mixing(Fluid.of('kubejs:molten_plutonium', 10), [
         'biggerreactors:cyanite_ingot',
         '4x kubejs:depleted_uranium'
     ]).superheated().id('atlanabyss:molten_plutonium')
@@ -216,13 +176,8 @@ onEvent('recipes', (event) => {
     //石墨棒
     event.custom({
         type: 'createaddition:rolling',
-        input: {
-            item: 'biggerreactors:graphite_ingot'
-        },
-        result: {
-            item: 'kubejs:graphite_rod',
-            count: 2
-        }
+        input: { item: 'biggerreactors:graphite_ingot' },
+        result: { item: 'kubejs:graphite_rod', count: 1 }
     }).id('atlanabyss:graphite_rod')
 
     //反应堆外壳

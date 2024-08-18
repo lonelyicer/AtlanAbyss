@@ -1,0 +1,23 @@
+{
+  "type": "createoreexcavation:drilling",
+  "drill": {
+    "tag": "createoreexcavation:drills"
+  },
+  "name": "{\"translate\":\"ore.kubejs.osmium\"}",
+  "weight": 20,
+  "ticks": 60,
+  "biomeWhitelist": "kubejs:is_moon",
+  "stress": 16,
+  "amountMin": 10.0,
+  "amountMax": 30.0,
+  "output": [
+    {
+      "item": "kubejs:raw_osmium"
+    }
+  ],
+  "fluid": {
+    "fluid": "minecraft:water",
+    "nbt": {},
+    "amount": 50
+  }
+}

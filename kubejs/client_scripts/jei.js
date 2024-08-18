@@ -201,6 +201,59 @@ onEvent('jei.hide.items', event => {
 		'beyond_earth:moon_cheese_ore',
 		'beyond_earth:cheese',
 		'beyond_earth:mars_diamond_ore',
+		//MEK
+		'mekanism:steel_casing',
+		'mekanism:ingot_osmium',//锭
+		'mekanism:ingot_tin',
+		'mekanism:ingot_lead',
+		'mekanism:ingot_uranium',
+		'mekanism:ingot_steel',
+		'mekanism:nugget_osmium',//粒
+		'mekanism:nugget_tin',
+		'mekanism:nugget_lead',
+		'mekanism:nugget_uranium',
+		'mekanism:nugget_steel',
+		'mekanism:nugget_uranium',
+		'mekanism:block_tin',//块
+		'mekanism:block_lead',
+		'mekanism:block_uranium',
+		'mekanism:block_steel',
+		'mekanism:block_charcoal',
+		'mekanism:raw_osmium',//粗
+		'mekanism:raw_tin',
+		'mekanism:raw_lead',
+		'mekanism:raw_uranium',
+		'mekanism:block_raw_osmium',
+		'mekanism:block_raw_tin',
+		'mekanism:block_raw_lead',
+		'mekanism:block_raw_uranium',
+		'mekanism:osmium_ore',//矿
+		'mekanism:deepslate_osmium_ore',
+		'mekanism:tin_ore',
+		'mekanism:deepslate_tin_ore',
+		'mekanism:lead_ore',
+		'mekanism:deepslate_lead_ore',
+		'mekanism:uranium_ore',
+		'mekanism:deepslate_uranium_ore',
+		'mekanism:dust_iron',//粉
+		'mekanism:dust_gold',
+		'mekanism:dust_copper',
+		'mekanism:dust_tin',
+		'mekanism:dust_lead',
+		'mekanism:dust_uranium',
+		'mekanism:dust_steel',
+		'mekanism:dust_osmium',
+		'mekanism:sawdust',
+		'mekanism:dust_sulfur',
+		'mekanism:dust_obsidian',
+		'mekanism:dust_quartz',
+		'mekanism:dust_emerald',
+		'mekanism:dust_diamond',
+		'mekanism:dust_netherite',
+		'mekanism:basic_control_circuit',//电路
+		'mekanism:advanced_control_circuit',
+		'mekanism:elite_control_circuit',
+		'mekanism:ultimate_control_circuit',
 		//黑紫方块
 		'citadel:fancy_item',
 		'decorative_blocks:blockstate_copy_item',
@@ -229,7 +282,9 @@ onEvent('jei.remove.categories', event => {
 		//发电机
 		'beyond_earth:coal_generator',
 		//液体提取机
-		'industrialforegoing:fluid_extractor'
+		'industrialforegoing:fluid_extractor',
+		//jer
+		'jeresources:enchantment'
 	].forEach(cat => {
 		event.remove(cat)
 	})
@@ -255,7 +310,7 @@ onEvent('jei.hide.fluids', event => {
 });
 
 onEvent('jei.information', event => {
-	event.add('biggerreactors:cyanite_ingot', ['核废料', '可通过裂变反应堆的产出获得。'])
+	event.add('biggerreactors:cyanite_ingot', ['核废料', '可通过Ⅱ型裂变反应堆的产出获得。'])
 	event.add('kubejs:divine_ore', ['颠倒维度特产品', '使用带时运的稿子破坏深板岩概率掉落。'])
 	event.add('kubejs:osmium_scrap', ['守卫者死亡时概率掉落。', '（也许你需要设计建造一个守卫者农场）'])
 })
@@ -263,6 +318,8 @@ onEvent('jei.information', event => {
 onEvent('jei.add.items', event => {
 	event.add('thermal:nuke_tnt');
 	event.add('thermal:nuke_grenade');
+	event.add('thermal:phyto_tnt');
+	event.add('thermal:phyto_grenade');
 	event.add('minecraft:dragon_egg');
 })
 

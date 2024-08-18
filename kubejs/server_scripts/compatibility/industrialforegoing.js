@@ -122,7 +122,7 @@ onEvent('recipes', event => {
     event.custom({
         type: 'createaddition:rolling',
         input: { tag: 'forge:ingots/enderium' },
-        result: { item: 'kubejs:enderium_rod', count: 2 }
+        result: { item: 'kubejs:enderium_rod', count: 1 }
     }).id('atlanabyss:rolling_enderium_ingot')
 
     //溶解成型机
@@ -302,4 +302,15 @@ onEvent('recipes', event => {
         F: 'kubejs:brass_gear',
         G: 'kubejs:desh_machine_frame'
     }).id('atlanabyss:hydroponic_bed')
+
+    //肉汤注射器
+    event.shaped('industrialforegoing:meat_feeder', [
+        'ABA',
+        'CAC',
+        ' A '
+    ], {
+        A: 'industrialforegoing:plastic',
+        B: 'mekanism:pellet_antimatter',
+        C: 'create:fluid_tank'
+    }).id('atlanabyss:meat_feeder')
 })

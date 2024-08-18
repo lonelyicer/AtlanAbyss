@@ -65,7 +65,7 @@
 			description: ["为了超级地球！"]
 			dependencies: [
 				"55645B086F62FED6"
-				"30A0CDCD1B7CE208"
+				"32235EE0E58F5696"
 			]
 			hide: true
 			id: "07B81B403E4B0D1A"
@@ -94,7 +94,6 @@
 			disable_toast: true
 			x: 4.0d
 			y: 0.0d
-			description: ["注：如果你的装备有减重力词条，建议脱下，不然会螺旋†升天†"]
 			dependencies: ["07B81B403E4B0D1A"]
 			hide: true
 			id: "616E289D48FA5E59"

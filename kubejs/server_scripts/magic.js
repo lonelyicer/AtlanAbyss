@@ -158,9 +158,6 @@ onEvent('recipes', event => {
     //镍矿
     botania.orechid('thermal:nickel_ore', 'minecraft:stone',
         18072).id('atlanabyss:orechid_nickel_ore')
-    //银矿
-    botania.orechid('thermal:silver_ore', 'minecraft:stone',
-        1521).id('atlanabyss:orechid_silver_ore')
     //锌矿
     botania.orechid('create:zinc_ore', 'minecraft:stone',
         23242).id('atlanabyss:orechid_zinc_ore')
@@ -171,15 +168,42 @@ onEvent('recipes', event => {
     //深层镍矿
     botania.orechid('thermal:deepslate_nickel_ore', 'minecraft:deepslate',
         100).id('atlanabyss:orechid_deepslate_nickel_ore')
-    //深层银矿
-    botania.orechid('thermal:deepslate_silver_ore', 'minecraft:deepslate',
-        120).id('atlanabyss:orechid_deepslate_silver_ore')
     //深层铅矿
     botania.orechid('thermal:deepslate_lead_ore', 'minecraft:deepslate',
         50).id('atlanabyss:orechid_deepslate_lead_ore')
     //深层锌矿
     botania.orechid('create:deepslate_zinc_ore', 'minecraft:deepslate',
         150).id('atlanabyss:orechid_deepslate_zinc_ore')
+
+    //月球铁矿
+    botania.orechid('beyond_earth:moon_iron_ore', 'beyond_earth:moon_stone',
+        600).id('atlanabyss:orechid_moon_iron_ore')
+    //月球戴斯
+    botania.orechid('beyond_earth:moon_desh_ore', 'beyond_earth:moon_stone',
+        300).id('atlanabyss:orechid_moon_desh_ore')
+    //月球锇矿
+    botania.orechid('kubejs:moon_osmium_ore', 'beyond_earth:moon_stone',
+        100).id('atlanabyss:orechid_moon_osmium_ore')
+
+    //火星铁矿
+    botania.orechid('beyond_earth:mars_iron_ore', 'beyond_earth:mars_stone',
+        500).id('atlanabyss:orechid_mars_iron_ore')
+    //火星紫金
+    botania.orechid('beyond_earth:mars_ostrum_ore', 'beyond_earth:mars_stone',
+        420).id('atlanabyss:orechid_mars_ostrum_ore')
+    //火星铀矿
+    botania.orechid('kubejs:mars_uranium_ore', 'beyond_earth:mars_stone',
+        80).id('atlanabyss:orechid_mars_uranium_ore')
+
+    //水星铁矿
+    botania.orechid_ignem('beyond_earth:mercury_iron_ore', 'beyond_earth:mercury_stone',
+        800).id('atlanabyss:orechid_mercury_iron_ore')
+    //水星铀矿
+    botania.orechid_ignem('kubejs:mercury_uranium_ore', 'beyond_earth:mercury_stone',
+        120).id('atlanabyss:orechid_mercury_uranium_ore')
+    //水星银矿
+    botania.orechid_ignem('kubejs:mercury_silver_ore', 'beyond_earth:mercury_stone',
+        80).id('atlanabyss:orechid_mercury_silver_ore')
 
     //闪长合金
     event.shaped('kubejs:diorite_alloy', [

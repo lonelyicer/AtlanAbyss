@@ -1,0 +1,19 @@
+{
+  "item.ae2things.disk_drive_1k": "1k-ME磁盘元件",
+  "item.ae2things.disk_drive_4k": "4k-ME磁盘元件",
+  "item.ae2things.disk_drive_16k": "16k-ME磁盘元件",
+  "item.ae2things.disk_drive_64k": "64k-ME磁盘元件",
+  "item.ae2things.disk_drive_256k": "256k-ME磁盘元件",
+  "item.ae2things.disk_housing": "ME磁盘元件外壳",
+  "text.ae2things.disk_drives": "ME磁盘元件",
+  "block.ae2things.advanced_inscriber": "高级压印器",
+  "block.ae2things.crystal_growth": "晶体催生仓",
+  "itemGroup.ae2things.item_group": "AE2Things",
+  "gui.ae2things.advanced_inscriber": "高级压印器",
+  "gui.ae2things.crystal_growth": "晶体催生仓",
+  "command.ae2things.recover_success": "%s已经恢复了UUID为 [%s] 的磁盘元件。",
+  "command.ae2things.recover_fail": "恢复ME磁盘元件失败: UUID [%s] 不存在。",
+  "command.ae2things.getuuid_success": "指定磁盘的UUID为: [%s]",
+  "command.ae2things.getuuid_fail_nouuid": "错误, 指定磁盘为空/没有找到UUID。",
+  "command.ae2things.getuuid_fail_notdisk": "错误, 指定物品并非磁盘。"
+}

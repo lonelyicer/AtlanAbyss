@@ -70,20 +70,6 @@
       "price_multiplier": 0.0,
       "max_trades": 9,
       "experience": 50
-    },
-    {
-      "type": "goblintraders:basic",
-      "offer_item": {
-        "item": "dimdungeons:block_key_charger",
-        "count": 1
-      },
-      "payment_item": {
-        "item": "lightmanscurrency:coin_diamond",
-        "count": 2
-      },
-      "price_multiplier": 0.0,
-      "max_trades": 4,
-      "experience": 100
     }
   ]
 }

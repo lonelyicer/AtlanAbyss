@@ -4,9 +4,9 @@
     "tag": "createoreexcavation:drills"
   },
   "name": "{\"translate\":\"ore.kubejs.uranium\"}",
-  "weight": 7,
+  "weight": 20,
   "ticks": 60,
-  "biomeWhitelist": "kubejs:is_inversia",
+  "biomeWhitelist": "kubejs:is_uranium",
   "stress": 16,
   "amountMin": 10.0,
   "amountMax": 30.0,

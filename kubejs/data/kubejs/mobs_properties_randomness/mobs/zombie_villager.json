@@ -18,10 +18,7 @@
     ],
     "potion_effects": [
         {
-            "id": "minecraft:speed",
-            "amplifier": {
-                "min": 1
-            }
+            "id": "minecraft:speed"
         }
     ]
 }

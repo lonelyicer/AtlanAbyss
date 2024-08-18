@@ -83,21 +83,10 @@ onEvent('block.registry', event => {
         .tagBlock('forge:ores_in_ground/end')
         .requiresTool(true)
         .displayName('End Bismuth Pre');
-    //颠倒铀矿
-    event.create('inversia_uranium_ore')
-        .material('deepslate')
-        .hardness(6.0)
-        .tagBlock('minecraft:mineable/pickaxe')
-        .tagBlock('minecraft:needs_diamond_tool')
-        .tagBlock('forge:ores')
-        .tagBlock('forge:ores/uranium')
-        .tagBlock('forge:ores_in_ground/deepslate')
-        .requiresTool(true)
-        .displayName('Inversia Uranium Pre');
     //月球锇矿
     event.create('moon_osmium_ore')
         .material('stone')
-        .hardness(6.0)
+        .hardness(8.0)
         .tagBlock('minecraft:mineable/pickaxe')
         .tagBlock('minecraft:needs_diamond_tool')
         .tagBlock('forge:ores')
@@ -116,6 +105,28 @@ onEvent('block.registry', event => {
         .tagBlock('forge:ores_in_ground/mercury')
         .requiresTool(true)
         .displayName('Mercury Silver Ore');
+    //火星铀矿
+    event.create('mars_uranium_ore')
+        .material('deepslate')
+        .hardness(6.0)
+        .tagBlock('minecraft:mineable/pickaxe')
+        .tagBlock('minecraft:needs_diamond_tool')
+        .tagBlock('forge:ores')
+        .tagBlock('forge:ores/uranium')
+        .tagBlock('forge:ores_in_ground/mars')
+        .requiresTool(true)
+        .displayName('Mars Uranium Pre');
+    //水星铀矿
+    event.create('mercury_uranium_ore')
+        .material('deepslate')
+        .hardness(6.0)
+        .tagBlock('minecraft:mineable/pickaxe')
+        .tagBlock('minecraft:needs_diamond_tool')
+        .tagBlock('forge:ores')
+        .tagBlock('forge:ores/uranium')
+        .tagBlock('forge:ores_in_ground/mercury')
+        .requiresTool(true)
+        .displayName('Mercury Uranium Pre');
     //粗铝块
     event.create('raw_aluminum_block')
         .material('stone')
@@ -206,18 +217,56 @@ onEvent('block.registry', event => {
     event.create('bismuth_block')
         .material('netherite')
         .hardness(8.0)
+        .renderType('cutout')
         .tagBlock('minecraft:mineable/pickaxe')
         .tagBlock('minecraft:needs_diamond_tool')
         .requiresTool(true)
         .displayName('Bismuth Block');
     //镀锇机壳
     event.create('osmium_casing')
-        .material('anvil')
+        .material('netherite')
         .hardness(8.0)
         .tagBlock('create:wrench_pickup')
         .tagBlock('minecraft:mineable/pickaxe')
         .requiresTool(true)
         .displayName('Osmium Casing');
+    //钢机器框架
+    event.create('steel_machine_frame')
+        .model('kubejs:block/machines/steel_machine_frame')
+        .material('lantern')
+        .hardness(2.0)
+        .renderType('cutout')
+        .tagBlock('create:wrench_pickup')
+        .tagBlock('minecraft:mineable/pickaxe')
+        .displayName('Steel Machine Frame');
+    //戴斯机器框架
+    event.create('desh_machine_frame')
+        .model('kubejs:block/machines/desh_machine_frame')
+        .material('lantern')
+        .hardness(2.5)
+        .renderType('cutout')
+        .tagBlock('create:wrench_pickup')
+        .tagBlock('minecraft:mineable/pickaxe')
+        .displayName('Desh Machine Frame');
+    //紫金机器框架
+    event.create('ostrum_machine_frame')
+        .model('kubejs:block/machines/ostrum_machine_frame')
+        .material('lantern')
+        .hardness(3.0)
+        .renderType('cutout')
+        .tagBlock('create:wrench_pickup')
+        .tagBlock('minecraft:mineable/pickaxe')
+        .displayName('Ostruml Machine Frame');
+    //耐热机器框架
+    event.create('calorite_machine_frame')
+        .model('kubejs:block/machines/calorite_machine_frame')
+        .material('lantern')
+        .hardness(3.5)
+        .renderType('cutout')
+        .tagBlock('create:wrench_pickup')
+        .tagBlock('minecraft:mineable/pickaxe')
+        .displayName('Calorite Machine Frame');
+
     //钚块
     event.create('plutonium_block')
         .material('lantern')
@@ -240,46 +289,6 @@ onEvent('block.registry', event => {
         .tagBlock('create:wrench_pickup')
         .tagBlock('minecraft:mineable/pickaxe')
         .displayName('Lucky Block');
-
-    //钢机器框架
-    event.create('steel_machine_frame')
-        .model('kubejs:block/machines/steel_machine_frame')
-        .material('lantern')
-        .hardness(2.0)
-        .renderType('cutout')
-        .tagBlock('create:wrench_pickup')
-        .tagBlock('minecraft:mineable/pickaxe')
-        .displayName('Steel Machine Frame');
-
-    //戴斯机器框架
-    event.create('desh_machine_frame')
-        .model('kubejs:block/machines/desh_machine_frame')
-        .material('lantern')
-        .hardness(2.5)
-        .renderType('cutout')
-        .tagBlock('create:wrench_pickup')
-        .tagBlock('minecraft:mineable/pickaxe')
-        .displayName('Desh Machine Frame');
-
-    //紫金机器框架
-    event.create('ostrum_machine_frame')
-        .model('kubejs:block/machines/ostrum_machine_frame')
-        .material('lantern')
-        .hardness(3.0)
-        .renderType('cutout')
-        .tagBlock('create:wrench_pickup')
-        .tagBlock('minecraft:mineable/pickaxe')
-        .displayName('Ostruml Machine Frame');
-
-    //耐热机器框架
-    event.create('calorite_machine_frame')
-        .model('kubejs:block/machines/calorite_machine_frame')
-        .material('lantern')
-        .hardness(3.5)
-        .renderType('cutout')
-        .tagBlock('create:wrench_pickup')
-        .tagBlock('minecraft:mineable/pickaxe')
-        .displayName('Calorite Machine Frame');
 
     //机器
     // let registerMachine = (name, layer) => {
