@@ -1,0 +1,159 @@
+﻿{
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Feryquitous\",\"Mami\"],name:\"§6I.回廊 (feat. mami)\",read_only:0b,time:257,url:\"https://music.163.com/song/media/outer/url?id=1416321641.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"satella\"],name:\"§6Serendipity\",read_only:0b,time:257,url:\"https://music.163.com/song/media/outer/url?id=1416321644.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"bqスタヂオ\"],name:\"§6celestite\",read_only:0b,time:291,url:\"https://music.163.com/song/media/outer/url?id=1416321646.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"アリスシャッハと魔法の楽団\"],name:\"§6FEHLT\",read_only:0b,time:254,url:\"https://music.163.com/song/media/outer/url?id=1416322453.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"BlackY\"],name:\"§6Kaguya\",read_only:0b,time:255,url:\"https://music.163.com/song/media/outer/url?id=1416322452.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"cosMo@暴走P\"],name:\"§625時76分発<<領域外>>行最終列車\",read_only:0b,time:236,url:\"https://music.163.com/song/media/outer/url?id=1416321642.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"xi\"],name:\"§6Illusion Maze\",read_only:0b,time:265,url:\"https://music.163.com/song/media/outer/url?id=1416321649.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Juggernaut.\"],name:\"§6Abiogenesis\",read_only:0b,time:281,trans_name:\"无生源说\",url:\"https://music.163.com/song/media/outer/url?id=1416321652.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"tigerlily\"],name:\"§6Play All\",read_only:0b,time:272,url:\"https://music.163.com/song/media/outer/url?id=1416322454.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Benitoite\"],name:\"§6輪廻\",read_only:0b,time:199,url:\"https://music.163.com/song/media/outer/url?id=1416321650.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Sobrem\"],name:\"§6The Unawaited\",read_only:0b,time:269,url:\"https://music.163.com/song/media/outer/url?id=1416321647.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"ハム\"],name:\"§6Apotosis\",read_only:0b,time:227,url:\"https://music.163.com/song/media/outer/url?id=1416321643.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"callasoiled\"],name:\"§6不全\",read_only:0b,time:246,url:\"https://music.163.com/song/media/outer/url?id=1416321648.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Taishi\"],name:\"§6Wasteland in the Depths\",read_only:0b,time:349,url:\"https://music.163.com/song/media/outer/url?id=1416321653.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"ARForest\"],name:\"§6Memory of Dystopia\",read_only:0b,time:295,trans_name:\"反乌托邦的记忆\",url:\"https://music.163.com/song/media/outer/url?id=1416321645.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        }
+      ]
+    }
+  ]
+}

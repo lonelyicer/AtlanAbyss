@@ -1,0 +1,199 @@
+﻿{
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"削除\"],name:\"§6I Can't Remember Anymore\",read_only:0b,time:204,url:\"https://music.163.com/song/media/outer/url?id=2011880149.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Juggernaut.\"],name:\"§6Immutable\",read_only:0b,time:325,url:\"https://music.163.com/song/media/outer/url?id=2011881260.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"satie\"],name:\"§6Relictos\",read_only:0b,time:207,url:\"https://music.163.com/song/media/outer/url?id=2011880150.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"yuichi NAGAO\"],name:\"§6記憶の固執\",read_only:0b,time:202,url:\"https://music.163.com/song/media/outer/url?id=2011880151.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Essbee\"],name:\"§6SIZUMU\",read_only:0b,time:277,url:\"https://music.163.com/song/media/outer/url?id=2011880152.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Elliot Hsu\"],name:\"§6Chamber of Shackles\",read_only:0b,time:273,url:\"https://music.163.com/song/media/outer/url?id=2011881261.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"BlackY\"],name:\"§6Odyssey\",read_only:0b,time:284,url:\"https://music.163.com/song/media/outer/url?id=2011880153.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"cosMo@暴走P\"],name:\"§6Badass GigaForte\",read_only:0b,time:192,url:\"https://music.163.com/song/media/outer/url?id=2011881262.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Ice\",\"PYKAMIA\"],name:\"§6４つの大鍵盤のための小悪魔狂想曲 (feat. PYKAMIA)\",read_only:0b,time:278,url:\"https://music.163.com/song/media/outer/url?id=2011880154.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"ARForest\"],name:\"§6When You Were Here\",read_only:0b,time:247,url:\"https://music.163.com/song/media/outer/url?id=2011881263.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"callasoiled\"],name:\"§6vacant\",read_only:0b,time:213,url:\"https://music.163.com/song/media/outer/url?id=2011881264.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Avans\"],name:\"§6Dubblethink\",read_only:0b,time:189,url:\"https://music.163.com/song/media/outer/url?id=2011881265.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"黒魔\"],name:\"§6Liquid Waste Pool\",read_only:0b,time:179,url:\"https://music.163.com/song/media/outer/url?id=2011881266.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Sobrem\"],name:\"§6Baa-raa-ra\",read_only:0b,time:191,url:\"https://music.163.com/song/media/outer/url?id=2011881267.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Sad Keyboard Guy\",\"Vally.exe\"],name:\"§6Memories of You (feat. vally.exe)\",read_only:0b,time:338,url:\"https://music.163.com/song/media/outer/url?id=2011880155.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"bqスタヂオ\"],name:\"§6時間工場\",read_only:0b,time:300,url:\"https://music.163.com/song/media/outer/url?id=2011881268.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Error Signal\"],name:\"§6堆積、そして固結、在ったもの\",read_only:0b,time:214,url:\"https://music.163.com/song/media/outer/url?id=2011880156.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Osamu Kubota\"],name:\"§6A Voyage to Nowhere\",read_only:0b,time:333,url:\"https://music.163.com/song/media/outer/url?id=2011881269.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Feryquitous\"],name:\"§6III.追想\",read_only:0b,time:228,url:\"https://music.163.com/song/media/outer/url?id=2011881270.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        }
+      ]
+    }
+  ]
+}

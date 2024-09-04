@@ -1,7 +1,7 @@
 {
 	id: "527A7AAB21F28EF5"
 	group: "03B4E601CC5A5BFE"
-	order_index: 5
+	order_index: 6
 	filename: "527A7AAB21F28EF5"
 	title: "花之力"
 	icon: "botania:pure_daisy"
@@ -11,6 +11,7 @@
 		{
 			x: 0.0d
 			y: 0.0d
+			description: ["与花魔法相关的工作台。"]
 			dependencies: ["5D059C7F1A64ABB9"]
 			hide: true
 			id: "5A6B03E76B3807D3"
@@ -29,6 +30,7 @@
 			disable_toast: true
 			x: -2.0d
 			y: 0.0d
+			description: ["关于植物魔法你所需要知道的事。"]
 			dependencies: ["5A6B03E76B3807D3"]
 			id: "6A63D947959AAB77"
 			tasks: [{
@@ -45,6 +47,7 @@
 		{
 			x: 2.0d
 			y: 0.0d
+			description: ["可制造出一些特殊的方块。"]
 			dependencies: ["5A6B03E76B3807D3"]
 			hide: true
 			id: "0FD46CB5A854B716"
@@ -61,7 +64,7 @@
 		}
 		{
 			x: 2.0d
-			y: -1.0d
+			y: -1.5d
 			description: ["注：活木只能通过至高木转化获得。"]
 			dependencies: ["0FD46CB5A854B716"]
 			id: "3A2A0B2CFDDB343F"
@@ -78,8 +81,8 @@
 		}
 		{
 			x: 2.0d
-			y: -2.0d
-			description: [" 制作出魔力发射器后，你可以考虑用火红莲或是水绣球用于前期产魔。"]
+			y: -2.5d
+			description: ["用于魔力的传输。"]
 			dependencies: ["3A2A0B2CFDDB343F"]
 			hide: true
 			id: "404B700E4ABCA47D"
@@ -97,7 +100,7 @@
 		{
 			x: 4.0d
 			y: 0.0d
-			description: ["注：活石只能通过方解石转化获得。"]
+			description: ["注：活石可通过方解石转化获得，或使用闪长合金右击石头获得。"]
 			dependencies: ["0FD46CB5A854B716"]
 			id: "3C4768CE7C04C704"
 			tasks: [{
@@ -121,7 +124,6 @@
 				"你可以通过至高木树苗魔力灌注获得。"
 			]
 			dependencies: ["369202E8265D6C29"]
-			hide: true
 			id: "34D10A81067DF0CB"
 			tasks: [
 				{
@@ -154,8 +156,8 @@
 		{
 			x: 5.5d
 			y: 0.0d
+			description: ["存储魔力的容器，也可以给物品注魔。"]
 			dependencies: ["3C4768CE7C04C704"]
-			hide: true
 			id: "369202E8265D6C29"
 			tasks: [{
 				id: "43DB87DB8899A3D0"
@@ -171,6 +173,7 @@
 		{
 			x: 5.5d
 			y: -1.5d
+			description: ["放置在魔力池的下方合成使用。"]
 			dependencies: ["369202E8265D6C29"]
 			id: "0FFF68D8B91B8A70"
 			tasks: [{
@@ -188,8 +191,8 @@
 			disable_toast: true
 			x: 4.5d
 			y: 1.0d
+			description: ["消耗魔力的工作台。"]
 			dependencies: ["369202E8265D6C29"]
-			hide: true
 			id: "5764D7F29A9A31E0"
 			tasks: [{
 				id: "0081763FC92938EC"
@@ -205,8 +208,8 @@
 		{
 			x: 7.0d
 			y: 0.0d
+			description: ["可以作为附魔台书架使用。"]
 			dependencies: ["369202E8265D6C29"]
-			hide: true
 			id: "4AA6C0889DF77D22"
 			tasks: [{
 				id: "1822B3163C0E19C8"
@@ -223,6 +226,7 @@
 			disable_toast: true
 			x: 3.0d
 			y: 1.0d
+			description: ["魔力合金炉！"]
 			dependencies: ["5764D7F29A9A31E0"]
 			hide: true
 			id: "176873F1E61B607A"
@@ -240,6 +244,7 @@
 		{
 			x: 1.0d
 			y: 1.0d
+			description: ["与钢是完全两种不同的金属。"]
 			dependencies: ["176873F1E61B607A"]
 			id: "5D1503960882D059"
 			tasks: [{
@@ -257,6 +262,7 @@
 			disable_toast: true
 			x: -1.0d
 			y: 1.0d
+			description: ["搭建一个精灵传送门（喝下诗之蜜酒便可进入）。"]
 			dependencies: ["5D1503960882D059"]
 			hide: true
 			id: "18AFCA7D6F0B5F8E"
@@ -296,8 +302,8 @@
 			x: 4.0d
 			y: 2.0d
 			shape: "hexagon"
+			description: ["搭建一个盖亚仪式祭坛。"]
 			dependencies: ["4729E917377191C1"]
-			hide: true
 			id: "414CFD78FA59E5C8"
 			tasks: [
 				{
@@ -322,6 +328,7 @@
 			x: 4.5d
 			y: 3.0d
 			shape: "hexagon"
+			description: ["击败盖亚获得。"]
 			dependencies: ["414CFD78FA59E5C8"]
 			hide: true
 			id: "5B1752815667A780"
@@ -402,6 +409,7 @@
 			x: 6.5d
 			y: 1.5d
 			shape: "hexagon"
+			description: ["经常使用的话比传送石碑好用。"]
 			dependencies: ["41DCA36A2F09C523"]
 			id: "72345E661D191FB1"
 			tasks: [{
@@ -420,6 +428,7 @@
 			x: 5.5d
 			y: 1.5d
 			shape: "hexagon"
+			description: ["制作传送道具相关的材料。"]
 			dependencies: ["369202E8265D6C29"]
 			hide: true
 			id: "41DCA36A2F09C523"
@@ -443,7 +452,6 @@
 			shape: "rsquare"
 			description: ["本整合包虽然移除了妖精女仆的生成，但你可以通过魔力池转换经验瓶以获得相应的P点。"]
 			dependencies: ["0FFF68D8B91B8A70"]
-			hide: true
 			id: "6CC3920A8B0C1B39"
 			tasks: [{
 				id: "2350CF369489A7D8"
@@ -461,6 +469,7 @@
 			x: 5.5d
 			y: -3.0d
 			shape: "hexagon"
+			description: ["物品复制！"]
 			dependencies: ["0FFF68D8B91B8A70"]
 			hide: true
 			id: "431E46B6870EA9D5"
@@ -468,6 +477,11 @@
 				id: "03517902087CF5BD"
 				type: "item"
 				item: "botania:conjuration_catalyst"
+			}]
+			rewards: [{
+				id: "392E5786A1E3EB5B"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -692,6 +706,23 @@
 			}]
 			rewards: [{
 				id: "5A06C041780337D1"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 2.0d
+			y: -3.5d
+			description: ["前期可做的性价比极高的产魔花。"]
+			dependencies: ["404B700E4ABCA47D"]
+			id: "38C41EE94A8890C1"
+			tasks: [{
+				id: "6CE210C4BF144E23"
+				type: "item"
+				item: "botania:gourmaryllis"
+			}]
+			rewards: [{
+				id: "18A9103325FC3D35"
 				type: "xp"
 				xp: 10
 			}]

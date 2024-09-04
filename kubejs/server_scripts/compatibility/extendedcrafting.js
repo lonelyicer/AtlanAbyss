@@ -96,7 +96,9 @@ onEvent('recipes', event => {
     ]).id('atlanabyss:crystal_matrix_ingot')
     //无尽之锭
     create.mechanical_crafting('kubejs:infinity_ingot', [
-        'ABCDEFG'
+        'PPPPPPP',
+        'ABCDEFG',
+        'PPPPPPP'
     ], {
         A: Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:magbismuth"}').weakNBT(),
         B: Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:meteosteel"}').weakNBT(),
@@ -104,7 +106,8 @@ onEvent('recipes', event => {
         D: Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:elemental"}').weakNBT(),
         E: Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:lutetium"}').weakNBT(),
         F: Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:aluminium"}').weakNBT(),
-        G: Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:virgin"}').weakNBT()
+        G: Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:virgin"}').weakNBT(),
+        P: 'mekanism:pellet_antimatter'
     }).id('atlanabyss:infinity_ingot');
 
 

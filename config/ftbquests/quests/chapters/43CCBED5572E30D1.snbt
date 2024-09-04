@@ -1,7 +1,7 @@
 {
 	id: "43CCBED5572E30D1"
 	group: "03B4E601CC5A5BFE"
-	order_index: 7
+	order_index: 8
 	filename: "43CCBED5572E30D1"
 	title: "马之力"
 	icon: "umapyoi:jewel"
@@ -19,6 +19,11 @@
 				id: "3641B34908270265"
 				type: "item"
 				item: "umapyoi:silver_uma_pedestal"
+			}]
+			rewards: [{
+				id: "4FCD98BF8A4E8317"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -154,6 +159,7 @@
 			x: 0.0d
 			y: 1.5d
 			shape: "hexagon"
+			description: ["关于赛马娘你所需要知道的事。"]
 			dependencies: ["6B663C08852AA5C0"]
 			id: "573051E57075AF0E"
 			tasks: [{

@@ -38,6 +38,7 @@
 			x: -1.5d
 			y: 0.0d
 			shape: "hexagon"
+			description: ["需要用连接工具与其他抽屉连接使用，并且控制器可与AE网络连接。"]
 			dependencies: ["53C4D6F0CFEE17BD"]
 			hide: true
 			id: "20E5B8D8CA70C5D2"
@@ -57,6 +58,7 @@
 			x: -3.0d
 			y: -0.5d
 			shape: "hexagon"
+			description: ["给抽屉扩容！"]
 			dependencies: ["20E5B8D8CA70C5D2"]
 			id: "28387CA3E8B83894"
 			tasks: [{
@@ -154,6 +156,7 @@
 			x: 0.0d
 			y: -0.5d
 			shape: "hexagon"
+			description: ["吸取抽屉附近容器里的物品。"]
 			dependencies: ["20E5B8D8CA70C5D2"]
 			id: "79A8F3B6CC691380"
 			tasks: [{
@@ -178,6 +181,7 @@
 			x: 0.0d
 			y: 0.5d
 			shape: "hexagon"
+			description: ["弹出抽屉内的物品。"]
 			dependencies: ["20E5B8D8CA70C5D2"]
 			id: "566FF5B3F8DA1BAF"
 			tasks: [{
@@ -202,6 +206,7 @@
 			x: 0.0d
 			y: 2.5d
 			shape: "hexagon"
+			description: ["把抽屉当垃圾桶！"]
 			dependencies: ["20E5B8D8CA70C5D2"]
 			id: "029B72F4BE8912EE"
 			tasks: [{

@@ -893,7 +893,7 @@ onEvent('recipes', event => {
     ], {
         A: 'ae2:quartz_glass',
         B: 'minecraft:redstone_block',
-        C: 'kubejs:integrated_circuit',
+        C: 'kubejs:integrated_circuit_advanced',
         D: 'kubejs:osmium_sheet'
     }).id('atlanabyss:ae_chemical_cell_housing');
     //化学品1k
@@ -904,7 +904,7 @@ onEvent('recipes', event => {
     ], {
         A: 'ae2:quartz_glass',
         B: 'minecraft:redstone_block',
-        C: 'kubejs:integrated_circuit',
+        C: 'kubejs:integrated_circuit_advanced',
         D: 'kubejs:osmium_sheet',
         E: 'ae2:cell_component_1k'
     }).id('atlanabyss:ae_chemical_storage_cell_1k');
@@ -916,7 +916,7 @@ onEvent('recipes', event => {
     ], {
         A: 'ae2:quartz_glass',
         B: 'minecraft:redstone_block',
-        C: 'kubejs:integrated_circuit',
+        C: 'kubejs:integrated_circuit_advanced',
         D: 'kubejs:osmium_sheet',
         E: 'ae2:cell_component_4k'
     }).id('atlanabyss:ae_chemical_storage_cell_4k');
@@ -940,7 +940,7 @@ onEvent('recipes', event => {
     ], {
         A: 'ae2:quartz_glass',
         B: 'minecraft:redstone_block',
-        C: 'kubejs:integrated_circuit_elite',
+        C: 'kubejs:integrated_circuit_advanced',
         D: 'kubejs:osmium_sheet',
         E: 'ae2:cell_component_64k'
     }).id('atlanabyss:ae_chemical_storage_cell_64k');
@@ -952,7 +952,7 @@ onEvent('recipes', event => {
     ], {
         A: 'ae2:quartz_glass',
         B: 'minecraft:redstone_block',
-        C: 'kubejs:integrated_circuit_ultimate',
+        C: 'kubejs:integrated_circuit_advanced',
         D: 'kubejs:osmium_sheet',
         E: 'ae2:cell_component_256k'
     }).id('atlanabyss:ae_chemical_storage_cell_256k');

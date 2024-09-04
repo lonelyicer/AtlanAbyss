@@ -1,5 +1,5 @@
 onEvent('recipes', event => {
-    let { create, botania, thermal } = event.recipes;
+    const { create, botania, thermal } = event.recipes;
 
     let remove = (name) => {
         event.remove({ id: name })
@@ -28,6 +28,13 @@ onEvent('recipes', event => {
         source: 500,
         pedestalItems: []
     }).id('atlanabyss:imbuement_coal')
+
+    //P点
+    botania.mana_infusion(
+        '10x touhou_little_maid:power_point',
+        'minecraft:experience_bottle', 240,
+        'botania:alchemy_catalyst'
+    ).id("atlanabyss:touhou_power_point")
 
     //萝卜宝石
     remove('umapyoi:jewel')
@@ -73,6 +80,16 @@ onEvent('recipes', event => {
     //     'twilightforest:liveroot_block'
     // ]).id('atlanabyss:liveroot_from_liveroot_block')
 
+
+    //便宜的彼方兰
+    remove('botania:petal_apothecary/gourmaryllis')
+    botania.petal_apothecary('botania:gourmaryllis', [
+        '#botania:petals/yellow',
+        '#botania:petals/yellow',
+        '#botania:petals/red',
+        '#botania:petals/light_gray'
+    ])
+        .id('atlanabyss:petal_apothecary_gourmaryllis')
 
 
     //附魔灌注台
@@ -303,5 +320,5 @@ onEvent('recipes', event => {
         'kubejs:infinity_ingot',
         'kubejs:infinity_ingot',
         'kubejs:infinity_ingot'
-    ], 200000).id('atlanabyss:runic_altar_time_bottle')
+    ], 200000).id('atlanabyss:runic_altar_creative_pool')
 })

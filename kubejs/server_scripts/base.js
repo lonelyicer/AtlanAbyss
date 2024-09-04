@@ -1496,12 +1496,6 @@ onEvent('recipes', event => {
 	// botania.elven_trade(['twilightforest:ice_bow'], 'minecraft:bow').id("atlanabyss:elven_trade_ice_bow")
 	// botania.elven_trade(['twilightforest:ice_sword'], 'minecraft:diamond_sword').id("atlanabyss:elven_trade_ice_sword")
 
-	botania.mana_infusion(
-		'2x touhou_little_maid:power_point',
-		'minecraft:experience_bottle', 240,
-		'botania:alchemy_catalyst'
-	).id("atlanabyss:touhou_power_point")
-
 	botania.brew('kubejs:alicepowah', [
 		'minecraft:nether_wart',
 		'createaddition:capacitor',
@@ -1606,6 +1600,18 @@ onEvent('recipes', event => {
 		Item.of('thermal:cinnabar').withChance(0.1),
 		Item.of('minecraft:emerald').withChance(0.05)
 	], '#create:stone_types/limestone').id("atlanabyss:splashing_limestone")
+	//粉碎岩浆块
+	create.milling([
+		Item.of('thermal:sulfur').withChance(0.50)
+	], 'minecraft:magma_block').id("atlanabyss:milling_magma_block")
+	//粉碎玄武岩
+	create.milling([
+		Item.of('create:crushed_raw_aluminum').withChance(0.40)
+	], 'minecraft:basalt').id("atlanabyss:milling_basalt")
+	create.crushing([
+		Item.of('create:crushed_raw_aluminum').withChance(0.40),
+		Item.of('kubejs:aluminum_nugget').withChance(0.40)
+	], 'minecraft:basalt').id("atlanabyss:crushing_basalt")
 
 	//压板
 	create.pressing(
@@ -1691,23 +1697,43 @@ onEvent('recipes', event => {
 	create.haunting('minecraft:twisting_vines', 'minecraft:vine').id('atlanabyss:haunting_vine')//缠怨藤
 
 	event.blasting('minecraft:weeping_vines', 'minecraft:vine').id('atlanabyss:blasting_vine')//垂泪藤
-	//管道升级
-	create.deploying('pipez:basic_upgrade', [
-		'industrialforegoing:plastic',
-		'thermal:nickel_nugget'
-	]).id('atlanabyss:deploying_basic_upgrade')//基础管道升级
-	create.deploying('pipez:improved_upgrade', [
-		'pipez:basic_upgrade',
-		'thermal:steel_nugget'
-	]).id('atlanabyss:deploying_improved_upgrade')//进阶管道升级
-	create.deploying('pipez:advanced_upgrade', [
-		'pipez:improved_upgrade',
-		'thermal:electrum_nugget'
-	]).id('atlanabyss:deploying_advanced_upgrade')//高级管道升级
-	create.deploying('pipez:ultimate_upgrade', [
-		'pipez:advanced_upgrade',
-		'thermal:signalum_nugget'
-	]).id('atlanabyss:deploying_ultimate_upgrade')//终极管道升级
+
+	//基础管道升级
+	event.shaped('pipez:basic_upgrade', [
+		'AAA',
+		'ABA',
+		'AAA'
+	], {
+		A: 'thermal:nickel_nugget',
+		B: 'kubejs:empty_pcb'
+	}).id('atlanabyss:deploying_basic_upgrade')
+	//进阶管道升级
+	event.shaped('pipez:improved_upgrade', [
+		'AAA',
+		'ABA',
+		'AAA'
+	], {
+		A: 'thermal:steel_nugget',
+		B: 'pipez:basic_upgrade',
+	}).id('atlanabyss:deploying_improved_upgrade')
+	//高级管道升级
+	event.shaped('pipez:advanced_upgrade', [
+		'AAA',
+		'ABA',
+		'AAA'
+	], {
+		A: 'thermal:electrum_nugget',
+		B: 'pipez:improved_upgrade'
+	}).id('atlanabyss:deploying_advanced_upgrade')
+	//终极管道升级
+	event.shaped('pipez:ultimate_upgrade', [
+		'AAA',
+		'ABA',
+		'AAA'
+	], {
+		A: 'thermal:signalum_nugget',
+		B: 'pipez:advanced_upgrade'
+	}).id('atlanabyss:deploying_ultimate_upgrade')
 
 	//过滤器目标工具
 	event.shaped('pipez:filter_destination_tool', [
@@ -2143,7 +2169,11 @@ onEvent('recipes', event => {
 	create.mixing('2x kubejs:aluminium_alloy_ingot', [
 		'ae2:silicon',
 		'2x kubejs:aluminum_ingot'
-	]).superheated().id("atlanabyss:aluminium_alloy_ingot")
+	]).heated().id("atlanabyss:aluminium_alloy_ingot")
+	thermal.smelter('2x kubejs:aluminium_alloy_ingot', [
+		'2x kubejs:aluminum_ingot',
+		'ae2:silicon',
+	]).energy(4000).id("atlanabyss:smelter_aluminium_alloy_ingot")
 
 	//铋锭
 	create.mixing('kubejs:bismuth_ingot', [

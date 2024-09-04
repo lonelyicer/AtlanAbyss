@@ -52,6 +52,51 @@ onEvent('recipes', event => {
         'createsifter:brass_mesh'
     ]).processingTime(500).id('atlanabyss:brass_mesh_gravel')
 
+    //筛灵魂沙
+    createsifter.sifting([
+        Item.of('minecraft:quartz').withChance(0.05),
+        Item.of('thermal:sulfur').withChance(0.03),
+    ], [
+        'minecraft:soul_sand',
+        'createsifter:string_mesh'
+    ]).processingTime(500).id('atlanabyss:string_mesh_soul_sand')
+
+    remove('createsifter:sifting/gravel_andesite_mesh')
+    createsifter.sifting([
+        Item.of('minecraft:quartz').withChance(0.10),
+        Item.of('thermal:sulfur').withChance(0.05),
+        Item.of('kubejs:aluminum_nugget').withChance(0.02),
+        Item.of('create:experience_nugget').withChance(0.1)
+    ], [
+        'minecraft:soul_sand',
+        'createsifter:andesite_mesh'
+    ]).processingTime(500).id('atlanabyss:andesite_mesh_soul_sand')
+
+    remove('createsifter:sifting/gravel_zinc_mesh')
+    createsifter.sifting([
+        Item.of('minecraft:quartz').withChance(0.15),
+        Item.of('thermal:sulfur').withChance(0.1),
+        Item.of('kubejs:aluminum_nugget').withChance(0.05),
+        Item.of('minecraft:gold_nugget').withChance(0.02),
+        Item.of('create:experience_nugget').withChance(0.1)
+    ], [
+        'minecraft:soul_sand',
+        'createsifter:zinc_mesh'
+    ]).processingTime(500).id('atlanabyss:zinc_mesh_soul_sand')
+
+    remove('createsifter:sifting/gravel_brass_mesh')
+    createsifter.sifting([
+        Item.of('minecraft:quartz').withChance(0.25),
+        Item.of('thermal:sulfur').withChance(0.15),
+        Item.of('kubejs:aluminum_nugget').withChance(0.1),
+        Item.of('minecraft:gold_nugget').withChance(0.05),
+        Item.of('tconstruct:cobalt_nugget').withChance(0.02),
+        Item.of('create:experience_nugget').withChance(0.2)
+    ], [
+        'minecraft:soul_sand',
+        'createsifter:brass_mesh'
+    ]).processingTime(500).id('atlanabyss:brass_mesh_soul_sand')
+
     //筛苔藓
     createsifter.sifting([
         Item.of('minecraft:wheat_seeds').withChance(0.1),

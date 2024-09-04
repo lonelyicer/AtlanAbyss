@@ -1,0 +1,169 @@
+﻿{
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Jerico\"],name:\"§6Cointreau Orange\",read_only:0b,time:184,url:\"https://music.163.com/song/media/outer/url?id=28496088.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"AcuticNotes\"],name:\"§6VelVid\",read_only:0b,time:279,url:\"https://music.163.com/song/media/outer/url?id=28496089.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"BlackY\"],name:\"§6Decisive Factor\",read_only:0b,time:289,url:\"https://music.163.com/song/media/outer/url?id=28496092.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"xi\"],name:\"§6Double Helix\",read_only:0b,time:325,url:\"https://music.163.com/song/media/outer/url?id=28496094.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"void\"],name:\"§6Sudden Romance\",read_only:0b,time:285,url:\"https://music.163.com/song/media/outer/url?id=28496090.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"tigerlily\"],name:\"§6Overslept\",read_only:0b,time:276,url:\"https://music.163.com/song/media/outer/url?id=28496091.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Atomic\"],name:\"§6Hakoniwa\",read_only:0b,time:269,url:\"https://music.163.com/song/media/outer/url?id=28496093.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Takahiro Eguchi\",\"Tomohiko Togashi\"],name:\"§6Celery Complex\",read_only:0b,time:193,url:\"https://music.163.com/song/media/outer/url?id=28496095.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"村瀬悠太\"],name:\"§6blooming*\",read_only:0b,time:330,url:\"https://music.163.com/song/media/outer/url?id=28496099.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Kaname Shigeyoshi\"],name:\"§6The Rain Turned to Autumn Leaves\",read_only:0b,time:293,url:\"https://music.163.com/song/media/outer/url?id=28496098.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"F.E.L\"],name:\"§6Navy Muffin\",read_only:0b,time:270,url:\"https://music.163.com/song/media/outer/url?id=28496100.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"b\"],name:\"§6カラメル\",read_only:0b,time:202,url:\"https://music.163.com/song/media/outer/url?id=28496096.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"RIC\"],name:\"§6Frozen Cave\",read_only:0b,time:286,url:\"https://music.163.com/song/media/outer/url?id=28496101.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"masaki kawasaki\"],name:\"§6Farewell\",read_only:0b,time:256,url:\"https://music.163.com/song/media/outer/url?id=28496097.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"削除\"],name:\"§6月の魔女\",read_only:0b,time:581,url:\"https://music.163.com/song/media/outer/url?id=28496103.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"削除\"],name:\"§6東洋の怪しい魔術師\",read_only:0b,time:369,url:\"https://music.163.com/song/media/outer/url?id=28496102.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        }
+      ]
+    }
+  ]
+}

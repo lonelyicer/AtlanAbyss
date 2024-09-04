@@ -27,10 +27,10 @@
 	PlayerPosX = 10
 	#Player position y in screen
 	#Range: > 0
-	PlayerPosY = 234
+	PlayerPosY = 10
 	#Player scale in screen
 	#Range: 8.0 ~ 360.0
-	PlayerScale = 88.83003234863281
+	PlayerScale = 40.0
 	#Player yaw offset in screen
 	#Range: 4.9E-324 ~ 1.7976931348623157E308
 	PlayerYawOffset = 5.0

@@ -1,0 +1,129 @@
+﻿{
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"void\"],name:\"§6Idealized Romance\",read_only:0b,time:391,url:\"https://music.163.com/song/media/outer/url?id=716275.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"An\"],name:\"§6Catanoph\",read_only:0b,time:231,url:\"https://music.163.com/song/media/outer/url?id=716278.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"ETIA.\"],name:\"§6Queen of the Red\",read_only:0b,time:217,url:\"https://music.163.com/song/media/outer/url?id=716281.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Lucifer Cast\"],name:\"§6Hidden Place\",read_only:0b,time:301,url:\"https://music.163.com/song/media/outer/url?id=716285.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"xi\"],name:\"§6天衣無縫\",read_only:0b,time:256,url:\"https://music.163.com/song/media/outer/url?id=716289.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Kenichi Chiba\"],name:\"§6PIANOTAP\",read_only:0b,time:362,url:\"https://music.163.com/song/media/outer/url?id=716293.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"tigerlily\"],name:\"§6Mezzoforte\",read_only:0b,time:388,url:\"https://music.163.com/song/media/outer/url?id=716297.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"satella\"],name:\"§6Spazierweg\",read_only:0b,time:277,url:\"https://music.163.com/song/media/outer/url?id=716300.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"eicateve\"],name:\"§6閉塞世界\",read_only:0b,time:330,url:\"https://music.163.com/song/media/outer/url?id=716303.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"qurter\"],name:\"§6split clock tower\",read_only:0b,time:288,url:\"https://music.163.com/song/media/outer/url?id=716305.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"bqスタヂオ\"],name:\"§6ポラリス環状鉄道\",read_only:0b,time:313,url:\"https://music.163.com/song/media/outer/url?id=716307.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"削除\"],name:\"§6水蓮\",read_only:0b,time:542,url:\"https://music.163.com/song/media/outer/url?id=716311.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        }
+      ]
+    }
+  ]
+}

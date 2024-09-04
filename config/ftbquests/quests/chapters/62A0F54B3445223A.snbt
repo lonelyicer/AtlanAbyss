@@ -1,151 +1,39 @@
 {
 	id: "62A0F54B3445223A"
 	group: "03B4E601CC5A5BFE"
-	order_index: 9
+	order_index: 10
 	filename: "62A0F54B3445223A"
 	title: "铳之力"
 	icon: "tacz:target"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [
-		{
-			disable_toast: true
-			x: 0.0d
-			y: 0.0d
-			description: ["大人，时代变了！"]
-			dependencies: ["62ABD67CFC26F88E"]
-			hide: true
-			size: 1.5d
-			id: "4DA61F4D53EDC6AD"
-			tasks: [{
-				id: "50B3A59E599AC5A0"
-				type: "item"
-				item: "tacz:gun_smith_table"
-			}]
-			rewards: [{
-				id: "00145F6A2BF70942"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
-			disable_toast: true
-			x: 3.0d
-			y: 2.5d
-			description: ["普通级枪械：100DPS以下。"]
-			dependencies: ["4DA61F4D53EDC6AD"]
-			hide: true
-			id: "0FE3B58E65864060"
-			tasks: [{
-				id: "108BC150BE8369AF"
-				type: "item"
-				item: "kubejs:uncommon_material"
-			}]
-			rewards: [{
-				id: "58933BC554071BAA"
-				type: "xp"
-				xp: 20
-			}]
-		}
-		{
-			disable_toast: true
-			x: 3.0d
-			y: -2.5d
-			description: ["稀有级枪械：100DPS以上。"]
-			dependencies: ["0FE3B58E65864060"]
-			hide: true
-			id: "1FC2394DF84DD49D"
-			tasks: [{
-				id: "060394B1D014C495"
-				type: "item"
-				item: "kubejs:rare_material"
-			}]
-			rewards: [{
-				id: "7F84AAE907DC9101"
-				type: "xp"
-				xp: 30
-			}]
-		}
-		{
-			disable_toast: true
-			x: 0.0d
-			y: -6.5d
-			description: ["史诗级枪械：200DPS以上。"]
-			dependencies: ["1FC2394DF84DD49D"]
-			hide: true
-			id: "0D06561B8C9D82E3"
-			tasks: [{
-				id: "7D1E26CF7FAADEE0"
-				type: "item"
-				item: "kubejs:epic_material"
-			}]
-			rewards: [{
-				id: "5B8F81C66E2D9EA7"
-				type: "xp"
-				xp: 40
-			}]
-		}
-		{
-			disable_toast: true
-			x: -3.0d
-			y: -2.5d
-			description: ["传说级枪械：400DPS以上。"]
-			dependencies: ["0D06561B8C9D82E3"]
-			hide: true
-			id: "0EC352B6A657D98C"
-			tasks: [{
-				id: "4D074B500E0AF2AD"
-				type: "item"
-				item: "kubejs:legendary_material"
-			}]
-			rewards: [{
-				id: "5C0659A6619B9174"
-				type: "xp"
-				xp: 50
-			}]
-		}
-		{
-			disable_toast: true
-			x: -3.0d
-			y: 2.5d
-			description: ["终极枪械：1000DPS以上。"]
-			dependencies: ["0EC352B6A657D98C"]
-			hide: true
-			id: "52730CF66109C799"
-			tasks: [{
-				id: "07E8D34F863A427F"
-				type: "item"
-				item: "kubejs:ultimate_material"
-			}]
-			rewards: [{
-				id: "36873C991F115625"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
-			disable_toast: true
-			x: 0.0d
-			y: 6.5d
-			description: [
-				"一种专为枪械打造的光环。"
-				"右键开始随机抽取光环，光环总共16种。"
-				"个别特殊的光环配合枪械，可使DPS上不封顶！"
-			]
-			dependencies: ["52730CF66109C799"]
-			hide: true
-			id: "48775D208B988239"
-			tasks: [{
-				id: "21FB196B8AAD31B5"
-				type: "item"
-				item: "kubejs:halo_gashapon"
-			}]
-			rewards: [{
-				id: "76B64C51D09DF8BB"
-				type: "xp"
-				xp: 200
-			}]
-		}
-	]
+	quests: [{
+		disable_toast: true
+		x: 0.0d
+		y: 0.0d
+		description: [
+			"大人，时代变了！"
+			"注：因为“R”键改为了疾跑键，所以换弹键改为了“T”键，其他键不变。"
+			"“G”键为切换开火模式。"
+			"“Z”键为打开枪械改装。"
+			"“H”键为枪械检视。"
+			"“V”键为枪械近战。"
+			"“左CTRL”键为瞄准镜缩放。"
+		]
+		dependencies: ["62ABD67CFC26F88E"]
+		hide: true
+		size: 1.5d
+		id: "4DA61F4D53EDC6AD"
+		tasks: [{
+			id: "50B3A59E599AC5A0"
+			type: "item"
+			item: "tacz:gun_smith_table"
+		}]
+		rewards: [{
+			id: "00145F6A2BF70942"
+			type: "xp"
+			xp: 10
+		}]
+	}]
 	quest_links: [ ]
 }

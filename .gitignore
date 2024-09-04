@@ -20,8 +20,10 @@
 /tlm_custom_pack
 /usercache.json
 /usernamecache.json
+/xaero
 /XaeroWaypoints
 /XaeroWaypoints_BACKUP032021
+/XaeroWaypoints_BACKUP240807
 /XaeroWorldMap
 /knownkeys.txt
 /rocknroller
@@ -31,6 +33,7 @@
 /WailaErrorOutput.txt
 /skyblock_exports
 /o_prof
+/servers.dat
 /servers.dat_old
 /servers.essential.dat
 
@@ -44,7 +47,5 @@ config/titanium
 config/touhou_little_maid
 config/yes_steve_model
 config/tacz/custom/tacz_default_gun
-config/tacz/custom/Suffuse GunSmoke-Beta1.0.1Pack.zip
-config/tacz/custom/the_division_pack_ver.0.2.6.zip
-config/tacz/custom/ak_metals_1.0.2.zip
-config/tacz/custom/82laffey1.3hotfix.zip
+config/tacz/custom/82laffey1.5hotfix.zip
+resourcepacks/AtlanAbyss Music Pack v1.0.zip

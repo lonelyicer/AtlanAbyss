@@ -11,6 +11,7 @@
 		{
 			x: 0.0d
 			y: 0.0d
+			description: ["类似于算力时代的机壳。"]
 			dependencies: ["0995E7B507258131"]
 			id: "147EA282B12BBF98"
 			tasks: [{
@@ -27,6 +28,7 @@
 		{
 			x: -1.5d
 			y: 0.0d
+			description: ["硬盘存放处。"]
 			dependencies: ["147EA282B12BBF98"]
 			id: "7948C4200A09FE37"
 			tasks: [{
@@ -44,6 +46,7 @@
 			disable_toast: true
 			x: 0.0d
 			y: 1.5d
+			description: ["用于查看AE网络里的物品。"]
 			dependencies: ["147EA282B12BBF98"]
 			id: "0DF60356F33E6CB3"
 			tasks: [{
@@ -62,6 +65,7 @@
 			x: -2.0d
 			y: 3.0d
 			shape: "hexagon"
+			description: ["用于样板的制作。"]
 			dependencies: ["20B36D04B937B5FA"]
 			hide: true
 			id: "7CE9CA55C7700FF5"
@@ -79,6 +83,7 @@
 		{
 			x: -1.0d
 			y: -1.0d
+			description: ["即可传输电力也可传输网络。"]
 			dependencies: ["147EA282B12BBF98"]
 			id: "20C4673FF6970BA3"
 			tasks: [{
@@ -137,6 +142,7 @@
 			x: -4.0d
 			y: 0.0d
 			shape: "hexagon"
+			description: ["自动化合成所需的配件。"]
 			dependencies: ["4745BB3D40BF9CE4"]
 			hide: true
 			id: "1B5CAE5435E0E8B8"
@@ -154,6 +160,7 @@
 		{
 			x: 0.0d
 			y: -1.5d
+			description: ["失去样板功能的ME接口。"]
 			dependencies: ["147EA282B12BBF98"]
 			id: "3DCFFE814D416FDE"
 			tasks: [{
@@ -170,6 +177,7 @@
 		{
 			x: 1.5d
 			y: 0.0d
+			description: ["自动化的接口。"]
 			dependencies: ["147EA282B12BBF98"]
 			id: "3293FA204D6F3720"
 			tasks: [{
@@ -186,6 +194,7 @@
 		{
 			x: 1.0d
 			y: -1.0d
+			description: ["用于自动化的工作台。"]
 			dependencies: ["147EA282B12BBF98"]
 			id: "61613B11E2742065"
 			tasks: [{
@@ -203,6 +212,7 @@
 			x: -2.5d
 			y: 1.0d
 			shape: "hexagon"
+			description: ["用于快速转移硬盘物品。"]
 			dependencies: ["4745BB3D40BF9CE4"]
 			hide: true
 			id: "1906C9628AEC2055"
@@ -441,6 +451,11 @@
 				type: "item"
 				item: "ae2:cell_component_4k"
 			}]
+			rewards: [{
+				id: "62C18397FB833453"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			disable_toast: true
@@ -455,6 +470,11 @@
 				type: "item"
 				item: "ae2:cell_component_64k"
 			}]
+			rewards: [{
+				id: "6C5992D034E0C6FF"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			disable_toast: true
@@ -468,11 +488,17 @@
 				type: "item"
 				item: "ae2:cell_component_16k"
 			}]
+			rewards: [{
+				id: "4E8DAF5A492A4442"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			x: 0.0d
 			y: -4.0d
 			shape: "octagon"
+			description: ["开启太空时代！"]
 			dependencies: [
 				"679863D04FCA1B0B"
 				"1C4C37304A41EA29"
@@ -496,6 +522,7 @@
 			x: 0.0d
 			y: -2.5d
 			shape: "hexagon"
+			description: ["无限制版的末影箱子。"]
 			dependencies: ["30A0CDCD1B7CE208"]
 			hide: true
 			id: "780E7334812E5863"
@@ -529,6 +556,7 @@
 			disable_toast: true
 			x: 3.5d
 			y: -1.0d
+			description: ["太空时代重要的合金。"]
 			dependencies: ["0995E7B507258131"]
 			hide: true
 			id: "5366B3798112EA39"
@@ -546,6 +574,7 @@
 		{
 			x: 0.0d
 			y: -5.5d
+			description: ["关于锇的获取，具体请看原子篇章！"]
 			dependencies: ["2A4E28366BBDD94D"]
 			id: "679863D04FCA1B0B"
 			tasks: [{
@@ -564,6 +593,7 @@
 			x: -1.5d
 			y: 2.0d
 			shape: "hexagon"
+			description: ["在ME终端的基础上加了工作台。"]
 			dependencies: ["0DF60356F33E6CB3"]
 			hide: true
 			id: "20B36D04B937B5FA"
@@ -621,6 +651,7 @@
 			x: -1.5d
 			y: 4.0d
 			shape: "hexagon"
+			description: ["用于管理AE网络中的样板。"]
 			dependencies: ["7CE9CA55C7700FF5"]
 			hide: true
 			id: "278AD15AE80069A7"
@@ -735,6 +766,7 @@
 			x: 0.0d
 			y: -8.5d
 			shape: "hexagon"
+			description: ["结束化合物。"]
 			dependencies: ["2A4E28366BBDD94D"]
 			hide: true
 			id: "633C37FA492FB28C"
@@ -803,6 +835,10 @@
 			x: 0.0d
 			y: -11.5d
 			shape: "hexagon"
+			description: [
+				"手持时间之瓶左击生物可消耗生物的生命值获取时间。"
+				"右击方块可消耗时间加速方块。"
+			]
 			dependencies: ["747BA8A02DC01DB1"]
 			id: "386E44C7B0EE98FD"
 			tasks: [{
@@ -824,7 +860,7 @@
 			x: 0.0d
 			y: -10.5d
 			shape: "rsquare"
-			description: ["开启最终试炼。"]
+			description: ["开启最终试炼篇章。"]
 			dependencies: [
 				"4A1CFC8966CA0784"
 				"5054A94D72277F83"
@@ -845,6 +881,7 @@
 			disable_toast: true
 			x: 0.0d
 			y: -7.0d
+			description: ["魔源宝石与糖合成获得。"]
 			dependencies: ["0995E7B507258131"]
 			hide: true
 			id: "2A4E28366BBDD94D"
@@ -872,6 +909,42 @@
 			}]
 			rewards: [{
 				id: "51FD86B5C6600778"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -2.5d
+			y: -1.0d
+			shape: "hexagon"
+			description: ["没有类型限制的存储元件。"]
+			dependencies: ["4745BB3D40BF9CE4"]
+			hide: true
+			id: "6276553422B0AABC"
+			tasks: [{
+				id: "30701CF173D978F0"
+				type: "item"
+				item: "ae2things:disk_housing"
+			}]
+			rewards: [{
+				id: "2FD054769D3C95A6"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			description: ["配方自动化！"]
+			dependencies: ["3293FA204D6F3720"]
+			id: "207DEBC08F6F8B41"
+			tasks: [{
+				id: "5B3503913515A0B1"
+				type: "item"
+				item: "ae2:blank_pattern"
+			}]
+			rewards: [{
+				id: "01F897AF91A2E29E"
 				type: "xp"
 				xp: 10
 			}]

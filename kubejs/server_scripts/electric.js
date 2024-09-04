@@ -596,16 +596,20 @@ onEvent('recipes', event => {
 
 
 
+  //蜂蜜修复
+  remove('thermal:machines/crucible/crucible_honey_block_to_honey')
+  thermal.crucible(Fluid.of('create:honey', 1000),
+    'minecraft:honey_block'
+  ).energy(2000).id('atlanabyss:crucible_honey_block')
+
   //机械熔岩炉
-  const superheated = [
-    { input: 'netherrack', output: 'minecraft:lava', count: 500 },
-    { input: 'magma_block', output: 'minecraft:lava', count: 1000 }
-  ];
-  for (const sh of superheated) {
-    create.mixing(Fluid.of(`${sh.output}`, sh.count),
-      `minecraft:${sh.input}`
-    ).superheated().id(`atlanabyss:superheated_${sh.input}`)
-  }
+  create.mixing(Fluid.of('minecraft:lava', 500),
+    'minecraft:netherrack'
+  ).superheated().id('atlanabyss:superheated_netherrack')
+  create.mixing(Fluid.of('minecraft:lava', 1000),
+    'minecraft:magma_block'
+  ).superheated().id('atlanabyss:superheated_magma_block')
+
   const heated = [
     { input: 'glowstone_dust', output: 'thermal:glowstone', count: 250 },
     { input: 'glowstone', output: 'thermal:glowstone', count: 1000 },

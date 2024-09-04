@@ -1,0 +1,7 @@
+{
+    "parent": "kubejs:item/album",
+    "textures": {
+        "particle": "block/glass",
+        "album": "kubejs:item/album/album_adp9"
+    }
+}

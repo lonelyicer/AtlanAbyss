@@ -1,7 +1,5 @@
 onEvent('item.registry', event => {
 	//物品
-	event.create('granite_alloy').displayName('Granite Alloy');
-	event.create('diorite_alloy').displayName('Diorite Alloy');
 	event.create('candy_crystal').displayName('Candy Crystal');
 	event.create('polished_candy_crystal').displayName('Polished Candy Crystal');
 	event.create('polished_sulfur').displayName('Polished Sulfur');
@@ -10,7 +8,12 @@ onEvent('item.registry', event => {
 	event.create('raw_uranium').displayName('Raw Uranium');
 	event.create('raw_osmium').displayName('Raw Osmium');
 	event.create('raw_bismuth').displayName('Raw Bismuth');
+	event.create('divine_ore').displayName('Divine Ore').rarity(RARITY_RARE);
 
+	event.create('granite_alloy').displayName('Granite Alloy');
+	event.create('diorite_alloy').displayName('Diorite Alloy');
+	event.create('platinum_ingot').displayName('Platinum Ingot');
+	event.create('tungsten_ingot').displayName('tungsten Ingot');
 	event.create('aluminum_ingot').displayName('Aluminum Ingot');
 	event.create('aluminium_alloy_ingot').displayName('Aluminium Alloy Ingot');
 	event.create('meteosteel_ingot').displayName('Meteosteel Ingot');
@@ -26,8 +29,6 @@ onEvent('item.registry', event => {
 	event.create('infinity_ingot').displayName('Infinity Ingot').glow(true).rarity(RARITY_EPIC);
 	event.create('eviltwisting_ingot').displayName('Eviltwisting Ingot').rarity(RARITY_RARE);
 	event.create('bismuth_ingot').displayName('Bismuth Ingot');
-	event.create('platinum_ingot').displayName('Platinum Ingot');
-	event.create('tungsten_ingot').displayName('tungsten Ingot');
 	event.create('chlorophyll_ingot').displayName('Chlorophyll Ingot');
 	event.create('abyss_ingot').displayName('Abyss Ingot');
 	event.create('planetary_ingot').displayName('Planetary Ingot');
@@ -118,6 +119,15 @@ onEvent('item.registry', event => {
 	event.create('album_mameyudoufu').displayName('Album').rarity(RARITY_RARE).unstackable();
 	event.create('album_adventure').displayName('Album').rarity(RARITY_RARE).unstackable();
 	event.create('album_made_in_abyss').displayName('Album').rarity(RARITY_RARE).unstackable();
+	event.create('album_adp').displayName('Album').rarity(RARITY_RARE).unstackable();
+	event.create('album_adp2').displayName('Album').rarity(RARITY_RARE).unstackable();
+	event.create('album_adp3').displayName('Album').rarity(RARITY_RARE).unstackable();
+	event.create('album_adp4').displayName('Album').rarity(RARITY_RARE).unstackable();
+	event.create('album_adp5').displayName('Album').rarity(RARITY_RARE).unstackable();
+	event.create('album_adp6').displayName('Album').rarity(RARITY_RARE).unstackable();
+	event.create('album_adp7').displayName('Album').rarity(RARITY_RARE).unstackable();
+	event.create('album_adp8').displayName('Album').rarity(RARITY_RARE).unstackable();
+	event.create('album_adp9').displayName('Album').rarity(RARITY_RARE).unstackable();
 	event.create('treasure_box').displayName('Treasure Box').glow(true).rarity(RARITY_EPIC).unstackable();
 
 	event.create('uncommon_material').displayName('Uncommon Material').glow(true);
@@ -125,8 +135,6 @@ onEvent('item.registry', event => {
 	event.create('epic_material').displayName('Epic Material').glow(true);
 	event.create('legendary_material').displayName('Legendary Material').glow(true);
 	event.create('ultimate_material').displayName('Ultimate Material').glow(true);
-
-	event.create('divine_ore').displayName('Divine Ore').rarity(RARITY_RARE);
 
 	event.create('catalyst_incomplete', 'create:sequenced_assembly').color(0, 0x1E2533).color(1, 0x353E50).displayName('Incomplete Catalyst');
 	event.create('chaos_incomplete', 'create:sequenced_assembly').color(0, 0x1E2533).color(1, 0x353E50).displayName('Incomplete Chemical Agent');

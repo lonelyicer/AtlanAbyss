@@ -36,10 +36,11 @@
 			x: 0.0d
 			y: -1.5d
 			shape: "hexagon"
+			description: ["可从原木里提取液体。"]
 			dependencies: ["0F1CD1C8804008B7"]
 			id: "27A398EC39DC9F94"
 			tasks: [{
-				id: "610F1FC0C1ACE44A"
+				id: "0F35ED0DB34030FE"
 				type: "item"
 				item: "thermal:device_tree_extractor"
 			}]
@@ -76,7 +77,7 @@
 			dependencies: ["0F1CD1C8804008B7"]
 			id: "27BBEB65EE647E74"
 			tasks: [{
-				id: "09DD98EAEF3FB5AD"
+				id: "09133DEA4BF1CF63"
 				type: "item"
 				item: "thermal:device_fisher"
 			}]
@@ -91,6 +92,7 @@
 			x: 1.5d
 			y: 0.0d
 			shape: "hexagon"
+			description: [" 批量堆肥，产出的堆肥和骨粉一致。"]
 			dependencies: ["0F1CD1C8804008B7"]
 			id: "6892758DB79A96E5"
 			tasks: [{
@@ -158,7 +160,7 @@
 			x: -1.0d
 			y: -1.0d
 			shape: "hexagon"
-			description: ["水车，大水车和曲柄，机械动力的来源，当然还有风车和蒸汽引擎。"]
+			description: ["水车，大水车和曲柄，动力的来源，当然还有风车和蒸汽引擎。"]
 			dependencies: ["0F1CD1C8804008B7"]
 			id: "1F5A77E77CE7A69A"
 			tasks: [
@@ -190,7 +192,7 @@
 			y: 1.5d
 			description: [
 				"您的金属处理第一站。"
-				"温馨提示：在鼠标指针指着某些物品时，可以按住W查看思索教学。"
+				"注：在鼠标指针指着某些物品时，可以按住 [W] 查看思索教学。"
 			]
 			dependencies: ["0F1CD1C8804008B7"]
 			id: "0D3B950AFB6E6BC2"
@@ -210,8 +212,8 @@
 			x: 1.0d
 			y: 2.0d
 			description: [
-				"在您进入下界时，可以提前做个空的烈焰人燃烧室，当您在下界探险时，务必多留意烈焰人，当遇见烈焰人时您可以手持空的烈焰人燃烧室对着烈焰人右击便可进行捕获。"
-				"温馨提示：烈焰人刷怪笼具有无限的烈焰人。"
+				"在您进入下界时，可以提前做个空的烈焰人燃烧室，在下界探险时，务必多留意烈焰人，遇见烈焰人时手持空的烈焰人燃烧室对着烈焰人右击便可进行捕获。"
+				"注：可直接对着烈焰人刷怪笼右击。"
 			]
 			dependencies: ["0D3B950AFB6E6BC2"]
 			hide: true
@@ -255,6 +257,7 @@
 			disable_toast: true
 			x: 0.0d
 			y: 4.5d
+			description: ["建议先发展黄铜科技，之后在发展钢科技。"]
 			dependencies: ["32F577B605FC8D35"]
 			hide: true
 			id: "59AF238BE1A99F24"
@@ -295,6 +298,7 @@
 			disable_toast: true
 			x: -1.0d
 			y: 2.0d
+			description: ["可用于处理以下四种配方：熔炼，烟熏，缠魂，洗涤。"]
 			dependencies: ["0D3B950AFB6E6BC2"]
 			id: "14A8E7E37136FB5C"
 			tasks: [{
@@ -356,6 +360,7 @@
 			disable_toast: true
 			x: 2.0d
 			y: 6.0d
+			description: ["可合成大型配方。"]
 			dependencies: ["1814D0684AAB4731"]
 			id: "529FFF3330B1F7EC"
 			tasks: [{
@@ -389,7 +394,8 @@
 		{
 			disable_toast: true
 			x: 2.0d
-			y: 7.0d
+			y: 7.5d
+			description: ["更大更好的磨粉机。"]
 			dependencies: ["529FFF3330B1F7EC"]
 			id: "3C4BF44C30626F05"
 			tasks: [{
@@ -427,8 +433,9 @@
 			y: 6.0d
 			shape: "hexagon"
 			description: [
-				"催化剂通过序列组装概率获得。"
+				"催化剂需通过序列组装概率获得。"
 				"催化剂可以用于元素炼金。"
+				"副产物可以用抽宝藏箱。"
 			]
 			dependencies: ["4786752F32FF31C0"]
 			id: "5BD88AB862216AA1"
@@ -467,6 +474,7 @@
 			rewards: [{
 				id: "4ED18D8B2CA8E52C"
 				type: "item"
+				title: "副产物"
 				item: "kubejs:alchemy_0"
 			}]
 		}
@@ -474,6 +482,7 @@
 			x: -1.0d
 			y: 6.0d
 			shape: "hexagon"
+			description: ["可用于合成钻石。"]
 			dependencies: ["4786752F32FF31C0"]
 			id: "736880DB591C8A0A"
 			tasks: [{
@@ -491,6 +500,7 @@
 			disable_toast: true
 			x: -1.0d
 			y: 3.0d
+			description: ["前期推荐使用煤炭处理成焦炭。"]
 			dependencies: ["32F577B605FC8D35"]
 			id: "7F1B208FCBFFF466"
 			tasks: [{
@@ -524,9 +534,10 @@
 		}
 		{
 			disable_toast: true
-			x: -5.0d
-			y: 1.0d
+			x: -7.0d
+			y: -1.0d
 			shape: "hexagon"
+			description: ["附魔也能全自动！"]
 			dependencies: ["0EA2F9720106F822"]
 			id: "513EF3E112260A3F"
 			tasks: [{
@@ -544,6 +555,7 @@
 			disable_toast: true
 			x: -6.0d
 			y: 2.0d
+			description: ["液体储罐，但不能手动输入输出，需要使用管道。"]
 			dependencies: ["0EA2F9720106F822"]
 			id: "79DE813508ECE200"
 			tasks: [{
@@ -562,6 +574,7 @@
 			x: -6.0d
 			y: -2.0d
 			shape: "hexagon"
+			description: ["液体运输！"]
 			dependencies: ["0EA2F9720106F822"]
 			id: "5546AD2F2428157C"
 			tasks: [
@@ -587,6 +600,7 @@
 			x: -5.0d
 			y: -1.0d
 			shape: "hexagon"
+			description: ["有些配方会用到它。"]
 			dependencies: ["0EA2F9720106F822"]
 			id: "5DA4D857EE2C106A"
 			tasks: [{
@@ -603,8 +617,9 @@
 		{
 			disable_toast: true
 			x: -7.0d
-			y: -1.0d
+			y: 1.0d
 			shape: "hexagon"
+			description: ["全自动砂轮。"]
 			dependencies: ["0EA2F9720106F822"]
 			id: "52B83ADC3D18FA78"
 			tasks: [{
@@ -620,9 +635,10 @@
 		}
 		{
 			disable_toast: true
-			x: -7.0d
+			x: -5.0d
 			y: 1.0d
 			shape: "hexagon"
+			description: ["有些配方会需要它。"]
 			dependencies: ["0EA2F9720106F822"]
 			id: "6C56CA5D09136547"
 			tasks: [{
@@ -641,6 +657,7 @@
 			x: -4.5d
 			y: 0.0d
 			shape: "hexagon"
+			description: ["既能抽水也能抽岩浆。"]
 			dependencies: ["0EA2F9720106F822"]
 			id: "35A013B670E4FB3D"
 			tasks: [{
@@ -659,6 +676,7 @@
 			x: -7.5d
 			y: 0.0d
 			shape: "hexagon"
+			description: ["利用强劲的蒸汽生产应力！"]
 			dependencies: ["0EA2F9720106F822"]
 			id: "29709B35CE793268"
 			tasks: [{
@@ -694,6 +712,7 @@
 			disable_toast: true
 			x: -1.0d
 			y: 1.0d
+			description: ["其实也可以当电梯用。"]
 			dependencies: ["0F1CD1C8804008B7"]
 			id: "3AA4506D8BD9B1CE"
 			tasks: [{
@@ -712,6 +731,7 @@
 			x: 3.0d
 			y: 3.5d
 			shape: "hexagon"
+			description: ["主要用于建造电梯，配合“接触式红石信号发生器”和“动态结构控制器”使用。"]
 			dependencies: ["1814D0684AAB4731"]
 			id: "2452A8C073F40229"
 			tasks: [{
@@ -730,6 +750,7 @@
 			x: 3.5d
 			y: 4.5d
 			shape: "hexagon"
+			description: ["无线红石！"]
 			dependencies: ["1814D0684AAB4731"]
 			id: "036EC478EB9C8A13"
 			tasks: [{
@@ -767,6 +788,7 @@
 			x: -4.0d
 			y: 5.0d
 			shape: "hexagon"
+			description: ["不用担心地形的物品移动机。"]
 			dependencies: ["6FCDF6D77BB86B96"]
 			id: "4BC557716D1C1120"
 			tasks: [{
@@ -783,6 +805,7 @@
 		{
 			x: -3.0d
 			y: 4.5d
+			description: ["第一个构件，机械与齿轮。"]
 			dependencies: ["4786752F32FF31C0"]
 			id: "6FCDF6D77BB86B96"
 			tasks: [{
@@ -790,12 +813,18 @@
 				type: "item"
 				item: "create:precision_mechanism"
 			}]
+			rewards: [{
+				id: "20E9ACDE70C810C1"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			disable_toast: true
 			x: -4.0d
 			y: 4.0d
 			shape: "hexagon"
+			description: ["变速精灵！"]
 			dependencies: ["6FCDF6D77BB86B96"]
 			id: "68AC3D4C33B0F941"
 			tasks: [{
@@ -814,13 +843,14 @@
 			x: 2.0d
 			y: 2.0d
 			shape: "hexagon"
+			description: ["铁路交通！"]
 			dependencies: ["6D070E7955546249"]
 			hide: true
 			id: "29E9DD3E49AA48DF"
 			tasks: [{
-				id: "33A2B0B9C21C14DE"
+				id: "41C6C51740ACEF81"
 				type: "item"
-				item: "create:controls"
+				item: "create:track_station"
 			}]
 			rewards: [{
 				id: "4A49C882AC1D5CFB"
@@ -833,6 +863,7 @@
 			x: 0.0d
 			y: 6.0d
 			shape: "hexagon"
+			description: ["自带分类功能的漏斗。"]
 			dependencies: ["59AF238BE1A99F24"]
 			hide: true
 			id: "471A76695E1374AB"
@@ -843,24 +874,6 @@
 			}]
 			rewards: [{
 				id: "4CEEA913D84B5EB9"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
-			disable_toast: true
-			x: 3.0d
-			y: 5.5d
-			shape: "hexagon"
-			dependencies: ["1814D0684AAB4731"]
-			id: "4FA504EF881D517D"
-			tasks: [{
-				id: "15CD6C55C1E08D4E"
-				type: "item"
-				item: "create:content_observer"
-			}]
-			rewards: [{
-				id: "2940BB8A90808623"
 				type: "xp"
 				xp: 10
 			}]
@@ -889,6 +902,7 @@
 			disable_toast: true
 			x: -6.0d
 			y: 3.0d
+			description: ["石油，炼起来。"]
 			dependencies: ["79DE813508ECE200"]
 			id: "4556B9E8057C5F44"
 			tasks: [{
@@ -906,7 +920,7 @@
 			title: "抽油机"
 			x: -4.0d
 			y: 3.0d
-			description: ["按住 [W] 思索"]
+			description: ["在含有石油的区块里搭建抽油机，搭建方法请按住 [W] 思索。"]
 			dependencies: ["4C2C16BA5796BFD0"]
 			id: "371F801CBEA09EA1"
 			tasks: [
@@ -942,7 +956,7 @@
 			disable_toast: true
 			x: -4.0d
 			y: 1.5d
-			description: ["这个世界上遍地都是石油，但大部分的石油肉眼并不可见，或许在炎热的沙漠地区会有少量的沥青沙，如果实在找不到沙漠也可以使用血液人工合成石油，但这些并不是最优选择，您需要原油探测器，有了它，世界上所有的石油都将会被您窥探的一干二净。"]
+			description: ["这个世界上遍地都是石油，但大部分的石油肉眼并不可见，或许在炎热的沙漠地区会有少量的沥青沙，如果实在找不到沙漠也可以使用血液人工合成石油，但这些并不是最优选择，您需要原油探测器，有了它，主世界所有的石油都将会被您窥探的一干二净。"]
 			dependencies: ["371F801CBEA09EA1"]
 			hide: true
 			id: "0BC087D2D6933F9C"
@@ -960,6 +974,7 @@
 		{
 			x: -5.0d
 			y: 6.0d
+			description: ["塑料，一种高分子聚合物。"]
 			dependencies: ["6993ED17CD46ACA5"]
 			id: "3909A2788335AB22"
 			tasks: [{
@@ -976,6 +991,7 @@
 		{
 			x: -5.0d
 			y: 4.5d
+			description: ["考验自动化能力的时候到了！"]
 			dependencies: [
 				"4556B9E8057C5F44"
 				"371F801CBEA09EA1"
@@ -1034,6 +1050,7 @@
 			x: -5.0d
 			y: 7.5d
 			shape: "octagon"
+			description: ["开启电力篇章！"]
 			dependencies: [
 				"3909A2788335AB22"
 				"449654DC7648F05B"
@@ -1090,6 +1107,7 @@
 			disable_toast: true
 			x: -7.0d
 			y: 3.0d
+			description: ["不要想着手搓哦。"]
 			dependencies: ["0F39A47561B38A32"]
 			id: "0A056C2098731282"
 			tasks: [{
@@ -1107,6 +1125,7 @@
 			disable_toast: true
 			x: -7.0d
 			y: 2.0d
+			description: ["可在下界挖到，或通过粉碎玄武岩获得。"]
 			dependencies: ["07835D33A0BA9FD1"]
 			hide: true
 			id: "0F39A47561B38A32"
@@ -1330,6 +1349,7 @@
 			x: -6.0d
 			y: 4.5d
 			shape: "hexagon"
+			description: ["占地比蒸汽机小。"]
 			dependencies: ["4556B9E8057C5F44"]
 			hide: true
 			id: "1B9310941CEF73C2"
@@ -1349,7 +1369,7 @@
 			x: -2.5d
 			y: 0.0d
 			shape: "hexagon"
-			description: ["无中生有！"]
+			description: ["一个简单的筛子机器。"]
 			dependencies: ["0F1CD1C8804008B7"]
 			id: "2CE707DA6F33E4D4"
 			tasks: [{
@@ -1393,6 +1413,7 @@
 			disable_toast: true
 			x: -3.0d
 			y: 2.0d
+			description: ["硫磺矿可在下界挖到，或通过粉碎岩浆块获得。"]
 			dependencies: ["07835D33A0BA9FD1"]
 			hide: true
 			id: "62FA4371C8E11B0E"
@@ -1403,6 +1424,24 @@
 			}]
 			rewards: [{
 				id: "3315FD2715577E4E"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 3.0d
+			y: 5.5d
+			shape: "rsquare"
+			description: ["开启商业之路。"]
+			dependencies: ["1814D0684AAB4731"]
+			id: "6E54B575C45D9CD4"
+			tasks: [{
+				id: "2699ABCC9F32F6E8"
+				type: "item"
+				item: "lightmanscurrency:terminal"
+			}]
+			rewards: [{
+				id: "2E346119E9A567C2"
 				type: "xp"
 				xp: 10
 			}]

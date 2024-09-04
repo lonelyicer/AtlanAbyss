@@ -1,0 +1,179 @@
+﻿{
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Feryquitous\"],name:\"§6Avwvz\",read_only:0b,time:228,url:\"https://music.163.com/song/media/outer/url?id=29932663.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"無力P\"],name:\"§6Aether\",read_only:0b,time:186,url:\"https://music.163.com/song/media/outer/url?id=29932664.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"cosMo@暴走P\"],name:\"§6Ωκεανος\",read_only:0b,time:251,trans_name:\"Oceanus\",url:\"https://music.163.com/song/media/outer/url?id=29932669.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"void\"],name:\"§6Dedication\",read_only:0b,time:265,url:\"https://music.163.com/song/media/outer/url?id=29932666.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"BlackY\"],name:\"§6Brionac\",read_only:0b,time:255,url:\"https://music.163.com/song/media/outer/url?id=29932668.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Nardis\"],name:\"§6LOVEWAVE\",read_only:0b,time:275,url:\"https://music.163.com/song/media/outer/url?id=29932667.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"村瀬悠太\"],name:\"§6snowscape\",read_only:0b,time:277,url:\"https://music.163.com/song/media/outer/url?id=29932665.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Kaname Shigeyoshi\"],name:\"§6Home\",read_only:0b,time:261,url:\"https://music.163.com/song/media/outer/url?id=29932671.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"xi\"],name:\"§6Trinity Stream\",read_only:0b,time:215,url:\"https://music.163.com/song/media/outer/url?id=29932672.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"RIN\"],name:\"§6Faint of Heart\",read_only:0b,time:181,url:\"https://music.163.com/song/media/outer/url?id=29932673.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Ym1024\"],name:\"§6moments of you\",read_only:0b,time:223,url:\"https://music.163.com/song/media/outer/url?id=29932674.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"tigerlily\"],name:\"§6White Palette\",read_only:0b,time:261,url:\"https://music.163.com/song/media/outer/url?id=29932675.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"masaki kawasaki\"],name:\"§6秋桜の終わりの季節によせる抒情詩 ～ピアノとオーケストラのために～\",read_only:0b,time:393,trans_name:\"寄给秋天的樱花凋谢的季节的抒情诗 ～钢琴乐团协奏曲～\",url:\"https://music.163.com/song/media/outer/url?id=29932679.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"黒魔\"],name:\"§6長い夏\",read_only:0b,time:234,trans_name:\"Long summer\",url:\"https://music.163.com/song/media/outer/url?id=29932677.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"bqスタヂオ\"],name:\"§6葉ノ舞\",read_only:0b,time:246,url:\"https://music.163.com/song/media/outer/url?id=29932676.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"削除\"],name:\"§6ガラクタの塔\",read_only:0b,time:428,url:\"https://music.163.com/song/media/outer/url?id=29932678.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Valerie\"],name:\"§6A Distant Day\",read_only:0b,time:355,url:\"https://music.163.com/song/media/outer/url?id=29932680.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        }
+      ]
+    }
+  ]
+}

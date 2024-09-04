@@ -1,7 +1,7 @@
 {
 	id: "29FE833EFBF0D56B"
 	group: "03B4E601CC5A5BFE"
-	order_index: 6
+	order_index: 7
 	filename: "29FE833EFBF0D56B"
 	title: "树之力"
 	icon: "ars_nouveau:green_archwood_sapling"
@@ -12,6 +12,7 @@
 			disable_toast: true
 			x: 0.0d
 			y: 0.0d
+			description: ["与树魔法相关的工作台。"]
 			dependencies: ["43E93D9FC2ED3F4D"]
 			hide: true
 			size: 1.5d
@@ -264,6 +265,7 @@
 		{
 			x: 2.5d
 			y: 0.0d
+			description: ["魔源容器。"]
 			dependencies: ["3F1BC198BA9B6A45"]
 			hide: true
 			id: "14739AB768F307AC"
@@ -362,6 +364,7 @@
 			disable_toast: true
 			x: -2.0d
 			y: 0.0d
+			description: ["关于新生魔艺你所需要知道的事。"]
 			dependencies: ["3F1BC198BA9B6A45"]
 			id: "06E0053A9632DFAA"
 			tasks: [{
@@ -379,6 +382,7 @@
 			x: -2.0d
 			y: 1.5d
 			shape: "rsquare"
+			description: ["开启赛马娘篇章。"]
 			dependencies: ["3F1BC198BA9B6A45"]
 			hide: true
 			id: "75BA5E928395B13B"

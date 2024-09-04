@@ -265,6 +265,7 @@
 			disable_toast: true
 			x: 0.0d
 			y: 0.0d
+			description: ["类似于原子时代的机壳。"]
 			dependencies: [
 				"135D5EDEC30846CA"
 				"6D869C10046E3B8D"
@@ -406,7 +407,7 @@
 		{
 			disable_toast: true
 			x: 0.0d
-			y: -5.5d
+			y: -4.5d
 			description: [
 				"锇，在主世界中极为罕见的高密度金属，不过，在守卫者的体内似乎含有微量的锇碎片？"
 				"如果需要大量的锇还是得上月球挖矿。"
@@ -430,6 +431,7 @@
 			icon: "tconstruct:molten_osmium_bucket"
 			x: 0.0d
 			y: -3.0d
+			description: ["本篇章会用到大量的熔融锇。"]
 			dependencies: ["786FDB466081FCC6"]
 			id: "135D5EDEC30846CA"
 			tasks: [{
@@ -903,6 +905,7 @@
 		{
 			x: 1.5d
 			y: 2.5d
+			description: ["氟石，颠倒之域的特产品。"]
 			dependencies: ["2896AD9C74EA52FF"]
 			id: "649865F690A3C441"
 			tasks: [{
@@ -974,6 +977,30 @@
 				id: "1E855F858C2E7C34"
 				type: "item"
 				item: "biggerreactors:blutonium_ingot"
+			}]
+			rewards: [{
+				id: "72B67C4DA1536AED"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 0.0d
+			y: -5.5d
+			shape: "hexagon"
+			description: ["可以存储化学品。"]
+			dependencies: ["786FDB466081FCC6"]
+			hide: true
+			id: "3F492823FC0DDA2C"
+			tasks: [{
+				id: "730F0ACF10141271"
+				type: "item"
+				item: "appmek:chemical_cell_housing"
+			}]
+			rewards: [{
+				id: "343FD8BD6B10F129"
+				type: "xp"
+				xp: 10
 			}]
 		}
 	]

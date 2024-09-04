@@ -1,0 +1,249 @@
+﻿{
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Feryquitous\",\"藍月なくる\"],name:\"§6Noir Specular\",read_only:0b,time:255,url:\"https://music.163.com/song/media/outer/url?id=526464669.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"南ゆに\"],name:\"§6九天世界の少年\",read_only:0b,time:276,url:\"https://music.163.com/song/media/outer/url?id=526464670.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"xi\"],name:\"§6Longinus\",read_only:0b,time:284,url:\"https://music.163.com/song/media/outer/url?id=526470593.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"BlackY\"],name:\"§6Downburst\",read_only:0b,time:314,url:\"https://music.163.com/song/media/outer/url?id=526468579.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"cosMo@暴走P\"],name:\"§6Hopeful BlueSky\",read_only:0b,time:297,url:\"https://music.163.com/song/media/outer/url?id=526470594.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"uma\"],name:\"§6No Way Out\",read_only:0b,time:339,url:\"https://music.163.com/song/media/outer/url?id=526470595.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"ETIA.\"],name:\"§6Piano Dance -Hanafubuki-\",read_only:0b,time:272,url:\"https://music.163.com/song/media/outer/url?id=526470596.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"sky_delta\"],name:\"§6Butterfly Effect\",read_only:0b,time:189,url:\"https://music.163.com/song/media/outer/url?id=526472546.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Junk\"],name:\"§6Live Your Own Life\",read_only:0b,time:301,trans_name:\"随心而活\",url:\"https://music.163.com/song/media/outer/url?id=526464671.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"NAY\"],name:\"§6Lamplight of soul\",read_only:0b,time:362,url:\"https://music.163.com/song/media/outer/url?id=526468580.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"モリモリあつし\"],name:\"§6Cherophobia\",read_only:0b,time:187,url:\"https://music.163.com/song/media/outer/url?id=526472547.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Taishi\"],name:\"§6The Shadows\",read_only:0b,time:556,url:\"https://music.163.com/song/media/outer/url?id=526468581.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"ハム\",\"F9\"],name:\"§6Mirage of Mind\",read_only:0b,time:268,url:\"https://music.163.com/song/media/outer/url?id=526468582.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Jerico\"],name:\"§6Machinery\",read_only:0b,time:262,url:\"https://music.163.com/song/media/outer/url?id=526468583.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Sobrem\"],name:\"§6Avisq\",read_only:0b,time:308,url:\"https://music.163.com/song/media/outer/url?id=526464673.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"EmoCosine\"],name:\"§6Lost My Memory\",read_only:0b,time:189,url:\"https://music.163.com/song/media/outer/url?id=526464672.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"yuichi NAGAO\"],name:\"§6Nocturne\",read_only:0b,time:262,url:\"https://music.163.com/song/media/outer/url?id=526468584.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"無力P\"],name:\"§6Akashic Records\",read_only:0b,time:221,url:\"https://music.163.com/song/media/outer/url?id=526464674.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"good-cool\",\"久保田修\"],name:\"§6Broken Hourglass (feat. OsamuKubota)\",read_only:0b,time:308,url:\"https://music.163.com/song/media/outer/url?id=526470598.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"F.E.L\"],name:\"§6Yours\",read_only:0b,time:240,url:\"https://music.163.com/song/media/outer/url?id=526470597.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Kenichi Chiba\"],name:\"§6a moment\",read_only:0b,time:240,url:\"https://music.163.com/song/media/outer/url?id=526468585.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"月代彩\"],name:\"§6Noctilucence\",read_only:0b,time:235,url:\"https://music.163.com/song/media/outer/url?id=526464675.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"bqスタヂオ\"],name:\"§6土曜日の雨は\",read_only:0b,time:217,url:\"https://music.163.com/song/media/outer/url?id=526464676.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"削除\"],name:\"§6ピアノ三重奏\",read_only:0b,time:762,trans_name:\"钢琴三重奏\",url:\"https://music.163.com/song/media/outer/url?id=526470599.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        }
+      ]
+    }
+  ]
+}

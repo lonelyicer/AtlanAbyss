@@ -12,6 +12,7 @@
 			disable_toast: true
 			x: 0.0d
 			y: 0.0d
+			description: ["类似于电力时代的机壳。"]
 			dependencies: ["2896AD9C74EA52FF"]
 			hide: true
 			id: "04B534A53F398C7A"
@@ -30,6 +31,7 @@
 			x: -3.0d
 			y: 0.0d
 			shape: "hexagon"
+			description: ["强大，无需多言。"]
 			dependencies: ["15FDE04FCBC2778D"]
 			hide: true
 			id: "0D77BEE452563508"
@@ -55,6 +57,7 @@
 			x: 2.0d
 			y: 0.0d
 			shape: "hexagon"
+			description: ["电力压板机（还可榨汁）。"]
 			dependencies: ["04B534A53F398C7A"]
 			id: "7D91651678824730"
 			tasks: [{
@@ -72,6 +75,7 @@
 			icon: "createaddition:tesla_coil"
 			x: 0.0d
 			y: -2.0d
+			description: ["可给一些特殊物品充能。"]
 			dependencies: ["04B534A53F398C7A"]
 			id: "61CDC9A969C09267"
 			tasks: [
@@ -97,6 +101,7 @@
 			x: 2.0d
 			y: -1.0d
 			shape: "hexagon"
+			description: ["可把应力转换成电力。"]
 			dependencies: ["04B534A53F398C7A"]
 			id: "091F01B16A12EAF2"
 			tasks: [{
@@ -111,8 +116,9 @@
 			}]
 		}
 		{
-			x: -1.0d
+			x: 1.0d
 			y: -2.0d
+			description: ["液体燃料发电！"]
 			dependencies: ["04B534A53F398C7A"]
 			id: "3A7C031DDABE3942"
 			tasks: [{
@@ -127,8 +133,9 @@
 			}]
 		}
 		{
-			x: 1.0d
+			x: -1.0d
 			y: -2.0d
+			description: ["岩浆液体发电！"]
 			dependencies: ["04B534A53F398C7A"]
 			id: "20ED7A1C1B7E4CD3"
 			tasks: [{
@@ -180,6 +187,7 @@
 		{
 			x: -2.0d
 			y: 0.0d
+			description: ["可合成一些特殊合金。"]
 			dependencies: ["04B534A53F398C7A"]
 			id: "15FDE04FCBC2778D"
 			tasks: [{
@@ -196,7 +204,7 @@
 		{
 			x: -2.0d
 			y: 1.0d
-			description: ["电力盆栽"]
+			description: ["电力盆栽。"]
 			dependencies: ["04B534A53F398C7A"]
 			id: "65161712E8643D11"
 			tasks: [{
@@ -213,6 +221,7 @@
 		{
 			x: -2.0d
 			y: -1.0d
+			description: ["电力磨粉机。"]
 			dependencies: ["04B534A53F398C7A"]
 			id: "05902BBF645C211E"
 			tasks: [{
@@ -230,6 +239,7 @@
 			x: -2.0d
 			y: 2.0d
 			shape: "hexagon"
+			description: ["可用于制作反应物。"]
 			dependencies: ["04B534A53F398C7A"]
 			id: "6429523E580D0569"
 			tasks: [{
@@ -247,6 +257,7 @@
 			x: -2.0d
 			y: -2.0d
 			shape: "hexagon"
+			description: ["实现岩浆自由。"]
 			dependencies: ["04B534A53F398C7A"]
 			id: "25029642A6C98057"
 			tasks: [{
@@ -264,6 +275,7 @@
 			x: 2.0d
 			y: 2.0d
 			shape: "hexagon"
+			description: ["全自动工作台。"]
 			dependencies: ["04B534A53F398C7A"]
 			id: "157A8F42A9C5BC48"
 			tasks: [{
@@ -281,6 +293,7 @@
 			x: 2.0d
 			y: 1.0d
 			shape: "hexagon"
+			description: ["离心机。"]
 			dependencies: ["04B534A53F398C7A"]
 			id: "138FFD32A0DABF38"
 			tasks: [{
@@ -298,6 +311,7 @@
 			x: 0.5d
 			y: 3.0d
 			shape: "hexagon"
+			description: ["在机器周围放水便形可成无限水。"]
 			dependencies: ["04B534A53F398C7A"]
 			id: "74BED0ACAF1CA27A"
 			tasks: [{
@@ -315,6 +329,7 @@
 			x: 2.0d
 			y: -2.0d
 			shape: "hexagon"
+			description: ["全自动刷石机。"]
 			dependencies: ["04B534A53F398C7A"]
 			id: "53FA04C57406C5C4"
 			tasks: [{
@@ -332,6 +347,7 @@
 			x: 1.0d
 			y: 2.0d
 			shape: "hexagon"
+			description: ["可实现范围效果。"]
 			dependencies: ["04B534A53F398C7A"]
 			id: "60C85559AEE3DFC5"
 			tasks: [{
@@ -349,6 +365,7 @@
 			x: -1.0d
 			y: 2.0d
 			shape: "hexagon"
+			description: ["物品和流体的垃圾桶。"]
 			dependencies: ["04B534A53F398C7A"]
 			id: "42F0BEF1687524CD"
 			tasks: [{
@@ -366,6 +383,7 @@
 			x: -0.5d
 			y: 3.0d
 			shape: "hexagon"
+			description: ["大漏斗。"]
 			dependencies: ["04B534A53F398C7A"]
 			id: "43415A7062E7C6B1"
 			tasks: [{
@@ -403,6 +421,7 @@
 			x: 0.0d
 			y: -8.0d
 			shape: "octagon"
+			description: ["开启算力篇章！"]
 			dependencies: [
 				"688C5FEF6695C5A4"
 				"68E785E7CF6A5ACF"
@@ -422,10 +441,9 @@
 		}
 		{
 			disable_toast: true
-			x: -1.5d
+			x: 1.5d
 			y: -8.0d
-			dependencies: ["2896AD9C74EA52FF"]
-			hide: true
+			dependencies: ["0F3A45C6F8B3C95F"]
 			id: "68E785E7CF6A5ACF"
 			tasks: [{
 				id: "3DAADF135EF426FA"
@@ -440,7 +458,7 @@
 		}
 		{
 			disable_toast: true
-			x: 1.5d
+			x: -1.5d
 			y: -8.0d
 			description: ["使用粉碎轮来合成！"]
 			dependencies: ["2896AD9C74EA52FF"]
@@ -461,7 +479,7 @@
 			x: 0.0d
 			y: 2.0d
 			shape: "octagon"
-			description: ["解锁更多的电力设备"]
+			description: ["解锁更多的电力设备（开启电力篇章Ⅱ）！"]
 			dependencies: ["04B534A53F398C7A"]
 			id: "4F36B2977E7F356A"
 			tasks: [{
@@ -519,7 +537,7 @@
 			x: -1.5d
 			y: -5.0d
 			description: [
-				"因为初期没有银的直接来源，所以推荐以下三种银的获取方法："
+				"初期没有银的直接来源，所以推荐以下三种银的获取方法："
 				"熔融粉碎锡矿石，每矿石必定获得30mb银。"
 				"使用筛子筛沙砾，有3%概率获得银粒。"
 				"粉碎恩赐之石有3%概率获得银矿石（恩赐之石在颠倒之域使用时运镐破坏深板岩概率获得）。"
@@ -749,6 +767,7 @@
 		{
 			x: 0.0d
 			y: -15.0d
+			description: ["开启太空时代！"]
 			dependencies: [
 				"2BECAF8C2ED996B0"
 				"5E35FA8C5C6F940D"
@@ -768,6 +787,45 @@
 			}]
 			rewards: [{
 				id: "23A4A1E25F2FA575"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 3.0d
+			y: -2.0d
+			shape: "hexagon"
+			description: ["最高可升级四次。"]
+			dependencies: ["1E39344709EC4874"]
+			hide: true
+			id: "504008ED9CF8393C"
+			tasks: [{
+				id: "1CB2EB78C8823DEF"
+				type: "item"
+				item: "pipez:basic_upgrade"
+			}]
+			rewards: [{
+				id: "37389F4F5DA66958"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 1.5d
+			y: -6.5d
+			description: ["使用轧机处理黄铜锭获得。"]
+			dependencies: ["2896AD9C74EA52FF"]
+			hide: true
+			id: "0F3A45C6F8B3C95F"
+			tasks: [{
+				id: "77E1E19C4DFF4C73"
+				type: "item"
+				item: "createaddition:brass_rod"
+			}]
+			rewards: [{
+				id: "0720AF35B87A9B8F"
 				type: "xp"
 				xp: 10
 			}]

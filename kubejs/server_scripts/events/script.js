@@ -106,6 +106,15 @@ onEvent('item.right_click', event => {
   lootbag('kubejs:album_mameyudoufu', 'kubejs:album/mameyudoufu', true)//专辑
   lootbag('kubejs:album_adventure', 'kubejs:album/adventure', true)//专辑
   lootbag('kubejs:album_made_in_abyss', 'kubejs:album/abyss', true)//专辑
+  lootbag('kubejs:album_adp', 'kubejs:album/adp', true)//专辑
+  lootbag('kubejs:album_adp2', 'kubejs:album/adp2', true)//专辑
+  lootbag('kubejs:album_adp3', 'kubejs:album/adp3', true)//专辑
+  lootbag('kubejs:album_adp4', 'kubejs:album/adp4', true)//专辑
+  lootbag('kubejs:album_adp5', 'kubejs:album/adp5', true)//专辑
+  lootbag('kubejs:album_adp6', 'kubejs:album/adp6', true)//专辑
+  lootbag('kubejs:album_adp7', 'kubejs:album/adp7', true)//专辑
+  lootbag('kubejs:album_adp8', 'kubejs:album/adp8', true)//专辑
+  lootbag('kubejs:album_adp9', 'kubejs:album/adp9', true)//专辑
 
   hoshino('minecraft:clock');// 时钟
   hoshino('tiab:time_in_a_bottle');// 时间之瓶
@@ -266,32 +275,6 @@ onEvent('entity.spawned', event => {
       }
     })
   }
-})
-
-onEvent('entity.check_spawn', event => {
-  let { entity } = event;
-  //给了ban了
-  if (entity.type === 'touhou_little_maid:fairy') {
-    event.cancel();
-  }
-  if (entity.type === 'minecraft:spider') {
-    event.cancel();
-  }
-  if (entity.type === 'minecraft:cave_spider') {
-    event.cancel();
-  }
-  if (entity.type === 'neapolitan:plantain_spider') {
-    event.cancel();
-  }
-  // if (entity.type === 'alexsmobs:fly') {
-  //   event.cancel();
-  // }
-  // if (entity.type === 'alexsmobs:crimson_mosquito') {
-  //   event.cancel();
-  // }
-  // if (entity.type === 'alexsmobs:cosmic_cod') {
-  //   event.cancel();
-  // }
 })
 
 

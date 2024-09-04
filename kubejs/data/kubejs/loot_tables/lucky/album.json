@@ -57,6 +57,51 @@
                     "type": "minecraft:item",
                     "weight": 7,
                     "name": "kubejs:album_made_in_abyss"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "kubejs:album_adp"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "kubejs:album_adp2"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "kubejs:album_adp3"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "kubejs:album_adp4"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "kubejs:album_adp5"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "kubejs:album_adp6"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "kubejs:album_adp7"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "kubejs:album_adp8"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "kubejs:album_adp9"
                 }
             ]
         }

@@ -12,8 +12,14 @@
 			title: "获取原木"
 			x: 0.0d
 			y: 0.0d
-			description: ["尽管整合包有许多内容可以探索，但在之前，您至少需要『获得木头』"]
-			dependencies: ["44572D4F990F380B"]
+			description: [
+				"尽管整合包有许多内容可以探索，但在之前，您至少需要『获得木头』。"
+				"注：在深海玩法中，可以用扳手回收下层的骨块并分解成骨粉用于催熟树苗。"
+			]
+			dependencies: [
+				"44572D4F990F380B"
+				"457F93059BD28394"
+			]
 			hide: true
 			id: "36943F6B7F336DF2"
 			tasks: [{
@@ -55,23 +61,30 @@
 			}]
 		}
 		{
-			title: "一些说明书"
+			title: "入门手册"
+			icon: "ftbquests:book"
 			disable_toast: true
 			x: -2.0d
 			y: 0.0d
-			shape: "hexagon"
-			description: ["入门手册实体版。"]
-			dependencies: ["36943F6B7F336DF2"]
+			description: [
+				"按\"J\"键可打开任务界面。"
+				"鼠标指着物品按\"G\"键：查看物品来源。"
+				"鼠标指着物品按\"U\"键：查看物品用途。"
+				"按下\"F4\"则开启灵魂出窍功能。\\n注：本整合包默认疾跑键改为了\"R\"键。"
+				"\"K\"键开启光影，\"O\"键打开光影包。\\n\"M\"键开启大地图。"
+				"\"ALT+Y\"键打开YSM选择界面（需要YSM），如果不显示模型，需要在YSM选择界面里点击右上角的“打开配置界面”，关掉阻止渲染玩家模型即可。"
+			]
+			dependencies: ["44572D4F990F380B"]
+			hide: true
 			id: "457F93059BD28394"
 			tasks: [{
-				id: "35C678F3E2232228"
-				type: "item"
-				item: "minecraft:book"
+				id: "30FC8AC1DD3E13BD"
+				type: "checkmark"
 			}]
 			rewards: [{
-				id: "560E0D1CFCFB49D0"
-				type: "item"
-				item: "ftbquests:book"
+				id: "23591AA62D45D05F"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -81,7 +94,7 @@
 			x: 0.0d
 			y: -1.0d
 			shape: "hexagon"
-			description: ["很可惜，在当前的Forge版无法使用原版的刷线机特性，但别灰心，为了弥补这个问题，您可以使用锄头类的工具破坏树叶，会有75%的概率会掉落线！"]
+			description: ["使用锄头类的工具破坏树叶，会有75%的概率会掉落线！"]
 			dependencies: ["36943F6B7F336DF2"]
 			hide: true
 			id: "519403A46F37EB4D"
@@ -104,8 +117,7 @@
 			shape: "hexagon"
 			description: [
 				"在破坏草时你也许会发现，除了会掉落原版的小麦种子以外，还会有棉花种子。"
-				"没错，为了弥补刷线机不能用的问题我不仅仅是只给树叶添加新特性，也添加了新作物！"
-				"种植棉花，获取无限的线！"
+				"没错，在这个包你可以种棉花！"
 			]
 			dependencies: ["36943F6B7F336DF2"]
 			hide: true
@@ -234,7 +246,7 @@
 			x: 3.0d
 			y: -1.0d
 			shape: "rsquare"
-			description: ["想找个东西存一存身上的物品？您或许可以考虑使用箱子，木桶。"]
+			description: ["身上的物品太多了？您或许可以考虑制作箱子，木桶。"]
 			dependencies: ["5BC3A59AAD6CEDBE"]
 			hide: true
 			id: "16CCDD21E5E15818"
@@ -290,7 +302,7 @@
 			x: 3.0d
 			y: 1.0d
 			shape: "hexagon"
-			description: ["想存储身上的物品但又想四处探险？您可以考虑制作一个背包！"]
+			description: ["您可以考虑制作一个背包！"]
 			dependencies: ["5BC3A59AAD6CEDBE"]
 			hide: true
 			id: "13627E6F08A8CB2D"
@@ -338,7 +350,7 @@
 			x: 1.0d
 			y: 2.0d
 			shape: "hexagon"
-			description: ["网络音乐机，只能播放本模组的唱片，原版唱片需用原版唱片机播放。"]
+			description: ["网络音乐机，只能播放本模组的唱片，原版唱片需用原版唱片机播放（幸运方块开出的专辑全是本模组的唱片）。"]
 			dependencies: ["58D3EC802A6FBD27"]
 			hide: true
 			id: "399B746233C77AFD"
@@ -486,6 +498,7 @@
 			disable_toast: true
 			x: 2.0d
 			y: 4.5d
+			description: ["要塞大改，请用结构罗盘寻找“要塞”，或使用末影之眼寻找。"]
 			dependencies: ["137563E84BDBF0CC"]
 			id: "31C9BD74CDB26F64"
 			tasks: [{
@@ -566,6 +579,7 @@
 			disable_toast: true
 			x: 2.0d
 			y: 1.5d
+			description: ["你的第一台资源处理设备。"]
 			dependencies: ["5BC3A59AAD6CEDBE"]
 			hide: true
 			id: "71BE14B442164268"
@@ -615,6 +629,7 @@
 			x: -3.0d
 			y: 1.0d
 			shape: "hexagon"
+			description: ["附魔不再随机。"]
 			dependencies: ["7FEC216969A7D841"]
 			id: "629B75A3BB761759"
 			tasks: [{
@@ -652,6 +667,10 @@
 			x: 4.0d
 			y: -1.0d
 			shape: "hexagon"
+			description: [
+				"可寻找自然结构。"
+				"注：寻找要塞直接输入“要塞”即可，原版要塞已禁用。"
+			]
 			dependencies: ["51118EFF5866B6D3"]
 			hide: true
 			id: "30B3228566B22321"
@@ -675,6 +694,10 @@
 			x: 4.0d
 			y: 1.0d
 			shape: "hexagon"
+			description: [
+				"可寻找生物群系。"
+				"注：深海玩法中的主世界只有海洋群系和蘑菇岛群系。"
+			]
 			dependencies: ["51118EFF5866B6D3"]
 			hide: true
 			id: "0920AAF0EBB3735F"
@@ -806,6 +829,7 @@
 			x: 4.0d
 			y: -2.0d
 			shape: "hexagon"
+			description: ["大箱子！"]
 			dependencies: ["16CCDD21E5E15818"]
 			id: "3FA564A468ADBFA9"
 			tasks: [{

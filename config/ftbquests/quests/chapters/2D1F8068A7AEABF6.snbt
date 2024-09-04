@@ -810,7 +810,11 @@
 		{
 			x: 0.0d
 			y: 5.0d
-			dependencies: ["3CA12DEEE216DB0B"]
+			dependencies: [
+				"3CA12DEEE216DB0B"
+				"30A0CDCD1B7CE208"
+			]
+			dependency_requirement: "one_completed"
 			size: 1.5d
 			id: "32235EE0E58F5696"
 			tasks: [{

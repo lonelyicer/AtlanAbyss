@@ -1,0 +1,189 @@
+﻿{
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Feryquitous\"],name:\"§6II.諦観\",read_only:0b,time:240,url:\"https://music.163.com/song/media/outer/url?id=1911868527.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Juggernaut.\"],name:\"§6nihil\",read_only:0b,time:206,url:\"https://music.163.com/song/media/outer/url?id=1911868529.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"satie\"],name:\"§6Glimmer\",read_only:0b,time:261,url:\"https://music.163.com/song/media/outer/url?id=1911878852.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"BlackY\"],name:\"§6Albireo\",read_only:0b,time:223,url:\"https://music.163.com/song/media/outer/url?id=1911868530.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Elliot Hsu\"],name:\"§6Celestial Intertwine\",read_only:0b,time:277,url:\"https://music.163.com/song/media/outer/url?id=1911868531.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Cansol\",\"Raimukun\"],name:\"§6量子力学のためのピアノ協奏曲\",read_only:0b,time:274,trans_name:\"为量子力学所作钢琴协奏曲\",url:\"https://music.163.com/song/media/outer/url?id=1911878857.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Ice\",\"Kero\"],name:\"§6Frog Rappa (feat. Kero)\",read_only:0b,time:214,url:\"https://music.163.com/song/media/outer/url?id=1911868534.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"xi\"],name:\"§6The End of Dreams\",read_only:0b,time:264,url:\"https://music.163.com/song/media/outer/url?id=1911868537.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"cosMo@暴走P\"],name:\"§6Tachyon\",read_only:0b,time:208,url:\"https://music.163.com/song/media/outer/url?id=1911878862.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"yuichi NAGAO\"],name:\"§6回転体\",read_only:0b,time:192,url:\"https://music.163.com/song/media/outer/url?id=1911868540.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"黒魔\"],name:\"§6Fragmented Happiness\",read_only:0b,time:277,url:\"https://music.163.com/song/media/outer/url?id=1911868541.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"ARForest\"],name:\"§6Neglected Pianist\",read_only:0b,time:248,url:\"https://music.163.com/song/media/outer/url?id=1911868546.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Sad Keyboard Guy\",\"AKA\"],name:\"§6Lullaby For an Android (feat. AKA)\",read_only:0b,time:307,url:\"https://music.163.com/song/media/outer/url?id=1911878867.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"bqスタヂオ\"],name:\"§6ずれる\",read_only:0b,time:202,url:\"https://music.163.com/song/media/outer/url?id=1911868548.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Sobrem\"],name:\"§6Segue\",read_only:0b,time:201,url:\"https://music.163.com/song/media/outer/url?id=1911868551.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Blacklolita\"],name:\"§6漂泊の旅\",read_only:0b,time:214,url:\"https://music.163.com/song/media/outer/url?id=1911868554.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Error Signal\"],name:\"§6Stigma\",read_only:0b,time:231,url:\"https://music.163.com/song/media/outer/url?id=1911878872.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"削除\"],name:\"§6Requiem Cantata '祈り'\",read_only:0b,time:293,trans_name:\"安魂曲大合唱 '祈祷'\",url:\"https://music.163.com/song/media/outer/url?id=1911868558.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        }
+      ]
+    }
+  ]
+}

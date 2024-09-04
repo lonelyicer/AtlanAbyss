@@ -1,7 +1,7 @@
 {
 	id: "623F74D0C56E4B62"
 	group: "03B4E601CC5A5BFE"
-	order_index: 8
+	order_index: 9
 	filename: "623F74D0C56E4B62"
 	title: "仆之力"
 	icon: {
@@ -43,6 +43,7 @@
 			disable_toast: true
 			x: 0.0d
 			y: 0.0d
+			description: ["在开始之前，请搭建一个女仆祭坛。"]
 			dependencies: ["6CC3920A8B0C1B39"]
 			hide: true
 			id: "546362B6A9815FC2"
@@ -342,6 +343,11 @@
 				type: "item"
 				item: "netmusic:music_player_backpack"
 			}]
+			rewards: [{
+				id: "593D7415A9F4EC3A"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			disable_toast: true
@@ -403,6 +409,7 @@
 		{
 			x: 0.0d
 			y: -1.5d
+			description: ["关于女仆你所需要知道的事。"]
 			dependencies: ["546362B6A9815FC2"]
 			id: "53CCBFBD0E44D08D"
 			tasks: [{
