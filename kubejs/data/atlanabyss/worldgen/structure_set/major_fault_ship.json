@@ -1,0 +1,22 @@
+{
+  "structures": [
+    {
+      "structure": "atlanabyss:flower_ship",
+      "weight": 1
+    },
+    {
+      "structure": "atlanabyss:gun_ship",
+      "weight": 1
+    },
+    {
+      "structure": "atlanabyss:tnt_ship",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 20,
+    "separation": 6,
+    "salt": 17355608777
+  }
+}

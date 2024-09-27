@@ -1,0 +1,55 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": {
+                "min": {
+                    "min": 1,
+                    "max": 4
+                },
+                "max": {
+                    "min": 4,
+                    "max": 8
+                }
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:sand",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 16,
+                                "max": 48
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "thermal:gunpowder_block",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 16
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:enchanted_golden_apple",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.5
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -51,6 +51,36 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
+                            "tag": "{AttachmentId:\"tacz:muzzle_silence_knight_qd\"}"
+                        }
+                    ],
+                    "name": "tacz:attachment"
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{AttachmentId:\"tacz:muzzle_silence_ptilopsis\"}"
+                        }
+                    ],
+                    "name": "tacz:attachment"
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{AttachmentId:\"tacz:muzzle_silence_ursus\"}"
+                        }
+                    ],
+                    "name": "tacz:attachment"
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
                             "tag": "{AttachmentId:\"tacz:muzzle_silence_phantom_s1\"}"
                         }
                     ],
@@ -72,16 +102,6 @@
                         {
                             "function": "minecraft:set_nbt",
                             "tag": "{AttachmentId:\"tacz:bayonet_m9\"}"
-                        }
-                    ],
-                    "name": "tacz:attachment"
-                },
-                {
-                    "type": "minecraft:item",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{AttachmentId:\"tacz:deagle_golden_long_barrel\"}"
                         }
                     ],
                     "name": "tacz:attachment"
@@ -182,6 +202,26 @@
                         {
                             "function": "minecraft:set_nbt",
                             "tag": "{AttachmentId:\"tacz:grip_magpul_afg_2\"}"
+                        }
+                    ],
+                    "name": "tacz:attachment"
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{AttachmentId:\"tacz:grip_vertical_military\"}"
+                        }
+                    ],
+                    "name": "tacz:attachment"
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{AttachmentId:\"tacz:grip_vertical_ranger\"}"
                         }
                     ],
                     "name": "tacz:attachment"

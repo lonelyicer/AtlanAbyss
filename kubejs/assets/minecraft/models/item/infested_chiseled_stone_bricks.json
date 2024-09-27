@@ -1,0 +1,11 @@
+{
+  "credit": "Made by Nan2uu",
+  "parent": "minecraft:item/block_item_rgb",
+  "gui_light":"front",
+  "textures": {
+	  "s":"minecraft:block/infested_chiseled_stone_bricks",
+	  "x":"minecraft:block/infested_chiseled_stone_bricks",
+	  "q":"minecraft:block/infested_chiseled_stone_bricks",
+    "rgb":"minecraft:block/block_item_red"
+  }
+}

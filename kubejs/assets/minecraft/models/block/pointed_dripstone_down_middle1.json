@@ -1,0 +1,60 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:block/pointed_dripstone",
+	"textures": {
+		"cross": "block/pointed_dripstone_up_middle"
+	},
+	"elements": [
+		{
+			"from": [3.53125, 12, 3.5],
+			"to": [12.53125, 16, 12.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [4.03125, 8, 19]},
+			"faces": {
+				"north": {"uv": [5, 16, 14, 12], "texture": "#cross"},
+				"east": {"uv": [5, 16, 14, 12], "texture": "#cross"},
+				"south": {"uv": [5, 16, 14, 12], "texture": "#cross"},
+				"west": {"uv": [5, 16, 14, 12], "texture": "#cross"},
+				"up": {"uv": [5, 16, 13, 8], "rotation": 90, "texture": "#cross", "cullface": "down"},
+				"down": {"uv": [2, 13, 10, 5], "rotation": 270, "texture": "#cross", "cullface": "down"}
+			}
+		},
+		{
+			"from": [3.53125, 9, 3.75],
+			"to": [12.28125, 12, 12.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [4.03125, 4, 19.25]},
+			"faces": {
+				"north": {"uv": [4, 12, 12, 9], "texture": "#cross"},
+				"east": {"uv": [5, 12, 13, 9], "texture": "#cross"},
+				"south": {"uv": [4, 12, 12, 9], "texture": "#cross"},
+				"west": {"uv": [4, 12, 12, 9], "texture": "#cross"},
+				"down": {"uv": [5, 16, 13, 8], "rotation": 270, "texture": "#cross"}
+			}
+		},
+		{
+			"from": [3.78125, 2, 3.5],
+			"to": [12.28125, 9, 12.25],
+			"rotation": {"angle": 0, "axis": "y", "origin": [4.03125, 1, 19]},
+			"faces": {
+				"north": {"uv": [4, 9, 12, 2], "texture": "#cross"},
+				"east": {"uv": [4, 9, 12, 2], "texture": "#cross"},
+				"south": {"uv": [4, 9, 12, 2], "texture": "#cross"},
+				"west": {"uv": [4, 9, 12, 2], "texture": "#cross"},
+				"up": {"uv": [5, 13, 13, 5], "rotation": 90, "texture": "#cross"},
+				"down": {"uv": [2, 13, 10, 5], "rotation": 270, "texture": "#cross"}
+			}
+		},
+		{
+			"from": [3.78125, 0, 3.5],
+			"to": [12.28125, 2, 12.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [4.03125, -6, 19]},
+			"faces": {
+				"north": {"uv": [4, 2, 12, 0], "texture": "#cross"},
+				"east": {"uv": [4, 2, 12, 0], "texture": "#cross"},
+				"south": {"uv": [4, 2, 12, 0], "texture": "#cross"},
+				"west": {"uv": [4, 2, 12, 0], "texture": "#cross"},
+				"up": {"uv": [5, 13, 13, 5], "rotation": 90, "texture": "#cross"},
+				"down": {"uv": [2, 14.25, 10, 6], "rotation": 270, "texture": "#cross"}
+			}
+		}
+	]
+}

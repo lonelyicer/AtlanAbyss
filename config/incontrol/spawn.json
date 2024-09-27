@@ -1,0 +1,23 @@
+[
+    {
+        "mob": "minecraft:bat",
+        "result": "deny"
+    },
+    {
+        "mob": "minecraft:spider",
+        "result": "deny"
+    },
+    {
+        "mob": "minecraft:cave_spider",
+        "result": "deny"
+    },
+    {
+        "mob": "neapolitan:plantain_spider",
+        "result": "deny"
+    },
+    {
+        "dimension": "minecraft:overworld",
+        "mob": "alexsmobs:fly",
+        "result": "deny"
+    }
+]

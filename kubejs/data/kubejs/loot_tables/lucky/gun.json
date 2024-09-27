@@ -5,58 +5,28 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "weight": 8,
-                    "name": "tacz:modern_kinetic_gun",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{GunCurrentAmmoCount:17,GunFireMode:\"SEMI\",GunId:\"tacz:glock_17\"}"
-                        }
-                    ]
+                    "weight": 2000,
+                    "name": "kubejs:uncommon_material"
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 7,
-                    "name": "tacz:modern_kinetic_gun",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{GunCurrentAmmoCount:2,GunFireMode:\"BURST\",GunId:\"tacz:db_short\"}"
-                        }
-                    ]
+                    "weight": 500,
+                    "name": "kubejs:rare_material"
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 6,
-                    "name": "tacz:modern_kinetic_gun",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{GunCurrentAmmoCount:20,GunFireMode:\"AUTO\",GunId:\"tacz:uzi\"}"
-                        }
-                    ]
+                    "weight": 80,
+                    "name": "kubejs:epic_material"
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 5,
-                    "name": "tacz:modern_kinetic_gun",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{GunCurrentAmmoCount:30,GunFireMode:\"AUTO\",GunId:\"tacz:ak47\"}"
-                        }
-                    ]
+                    "weight": 10,
+                    "name": "kubejs:legendary_material"
                 },
                 {
                     "type": "minecraft:item",
                     "weight": 1,
-                    "name": "tacz:modern_kinetic_gun",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{GunCurrentAmmoCount:1,GunFireMode:\"AUTO\",GunId:\"tacz:rpg7\"}"
-                        }
-                    ]
+                    "name": "kubejs:ultimate_material"
                 }
             ]
         }

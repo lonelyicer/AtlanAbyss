@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "thickness=base,vertical_direction=down": [
+      {"model": "minecraft:block/pointed_dripstone_down_base","weight": 10},
+      {"model": "minecraft:block/pointed_dripstone_down_base1","weight": 10},
+      {"model": "minecraft:block/pointed_dripstone_down_base2","weight": 10},
+      {"model": "minecraft:block/pointed_dripstone_down_base3","weight": 10}
+    ],
+    "thickness=base,vertical_direction=up": [
+      {"model": "minecraft:block/pointed_dripstone_up_base","weight": 10},
+      {"model": "minecraft:block/pointed_dripstone_up_base1","weight": 10},
+      {"model": "minecraft:block/pointed_dripstone_up_base2","weight": 10},
+      {"model": "minecraft:block/pointed_dripstone_up_base3","weight": 10}
+    ],
+    "thickness=frustum,vertical_direction=down": [
+      {"model": "minecraft:block/pointed_dripstone_down_frustum","weight": 10},
+      {"model": "minecraft:block/pointed_dripstone_down_frustum1","weight": 10},
+      {"model": "minecraft:block/pointed_dripstone_down_frustum2","weight": 10},
+      {"model": "minecraft:block/pointed_dripstone_down_frustum3","weight": 10}
+    ],
+    "thickness=frustum,vertical_direction=up": [
+      {"model": "minecraft:block/pointed_dripstone_up_frustum","weight": 10},
+      {"model": "minecraft:block/pointed_dripstone_up_frustum1","weight": 10},
+      {"model": "minecraft:block/pointed_dripstone_up_frustum2","weight": 10},
+      {"model": "minecraft:block/pointed_dripstone_up_frustum3","weight": 10}
+    ],
+    "thickness=middle,vertical_direction=down": [
+      {"model": "minecraft:block/pointed_dripstone_down_middle","weight": 10},
+      {"model": "minecraft:block/pointed_dripstone_down_middle1","weight": 10},
+      {"model": "minecraft:block/pointed_dripstone_down_middle2","weight": 10},
+      {"model": "minecraft:block/pointed_dripstone_down_middle3","weight": 10}
+    ],
+    "thickness=middle,vertical_direction=up": [
+      {"model": "minecraft:block/pointed_dripstone_up_middle","weight": 10},
+      {"model": "minecraft:block/pointed_dripstone_up_middle1","weight": 10},
+      {"model": "minecraft:block/pointed_dripstone_up_middle2","weight": 10},
+      {"model": "minecraft:block/pointed_dripstone_up_middle3","weight": 10}
+    ],
+    "thickness=tip,vertical_direction=down": [
+      {"model": "minecraft:block/pointed_dripstone_down_tip","weight": 10},
+      {"model": "minecraft:block/pointed_dripstone_down_tip1","weight": 10},
+      {"model": "minecraft:block/pointed_dripstone_down_tip2","weight": 10},
+      {"model": "minecraft:block/pointed_dripstone_down_tip3","weight": 10}
+    ],
+    "thickness=tip,vertical_direction=up": [
+      {"model": "minecraft:block/pointed_dripstone_up_tip","weight": 10},
+      {"model": "minecraft:block/pointed_dripstone_up_tip1","weight": 10},
+      {"model": "minecraft:block/pointed_dripstone_up_tip2","weight": 10},
+      {"model": "minecraft:block/pointed_dripstone_up_tip3","weight": 10}
+    ],
+    "thickness=tip_merge,vertical_direction=down": [
+      {"model": "minecraft:block/pointed_dripstone_down_tip_merge","weight": 10},
+      {"model": "minecraft:block/pointed_dripstone_down_tip_merge1","weight": 10},
+      {"model": "minecraft:block/pointed_dripstone_down_tip_merge2","weight": 10},
+      {"model": "minecraft:block/pointed_dripstone_down_tip_merge3","weight": 10}
+    ],
+    "thickness=tip_merge,vertical_direction=up": [
+      {"model": "minecraft:block/pointed_dripstone_up_tip_merge","weight": 10},
+      {"model": "minecraft:block/pointed_dripstone_up_tip_merge1","weight": 10},
+      {"model": "minecraft:block/pointed_dripstone_up_tip_merge2","weight": 10},
+      {"model": "minecraft:block/pointed_dripstone_up_tip_merge3","weight": 10}
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "multipart": [
+    {
+      "when": {"persistent": "false","distance": "1"},
+      "apply": [
+        {"model": "minecraft:block/jungle_leaves","weight":1}
+      ]
+    },
+    {
+      "when": {"persistent": "false","distance": "2"},
+      "apply": [
+        {"model": "minecraft:block/jungle_leaves","weight":1}
+      ]
+    },
+    {
+      "when": {"persistent": "false","distance": "3"},
+      "apply": [
+        {"model": "minecraft:block/jungle_leaves","weight":1}
+      ]
+    },
+    {
+      "when": {"persistent": "false","distance": "4"},
+      "apply": [
+        {"model": "minecraft:block/jungle_leaves","weight":1}
+      ]
+    },
+    {
+      "when": {"persistent": "false","distance": "5"},
+      "apply": [
+        {"model": "minecraft:block/jungle_leaves","weight":1}
+      ]
+    },
+    {
+      "when": {"persistent": "false","distance": "6"},
+      "apply": [
+        {"model": "minecraft:block/jungle_leaves","weight":1}
+      ]
+    },
+    {
+      "when": {"persistent": "false","distance": "7"},
+      "apply": [
+        {"model": "minecraft:block/jungle_leaves_kuwei","weight":1}
+      ]
+    },
+    {
+      "when": {"persistent": "true","distance": "1"},
+      "apply": [
+        {"model": "minecraft:block/jungle_leaves","weight":1}
+      ]
+    },
+    {
+      "when": {"persistent": "true","distance": "2"},
+      "apply": [
+        {"model": "minecraft:block/jungle_leaves","weight":1}
+      ]
+    },
+    {
+      "when": {"persistent": "true","distance": "3"},
+      "apply": [
+        {"model": "minecraft:block/jungle_leaves","weight":1}
+      ]
+    },
+    {
+      "when": {"persistent": "true","distance": "4"},
+      "apply": [
+        {"model": "minecraft:block/jungle_leaves","weight":1}
+      ]
+    },
+    {
+      "when": {"persistent": "true","distance": "5"},
+      "apply": [
+        {"model": "minecraft:block/jungle_leaves","weight":1}
+      ]
+    },
+    {
+      "when": {"persistent": "true","distance": "6"},
+      "apply": [
+        {"model": "minecraft:block/jungle_leaves","weight":1}
+      ]
+    },
+    {
+      "when": {"persistent": "true","distance": "7"},
+      "apply": [
+        {"model": "minecraft:block/jungle_leaves","weight":1}
+      ]
+    }
+  ]
+}

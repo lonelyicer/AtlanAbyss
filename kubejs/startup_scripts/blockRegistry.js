@@ -361,17 +361,17 @@ onEvent('block.registry', event => {
             outputItem: outputItem
         })
         event.create(`substrate_${id}`)
-            .material("glass")
+            .material('glass')
             .color(0, c1)
             .color(1, c2)
             .hardness(0.1)
             .box(.25, 0, .25, .75, 14.0 / 16.0, .75, false)
-            .model("kubejs:block/" + model)
+            .model('kubejs:block/' + model)
             .displayName(localName)
-            .renderType("cutout")
-            .item(e => e.rarity(model == "catalyst" ? RARITY_UNCOMMON : RARITY_COMMON).color(0, c1).color(1, c2))
-            .tagBoth("kubejs:substrates")
-            .tagBlock("minecraft:mineable/pickaxe")
+            .renderType('cutout')
+            .item(e => e.rarity(model == 'catalyst' ? RARITY_UNCOMMON : RARITY_COMMON).color(0, c1).color(1, c2))
+            .tagBoth('kubejs:substrates')
+            .tagBlock('minecraft:mineable/pickaxe')
         substrate_index++
     }
 

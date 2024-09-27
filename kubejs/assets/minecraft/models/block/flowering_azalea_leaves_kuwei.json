@@ -1,0 +1,22 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:block/leaves_ws",
+	"textures": {
+		"4": "block/flowering_azalea_leaves_kuwei",
+		"particle": "block/better_flowering_azalea_leaves_kuwei"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#4", "cullface": "north"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#4", "cullface": "east"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#4", "cullface": "south"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#4", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#4", "cullface": "up"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#4", "cullface": "down"}
+			}
+		}
+	]
+}

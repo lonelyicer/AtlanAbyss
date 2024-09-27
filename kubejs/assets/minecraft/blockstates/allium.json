@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      {"model": "minecraft:block/allium"},
+      {"model": "minecraft:block/allium1"},
+      {"model": "minecraft:block/allium2"},
+      {"model": "minecraft:block/allium3"}
+    ]
+  }
+}

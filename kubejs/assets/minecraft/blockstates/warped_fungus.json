@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {"model": "minecraft:block/warped_fungus","weight":10},
+	  {"model": "minecraft:block/warped_fungus1","weight":30},
+	  {"model": "minecraft:block/warped_fungus2","weight":10},
+	  {"model": "minecraft:block/warped_fungus3","weight":30},
+	  {"model": "minecraft:block/warped_fungus4","weight":30},
+	  {"model": "minecraft:block/warped_fungus5","weight":10}
+    ]
+  }
+}

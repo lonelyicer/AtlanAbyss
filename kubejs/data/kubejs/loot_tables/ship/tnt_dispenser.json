@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 5,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:tnt",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 20,
+                                "max": 40
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

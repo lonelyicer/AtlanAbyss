@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:huge_fungus",
+  "config": {
+    "hat_state": {
+      "Name": "botania:elf_glass"
+    },
+    "decor_state": {
+      "Name": "minecraft:sea_lantern"
+    },
+    "stem_state": {
+      "Name": "botania:dreamwood_log",
+      "Properties": {
+        "axis": "y"
+      }
+    },
+    "valid_base_block": {
+      "Name": "minecraft:grass_block",
+      "Properties": {
+        "snowy": "false"
+      }
+    },
+    "planted": false
+  }
+}

@@ -1,0 +1,58 @@
+{
+	"credit": "Made by Nan2uu",
+	"parent": "minecraft:block/infested_stone",
+	"textures": {
+		"particle": "#q"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 8, 16],
+			"faces": {
+				"north": {"uv": [0, 8, 16, 16], "texture": "#q"},
+				"east": {"uv": [0, 8, 16, 16], "texture": "#q"},
+				"south": {"uv": [0, 8, 16, 16], "texture": "#q"},
+				"west": {"uv": [0, 8, 16, 16], "texture": "#q"},
+				"up": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#s"},
+				"down": {"uv": [0, 0, 16, 16], "rotation": 270, "texture": "#x"}
+			}
+		},
+		{
+			"from": [-1, 9, -1],
+			"to": [17, -1, 17],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 18, 8]},
+			"faces": {
+				"north": {"uv": [16, 16, 0, 6], "texture": "#rgb"},
+				"east": {"uv": [0, 16, 16, 6], "texture": "#rgb"},
+				"south": {"uv": [16, 16, 0, 6], "texture": "#rgb"},
+				"west": {"uv": [0, 16, 16, 6], "texture": "#rgb"},
+				"up": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#rgb"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#rgb"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [75, 135, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [75, 135, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 135, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 135, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"fixed": {
+			"rotation": [0, 90, 0],
+			"scale": [0.5, 0.5, 0.5]
+		}
+	}
+}

@@ -31,6 +31,7 @@
 /multiblocked
 /fancymenu_data
 /WailaErrorOutput.txt
+/simplebackups
 /skyblock_exports
 /o_prof
 /servers.dat
@@ -47,5 +48,9 @@ config/titanium
 config/touhou_little_maid
 config/yes_steve_model
 config/tacz/custom/tacz_default_gun
-config/tacz/custom/82laffey1.5hotfix.zip
-resourcepacks/AtlanAbyss Music Pack v1.0.zip
+config/tacz/custom/82laffey1.7.zip
+config/tacz/custom/Amethy_BF_Gun_Pack_v1.0a.zip
+
+resourcepacks/Quark Programmer Art.zip
+resourcepacks/AtlanAbyss Music Pack v1.0.0.zip
+resourcepacks/AtlanAbyss Music Pack v1.0.0

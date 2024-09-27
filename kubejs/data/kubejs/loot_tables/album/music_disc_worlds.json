@@ -1,0 +1,57 @@
+{
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:music_disc_divinity"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:music_disc_sad_machine"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:music_disc_years_of_war"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:music_disc_flicker"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:music_disc_fresh_static_snow"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:music_disc_polygon_dust"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:music_disc_hear_the_bells"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:music_disc_natural_light"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:music_disc_lionhearted"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:music_disc_sea_of_voices"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:music_disc_fellow_feeling"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:music_disc_goodbye_to_a_world"
+        }
+      ]
+    }
+  ]
+}

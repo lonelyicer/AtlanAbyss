@@ -1,0 +1,24 @@
+{
+    "feature": "atlanabyss:major_fault/diorite_big",
+    "placement": [
+        {
+            "type": "count",
+            "count": 48
+        },
+        {
+            "type": "minecraft:in_square"
+        },
+        {
+            "type": "minecraft:height_range",
+            "height": {
+                "min_inclusive": {
+                    "above_bottom": -510
+                },
+                "max_inclusive": {
+                    "absolute": -440
+                },
+                "type": "minecraft:uniform"
+            }
+        }
+    ]
+}

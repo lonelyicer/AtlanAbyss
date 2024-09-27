@@ -14,22 +14,15 @@
                 }
             },
             "operation": "addition"
-        }
-    ],
-    "potion_effects": [
+        },
         {
-            "id": "minecraft:speed",
-            "chance": 0.9,
-            "amplifier": {
-                "min": 1,
-                "max": 3,
-                "difficulty_modifier": {
-                    "operation": "add",
-                    "easy": 0,
-                    "normal": 1,
-                    "hard": 2
-                }
-            }
+            "id": "minecraft:generic.movement_speed",
+            "modifier_name": "Speed for Husks",
+            "amount": {
+                "min": 0.1,
+                "max": 0.5
+            },
+            "operation": "addition"
         }
     ]
 }

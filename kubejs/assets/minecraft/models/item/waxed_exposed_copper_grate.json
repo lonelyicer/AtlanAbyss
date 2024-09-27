@@ -1,0 +1,11 @@
+{
+  "credit": "Made by Nan2uu",
+  "parent": "minecraft:item/block_item_rgb",
+  "gui_light":"front",
+  "textures": {
+	  "s":"minecraft:block/exposed_copper_grate",
+	  "x":"minecraft:block/exposed_copper_grate",
+	  "q":"minecraft:block/exposed_copper_grate",
+	  "rgb":"minecraft:block/block_item_yellow"
+  }
+}

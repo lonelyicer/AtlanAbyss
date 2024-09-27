@@ -1,0 +1,34 @@
+{
+	"credit": "Made by Nan2uu",
+	"parent": "block/thin_block",
+	"textures": {
+		"particle": "#q"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 3, 16],
+			"faces": {
+				"north": {"uv": [0, 16, 16, 13], "texture": "#q", "cullface": "north"},
+				"east": {"uv": [0, 16, 16, 13], "texture": "#q", "cullface": "east"},
+				"south": {"uv": [0, 16, 16, 13], "texture": "#q", "cullface": "south"},
+				"west": {"uv": [0, 16, 16, 13], "texture": "#q", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#s"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#x", "cullface": "down"}
+			}
+		},
+		{
+			"from": [-1, 4, -1],
+			"to": [17, -1, 17],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 13, 8]},
+			"faces": {
+				"north": {"uv": [0, 16, 16, 13], "texture": "#rgb", "cullface": "north"},
+				"east": {"uv": [0, 16, 16, 13], "texture": "#rgb", "cullface": "east"},
+				"south": {"uv": [0, 16, 16, 13], "texture": "#rgb", "cullface": "south"},
+				"west": {"uv": [0, 16, 16, 13], "texture": "#rgb", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#rgb"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#rgb", "cullface": "down"}
+			}
+		}
+	]
+}

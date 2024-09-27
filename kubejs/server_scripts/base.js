@@ -886,37 +886,7 @@ onEvent('recipes', event => {
 			create.deploying(vm, [vm, 'minecraft:redstone'])
 		]).transitionalItem(vm).loops(5).id("atlanabyss:vibration_mechanism")
 
-	//区块加载器
-	//3x3
-	remove('chunkloaders:basic_chunk_loader')
-	event.shaped('chunkloaders:basic_chunk_loader', [
-		' A ',
-		'ABA',
-		' A '
-	], {
-		A: 'thermal:steel_plate',
-		B: 'kubejs:vibration_mechanism'
-	}).id("atlanabyss:basic_chunk_loader")
-	//5x5
-	remove('chunkloaders:advanced_chunk_loader')
-	event.shaped('chunkloaders:advanced_chunk_loader', [
-		' A ',
-		'ABA',
-		' A '
-	], {
-		A: 'chunkloaders:basic_chunk_loader',
-		B: 'thermal:electrum_block'
-	}).id("atlanabyss:advanced_chunk_loader")
-	//7x7
-	remove('chunkloaders:ultimate_chunk_loader')
-	event.shaped('chunkloaders:ultimate_chunk_loader', [
-		' A ',
-		'ABA',
-		' A '
-	], {
-		A: 'chunkloaders:advanced_chunk_loader',
-		B: 'thermal:enderium_block'
-	}).id("atlanabyss:ultimate_chunk_loader")
+
 
 	//传送石碑
 	//传送粉
@@ -2370,7 +2340,7 @@ onEvent('recipes', event => {
 	]).energy(18000).id("atlanabyss:smelter_zirconium_alloy_ingot")
 
 	//充能魂钢锭
-	teslaCharging('tconstruct:soulsteel_ingot', 'kubejs:charged_soulsteel_ingot', 1600, 'charged_soulsteel_ingot')
+	teslaCharging('tconstruct:soulsteel_ingot', 'kubejs:charged_soulsteel_ingot', 150000, 'charged_soulsteel_ingot')
 	//充能康铜锭
 	teslaCharging('thermal:constantan_ingot', 'kubejs:charged_constantan_ingot', 64000, 'charged_constantan_ingot')
 

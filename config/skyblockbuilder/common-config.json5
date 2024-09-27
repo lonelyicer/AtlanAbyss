@@ -134,6 +134,9 @@
       // Should players be able to visit other island? [default: true]
       "allowVisits": true,
       
+      // Should players be able to teleport to another dimension? [default: true]
+      "crossDimensionTeleportation": true,
+      
       // Should players be able to teleport to their home island? [default: true]
       "home": true,
       
@@ -144,7 +147,14 @@
       "spawn": true,
       
       // Cooldown in ticks for teleporting to spawn. [default: 3600 = 3min]
-      "spawnCooldown": 1200
+      "spawnCooldown": 1200,
+      
+      // Dimensions in this list are not allowed for executing teleportation commands. Inverted behaviour if you set "allow_list" to true.
+      // This is a resource list. See https://noeppi-noeppi.github.io/LibX/io/github/noeppi_noeppi/libx/util/ResourceList.html#use_resource_lists_in_configs
+      "teleportationDimensions": {
+        "allow_list": false,
+        "elements": []
+      }
     }
   },
   
@@ -152,13 +162,14 @@
   
     // A list of biomes for each dimension.
     // You can not use this for the end dimension. The end dimension will always have it's five biomes.
-    // These are resource lists. See https://noeppi-noeppi.github.io/LibX/io/github/noeppi_noeppi/libx/util/ResourceList.html#use_resource_lists_in_configs
+    // Overworld has all oceans by default because animals cannot spawn in these biomes.
+    // These are resource lists. See https://moddingx.org/libx/org/moddingx/libx/util/data/ResourceList.html#use_resource_lists_in_configs
     "biomes": {
       "minecraft:overworld": {
         "allow_list": true,
         "elements": [
           "minecraft:*ocean*",
-          "minecraft.snowy_taiga",
+          "minecraft:minecraft.snowy_taiga",
           "minecraft:mushroom_fields"
         ]
       },

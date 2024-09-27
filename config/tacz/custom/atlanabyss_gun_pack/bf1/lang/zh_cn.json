@@ -1,0 +1,14 @@
+{
+  "bf1.ammo.792x57.name": "§67.92x57mm 毛瑟步枪弹",
+  "bf1.ammo.132x92.name": "§613.2x92mm 毛瑟反坦克弹",
+
+  "bf1.gun.tg1918.name": "毛瑟 M1918 反坦克步枪",
+  "bf1.gun.mg0815.name": "马克沁 MG08/15 机枪",
+  "bf1.gun.vp1915.name": "维拉·佩罗萨 M1915 冲锋枪",
+
+  "bf1.attachment.grip_trench_bipods.name": "堑壕二脚架",
+
+  "bf1.gun.tg1918.desc": "可不止用来反坦克",
+  "bf1.gun.mg0815.desc": "恶魔的油漆刷",
+  "bf1.gun.vp1915.desc": "一战双马尾"
+}

@@ -1,0 +1,11 @@
+{
+  "credit": "Made by Nan2uu",
+  "parent": "minecraft:item/block_item_rgb",
+  "gui_light":"front",
+  "textures": {
+	  "s":"minecraft:block/suspicious_gravel_0",
+	  "x":"minecraft:block/suspicious_gravel_0",
+	  "q":"minecraft:block/suspicious_gravel_0",
+    "rgb":"minecraft:block/block_item_rgb"
+  }
+}

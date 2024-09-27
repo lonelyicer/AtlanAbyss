@@ -1,0 +1,70 @@
+{
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "#flowerbed"
+	},
+	"elements": [
+		{
+			"from": [8, 2, 8],
+			"to": [16, 2, 16],
+			"faces": {
+				"up": {"uv": [8, 8, 16, 16], "texture": "#flowerbed"},
+				"down": {"uv": [8, 16, 16, 8], "texture": "#flowerbed"}
+			}
+		},
+		{
+			"from": [15.65, 0, 1.9],
+			"to": [15.65, 2, 2.9],
+			"rotation": {"angle": -45, "axis": "y", "origin": [-2, 0, 1]},
+			"faces": {
+				"east": {"uv": [0, 5, 1, 7], "texture": "#stem", "tintindex": 1},
+				"west": {"uv": [0, 5, 1, 7], "texture": "#stem", "tintindex": 1}
+			}
+		},
+		{
+			"from": [21.10447, 0, 20.63061],
+			"to": [22.10447, 2, 20.63061],
+			"rotation": {"angle": -45, "axis": "y", "origin": [23.00447, 0, 2.98061]},
+			"faces": {
+				"north": {"uv": [0, 5, 1, 7], "texture": "#stem", "tintindex": 1},
+				"south": {"uv": [0, 5, 1, 7], "texture": "#stem", "tintindex": 1}
+			}
+		},
+		{
+			"from": [16.65, 0, -2.35],
+			"to": [16.65, 2, -1.35],
+			"rotation": {"angle": -45, "axis": "y", "origin": [-1, 0, 1]},
+			"faces": {
+				"east": {"uv": [0, 5, 1, 7], "texture": "#stem", "tintindex": 1},
+				"west": {"uv": [0, 5, 1, 7], "texture": "#stem", "tintindex": 1}
+			}
+		},
+		{
+			"from": [16.15, 0, -1.85],
+			"to": [17.15, 2, -1.85],
+			"rotation": {"angle": -45, "axis": "y", "origin": [-1, 0, 1]},
+			"faces": {
+				"north": {"uv": [0, 5, 1, 7], "texture": "#stem", "tintindex": 1},
+				"south": {"uv": [0, 5, 1, 7], "texture": "#stem", "tintindex": 1}
+			}
+		},
+		{
+			"from": [13.4, 0, -0.5],
+			"to": [13.4, 2, 0.5],
+			"rotation": {"angle": -45, "axis": "y", "origin": [0, 0, 0]},
+			"faces": {
+				"east": {"uv": [0, 5, 1, 7], "texture": "#stem", "tintindex": 1},
+				"west": {"uv": [0, 5, 1, 7], "texture": "#stem", "tintindex": 1}
+			}
+		},
+		{
+			"from": [12.9, 0, 0],
+			"to": [13.9, 2, 0],
+			"rotation": {"angle": -45, "axis": "y", "origin": [0, 0, 0]},
+			"faces": {
+				"north": {"uv": [0, 5, 1, 7], "texture": "#stem", "tintindex": 1},
+				"south": {"uv": [0, 5, 1, 7], "texture": "#stem", "tintindex": 1}
+			}
+		}
+	]
+}

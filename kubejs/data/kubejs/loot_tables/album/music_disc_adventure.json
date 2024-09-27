@@ -1,0 +1,81 @@
+{
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:music_disc_isometric"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:music_disc_you_re_on"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:music_disc_ok"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:music_disc_la_lune"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:music_disc_pay_no_mind"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:music_disc_beings"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:music_disc_imperium"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:music_disc_zephyr"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:music_disc_nonsense"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:music_disc_innocence"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:music_disc_pixel_empire"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:music_disc_home"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:music_disc_icarus"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:music_disc_finale"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:music_disc_the_city"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:music_disc_cut_the_kid"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:music_disc_technicolor"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:music_disc_only_way_out"
+        }
+      ]
+    }
+  ]
+}

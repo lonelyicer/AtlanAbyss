@@ -36,6 +36,11 @@
                 {
                     "type": "minecraft:item",
                     "weight": 1,
+                    "name": "kubejs:album_michelia"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
                     "name": "kubejs:album_nacollection4"
                 },
                 {
@@ -52,6 +57,11 @@
                     "type": "minecraft:item",
                     "weight": 1,
                     "name": "kubejs:album_adventure"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "kubejs:album_worlds"
                 },
                 {
                     "type": "minecraft:item",

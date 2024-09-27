@@ -1,8 +1,8 @@
 {
-  "model": "atlanabyss:gun/ex_deagle_geo",
+  "model": "tacz:gun/deagle_golden_geo",
   "texture": "atlanabyss:gun/uv/deagle_red",
   "lod": {
-    "model": "atlanabyss:gun/lod/deagle",
+    "model": "tacz:gun/lod/deagle_golden",
     "texture": "atlanabyss:gun/lod/deagle_red"
   },
   "hud": "atlanabyss:gun/hud/deagle",

@@ -1,0 +1,10 @@
+{
+    "replace": false,
+    "values": [
+      "kubejs:derelict_grass",
+      "kubejs:derelict",
+      "kubejs:ice",
+      "kubejs:jungle",
+      "kubejs:regular"
+    ]
+  }

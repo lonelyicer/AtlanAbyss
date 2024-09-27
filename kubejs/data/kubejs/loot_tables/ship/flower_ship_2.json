@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": {
+                "min": 5,
+                "max": 10
+            },
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "kubejs:lucky/eat"
+                }
+            ]
+        }
+    ]
+}

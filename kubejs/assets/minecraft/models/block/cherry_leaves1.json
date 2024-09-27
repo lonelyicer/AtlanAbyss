@@ -1,0 +1,8 @@
+{
+	"parent": "minecraft:block/leaves_ws_cherry",
+	"textures": {
+		"all": "block/cherry_leaves",
+		"s": "block/better_cherry_leaves",
+		"x": "block/better_cherry_leaves"
+	}
+}

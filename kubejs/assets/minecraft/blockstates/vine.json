@@ -1,0 +1,49 @@
+{
+  "multipart": [
+    {
+      "when": {"up":"true"},
+      "apply": [
+        {"model":"minecraft:block/vine","x":270,"uvlock":true,"weight":200},
+        {"model":"minecraft:block/vine1","x":270,"uvlock":true,"weight":3},
+        {"model":"minecraft:block/vine2","x":270,"uvlock":true,"weight":3},
+        {"model":"minecraft:block/vine3","x":270,"uvlock":true,"weight":3}
+      ]
+    },
+    {
+      "when": {"north":"true"},
+      "apply": [
+        {"model":"minecraft:block/vine","weight":200},
+        {"model":"minecraft:block/vine1","weight":3},
+        {"model":"minecraft:block/vine2","weight":3},
+        {"model":"minecraft:block/vine3","weight":3}
+      ]
+    },
+    {
+      "when": {"west":"true"},
+      "apply": [
+        {"model":"minecraft:block/vine","y":270,"uvlock":true,"weight":200},
+        {"model":"minecraft:block/vine1","y":270,"uvlock":true,"weight":3},
+        {"model":"minecraft:block/vine2","y":270,"uvlock":true,"weight":3},
+        {"model":"minecraft:block/vine3","y":270,"uvlock":true,"weight":3}
+      ]
+    },
+    {
+      "when": {"south":"true"},
+      "apply": [
+        {"model":"minecraft:block/vine","y":180,"uvlock":true,"weight":200},
+        {"model":"minecraft:block/vine1","y":180,"uvlock":true,"weight":3},
+        {"model":"minecraft:block/vine2","y":180,"uvlock":true,"weight":3},
+        {"model":"minecraft:block/vine3","y":180,"uvlock":true,"weight":3}
+      ]
+    },
+    {
+      "when": {"east":"true"},
+      "apply": [
+        {"model":"minecraft:block/vine","y":90,"uvlock":true,"weight":200},
+        {"model":"minecraft:block/vine1","y":90,"uvlock":true,"weight":3},
+        {"model":"minecraft:block/vine2","y":90,"uvlock":true,"weight":3},
+        {"model":"minecraft:block/vine3","y":90,"uvlock":true,"weight":3}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,380 @@
+{
+    "type": "minecraft:simple_random_selector",
+    "config": {
+        "features": [
+            {
+                "feature": {
+                    "type": "minecraft:simple_block",
+                    "config": {
+                        "to_place": {
+                            "type": "minecraft:weighted_state_provider",
+                            "entries": [
+                                {
+                                    "weight": 1,
+                                    "data": {
+                                        "Name": "yuushya:marble_column",
+                                        "Properties": {
+                                            "waterlogged": "false",
+                                            "pos": "none",
+                                            "facing": "east"
+                                        }
+                                    }
+                                },
+                                {
+                                    "weight": 1,
+                                    "data": {
+                                        "Name": "yuushya:marble_column",
+                                        "Properties": {
+                                            "waterlogged": "false",
+                                            "pos": "none",
+                                            "facing": "west"
+                                        }
+                                    }
+                                },
+                                {
+                                    "weight": 1,
+                                    "data": {
+                                        "Name": "yuushya:marble_column",
+                                        "Properties": {
+                                            "waterlogged": "false",
+                                            "pos": "none",
+                                            "facing": "north"
+                                        }
+                                    }
+                                },
+                                {
+                                    "weight": 1,
+                                    "data": {
+                                        "Name": "yuushya:marble_column",
+                                        "Properties": {
+                                            "waterlogged": "false",
+                                            "pos": "none",
+                                            "facing": "south"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                "placement": []
+            },
+            {
+                "feature": {
+                    "type": "minecraft:block_column",
+                    "config": {
+                        "direction": "up",
+                        "allowed_placement": {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": [
+                                "minecraft:air",
+                                "minecraft:water"
+                            ]
+                        },
+                        "prioritize_tip": true,
+                        "layers": [
+                            {
+                                "height": 1,
+                                "provider": {
+                                    "type": "minecraft:simple_state_provider",
+                                    "state": {
+                                        "Name": "yuushya:marble_column",
+                                        "Properties": {
+                                            "waterlogged": "false",
+                                            "pos": "bottom",
+                                            "facing": "east"
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "height": {
+                                    "type": "minecraft:weighted_list",
+                                    "distribution": [
+                                        {
+                                            "weight": 2,
+                                            "data": {
+                                                "type": "minecraft:uniform",
+                                                "value": {
+                                                    "min_inclusive": 0,
+                                                    "max_inclusive": 8
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "weight": 1,
+                                            "data": 0
+                                        }
+                                    ]
+                                },
+                                "provider": {
+                                    "type": "minecraft:simple_state_provider",
+                                    "state": {
+                                        "Name": "yuushya:marble_column",
+                                        "Properties": {
+                                            "waterlogged": "false",
+                                            "pos": "middle",
+                                            "facing": "east"
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "height": 1,
+                                "provider": {
+                                    "type": "minecraft:simple_state_provider",
+                                    "state": {
+                                        "Name": "yuushya:marble_column",
+                                        "Properties": {
+                                            "waterlogged": "false",
+                                            "pos": "top",
+                                            "facing": "east"
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                "placement": []
+            },
+            {
+                "feature": {
+                    "type": "minecraft:block_column",
+                    "config": {
+                        "direction": "up",
+                        "allowed_placement": {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": [
+                                "minecraft:air",
+                                "minecraft:water"
+                            ]
+                        },
+                        "prioritize_tip": true,
+                        "layers": [
+                            {
+                                "height": 1,
+                                "provider": {
+                                    "type": "minecraft:simple_state_provider",
+                                    "state": {
+                                        "Name": "yuushya:marble_column",
+                                        "Properties": {
+                                            "waterlogged": "false",
+                                            "pos": "bottom",
+                                            "facing": "west"
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "height": {
+                                    "type": "minecraft:weighted_list",
+                                    "distribution": [
+                                        {
+                                            "weight": 2,
+                                            "data": {
+                                                "type": "minecraft:uniform",
+                                                "value": {
+                                                    "min_inclusive": 0,
+                                                    "max_inclusive": 8
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "weight": 1,
+                                            "data": 0
+                                        }
+                                    ]
+                                },
+                                "provider": {
+                                    "type": "minecraft:simple_state_provider",
+                                    "state": {
+                                        "Name": "yuushya:marble_column",
+                                        "Properties": {
+                                            "waterlogged": "false",
+                                            "pos": "middle",
+                                            "facing": "west"
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "height": 1,
+                                "provider": {
+                                    "type": "minecraft:simple_state_provider",
+                                    "state": {
+                                        "Name": "yuushya:marble_column",
+                                        "Properties": {
+                                            "waterlogged": "false",
+                                            "pos": "top",
+                                            "facing": "west"
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                "placement": []
+            },
+            {
+                "feature": {
+                    "type": "minecraft:block_column",
+                    "config": {
+                        "direction": "up",
+                        "allowed_placement": {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": [
+                                "minecraft:air",
+                                "minecraft:water"
+                            ]
+                        },
+                        "prioritize_tip": true,
+                        "layers": [
+                            {
+                                "height": 1,
+                                "provider": {
+                                    "type": "minecraft:simple_state_provider",
+                                    "state": {
+                                        "Name": "yuushya:marble_column",
+                                        "Properties": {
+                                            "waterlogged": "false",
+                                            "pos": "bottom",
+                                            "facing": "south"
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "height": {
+                                    "type": "minecraft:weighted_list",
+                                    "distribution": [
+                                        {
+                                            "weight": 2,
+                                            "data": {
+                                                "type": "minecraft:uniform",
+                                                "value": {
+                                                    "min_inclusive": 0,
+                                                    "max_inclusive": 8
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "weight": 1,
+                                            "data": 0
+                                        }
+                                    ]
+                                },
+                                "provider": {
+                                    "type": "minecraft:simple_state_provider",
+                                    "state": {
+                                        "Name": "yuushya:marble_column",
+                                        "Properties": {
+                                            "waterlogged": "false",
+                                            "pos": "middle",
+                                            "facing": "south"
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "height": 1,
+                                "provider": {
+                                    "type": "minecraft:simple_state_provider",
+                                    "state": {
+                                        "Name": "yuushya:marble_column",
+                                        "Properties": {
+                                            "waterlogged": "false",
+                                            "pos": "top",
+                                            "facing": "south"
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                "placement": []
+            },
+            {
+                "feature": {
+                    "type": "minecraft:block_column",
+                    "config": {
+                        "direction": "up",
+                        "allowed_placement": {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": [
+                                "minecraft:air",
+                                "minecraft:water"
+                            ]
+                        },
+                        "prioritize_tip": true,
+                        "layers": [
+                            {
+                                "height": 1,
+                                "provider": {
+                                    "type": "minecraft:simple_state_provider",
+                                    "state": {
+                                        "Name": "yuushya:marble_column",
+                                        "Properties": {
+                                            "waterlogged": "false",
+                                            "pos": "bottom",
+                                            "facing": "north"
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "height": {
+                                    "type": "minecraft:weighted_list",
+                                    "distribution": [
+                                        {
+                                            "weight": 2,
+                                            "data": {
+                                                "type": "minecraft:uniform",
+                                                "value": {
+                                                    "min_inclusive": 0,
+                                                    "max_inclusive": 8
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "weight": 1,
+                                            "data": 0
+                                        }
+                                    ]
+                                },
+                                "provider": {
+                                    "type": "minecraft:simple_state_provider",
+                                    "state": {
+                                        "Name": "yuushya:marble_column",
+                                        "Properties": {
+                                            "waterlogged": "false",
+                                            "pos": "middle",
+                                            "facing": "north"
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "height": 1,
+                                "provider": {
+                                    "type": "minecraft:simple_state_provider",
+                                    "state": {
+                                        "Name": "yuushya:marble_column",
+                                        "Properties": {
+                                            "waterlogged": "false",
+                                            "pos": "top",
+                                            "facing": "north"
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                "placement": []
+            }
+        ]
+    }
+}

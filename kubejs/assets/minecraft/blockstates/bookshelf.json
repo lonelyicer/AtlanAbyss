@@ -1,0 +1,14 @@
+{
+  "variants": {
+    "": [
+      { "model": "minecraft:block/bookshelf" , "weight": 70 },
+	  { "model": "minecraft:block/bookshelf1" , "weight":9 },
+	  { "model": "minecraft:block/bookshelf2" , "weight":9 },
+	  { "model": "minecraft:block/bookshelf3" , "weight":9 },
+	  { "model": "minecraft:block/bookshelf4" , "weight":70 },
+	  { "model": "minecraft:block/bookshelf5" , "weight":9 },
+	  { "model": "minecraft:block/bookshelf6" , "weight":70 }
+	  
+    ]
+  }
+}

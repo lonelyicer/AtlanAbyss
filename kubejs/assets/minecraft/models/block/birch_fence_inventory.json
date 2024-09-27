@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/fence_inventory_item",
+  "textures": {
+    "texture": "minecraft:block/birch_planks",
+    "texture1": "minecraft:block/stripped_birch_log"
+  }
+}

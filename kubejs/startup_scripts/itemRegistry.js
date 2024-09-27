@@ -116,8 +116,8 @@ onEvent('item.registry', event => {
 	event.create('album_yelling').displayName('Album').rarity(RARITY_RARE).unstackable();
 	event.create('album_nacollection4').displayName('Album').rarity(RARITY_RARE).unstackable();
 	event.create('album_kessoku_band').displayName('Album').rarity(RARITY_RARE).unstackable();
-	event.create('album_mameyudoufu').displayName('Album').rarity(RARITY_RARE).unstackable();
 	event.create('album_adventure').displayName('Album').rarity(RARITY_RARE).unstackable();
+	event.create('album_worlds').displayName('Album').rarity(RARITY_RARE).unstackable();
 	event.create('album_made_in_abyss').displayName('Album').rarity(RARITY_RARE).unstackable();
 	event.create('album_adp').displayName('Album').rarity(RARITY_RARE).unstackable();
 	event.create('album_adp2').displayName('Album').rarity(RARITY_RARE).unstackable();
@@ -128,8 +128,9 @@ onEvent('item.registry', event => {
 	event.create('album_adp7').displayName('Album').rarity(RARITY_RARE).unstackable();
 	event.create('album_adp8').displayName('Album').rarity(RARITY_RARE).unstackable();
 	event.create('album_adp9').displayName('Album').rarity(RARITY_RARE).unstackable();
-	event.create('treasure_box').displayName('Treasure Box').glow(true).rarity(RARITY_EPIC).unstackable();
+	event.create('album_mameyudoufu').displayName('Album').rarity(RARITY_RARE).unstackable();
 
+	event.create('treasure_box').displayName('Treasure Box').glow(true).rarity(RARITY_EPIC).unstackable();
 	event.create('uncommon_material').displayName('Uncommon Material').glow(true);
 	event.create('rare_material').displayName('Rare Material').glow(true);
 	event.create('epic_material').displayName('Epic Material').glow(true);
@@ -139,19 +140,18 @@ onEvent('item.registry', event => {
 	event.create('catalyst_incomplete', 'create:sequenced_assembly').color(0, 0x1E2533).color(1, 0x353E50).displayName('Incomplete Catalyst');
 	event.create('chaos_incomplete', 'create:sequenced_assembly').color(0, 0x1E2533).color(1, 0x353E50).displayName('Incomplete Chemical Agent');
 
-	event.create('pistol_ammo').displayName('Pistol Ammo');
-	event.create('shotgun_ammo').maxStackSize(32).displayName('Shotgun Ammo');
-	event.create('rifle_ammo').displayName('Rifle Ammo');
-	event.create('smg_ammo').displayName('SMG Ammo');
-	event.create('sniper_ammo').displayName('Sniper Ammo');
-	event.create('magnum_ammo').maxStackSize(16).displayName('Magnum Ammo');
+	// event.create('pistol_ammo').displayName('Pistol Ammo');
+	// event.create('shotgun_ammo').maxStackSize(32).displayName('Shotgun Ammo');
+	// event.create('rifle_ammo').displayName('Rifle Ammo');
+	// event.create('smg_ammo').displayName('SMG Ammo');
+	// event.create('sniper_ammo').displayName('Sniper Ammo');
+	// event.create('magnum_ammo').maxStackSize(16).displayName('Magnum Ammo');
 
-	event.create('pistol_shell', 'create:sequenced_assembly').displayName('Pistol Shell');
-	event.create('shotgun_shell', 'create:sequenced_assembly').displayName('Shotgun Shell');
-	event.create('rifle_shell', 'create:sequenced_assembly').displayName('Rifle Shell');
-	event.create('smg_shell', 'create:sequenced_assembly').displayName('SMG Shell');
-	event.create('sniper_shell', 'create:sequenced_assembly').displayName('Sniper Shell');
-	event.create('magnum_shell', 'create:sequenced_assembly').displayName('Magnum Shell');
+	event.create('shell_pistol', 'create:sequenced_assembly').displayName('Pistol Shell');
+	event.create('shell_shotgun', 'create:sequenced_assembly').displayName('Shotgun Shell');
+	event.create('shell_rifle', 'create:sequenced_assembly').displayName('Rifle Shell');
+	event.create('shell_sniper', 'create:sequenced_assembly').displayName('Sniper Shell');
+	event.create('shell_magnum', 'create:sequenced_assembly').displayName('Magnum Shell');
 
 	//混合药草
 	// event.create('mixed_herb_gg').unstackable().food((food) => {
@@ -613,8 +613,69 @@ onEvent('item.registry', event => {
 	event.create('multiply_cast').displayName('Operator Cast (x)').unstackable()
 	event.create('divide_cast').displayName('Operator Cast (/)').unstackable()
 	event.create('missingno').displayName('error')
-	event.create('computation_matrix').parentModel("kubejs:item/computation_matrix").displayName('Computation Matrix').rarity(RARITY_UNCOMMON).unstackable()
+	event.create('computation_matrix').parentModel('kubejs:item/computation_matrix').displayName('Computation Matrix').rarity(RARITY_UNCOMMON).unstackable()
 
 	event.create('sponge_gemmule').displayName('Sponge Gemmule')
 	event.create('cotton').displayName('Cotton')
+
+
+
+	// ミシュメリア
+	function michalia(name) {
+		event.create('music_disc_' + name, 'music_disc')
+			.song('kubejs:record.music_disc_' + name).analogOutput(1)
+			.texture('kubejs:item/music_disc_michalia')
+			.tag('minecraft:music_discs')
+	}
+	michalia('mishumeria')
+	michalia('fragile_utopia')
+	michalia('oddoai_ririi')
+	michalia('tuliparfeit')
+	michalia('gyakusahana')
+	michalia('lucid_hallucination')
+
+	// Adventure
+	function adventure(name) {
+		event.create('music_disc_' + name, 'music_disc')
+			.song('kubejs:record.music_disc_' + name).analogOutput(1)
+			.texture('kubejs:item/music_disc_adventure')
+			.tag('minecraft:music_discs')
+	}
+	adventure('isometric')
+	adventure('you_re_on')
+	adventure('ok')
+	adventure('la_lune')
+	adventure('pay_no_mind')
+	adventure('beings')
+	adventure('imperium')
+	adventure('zephyr')
+	adventure('nonsense')
+	adventure('innocence')
+	adventure('pixel_empire')
+	adventure('home')
+	adventure('icarus')
+	adventure('finale')
+	adventure('the_city')
+	adventure('cut_the_kid')
+	adventure('technicolor')
+	adventure('only_way_out')
+	// Worlds
+	function worlds(name) {
+		event.create('music_disc_' + name, 'music_disc')
+			.song('kubejs:record.music_disc_' + name).analogOutput(1)
+			.texture('kubejs:item/music_disc_worlds')
+			.tag('minecraft:music_discs')
+	}
+	worlds('divinity')
+	worlds('sad_machine')
+	worlds('years_of_war')
+	worlds('flicker')
+	worlds('fresh_static_snow')
+	worlds('polygon_dust')
+	worlds('hear_the_bells')
+	worlds('natural_light')
+	worlds('lionhearted')
+	worlds('sea_of_voices')
+	worlds('fellow_feeling')
+	worlds('goodbye_to_a_world')
 })

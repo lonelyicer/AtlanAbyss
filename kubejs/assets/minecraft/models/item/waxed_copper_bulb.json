@@ -1,0 +1,11 @@
+{
+  "credit": "Made by Nan2uu",
+  "parent": "minecraft:item/block_item_rgb",
+  "gui_light":"front",
+  "textures": {
+	  "s":"minecraft:block/copper_bulb",
+	  "x":"minecraft:block/copper_bulb",
+	  "q":"minecraft:block/copper_bulb",
+	  "rgb":"minecraft:block/block_item_yellow"
+  }
+}

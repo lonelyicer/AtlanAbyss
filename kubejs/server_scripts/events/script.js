@@ -92,33 +92,6 @@ const Minecraft = java('net.minecraft.client.Minecraft');
 onEvent('item.right_click', event => {
   let { player, server, level, item } = event;
 
-  lootbag('kubejs:halo_gashapon', 'kubejs:halo', true)//光环
-  lootbag('kubejs:treasure_box', 'kubejs:treasure_box', false)//宝藏袋
-  lootbag('kubejs:album_transpain', 'kubejs:album/transpain', true)//专辑
-  lootbag('kubejs:album_indigrotto', 'kubejs:album/indigrotto', true)//专辑
-  lootbag('kubejs:album_growing', 'kubejs:album/growing', true)//专辑
-  lootbag('kubejs:album_blurred_mind', 'kubejs:album/blurred_mind', true)//专辑
-  lootbag('kubejs:album_redraw', 'kubejs:album/redraw', true)//专辑
-  lootbag('kubejs:album_yelling', 'kubejs:album/yelling', true)//专辑
-  lootbag('kubejs:album_michelia', 'kubejs:album/michelia', true)//专辑
-  lootbag('kubejs:album_nacollection4', 'kubejs:album/nacollection4', true)//专辑
-  lootbag('kubejs:album_kessoku_band', 'kubejs:album/kessoku_band', true)//专辑
-  lootbag('kubejs:album_mameyudoufu', 'kubejs:album/mameyudoufu', true)//专辑
-  lootbag('kubejs:album_adventure', 'kubejs:album/adventure', true)//专辑
-  lootbag('kubejs:album_made_in_abyss', 'kubejs:album/abyss', true)//专辑
-  lootbag('kubejs:album_adp', 'kubejs:album/adp', true)//专辑
-  lootbag('kubejs:album_adp2', 'kubejs:album/adp2', true)//专辑
-  lootbag('kubejs:album_adp3', 'kubejs:album/adp3', true)//专辑
-  lootbag('kubejs:album_adp4', 'kubejs:album/adp4', true)//专辑
-  lootbag('kubejs:album_adp5', 'kubejs:album/adp5', true)//专辑
-  lootbag('kubejs:album_adp6', 'kubejs:album/adp6', true)//专辑
-  lootbag('kubejs:album_adp7', 'kubejs:album/adp7', true)//专辑
-  lootbag('kubejs:album_adp8', 'kubejs:album/adp8', true)//专辑
-  lootbag('kubejs:album_adp9', 'kubejs:album/adp9', true)//专辑
-
-  hoshino('minecraft:clock');// 时钟
-  hoshino('tiab:time_in_a_bottle');// 时间之瓶
-
   function lootbag(lootbag, lootable, activation) {
     if (item !== lootbag) {
       return;
@@ -174,6 +147,34 @@ onEvent('item.right_click', event => {
     }
   }
 
+
+  lootbag('kubejs:halo_gashapon', 'kubejs:halo', true)//光环
+  lootbag('kubejs:treasure_box', 'kubejs:treasure_box', false)//宝藏袋
+  lootbag('kubejs:album_transpain', 'kubejs:album/transpain', true)//专辑
+  lootbag('kubejs:album_indigrotto', 'kubejs:album/indigrotto', true)//专辑
+  lootbag('kubejs:album_growing', 'kubejs:album/growing', true)//专辑
+  lootbag('kubejs:album_blurred_mind', 'kubejs:album/blurred_mind', true)//专辑
+  lootbag('kubejs:album_redraw', 'kubejs:album/redraw', true)//专辑
+  lootbag('kubejs:album_yelling', 'kubejs:album/yelling', true)//专辑
+  lootbag('kubejs:album_michelia', 'kubejs:album/music_disc_michelia', true)//专辑
+  lootbag('kubejs:album_nacollection4', 'kubejs:album/nacollection4', true)//专辑
+  lootbag('kubejs:album_kessoku_band', 'kubejs:album/kessoku_band', true)//专辑
+  lootbag('kubejs:album_mameyudoufu', 'kubejs:album/mameyudoufu', true)//专辑
+  lootbag('kubejs:album_adventure', 'kubejs:album/music_disc_adventure', true)//专辑
+  lootbag('kubejs:album_worlds', 'kubejs:album/music_disc_worlds', true)//专辑
+  lootbag('kubejs:album_made_in_abyss', 'kubejs:album/abyss', true)//专辑
+  lootbag('kubejs:album_adp', 'kubejs:album/adp', true)//专辑
+  lootbag('kubejs:album_adp2', 'kubejs:album/adp2', true)//专辑
+  lootbag('kubejs:album_adp3', 'kubejs:album/adp3', true)//专辑
+  lootbag('kubejs:album_adp4', 'kubejs:album/adp4', true)//专辑
+  lootbag('kubejs:album_adp5', 'kubejs:album/adp5', true)//专辑
+  lootbag('kubejs:album_adp6', 'kubejs:album/adp6', true)//专辑
+  lootbag('kubejs:album_adp7', 'kubejs:album/adp7', true)//专辑
+  lootbag('kubejs:album_adp8', 'kubejs:album/adp8', true)//专辑
+  lootbag('kubejs:album_adp9', 'kubejs:album/adp9', true)//专辑
+
+  hoshino('minecraft:clock');// 时钟
+  hoshino('tiab:time_in_a_bottle');// 时间之瓶
 
   // let artifact = 'kubejs:crystal_nucleus';
 

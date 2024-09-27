@@ -1,0 +1,11 @@
+{
+  "credit": "Made by Nan2uu",
+  "parent": "minecraft:item/trapdoor_item_rgb",
+  "gui_light":"front",
+  "textures": {
+	  "s":"minecraft:block/weathered_copper_trapdoor",
+	  "x":"minecraft:block/weathered_copper_trapdoor",
+	  "q":"minecraft:block/weathered_copper_trapdoor",
+	  "rgb":"minecraft:block/block_item_yellow"
+  }
+}

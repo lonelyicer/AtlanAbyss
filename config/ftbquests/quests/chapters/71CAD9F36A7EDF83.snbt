@@ -52,25 +52,6 @@
 		}
 		{
 			disable_toast: true
-			x: 0.0d
-			y: -3.0d
-			shape: "rsquare"
-			description: ["开启枪械之路。"]
-			dependencies: ["27A398EC39DC9F94"]
-			id: "62ABD67CFC26F88E"
-			tasks: [{
-				id: "292202280DB4F9F0"
-				type: "item"
-				item: "thermal:cured_rubber"
-			}]
-			rewards: [{
-				id: "7B24EB35E5C59185"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
-			disable_toast: true
 			x: 1.0d
 			y: -1.0d
 			shape: "hexagon"

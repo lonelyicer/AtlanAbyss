@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:bastion_remnant",
+  "biomes": "#atlanabyss:is_secret_garden",
+  "adapt_noise": false,
+  "spawn_overrides": {},
+  "config": {
+    "start_pool": "atlanabyss:tnt_ship",
+    "size": 1
+  }
+}

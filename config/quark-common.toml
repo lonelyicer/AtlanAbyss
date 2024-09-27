@@ -1428,7 +1428,7 @@
 					"Is Blacklist" = true
 
 [client]
-	"Variant Animal Textures" = true
+	"Variant Animal Textures" = false
 	"Uses For Curses" = true
 	"Usage Ticker" = true
 	"Soul Candles" = true

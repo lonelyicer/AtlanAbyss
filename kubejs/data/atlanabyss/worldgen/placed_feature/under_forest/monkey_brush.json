@@ -1,0 +1,28 @@
+{
+  "feature": "atmospheric:monkey_brush",
+  "placement": [
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": 2
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:would_survive",
+        "state": {
+          "Name": "minecraft:vine",
+          "Properties": {
+            "east": "true",
+            "north": "true",
+            "south": "true",
+            "up": "true",
+            "west": "true"
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "credit": "Made by Nan2uu",
+  "parent": "minecraft:item/block_item_rgb",
+  "gui_light":"front",
+  "textures": {
+	  "s":"minecraft:block/infested_cobblestone",
+	  "x":"minecraft:block/infested_cobblestone",
+	  "q":"minecraft:block/infested_cobblestone",
+    "rgb":"minecraft:block/block_item_red"
+  }
+}

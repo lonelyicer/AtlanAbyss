@@ -8,7 +8,11 @@
     "tracer_count_interval": 0,
     "extra_damage": {
       "armor_ignore": 0.0,
-      "head_shot_multiplier": 1.75
+      "head_shot_multiplier": 1.75,
+      "damage_adjust": [
+        {"distance": 100, "damage": 18},
+        {"distance": "infinite", "damage": 16}
+      ]
     },
     "speed": 42,
     "gravity": 0.01,
@@ -17,8 +21,11 @@
     "ignite": false,
     "pierce": 0,
     "explosion": {
-      "damage": 114,
-      "radius": 5
+      "explode": true,
+      "damage": 500,
+      "radius": 5,
+      "knockback": true,
+      "delay": 30
     }
   },
   "ammo_amount": 3,
@@ -43,6 +50,11 @@
   "put_away_time": 0.33,
   "aim_time": 0.2,
   "sprint_time": 0.2,
+  "movement_speed": {
+    "base": 0.0,
+    "aim": -0.1,
+    "reload": 0
+  },
   "fire_mode": [
     "semi",
     "burst"
@@ -77,6 +89,6 @@
     "move": 1.0,
     "sneak": 0.25,
     "lie": 0.1,
-    "aim": 0.1
+    "aim": 0.0
   }
 }

@@ -1,0 +1,127 @@
+{
+  "spawners": {
+    "monster": [
+      {
+        "type": "minecraft:phantom",
+        "weight": 100,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:shulker",
+        "weight": 100,
+        "minCount": 1,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:skeleton",
+        "weight": 100,
+        "minCount": 4,
+        "maxCount": 4
+      }
+    ],
+    "creature": [],
+    "ambient": [],
+    "axolotls": [
+      {
+        "type": "minecraft:axolotl",
+        "weight": 10,
+        "minCount": 4,
+        "maxCount": 6
+      }
+    ],
+    "underground_water_creature": [],
+    "water_creature": [],
+    "water_ambient": [
+      {
+        "type": "minecraft:tropical_fish",
+        "weight": 25,
+        "minCount": 8,
+        "maxCount": 8
+      }
+    ],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "atlanabyss:cave",
+      "atlanabyss:canyon"
+    ]
+  },
+  "features": [
+    [],
+    [
+      "minecraft:lake_lava_surface",
+      "minecraft:lake_lava_underground"
+    ],
+    [
+      "minecraft:amethyst_geode",
+      "minecraft:pointed_dripstone",
+      "atlanabyss:major_fault/void_amethyst_geode"
+    ],
+    [
+      "atlanabyss:major_fault/amethyst_crystal_spike",
+      "atlanabyss:major_fault/amethyst_crystal_ground_spike",
+      "atlanabyss:major_fault/smooth_basalt_blob"
+    ],
+    [
+      "atlanabyss:major_fault/smooth_basalt_calcite_blob"
+    ],
+    [
+      "minecraft:patch_tall_grass_2",
+      "minecraft:trees_plains",
+      "atlanabyss:under_forest/lichen",
+      "atlanabyss:under_forest/lichen2",
+      "minecraft:patch_grass_plain"
+    ],
+    [
+      "atlanabyss:major_fault/diorite_big"
+    ],
+    [],
+    [],
+    [
+      "minecraft:glow_lichen",
+      "minecraft:patch_tall_grass_2",
+      "minecraft:lush_caves_ceiling_vegetation",
+      "minecraft:cave_vines",
+      "minecraft:rooted_azalea_tree",
+      "minecraft:spore_blossom",
+      "minecraft:classic_vines_cave_feature",
+      "atlanabyss:major_fault/amethyst_void_crystals",
+      "atlanabyss:major_fault/amethyst_void_ceiling_crystals",
+      "atlanabyss:major_fault/amethyst_vine"
+    ],
+    [
+      "minecraft:freeze_top_layer"
+    ]
+  ],
+  "temperature": 0.05,
+  "downfall": 0.3,
+  "precipitation": "none",
+  "temperature_modifier": "none",
+  "category": "underground",
+  "effects": {
+    "sky_color": 16777215,
+    "fog_color": 1448222,
+    "water_color": 4159204,
+    "water_fog_color": 329011,
+    "ambient_sound": "minecraft:ambient.basalt_deltas.loop",
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 2000,
+      "block_search_extent": 8,
+      "offset": 2
+    },
+    "additions_sound": {
+      "sound": "minecraft:block.amethyst_block.chime",
+      "tick_chance": 0.02
+    },
+    "music": {
+      "sound": "minecraft:music.overworld.lush_caves",
+      "min_delay": 12000,
+      "max_delay": 24000,
+      "replace_current_music": false
+    }
+  }
+}

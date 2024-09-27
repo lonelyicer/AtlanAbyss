@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/moss_carpet_mx",
+  "textures": {
+    "top": "minecraft:block/moss_block_2",
+	"c": "minecraft:block/moss_block_c_2"
+  }
+}

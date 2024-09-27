@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/exposed_copper_door",
+  "textures": {
+    "layer0": "minecraft:item/waxed_exposed_copper_door"
+  }
+}

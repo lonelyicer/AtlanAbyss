@@ -1,0 +1,14 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "atlanabyss:materials/uncommon"
+      },
+      "count": 9
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "bf1:vp1915"
+  }
+}

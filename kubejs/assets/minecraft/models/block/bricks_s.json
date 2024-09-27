@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_s",
+  "textures": {
+    "all": "minecraft:block/bricks",
+	"sw":"minecraft:block/bricks_sw"
+  }
+}

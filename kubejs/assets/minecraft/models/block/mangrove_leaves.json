@@ -1,0 +1,8 @@
+{
+	"parent": "minecraft:block/leaves_ys",
+	"textures": {
+		"all": "block/mangrove_leaves",
+		"s": "block/better_mangrove_leaves",
+		"x": "block/better_mangrove_leaves1"
+	}
+}

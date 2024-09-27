@@ -1,0 +1,11 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:block/leaves_ws_cherry",
+	"textures": {
+		"all": "block/cherry_leaves",
+		"s": "block/better_cherry_leaves",
+		"ss": "block/better_cherry_leaves_b",
+		"x": "block/better_cherry_leaves1",
+		"xx": "block/better_cherry_leaves1_b"
+	}
+}

@@ -1,0 +1,85 @@
+{
+    "type": "minecraft:flower",
+    "config": {
+        "tries": 96,
+        "xz_spread": 6,
+        "y_spread": 2,
+        "feature": {
+            "feature": {
+                "type": "minecraft:simple_block",
+                "config": {
+                    "to_place": {
+                        "type": "minecraft:noise_provider",
+                        "seed": 2345,
+                        "noise": {
+                            "firstOctave": 0,
+                            "amplitudes": [
+                                1
+                            ]
+                        },
+                        "scale": 0.020833334,
+                        "states": [
+                            {
+                                "Name": "botania:white_shiny_flower"
+                            },
+                            {
+                                "Name": "botania:orange_shiny_flower"
+                            },
+                            {
+                                "Name": "botania:magenta_shiny_flower"
+                            },
+                            {
+                                "Name": "botania:light_blue_shiny_flower"
+                            },
+                            {
+                                "Name": "botania:yellow_shiny_flower"
+                            },
+                            {
+                                "Name": "botania:lime_shiny_flower"
+                            },
+                            {
+                                "Name": "botania:pink_shiny_flower"
+                            },
+                            {
+                                "Name": "botania:gray_shiny_flower"
+                            },
+                            {
+                                "Name": "botania:light_gray_shiny_flower"
+                            },
+                            {
+                                "Name": "botania:cyan_shiny_flower"
+                            },
+                            {
+                                "Name": "botania:purple_shiny_flower"
+                            },
+                            {
+                                "Name": "botania:blue_shiny_flower"
+                            },
+                            {
+                                "Name": "botania:brown_shiny_flower"
+                            },
+                            {
+                                "Name": "botania:green_shiny_flower"
+                            },
+                            {
+                                "Name": "botania:red_shiny_flower"
+                            },
+                            {
+                                "Name": "botania:black_shiny_flower"
+                            }
+                        ]
+                    }
+                }
+            },
+            "placement": [
+                {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                        "type": "minecraft:matching_blocks",
+                        "blocks": "minecraft:air"
+                    }
+                }
+            ]
+        }
+    }
+}

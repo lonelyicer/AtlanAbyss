@@ -21,15 +21,15 @@
             "modifier_name": "max_health for Husks",
             "amount": -10,
             "operation": "addition"
-        }
-    ],
-    "potion_effects": [
+        },
         {
-            "id": "minecraft:speed",
-            "chance": 0.7,
-            "amplifier": {
-                "min": 1
-            }
+            "id": "minecraft:generic.movement_speed",
+            "modifier_name": "Speed for Husks",
+            "amount": {
+                "min": 0.1,
+                "max": 0.2
+            },
+            "operation": "addition"
         }
     ]
 }

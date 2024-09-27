@@ -1,0 +1,10 @@
+{
+	"credit": "Made by Nan2uu",
+	"parent": "minecraft:block/oak_leaves_flower_block",
+	"textures": {
+	  "all": "block/oak_leaves",
+	  "s": "block/better_leaves_oak",
+	  "x": "block/better_leaves_oak1",
+	  "hua":"block/oak_leaves_flower1"
+	  }
+  }

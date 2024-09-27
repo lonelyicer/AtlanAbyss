@@ -1,0 +1,11 @@
+{
+  "credit": "Made by Nan2uu",
+  "parent": "minecraft:item/block_item_rgb",
+  "gui_light":"front",
+  "textures": {
+	"s":"minecraft:block/infested_deepslate_bricks_top",
+	"x":"minecraft:block/infested_deepslate_bricks_top",
+	"q":"minecraft:block/infested_deepslate_bricks",
+  "rgb":"minecraft:block/block_item_red"
+  }
+}

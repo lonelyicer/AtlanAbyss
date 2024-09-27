@@ -1,0 +1,38 @@
+{
+	"credit": "Made with Blockbench",
+	"ambientocclusion": false,
+	"textures": {
+		"1": "block/shuiliangen",
+		"particle": "block/lily_pad3",
+		"texture": "block/lily_pad3"
+	},
+	"elements": [
+		{
+			"from": [-8, 0.2, -8],
+			"to": [24, 0.2, 24],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7.95, 8]},
+			"faces": {
+				"up": {"uv": [16, 0, 0, 16], "texture": "#texture"},
+				"down": {"uv": [16, 16, 0, 0], "texture": "#texture"}
+			}
+		},
+		{
+			"from": [10.5, -12.8, 4.45],
+			"to": [10.5, 0.2, 20.45],
+			"rotation": {"angle": 45, "axis": "y", "origin": [3.5, -7.8, 12.45]},
+			"faces": {
+				"east": {"uv": [0, 0, 16, 13], "texture": "#1"},
+				"west": {"uv": [0, 0, 16, 13], "texture": "#1"}
+			}
+		},
+		{
+			"from": [6.5, -12.8, 4.45],
+			"to": [6.5, 0.2, 20.45],
+			"rotation": {"angle": -45, "axis": "y", "origin": [13.5, -7.8, 12.45]},
+			"faces": {
+				"east": {"uv": [0, 0, 16, 13], "texture": "#1"},
+				"west": {"uv": [0, 0, 16, 13], "texture": "#1"}
+			}
+		}
+	]
+}

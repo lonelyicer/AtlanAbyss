@@ -292,11 +292,11 @@ const tagToAdd = [
 	['forge:ores', 'kubejs:mercury_silver_ore'],//矿石
 	['forge:ores/silver', 'kubejs:mercury_silver_ore'],
 	//枪械材料
-	['forge:materials/uncommon', 'kubejs:uncommon_material'],
-	['forge:materials/rare', 'kubejs:rare_material'],
-	['forge:materials/epic', 'kubejs:epic_material'],
-	['forge:materials/legendary', 'kubejs:legendary_material'],
-	['forge:materials/ultimate', 'kubejs:ultimate_material'],
+	['atlanabyss:materials/uncommon', 'kubejs:uncommon_material'],
+	['atlanabyss:materials/rare', 'kubejs:rare_material'],
+	['atlanabyss:materials/epic', 'kubejs:epic_material'],
+	['atlanabyss:materials/legendary', 'kubejs:legendary_material'],
+	['atlanabyss:materials/ultimate', 'kubejs:ultimate_material'],
 	//框架tag
 	['industrialforegoing:machine_frame/pity', 'kubejs:steel_machine_frame'],
 	['industrialforegoing:machine_frame/simple', 'kubejs:desh_machine_frame'],
@@ -370,6 +370,20 @@ onEvent('tags.items', event => {
 		'minecraft:music_disc_otherside', 'minecraft:music_disc_pigstep',
 		'integrated_stronghold:music_disc_forlorn', 'integrated_stronghold:disc_fragment_sight'
 	]);
+	//专辑
+	event.add('atlanabyss:albums', [
+		'kubejs:album_transpain', 'kubejs:album_indigrotto',
+		'kubejs:album_michelia', 'kubejs:album_growing',
+		'kubejs:album_blurred_mind', 'kubejs:album_redraw',
+		'kubejs:album_yelling', 'kubejs:album_nacollection4',
+		'kubejs:album_kessoku_band', 'kubejs:album_adventure',
+		'kubejs:album_worlds', 'kubejs:album_made_in_abyss',
+		'kubejs:album_adp', 'kubejs:album_adp2',
+		'kubejs:album_adp3', 'kubejs:album_adp4',
+		'kubejs:album_adp5', 'kubejs:album_adp6',
+		'kubejs:album_adp7', 'kubejs:album_adp8',
+		'kubejs:album_adp9', 'kubejs:album_mameyudoufu',
+	]);
 
 	//原木标签
 	event.add('atlanabyss:unstripped_wood', [
@@ -380,7 +394,12 @@ onEvent('tags.items', event => {
 		'minecraft:acacia_log', 'minecraft:acacia_wood',
 		'minecraft:dark_oak_log', 'minecraft:dark_oak_wood',
 		'minecraft:crimson_stem', 'minecraft:crimson_hyphae',
-		'minecraft:warped_stem', 'minecraft:warped_hyphae'
+		'minecraft:warped_stem', 'minecraft:warped_hyphae',
+		'ars_nouveau:blue_archwood_log', 'ars_nouveau:purple_archwood_log',
+		'ars_nouveau:green_archwood_log', 'ars_nouveau:red_archwood_log',
+		'atmospheric:rosewood_log', 'atmospheric:morado_log',
+		'atmospheric:yucca_log', 'atmospheric:aspen_log',
+		'quark:blossom_log'
 	]);
 	event.add('atlanabyss:vanilla_saplings', [
 		'minecraft:oak_sapling', 'minecraft:spruce_sapling',
@@ -438,6 +457,9 @@ onEvent('tags.blocks', event => {
 	}
 	removeBeaconBase('thermal:rose_gold_block')
 	removeBeaconBase('beyond_earth:steel_block')
+
+	//泥土
+	event.add('minecraft:dirt', 'botania:enchanted_soil')
 
 	//机械动力扳手标签
 	event.add('create:wrench_pickup', [

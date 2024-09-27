@@ -1,0 +1,22 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:block/leaves_ys",
+	"textures": {
+		"5": "block/mangrove_leaves_kuwei",
+		"particle": "block/better_mangrove_leaves_kuwei"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#5", "cullface": "north"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#5", "cullface": "east"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#5", "cullface": "south"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#5", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#5", "cullface": "up"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#5", "cullface": "down"}
+			}
+		}
+	]
+}

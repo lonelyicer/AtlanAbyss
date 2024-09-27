@@ -1,8 +1,9 @@
-onEvent('recipes', event => {
-	const { create } = event.recipes;
+onEvent('recipes', (event) => {
 	let remove = (name) => {
 		event.remove({ id: name })
 	}
+
+	const { create } = event.recipes;
 
 	// let tacRecipes = (item, input) => {
 	// 	let inputList = []
@@ -251,7 +252,7 @@ onEvent('recipes', event => {
 		'BCB',
 		'ABA'
 	], {
-		A: 'thermal:cured_rubber',
+		A: '#forge:stripped_logs',
 		B: 'create:iron_sheet',
 		C: 'minecraft:iron_ingot'
 	}).id('atlanabyss:uncommon_material')
@@ -261,8 +262,8 @@ onEvent('recipes', event => {
 		'BCB',
 		'ABA'
 	], {
-		A: 'thermal:steel_plate',
-		B: 'thermal:steel_ingot',
+		A: 'thermal:cured_rubber',
+		B: 'thermal:steel_plate',
 		C: 'kubejs:uncommon_material'
 	}).id('atlanabyss:rare_material')
 	//紫材料
@@ -291,20 +292,82 @@ onEvent('recipes', event => {
 		'BCB',
 		'ABA'
 	], {
-		A: 'thermal:signalum_block',
+		A: 'kubejs:lutetium_ingot',
 		B: 'kubejs:charged_soulsteel_ingot',
 		C: 'kubejs:legendary_material'
 	}).id('atlanabyss:ultimate_material')
 
+	//空弹壳
+	event.stonecutting('kubejs:shell_pistol', 'create:copper_sheet').id('atlanabyss:cutting_shell_pistol');
+	event.stonecutting('kubejs:shell_shotgun', 'create:copper_sheet').id('atlanabyss:cutting_shell_shotgun');
+	event.stonecutting('kubejs:shell_rifle', 'thermal:steel_plate').id('atlanabyss:cutting_shell_rifle');
+	event.stonecutting('kubejs:shell_sniper', 'create:brass_sheet').id('atlanabyss:cutting_shell_sniper');
+	event.stonecutting('kubejs:shell_magnum', 'kubejs:charged_constantan_sheet').id('atlanabyss:cutting_shell_magnum');
+
 	// //子弹
-	// let pa = ('kubejs:pistol_shell')
-	// create.sequenced_assembly([
-	// 	'10x kubejs:pistol_ammo'
-	// ], 'create:copper_sheet', [
-	// 	create.cutting(pa, pa),
-	// 	create.deploying(pa, [pa, 'minecraft:gunpowder']),
-	// 	create.pressing(pa, pa),
-	// ]).transitionalItem(pa).loops(1).id('atlanabyss:pistol_ammo')//手枪子弹
+	function ammo(shell, sheet, ammo, count, d1, d2, loop) {
+		create.sequenced_assembly(Item.of('tacz:ammo', count, `{AmmoId:"${ammo}"}`), sheet, [
+			create.deploying(shell, [shell, Item.of('tacz:ammo', `{AmmoId:"${ammo}"}`)]).keepHeldItem(true),
+			create.deploying(shell, [shell, d1]),
+			create.deploying(shell, [shell, d2]),
+			create.pressing(shell, shell),
+		]).transitionalItem(shell).loops(1).id('atlanabyss:sequenced_assembly_' + ammo.replace(':', '_'))
+	}
+	//手枪弹
+	ammo('kubejs:shell_pistol', 'create:copper_sheet',
+		'tacz:9mm', 30,
+		'minecraft:gunpowder', 'create:copper_nugget'
+	)
+	ammo('kubejs:shell_pistol', 'create:copper_sheet',
+		'tacz:45acp', 30,
+		'minecraft:gunpowder', 'create:copper_nugget'
+	)
+	//步枪弹
+	ammo('kubejs:shell_sniper', 'create:brass_sheet',
+		'tacz:308', 10,
+		'minecraft:gunpowder', 'create:brass_nugget'
+	)
+	ammo('kubejs:shell_rifle', 'thermal:steel_plate',
+		'tacz:762x39', 10,
+		'minecraft:gunpowder', 'create:brass_nugget'
+	)
+	ammo('kubejs:shell_sniper', 'create:brass_sheet',
+		'tacz:556x45', 10,
+		'minecraft:gunpowder', 'create:brass_nugget'
+	)
+	ammo('kubejs:shell_sniper', 'create:brass_sheet',
+		'bf1:792x57', 50,
+		'thermal:gunpowder_block', 'create:brass_nugget'
+	)
+	//狙击步枪弹
+	ammo('kubejs:shell_rifle', 'thermal:steel_plate',
+		'tacz:50bmg', 5,
+		'tconstruct:efln_ball', 'create:brass_nugget'
+	)
+	ammo('kubejs:shell_sniper', 'create:brass_sheet',
+		'tacz:338', 5,
+		'tconstruct:efln_ball', 'create:copper_nugget'
+	)
+	ammo('kubejs:shell_sniper', 'create:brass_sheet',
+		'bf1:132x92', 5,
+		'tconstruct:efln_ball', 'create:brass_nugget'
+	)
+	//霰弹
+	ammo('kubejs:shell_shotgun', 'create:brass_sheet',
+		'tacz:12g', 2,
+		'minecraft:gunpowder', 'minecraft:iron_nugget'
+	)
+	//马格南
+	ammo('kubejs:shell_magnum', 'kubejs:charged_constantan_sheet',
+		'tacz:357mag', 1,
+		'thermal:gunpowder_block', 'thermal:silver_nugget'
+	)
+	ammo('kubejs:shell_magnum', 'kubejs:charged_constantan_sheet',
+		'tacz:50ae', 1,
+		'thermal:gunpowder_block', 'thermal:constantan_nugget'
+	)
+
+
 
 	// let sa = ('kubejs:shotgun_shell')
 	// create.sequenced_assembly([
@@ -358,15 +421,39 @@ onEvent('recipes', event => {
 
 
 	//火箭弹
-	remove('tac:rpg7_missile')
-	event.shaped(Item.of('tacz:ammo', '{AmmoId:"tacz:rpg_rocket"}'), [
+	event.shaped(Item.of('tacz:ammo', 2, '{AmmoId:"tacz:rpg_rocket"}'), [
 		'A',
 		'B',
 		'B'
 	], {
 		A: 'minecraft:tnt',
 		B: 'createaddition:iron_rod'
-	}).id('atlanabyss:rpg_rocket')
+	}).id('atlanabyss:tacz_4rpg_rocket_2')
+	event.shaped(Item.of('tacz:ammo', '{AmmoId:"tacz:rpg_rocket"}'), [
+		'A',
+		'B',
+		'B'
+	], {
+		A: 'ae2:tiny_tnt',
+		B: 'createaddition:iron_rod'
+	}).id('atlanabyss:tacz_4rpg_rocket')
+
+	//榴弹
+	event.shaped(Item.of('tacz:ammo', 6, '{AmmoId:"tacz:40mm"}'), [
+		'BBB',
+		'BAB',
+		'BBB'
+	], {
+		A: 'ae2:tiny_tnt',
+		B: 'kubejs:aluminum_sheet'
+	}).id('atlanabyss:tacz_40mm')
+
+	//纸壳弹
+	event.shapeless(Item.of('tacz:ammo', 8, '{AmmoId:"qkl:16mm"}'), [
+		'#forge:cobblestone',
+		'minecraft:paper',
+		'minecraft:gunpowder'
+	]).id('atlanabyss:tacz_16mm')
 
 	//枪械工作台
 	remove('tacz:gun_smith_table')

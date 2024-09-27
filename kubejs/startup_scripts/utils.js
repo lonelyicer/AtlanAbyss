@@ -40,6 +40,8 @@
 // 	}
 // }
 
+
+
 onEvent('botania.brews.registry', event => {
 	event.create('alicepowah')
 		.cost(5000)
@@ -100,5 +102,11 @@ onEvent('item.modification', event => {
 			food.effect('minecraft:weakness', 600, 1, 1)//虚弱2
 			food.effect('minecraft:poison', 200, 0, 1)//中毒
 		}
+	})
+})
+
+onEvent('block.modification', event => {
+	event.modify('kubejs:compressed_coal_block', block => {
+		block.setDestroySpeed(-1);
 	})
 })

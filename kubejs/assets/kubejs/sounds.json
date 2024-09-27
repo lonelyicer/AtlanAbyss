@@ -6,5 +6,329 @@
             }
         ],
         "subtitle": "subtitle.kubejs.ciallo"
+    },
+    "record.music_disc_mishumeria": {
+        "sounds": [
+            {
+                "name": "kubejs:records/michelia/music_disc_mishumeria",
+                "stream": true
+            }
+        ],
+        "subtitle": "subtitle.kubejs.record.music_disc_mishumeria"
+    },
+    "record.music_disc_fragile_utopia": {
+        "sounds": [
+            {
+                "name": "kubejs:records/michelia/music_disc_fragile_utopia",
+                "stream": true
+            }
+        ],
+        "subtitle": "subtitle.kubejs.record.music_disc_fragile_utopia"
+    },
+    "record.music_disc_oddoai_ririi": {
+        "sounds": [
+            {
+                "name": "kubejs:records/michelia/music_disc_oddoai_ririi",
+                "stream": true
+            }
+        ],
+        "subtitle": "subtitle.kubejs.record.music_disc_oddoai_ririi"
+    },
+    "record.music_disc_tuliparfeit": {
+        "sounds": [
+            {
+                "name": "kubejs:records/michelia/music_disc_tuliparfeit",
+                "stream": true
+            }
+        ],
+        "subtitle": "subtitle.kubejs.record.music_disc_tuliparfeit"
+    },
+    "record.music_disc_gyakusahana": {
+        "sounds": [
+            {
+                "name": "kubejs:records/michelia/music_disc_gyakusahana",
+                "stream": true
+            }
+        ],
+        "subtitle": "subtitle.kubejs.record.music_disc_gyakusahana"
+    },
+    "record.music_disc_lucid_hallucination": {
+        "sounds": [
+            {
+                "name": "kubejs:records/michelia/music_disc_lucid_hallucination",
+                "stream": true
+            }
+        ],
+        "subtitle": "subtitle.kubejs.record.music_disc_lucid_hallucination"
+    },
+    "record.music_disc_isometric": {
+        "sounds": [
+            {
+                "name": "kubejs:records/adventure/music_disc_isometric",
+                "stream": true
+            }
+        ],
+        "subtitle": "subtitle.kubejs.record.music_disc_isometric"
+    },
+    "record.music_disc_you_re_on": {
+        "sounds": [
+            {
+                "name": "kubejs:records/adventure/music_disc_you_re_on",
+                "stream": true
+            }
+        ],
+        "subtitle": "subtitle.kubejs.record.music_disc_you_re_on"
+    },
+    "record.music_disc_ok": {
+        "sounds": [
+            {
+                "name": "kubejs:records/adventure/music_disc_ok",
+                "stream": true
+            }
+        ],
+        "subtitle": "subtitle.kubejs.record.music_disc_ok"
+    },
+    "record.music_disc_la_lune": {
+        "sounds": [
+            {
+                "name": "kubejs:records/adventure/music_disc_la_lune",
+                "stream": true
+            }
+        ],
+        "subtitle": "subtitle.kubejs.record.music_disc_la_lune"
+    },
+    "record.music_disc_pay_no_mind": {
+        "sounds": [
+            {
+                "name": "kubejs:records/adventure/music_disc_pay_no_mind",
+                "stream": true
+            }
+        ],
+        "subtitle": "subtitle.kubejs.record.music_disc_pay_no_mind"
+    },
+    "record.music_disc_beings": {
+        "sounds": [
+            {
+                "name": "kubejs:records/adventure/music_disc_beings",
+                "stream": true
+            }
+        ],
+        "subtitle": "subtitle.kubejs.record.music_disc_beings"
+    },
+    "record.music_disc_imperium": {
+        "sounds": [
+            {
+                "name": "kubejs:records/adventure/music_disc_imperium",
+                "stream": true
+            }
+        ],
+        "subtitle": "subtitle.kubejs.record.music_disc_imperium"
+    },
+    "record.music_disc_zephyr": {
+        "sounds": [
+            {
+                "name": "kubejs:records/adventure/music_disc_zephyr",
+                "stream": true
+            }
+        ],
+        "subtitle": "subtitle.kubejs.record.music_disc_zephyr"
+    },
+    "record.music_disc_nonsense": {
+        "sounds": [
+            {
+                "name": "kubejs:records/adventure/music_disc_nonsense",
+                "stream": true
+            }
+        ],
+        "subtitle": "subtitle.kubejs.record.music_disc_nonsense"
+    },
+    "record.music_disc_innocence": {
+        "sounds": [
+            {
+                "name": "kubejs:records/adventure/music_disc_innocence",
+                "stream": true
+            }
+        ],
+        "subtitle": "subtitle.kubejs.record.music_disc_innocence"
+    },
+    "record.music_disc_pixel_empire": {
+        "sounds": [
+            {
+                "name": "kubejs:records/adventure/music_disc_pixel_empire",
+                "stream": true
+            }
+        ],
+        "subtitle": "subtitle.kubejs.record.music_disc_pixel_empire"
+    },
+    "record.music_disc_home": {
+        "sounds": [
+            {
+                "name": "kubejs:records/adventure/music_disc_home",
+                "stream": true
+            }
+        ],
+        "subtitle": "subtitle.kubejs.record.music_disc_home"
+    },
+    "record.music_disc_icarus": {
+        "sounds": [
+            {
+                "name": "kubejs:records/adventure/music_disc_icarus",
+                "stream": true
+            }
+        ],
+        "subtitle": "subtitle.kubejs.record.music_disc_icarus"
+    },
+    "record.music_disc_finale": {
+        "sounds": [
+            {
+                "name": "kubejs:records/adventure/music_disc_finale",
+                "stream": true
+            }
+        ],
+        "subtitle": "subtitle.kubejs.record.music_disc_finale"
+    },
+    "record.music_disc_the_city": {
+        "sounds": [
+            {
+                "name": "kubejs:records/adventure/music_disc_the_city",
+                "stream": true
+            }
+        ],
+        "subtitle": "subtitle.kubejs.record.music_disc_the_city"
+    },
+    "record.music_disc_cut_the_kid": {
+        "sounds": [
+            {
+                "name": "kubejs:records/adventure/music_disc_cut_the_kid",
+                "stream": true
+            }
+        ],
+        "subtitle": "subtitle.kubejs.record.music_disc_cut_the_kid"
+    },
+    "record.music_disc_technicolor": {
+        "sounds": [
+            {
+                "name": "kubejs:records/adventure/music_disc_technicolor",
+                "stream": true
+            }
+        ],
+        "subtitle": "subtitle.kubejs.record.music_disc_technicolor"
+    },
+    "record.music_disc_only_way_out": {
+        "sounds": [
+            {
+                "name": "kubejs:records/adventure/music_disc_only_way_out",
+                "stream": true
+            }
+        ],
+        "subtitle": "subtitle.kubejs.record.music_disc_only_way_out"
+    },
+    "record.music_disc_divinity": {
+        "sounds": [
+            {
+                "name": "kubejs:records/worlds/music_disc_divinity",
+                "stream": true
+            }
+        ],
+        "subtitle": "subtitle.kubejs.record.music_disc_divinity"
+    },
+    "record.music_disc_sad_machine": {
+        "sounds": [
+            {
+                "name": "kubejs:records/worlds/music_disc_sad_machine",
+                "stream": true
+            }
+        ],
+        "subtitle": "subtitle.kubejs.record.music_disc_sad_machine"
+    },
+    "record.music_disc_years_of_war": {
+        "sounds": [
+            {
+                "name": "kubejs:records/worlds/music_disc_years_of_war",
+                "stream": true
+            }
+        ],
+        "subtitle": "subtitle.kubejs.record.music_disc_years_of_war"
+    },
+    "record.music_disc_flicker": {
+        "sounds": [
+            {
+                "name": "kubejs:records/worlds/music_disc_flicker",
+                "stream": true
+            }
+        ],
+        "subtitle": "subtitle.kubejs.record.music_disc_flicker"
+    },
+    "record.music_disc_fresh_static_snow": {
+        "sounds": [
+            {
+                "name": "kubejs:records/worlds/music_disc_fresh_static_snow",
+                "stream": true
+            }
+        ],
+        "subtitle": "subtitle.kubejs.record.music_disc_fresh_static_snow"
+    },
+    "record.music_disc_polygon_dust": {
+        "sounds": [
+            {
+                "name": "kubejs:records/worlds/music_disc_polygon_dust",
+                "stream": true
+            }
+        ],
+        "subtitle": "subtitle.kubejs.record.music_disc_polygon_dust"
+    },
+    "record.music_disc_hear_the_bells": {
+        "sounds": [
+            {
+                "name": "kubejs:records/worlds/music_disc_hear_the_bells",
+                "stream": true
+            }
+        ],
+        "subtitle": "subtitle.kubejs.record.music_disc_hear_the_bells"
+    },
+    "record.music_disc_natural_light": {
+        "sounds": [
+            {
+                "name": "kubejs:records/worlds/music_disc_natural_light",
+                "stream": true
+            }
+        ],
+        "subtitle": "subtitle.kubejs.record.music_disc_natural_light"
+    },
+    "record.music_disc_lionhearted": {
+        "sounds": [
+            {
+                "name": "kubejs:records/worlds/music_disc_lionhearted",
+                "stream": true
+            }
+        ],
+        "subtitle": "subtitle.kubejs.record.music_disc_lionhearted"
+    },
+    "record.music_disc_sea_of_voices": {
+        "sounds": [
+            {
+                "name": "kubejs:records/worlds/music_disc_sea_of_voices",
+                "stream": true
+            }
+        ],
+        "subtitle": "subtitle.kubejs.record.music_disc_sea_of_voices"
+    },
+    "record.music_disc_fellow_feeling": {
+        "sounds": [
+            {
+                "name": "kubejs:records/worlds/music_disc_fellow_feeling",
+                "stream": true
+            }
+        ],
+        "subtitle": "subtitle.kubejs.record.music_disc_fellow_feeling"
+    },
+    "record.music_disc_goodbye_to_a_world": {
+        "sounds": [
+            {
+                "name": "kubejs:records/worlds/music_disc_goodbye_to_a_world",
+                "stream": true
+            }
+        ],
+        "subtitle": "subtitle.kubejs.record.music_disc_goodbye_to_a_world"
     }
 }

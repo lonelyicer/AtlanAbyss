@@ -1,0 +1,7 @@
+{
+    "parent": "item/potion_item",
+    "textures": {
+        "layer0": "item/splash_potion_overlay",
+        "layer1": "item/splash_potion"
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": 
+    [
+      {"model": "minecraft:block/moss_carpet","weight": 100},
+      {"model": "minecraft:block/moss_carpet_1","weight": 100},
+      {"model": "minecraft:block/moss_carpet_2","weight": 10},
+      {"model": "minecraft:block/moss_carpet_3","weight": 10},
+      {"model": "minecraft:block/moss_carpet_4","weight": 10}
+    ]
+  }
+}

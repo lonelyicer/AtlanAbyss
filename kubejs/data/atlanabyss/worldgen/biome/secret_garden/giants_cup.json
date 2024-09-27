@@ -1,0 +1,156 @@
+{
+  "spawners": {
+    "monster": [
+      {
+        "type": "minecraft:zombie_villager",
+        "weight": 10,
+        "minCount": 1,
+        "maxCount": 2
+      }
+    ],
+    "creature": [
+      {
+        "type": "minecraft:sheep",
+        "weight": 100,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:pig",
+        "weight": 100,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:chicken",
+        "weight": 100,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:cow",
+        "weight": 80,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "alexsmobs:flutter",
+        "weight": 100,
+        "minCount": 2,
+        "maxCount": 4
+      }
+    ],
+    "ambient": [],
+    "axolotls": [
+      {
+        "type": "minecraft:axolotl",
+        "weight": 10,
+        "minCount": 4,
+        "maxCount": 6
+      }
+    ],
+    "underground_water_creature": [
+      {
+        "type": "minecraft:glow_squid",
+        "weight": 10,
+        "minCount": 4,
+        "maxCount": 6
+      }
+    ],
+    "water_creature": [],
+    "water_ambient": [
+      {
+        "type": "minecraft:tropical_fish",
+        "weight": 25,
+        "minCount": 8,
+        "maxCount": 8
+      }
+    ],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "atlanabyss:cave",
+      "atlanabyss:canyon"
+    ]
+  },
+  "features": [
+    [],
+    [],
+    [
+      "minecraft:amethyst_geode",
+      "atlanabyss:secret_garden/white_candle"
+    ],
+    [
+      "minecraft:monster_room",
+      "minecraft:monster_room_deep"
+    ],
+    [],
+    [],
+    [
+      "minecraft:ore_diorite_upper",
+      "minecraft:ore_diorite_lower",
+      "minecraft:ore_andesite_upper",
+      "minecraft:ore_andesite_lower",
+      "minecraft:ore_tuff",
+      "minecraft:disk_sand",
+      "minecraft:disk_clay"
+    ],
+    [],
+    [
+      "minecraft:spring_water"
+    ],
+    [
+      "minecraft:lush_caves_ceiling_vegetation",
+      "minecraft:patch_grass_badlands",
+      "minecraft:brown_mushroom_normal",
+      "minecraft:red_mushroom_normal",
+      "minecraft:patch_sugar_cane",
+      "minecraft:patch_pumpkin",
+      "minecraft:spore_blossom",
+      "minecraft:classic_vines_cave_feature",
+      "atlanabyss:secret_garden/cave_pool",
+      "atlanabyss:secret_garden/flower_flower",
+      "atlanabyss:secret_garden/flower_forest",
+      "atlanabyss:secret_garden/pink_tree_1",
+      "atlanabyss:secret_garden/red_tree_1",
+      "atlanabyss:secret_garden/blue_tree_1",
+      "atlanabyss:secret_garden/yellow_tree_1",
+      "atlanabyss:secret_garden/orange_tree_1",
+      "atlanabyss:secret_garden/lavender_tree_1",
+      "atlanabyss:secret_garden/flower_cave_2",
+      "atlanabyss:secret_garden/leafcutter_anthill"
+    ],
+    [
+      "minecraft:freeze_top_layer"
+    ]
+  ],
+  "temperature": 0.95,
+  "downfall": 0.4,
+  "effects": {
+    "sky_color": 5205851,
+    "fog_color": 1448222,
+    "water_color": 4159204,
+    "water_fog_color": 329011,
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2
+    },
+    "additions_sound": {
+      "sound": "atlanabyss:under_forest_ambient_wind",
+      "tick_chance": 0.0001
+    },
+    "music": {
+      "sound": "minecraft:music.overworld.lush_caves",
+      "min_delay": 12000,
+      "max_delay": 24000,
+      "replace_current_music": false
+    },
+    "ambient_sound": "minecraft:block.roots.step"
+  },
+  "precipitation": "none",
+  "category": "none"
+}

@@ -1,0 +1,9 @@
+{
+  "slot": "bf1:attachment/slot/grip_trench_bipods",
+  "model": "bf1:attachment/grip_trench_bipods_geo",
+  "texture": "bf1:attachment/uv/grip_trench_bipods",
+  "sounds": {
+    "install": "tacz:attachments/attachment_general_b",
+    "uninstall": "tacz:attachments/attachment_general_uninstall"
+  }
+}

@@ -11,6 +11,17 @@
         "value": 10000000
       }
     },
+    "tacz:tacz.bullet_resistance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 10000000
+      }
+    },
     "forge:step_height_addition": {
       "enabled": false,
       "min": {

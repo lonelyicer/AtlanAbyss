@@ -1,0 +1,33 @@
+{
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:music_disc_mishumeria"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:music_disc_fragile_utopia"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:music_disc_oddoai_ririi"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:music_disc_tuliparfeit"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:music_disc_gyakusahana"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:music_disc_lucid_hallucination"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": {
+                "min": 3,
+                "max": {
+                    "min": 4,
+                    "max": 8
+                }
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "tacz:ammo",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{AmmoId:\"bf1:132x92\"}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 20
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "tacz:ammo",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{AmmoId:\"bf1:792x57\"}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 50
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "tacz:ammo",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{AmmoId:\"tacz:12g\"}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 36
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

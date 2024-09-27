@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves_ys_item",
+  "textures": {
+		"all": "block/acacia_leaves"
+	}
+}

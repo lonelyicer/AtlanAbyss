@@ -857,22 +857,7 @@ onEvent('recipes', event => {
     remove('mekanism:sawing/stairs')
     remove('mekanism:sawing/slabs')
     remove('mekanism:sawing/stick')
-    mekanism.sawing('6x minecraft:warped_planks', '#minecraft:warped_stems',
-        Item.of('thermal:sawdust').withChance(0.25)).id('atlanabyss:sawing_warped_stems')
-    mekanism.sawing('6x minecraft:crimson_planks', '#minecraft:crimson_stems',
-        Item.of('thermal:sawdust').withChance(0.25)).id('atlanabyss:sawing_crimson_stems')
-    mekanism.sawing('6x minecraft:dark_oak_planks', '#minecraft:dark_oak_logs',
-        Item.of('thermal:sawdust').withChance(0.25)).id('atlanabyss:sawing_dark_oak_logs')
-    mekanism.sawing('6x minecraft:acacia_planks', '#minecraft:acacia_logs',
-        Item.of('thermal:sawdust').withChance(0.25)).id('atlanabyss:sawing_acacia_logs')
-    mekanism.sawing('6x minecraft:jungle_planks', '#minecraft:jungle_logs',
-        Item.of('thermal:sawdust').withChance(0.25)).id('atlanabyss:sawing_jungle_logs')
-    mekanism.sawing('6x minecraft:birch_planks', '#minecraft:birch_logs',
-        Item.of('thermal:sawdust').withChance(0.25)).id('atlanabyss:sawing_birch_logs')
-    mekanism.sawing('6x minecraft:spruce_planks', '#minecraft:spruce_logs',
-        Item.of('thermal:sawdust').withChance(0.25)).id('atlanabyss:sawing_spruce_logs')
-    mekanism.sawing('6x minecraft:oak_planks', '#minecraft:oak_logs',
-        Item.of('thermal:sawdust').withChance(0.25)).id('atlanabyss:sawing_oak_logs')
+
     mekanism.sawing('6x minecraft:stick', '#minecraft:planks',
         Item.of('thermal:sawdust').withChance(0.25)).id('atlanabyss:sawing_planks')
     mekanism.sawing('9x minecraft:stick', '#minecraft:wooden_stairs',
@@ -881,6 +866,35 @@ onEvent('recipes', event => {
         Item.of('thermal:sawdust').withChance(0.13)).id('atlanabyss:sawing_wooden_slabs')
     mekanism.sawing('thermal:sawdust', 'minecraft:stick'
     ).id('atlanabyss:sawing_stick')
+    //批量锯末
+    function sawdust(output, input, id) {
+        mekanism.sawing(output, input,
+            Item.of('thermal:sawdust').withChance(0.25)).id('atlanabyss:sawdust_from_sawing_' + id);
+    }
+    sawdust('6x minecraft:warped_planks', '#minecraft:warped_stems', 'warped_stems');
+    sawdust('6x minecraft:crimson_planks', '#minecraft:crimson_stems', 'crimson_stems');
+    sawdust('6x minecraft:dark_oak_planks', '#minecraft:dark_oak_logs', 'dark_oak_logs');
+    sawdust('6x minecraft:acacia_planks', '#minecraft:acacia_logs', 'acacia_logs');
+    sawdust('6x minecraft:jungle_planks', '#minecraft:jungle_logs', 'jungle_logs');
+    sawdust('6x minecraft:birch_planks', '#minecraft:birch_logs', 'birch_logs');
+    sawdust('6x minecraft:spruce_planks', '#minecraft:spruce_logs', 'spruce_logs');
+    sawdust('6x minecraft:oak_planks', '#minecraft:oak_logs', 'oak_logs');
+    sawdust('6x ars_nouveau:archwood_planks', '#forge:logs/archwood', 'archwood');
+    sawdust('6x atmospheric:rosewood_planks', '#atmospheric:rosewood_logs', 'rosewood_logs');
+    sawdust('6x atmospheric:morado_planks', '#atmospheric:morado_logs', 'morado_logs');
+    sawdust('6x atmospheric:yucca_planks', '#atmospheric:yucca_logs', 'yucca_logs');
+    sawdust('6x atmospheric:aspen_planks', '#atmospheric:aspen_logs', 'aspen_logs');
+    sawdust('6x quark:blossom_planks', '#quark:blossom_logs', 'blossom_logs');
+    //批量去皮
+    function treebark(output, input, id) {
+        mekanism.sawing(output, input, 'farmersdelight:tree_bark').id('atlanabyss:treebark_from_sawing_' + id);
+    }
+    treebark('atmospheric:stripped_rosewood_log', 'atmospheric:rosewood_log', 'rosewood_logs');
+    treebark('atmospheric:stripped_morado_log', 'atmospheric:morado_log', 'morado_logs');
+    treebark('atmospheric:stripped_yucca_log', 'atmospheric:yucca_log', 'yucca_logs');
+    treebark('atmospheric:stripped_aspen_log', 'atmospheric:aspen_log', 'aspen_logs');
+    treebark('atmospheric:stripped_aspen_log', 'atmospheric:watchful_aspen_log', 'watchful_aspen_log');
+    treebark('quark:stripped_blossom_log', 'quark:blossom_log', 'blossom_logs');
 
 
 
@@ -956,4 +970,25 @@ onEvent('recipes', event => {
         D: 'kubejs:osmium_sheet',
         E: 'ae2:cell_component_256k'
     }).id('atlanabyss:ae_chemical_storage_cell_256k');
+
+
+
+    //机械砧板
+    function autoConvert(recipe) {
+        const recipeString = JSON.parse(String(recipe.json))
+        const newResult = recipeString.result
+        const newRecipe = {
+            type: 'mekanism:sawing',
+            input: { ingredient: recipeString.ingredients[0] },
+            mainOutput: newResult[0]
+        }
+        if (newResult[1]) {
+            Object.assign(newRecipe, {
+                secondaryChance: newResult[1].chance || 1,
+                secondaryOutput: newResult[1]
+            })
+        }
+        event.custom(newRecipe).id((recipe.id + '_auto').replace(/^\w+:/, 'atlanabyss:'))
+    }
+    event.forEachRecipe({ type: 'farmersdelight:cutting' }, autoConvert);
 })

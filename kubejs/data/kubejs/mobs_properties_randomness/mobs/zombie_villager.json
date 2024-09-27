@@ -5,20 +5,24 @@
             "id": "minecraft:generic.attack_damage",
             "modifier_name": "attack_damage for ZombieVillagers",
             "amount": {
-                "min": 5,
+                "min": 3,
                 "difficulty_modifier": {
                     "operation": "add",
-                    "easy": -5,
+                    "easy": -3,
                     "normal": 0,
-                    "hard": 5
+                    "hard": 2
                 }
             },
             "operation": "addition"
-        }
-    ],
-    "potion_effects": [
+        },
         {
-            "id": "minecraft:speed"
+            "id": "minecraft:generic.movement_speed",
+            "modifier_name": "Speed for ZombieVillagers",
+            "amount": {
+                "min": -0.1,
+                "max": 0
+            },
+            "operation": "addition"
         }
     ]
 }

@@ -1,0 +1,25 @@
+{
+    "type": "atlanabyss:major_fault",
+    "generator": {
+        "type": "minecraft:noise",
+        "seed": -1577177670,
+        "settings": "atlanabyss:major_fault",
+        "biome_source": {
+            "type": "minecraft:multi_noise",
+            "biomes": [
+                {
+                    "biome": "atlanabyss:major_fault/white_cavern",
+                    "parameters": {
+                        "temperature": -0.2,
+                        "humidity": 0.3,
+                        "continentalness": 0.2,
+                        "erosion": 0.4,
+                        "weirdness": 0,
+                        "depth": 0,
+                        "offset": 0
+                    }
+                }
+            ]
+        }
+    }
+}

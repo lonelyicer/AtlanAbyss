@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {"model": "minecraft:block/brown_mushroom","weight":10},
+	  {"model": "minecraft:block/brown_mushroom1","weight":30},
+	  {"model": "minecraft:block/brown_mushroom2","weight":10},
+	  {"model": "minecraft:block/brown_mushroom3","weight":25},
+	  {"model": "minecraft:block/brown_mushroom4","weight":30},
+	  {"model": "minecraft:block/brown_mushroom5","weight":15}
+    ]
+  }
+}

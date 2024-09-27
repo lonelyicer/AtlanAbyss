@@ -1,0 +1,11 @@
+{
+  "credit": "Made by Nan2uu",
+  "parent": "minecraft:item/block_item_rgb",
+  "gui_light":"front",
+  "textures": {
+	  "s":"minecraft:block/budding_amethyst",
+	  "x":"minecraft:block/budding_amethyst",
+	  "q":"minecraft:block/budding_amethyst",
+    "rgb":"minecraft:block/block_item_rgb"
+  }
+}

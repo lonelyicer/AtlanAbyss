@@ -1,5 +1,5 @@
 {
-  "ammo": "whiterat:yuzurocket",
+  "ammo": "tacz:40mm",
   "rpm": 150,
   "ammo_amount": 1,
   "bolt": "open_bolt",
@@ -18,9 +18,11 @@
     "ignite": false,
     "pierce": 0,
     "explosion": {
+      "explode": true,
       "damage": 50,
-      "radius": 5,
-      "knockback": true
+      "radius": 7,
+      "knockback": true,
+      "delay": 30
     }
   },
   "reload": {
