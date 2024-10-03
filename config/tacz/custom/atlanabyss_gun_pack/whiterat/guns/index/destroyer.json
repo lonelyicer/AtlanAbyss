@@ -3,5 +3,6 @@
   "display": "whiterat:destroyer_display",
   "data": "whiterat:destroyer_data",
   "tooltip": "whiterat.gun.destroyer.desc",
-  "type": "mg"
+  "type": "mg",
+  "sort": 10
 }

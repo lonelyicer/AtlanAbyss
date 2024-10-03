@@ -1,0 +1,8 @@
+{
+    "name": "emxarms.gun.emx_pmg90ice.name",
+    "display": "emxarms:emx_pmg90ice_display",
+    "tooltip": "emxarms.gun.emx_pmg90ice.desc",
+    "data": "emxarms:emx_pmg90ice_data",
+    "type": "shotgun",
+    "sort": 5
+}

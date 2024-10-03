@@ -83,7 +83,7 @@
 				cullingMaxDistanceX = 4096
 				#Toggles distance culling for Block Entities
 				#Maybe you use another mod for that :(
-				enable = false
+				enable = true
 				#Configure vertical max distance before cull Block entities
 				#Value is raw
 				#Range: 0 ~ 512

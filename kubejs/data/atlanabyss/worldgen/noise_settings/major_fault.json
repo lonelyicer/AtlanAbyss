@@ -21,8 +21,8 @@
         "sampling": {
             "xz_scale": 5,
             "y_scale": 0.5,
-            "xz_factor": 600,
-            "y_factor": 300
+            "xz_factor": 800,
+            "y_factor": 450
         },
         "bottom_slide": {
             "target": -2.5,
@@ -218,92 +218,97 @@
                 }
             },
             {
-                "type": "minecraft:condition",
-                "if_true": {
-                    "type": "minecraft:vertical_gradient",
-                    "random_name": "minecraft:crimsite",
-                    "true_at_and_below": {
-                        "absolute": -480
+                "type": "minecraft:sequence",
+                "sequence": [
+                    {
+                        "type": "minecraft:condition",
+                        "if_true": {
+                            "type": "minecraft:vertical_gradient",
+                            "random_name": "minecraft:crimsite",
+                            "true_at_and_below": {
+                                "absolute": -480
+                            },
+                            "false_at_and_above": {
+                                "absolute": -472
+                            }
+                        },
+                        "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                                "Name": "create:crimsite",
+                                "Properties": {
+                                    "axis": "y"
+                                }
+                            }
+                        }
                     },
-                    "false_at_and_above": {
-                        "absolute": -472
-                    }
-                },
-                "then_run": {
-                    "type": "minecraft:block",
-                    "result_state": {
-                        "Name": "create:crimsite",
-                        "Properties": {
-                            "axis": "y"
+                    {
+                        "type": "minecraft:condition",
+                        "if_true": {
+                            "type": "minecraft:vertical_gradient",
+                            "random_name": "minecraft:tuff",
+                            "true_at_and_below": {
+                                "absolute": -448
+                            },
+                            "false_at_and_above": {
+                                "absolute": -384
+                            }
+                        },
+                        "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                                "Name": "minecraft:tuff",
+                                "Properties": {
+                                    "axis": "y"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "type": "minecraft:condition",
+                        "if_true": {
+                            "type": "minecraft:vertical_gradient",
+                            "random_name": "minecraft:limestone",
+                            "true_at_and_below": {
+                                "absolute": -384
+                            },
+                            "false_at_and_above": {
+                                "absolute": -320
+                            }
+                        },
+                        "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                                "Name": "create:limestone",
+                                "Properties": {
+                                    "axis": "y"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "type": "minecraft:condition",
+                        "if_true": {
+                            "type": "minecraft:vertical_gradient",
+                            "random_name": "minecraft:calcite",
+                            "true_at_and_below": {
+                                "absolute": -320
+                            },
+                            "false_at_and_above": {
+                                "absolute": -256
+                            }
+                        },
+                        "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                                "Name": "minecraft:calcite",
+                                "Properties": {
+                                    "axis": "y"
+                                }
+                            }
                         }
                     }
-                }
-            },
-            {
-                "type": "minecraft:condition",
-                "if_true": {
-                    "type": "minecraft:vertical_gradient",
-                    "random_name": "minecraft:tuff",
-                    "true_at_and_below": {
-                        "absolute": -448
-                    },
-                    "false_at_and_above": {
-                        "absolute": -384
-                    }
-                },
-                "then_run": {
-                    "type": "minecraft:block",
-                    "result_state": {
-                        "Name": "minecraft:tuff",
-                        "Properties": {
-                            "axis": "y"
-                        }
-                    }
-                }
-            },
-            {
-                "type": "minecraft:condition",
-                "if_true": {
-                    "type": "minecraft:vertical_gradient",
-                    "random_name": "minecraft:limestone",
-                    "true_at_and_below": {
-                        "absolute": -384
-                    },
-                    "false_at_and_above": {
-                        "absolute": -320
-                    }
-                },
-                "then_run": {
-                    "type": "minecraft:block",
-                    "result_state": {
-                        "Name": "create:limestone",
-                        "Properties": {
-                            "axis": "y"
-                        }
-                    }
-                }
-            },
-            {
-                "type": "minecraft:condition",
-                "if_true": {
-                    "type": "minecraft:vertical_gradient",
-                    "random_name": "minecraft:calcite",
-                    "true_at_and_below": {
-                        "absolute": -320
-                    },
-                    "false_at_and_above": {
-                        "absolute": -256
-                    }
-                },
-                "then_run": {
-                    "type": "minecraft:block",
-                    "result_state": {
-                        "Name": "minecraft:calcite",
-                        "Properties": {
-                            "axis": "y"
-                        }
-                    }
-                }
+                ]
             }
         ]
     }

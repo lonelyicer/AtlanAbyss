@@ -1,0 +1,26 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "atlanabyss:materials/legendary"
+      },
+      "count": 3
+    },
+    {
+      "item": {
+        "tag": "atlanabyss:materials/epic"
+      },
+      "count": 9
+    },
+    {
+      "item": {
+        "item": "mekanism:energy_tablet"
+      },
+      "count": 1
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "emxarms:emx_mg57_yh"
+  }
+}

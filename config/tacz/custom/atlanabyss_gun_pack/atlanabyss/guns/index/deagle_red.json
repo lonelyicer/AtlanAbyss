@@ -3,5 +3,6 @@
   "display": "atlanabyss:deagle_red_display",
   "data": "atlanabyss:deagle_red_data",
   "tooltip": "atlanabyss.gun.deagle_red.desc",
-  "type": "shotgun"
+  "type": "shotgun",
+  "sort": 10
 }

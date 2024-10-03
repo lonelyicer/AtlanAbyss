@@ -28,7 +28,7 @@
             }
         },
         "vegetation_feature": {
-            "feature": "atlanabyss:secret_garden/cave_pink",
+            "feature": "atlanabyss:secret_garden/flower_cave_path",
             "placement": []
         }
     }

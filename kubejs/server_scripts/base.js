@@ -254,6 +254,8 @@ onEvent('recipes', event => {
 	remove('tconstruct:common/materials/netherite_nugget_from_ingot')
 	remove('tconstruct:common/materials/netherite_ingot_from_nuggets')
 
+	remove('create:crafting/tree_fertilizer')
+
 	//精妙背包升级基板
 	remove('sophisticatedbackpacks:upgrade_base')
 	event.shaped('sophisticatedbackpacks:upgrade_base', [
@@ -370,6 +372,69 @@ onEvent('recipes', event => {
 
 	//火把
 	event.campfireCooking('minecraft:torch', 'minecraft:stick').cookingTime(16).id("atlanabyss:campfire_stick")
+	//末影珍珠只能复制再生
+	remove('minecraft:ender_eye')
+	remove('tconstruct:smeltery/casting/ender/eye')
+	event.shaped('2x minecraft:ender_eye', [
+		'CBC',
+		'BAB',
+		'CBC'
+	], {
+		A: 'minecraft:ender_eye',
+		B: 'minecraft:ender_pearl',
+		C: 'minecraft:blaze_powder'
+	}).id("atlanabyss:ender_eye")
+
+	//水晶传送门
+	event.shaped('kubejs:amethyst_portal', [
+		'BBB',
+		'BAB',
+		'BBB'
+	], {
+		A: 'minecraft:gold_block',
+		B: 'minecraft:amethyst_block'
+	}).id("atlanabyss:amethyst_portal")
+	//深层传送门
+	event.shaped('kubejs:deep_portal', [
+		'BBB',
+		'BAB',
+		'BBB'
+	], {
+		A: 'thermal:sulfur_block',
+		B: 'minecraft:netherite_block'
+	}).id("atlanabyss:deep_portal")
+
+	//3x3配方修复
+	function crate(a, b) {
+		event.shaped(a, [
+			'AAA',
+			'AAA',
+			'AAA'
+		], {
+			A: b
+		}).id("atlanabyss:" + a.replace(/^\w+:/, "shaped_") + "_from" + b.replace(/^\w+:/, '_'))
+		event.shapeless('9x ' + b, [
+			a
+		]).id("atlanabyss:" + b.replace(/^\w+:/, "shapeless_") + "_from" + a.replace(/^\w+:/, '_'))
+	}
+	crate('neapolitan:strawberry_basket', 'neapolitan:strawberries')
+	crate('neapolitan:white_strawberry_basket', 'neapolitan:white_strawberries')
+	crate('neapolitan:banana_crate', 'neapolitan:banana_bunch')
+	crate('neapolitan:mint_basket', 'neapolitan:mint_leaves')
+	crate('neapolitan:adzuki_crate', 'neapolitan:adzuki_beans')
+	crate('neapolitan:roasted_adzuki_crate', 'neapolitan:roasted_adzuki_beans')
+	crate('atmospheric:passionfruit_crate', 'atmospheric:passionfruit')
+	crate('atmospheric:shimmering_passionfruit_crate', 'atmospheric:shimmering_passionfruit')
+	crate('atmospheric:barrel_cactus_batch', 'atmospheric:barrel_cactus')
+	crate('atmospheric:yucca_cask', 'atmospheric:yucca_fruit')
+	crate('atmospheric:roasted_yucca_cask', 'atmospheric:roasted_yucca_fruit')
+
+	event.shapeless('9x minecraft:apple', [
+		'quark:apple_crate'
+	]).id("atlanabyss:apple_from_quark_apple_crate")
+	event.shapeless('9x minecraft:glow_berries', [
+		'quark:glowberry_sack'
+	]).id("atlanabyss:glow_berries_from_quark_glowberry_sack")
 
 	//安山合金
 	remove('create:crafting/materials/andesite_alloy_from_zinc')

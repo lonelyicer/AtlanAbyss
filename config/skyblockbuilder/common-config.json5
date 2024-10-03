@@ -13,7 +13,7 @@
     "Nether": {
     
       // Should nether generate as in default world type? [default: false]
-      "Default": false
+      "Default": true
     },
     
     "Overworld": {
@@ -105,9 +105,7 @@
         "minecraft:shipwreck",
         "minecraft:mineshaft",
         "minecraft:fortress",
-        "minecraft:monument",
-        "integrated_api:underground_structure",
-        "integrated_stronghold:stronghold"
+        "minecraft:monument"
       ]
     }
   },

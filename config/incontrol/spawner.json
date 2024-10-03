@@ -2,6 +2,23 @@
     {
         "mobsfrombiome": "creature",
         "persecond": 0.5,
+        "attempts": 1,
+        "amount": {
+            "minimum": 4,
+            "maximum": 4
+        },
+        "conditions": {
+            "dimension": "atlanabyss:major_fault",
+            "norestrictions": true,
+            "mindist": 16,
+            "maxdist": 128,
+            "minheight": -500,
+            "maxheight": -8
+        }
+    },
+    {
+        "mobsfrombiome": "creature",
+        "persecond": 0.5,
         "attempts": 10,
         "amount": {
             "minimum": 2,
@@ -19,7 +36,7 @@
     {
         "mob": "alexsmobs:flutter",
         "persecond": 0.5,
-        "attempts": 10,
+        "attempts": 1,
         "amount": {
             "minimum": 4,
             "maximum": 5
@@ -27,8 +44,8 @@
         "conditions": {
             "dimension": "atlanabyss:giants_cup",
             "norestrictions": true,
-            "mindist": 20,
-            "maxdist": 120,
+            "mindist": 5,
+            "maxdist": 60,
             "minheight": 108,
             "maxheight": 150,
             "maxthis": 10
@@ -36,8 +53,8 @@
     },
     {
         "mob": "goblintraders:goblin_trader",
-        "persecond": 0.5,
-        "attempts": 20,
+        "persecond": 0.05,
+        "attempts": 1,
         "amount": {
             "minimum": 1,
             "maximum": 1

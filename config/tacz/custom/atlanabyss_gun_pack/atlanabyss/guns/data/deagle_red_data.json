@@ -10,9 +10,18 @@
       "armor_ignore": 0.0,
       "head_shot_multiplier": 1.5,
       "damage_adjust": [
-        {"distance": 10, "damage": 100},
-        {"distance": 49.5, "damage": 40},
-        {"distance": "infinite", "damage": 30}
+        {
+          "distance": 10,
+          "damage": 100
+        },
+        {
+          "distance": 49.5,
+          "damage": 40
+        },
+        {
+          "distance": "infinite",
+          "damage": 30
+        }
       ]
     },
     "speed": 220,
@@ -24,9 +33,9 @@
   },
   "ammo_amount": 7,
   "extended_mag_ammo_amount": [
-    8,
     10,
-    12
+    14,
+    20
   ],
   "bolt": "closed_bolt",
   "reload": {
@@ -59,16 +68,64 @@
   ],
   "recoil": {
     "pitch": [
-      {"time": 0, "value": [3.25, 3.25]},
-      {"time": 0.4, "value": [3.25, 3.25]},
-      {"time": 0.65, "value": [-0.225, -0.225]},
-      {"time": 0.85, "value": [0.125, 0.125]},
-      {"time": 1.1, "value": [0, 0]},
-      {"time": 1.2, "value": [0, 0]}
+      {
+        "time": 0,
+        "value": [
+          3.25,
+          3.25
+        ]
+      },
+      {
+        "time": 0.4,
+        "value": [
+          3.25,
+          3.25
+        ]
+      },
+      {
+        "time": 0.65,
+        "value": [
+          -0.225,
+          -0.225
+        ]
+      },
+      {
+        "time": 0.85,
+        "value": [
+          0.125,
+          0.125
+        ]
+      },
+      {
+        "time": 1.1,
+        "value": [
+          0,
+          0
+        ]
+      },
+      {
+        "time": 1.2,
+        "value": [
+          0,
+          0
+        ]
+      }
     ],
     "yaw": [
-      {"time": 0, "value": [-0.3, 0.3]},
-      {"time": 0.5, "value": [0, 0]}
+      {
+        "time": 0,
+        "value": [
+          -0.3,
+          0.3
+        ]
+      },
+      {
+        "time": 0.5,
+        "value": [
+          0,
+          0
+        ]
+      }
     ]
   },
   "inaccuracy": {

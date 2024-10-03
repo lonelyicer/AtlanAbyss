@@ -5,13 +5,13 @@
             "type": "minecraft:weighted_state_provider",
             "entries": [
                 {
-                    "weight": 80,
+                    "weight": 85,
                     "data": {
                         "Name": "minecraft:white_tulip"
                     }
                 },
                 {
-                    "weight": 20,
+                    "weight": 15,
                     "data": {
                         "Name": "minecraft:lily_of_the_valley"
                     }

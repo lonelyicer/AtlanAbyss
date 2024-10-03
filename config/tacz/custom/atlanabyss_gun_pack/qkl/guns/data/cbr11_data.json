@@ -6,16 +6,16 @@
     "bullet": {
       "life": 1,
       "bullet_amount": 1,
-      "damage": 32,
+      "damage": 20,
       "tracer_count_interval": 0,
       "extra_damage": {
         "armor_ignore": 0.65,
         "head_shot_multiplier": 1.5,
         "damage_adjust": [
-          {"distance": 80, "damage": 32},
-          {"distance": 100, "damage": 27},
-          {"distance": 150, "damage": 24},
-          {"distance": "infinite", "damage": 20}
+          {"distance": 80, "damage": 20},
+          {"distance": 100, "damage": 19},
+          {"distance": 150, "damage": 14},
+          {"distance": "infinite", "damage": 10}
         ]
       },
       "speed": 380,

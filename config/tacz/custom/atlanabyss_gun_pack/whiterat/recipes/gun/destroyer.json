@@ -2,27 +2,15 @@
   "materials": [
     {
       "item": {
-        "tag": "forge:gems/diamond"
+        "tag": "atlanabyss:materials/ultimate"
       },
-      "count": 6
+      "count": 4
     },
     {
       "item": {
-        "tag": "forge:ingots/gold"
+        "tag": "atlanabyss:materials/legendary"
       },
-      "count": 32
-    },
-    {
-      "item": {
-        "tag": "forge:ingots/iron"
-      },
-      "count": 150
-    },
-    {
-      "item": {
-        "tag": "forge:rods/blaze"
-      },
-      "count": 2
+      "count": 11
     }
   ],
   "result": {

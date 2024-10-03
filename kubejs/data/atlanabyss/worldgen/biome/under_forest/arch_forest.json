@@ -15,10 +15,6 @@
       "block_search_extent": 8,
       "offset": 2
     },
-    "additions_sound": {
-      "sound": "atlanabyss:under_forest_ambient_wind",
-      "tick_chance": 0.0001
-    },
     "music": {
       "sound": "minecraft:music.overworld.lush_caves",
       "min_delay": 12000,
@@ -75,6 +71,12 @@
         "weight": 5,
         "minCount": 1,
         "maxCount": 1
+      },
+      {
+        "type": "alexsmobs:komodo_dragon",
+        "weight": 5,
+        "minCount": 1,
+        "maxCount": 1
       }
     ],
     "creature": [
@@ -107,6 +109,12 @@
         "weight": 4,
         "minCount": 2,
         "maxCount": 3
+      },
+      {
+        "type": "alexsmobs:grizzly_bear",
+        "weight": 10,
+        "minCount": 4,
+        "maxCount": 4
       }
     ],
     "ambient": [],
@@ -188,7 +196,8 @@
       "minecraft:spore_blossom",
       "minecraft:classic_vines_cave_feature",
       "atlanabyss:under_forest/arch_cave",
-      "atlanabyss:under_forest/twisting_vines"
+      "atlanabyss:under_forest/twisting_vines",
+      "atlanabyss:under_forest/lake_patch"
     ],
     [
       "minecraft:freeze_top_layer"

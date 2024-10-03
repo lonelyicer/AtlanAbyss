@@ -1,0 +1,39 @@
+{
+    "type": "minecraft:simple_block",
+    "config": {
+        "to_place": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+                {
+                    "weight": 75,
+                    "data": {
+                        "Name": "minecraft:allium"
+                    }
+                },
+                {
+                    "weight": 16,
+                    "data": {
+                        "Name": "quark:lavender_blossom_leaf_carpet"
+                    }
+                },
+                {
+                    "weight": 7,
+                    "data": {
+                        "Name": "quark:lavender_blossom_leaves"
+                    }
+                },
+                {
+                    "weight": 2,
+                    "data": {
+                        "Name": "minecraft:pink_candle",
+                        "Properties": {
+                            "candles": "4",
+                            "lit": "true",
+                            "waterlogged": "false"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

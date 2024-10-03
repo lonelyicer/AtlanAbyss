@@ -1,0 +1,26 @@
+{
+  "materials": [
+    {
+      "item": {
+        "item": "mekanism:module_base"
+      },
+      "count": 1
+    },
+    {
+      "item": {
+        "item": "mekanism:alloy_reinforced"
+      },
+      "count": 20
+    },
+    {
+      "item": {
+        "item": "mekanism:pellet_polonium"
+      },
+      "count": 2
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "emxarms:muzzle_emx_catch"
+  }
+}

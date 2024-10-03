@@ -147,7 +147,6 @@ onEvent('item.right_click', event => {
     }
   }
 
-
   lootbag('kubejs:halo_gashapon', 'kubejs:halo', true)//光环
   lootbag('kubejs:treasure_box', 'kubejs:treasure_box', false)//宝藏袋
   lootbag('kubejs:album_transpain', 'kubejs:album/transpain', true)//专辑
@@ -631,37 +630,37 @@ onEvent('item.food_eaten', event => {
     player.attack(12)
   }
 
-  function bowl(food, container) {
-    if (item.id !== food) return;
-    if (!player.creativeMode) {
-      player.giveInHand(container)
-    }
-  }
+  // function bowl(food, container) {
+  //   if (item.id !== food) return;
+  //   if (!player.creativeMode) {
+  //     player.giveInHand(container)
+  //   }
+  // }
 
-  bowl('kubejs:glowstew', 'minecraft:bowl')
-  bowl('kubejs:mushgloom_sauce', 'minecraft:bowl')
-  bowl('kubejs:glow_venison_rib_with_pasta', 'minecraft:bowl')
-  bowl('kubejs:mushgloom_meef_pasta', 'minecraft:bowl')
-  bowl('kubejs:fried_insect', 'minecraft:bowl')
-  bowl('kubejs:ghast_brain_salad', 'minecraft:bowl')
-  bowl('kubejs:borer_tear_soup', 'minecraft:bowl')
-  bowl('kubejs:thousand_plant_stew', 'minecraft:bowl')
-  bowl('kubejs:grilled_ghast', 'minecraft:bowl')
-  bowl('kubejs:lily_chicken', 'minecraft:bowl')
-  bowl('kubejs:fiery_snakes', 'minecraft:bowl')
-  bowl('kubejs:glacier_ice_cream', 'minecraft:bowl')
-  bowl('kubejs:phytochemical_ice_cream', 'minecraft:bowl')
-  bowl('kubejs:torchberry_ice_cream', 'minecraft:bowl')
-  bowl('kubejs:aurora_ice_cream', 'minecraft:bowl')
-  bowl('kubejs:twilight_ice_cream', 'minecraft:bowl')
-  bowl('kubejs:rainbow_ice_cream', 'minecraft:bowl')
-  bowl('kubejs:refreshing_ice_cream', 'minecraft:bowl')
-  bowl('kubejs:thorn_rose_tea', 'minecraft:glass_bottle')
-  bowl('kubejs:torchberry_juice', 'minecraft:glass_bottle')
-  bowl('kubejs:phytochemical_juice', 'minecraft:glass_bottle')
-  bowl('kubejs:glacier_ice_tea', 'minecraft:glass_bottle')
-  bowl('kubejs:twilight_spring', 'minecraft:glass_bottle')
-  bowl('kubejs:tear_drink', 'minecraft:glass_bottle')
+  // bowl('kubejs:glowstew', 'minecraft:bowl')
+  // bowl('kubejs:mushgloom_sauce', 'minecraft:bowl')
+  // bowl('kubejs:glow_venison_rib_with_pasta', 'minecraft:bowl')
+  // bowl('kubejs:mushgloom_meef_pasta', 'minecraft:bowl')
+  // bowl('kubejs:fried_insect', 'minecraft:bowl')
+  // bowl('kubejs:ghast_brain_salad', 'minecraft:bowl')
+  // bowl('kubejs:borer_tear_soup', 'minecraft:bowl')
+  // bowl('kubejs:thousand_plant_stew', 'minecraft:bowl')
+  // bowl('kubejs:grilled_ghast', 'minecraft:bowl')
+  // bowl('kubejs:lily_chicken', 'minecraft:bowl')
+  // bowl('kubejs:fiery_snakes', 'minecraft:bowl')
+  // bowl('kubejs:glacier_ice_cream', 'minecraft:bowl')
+  // bowl('kubejs:phytochemical_ice_cream', 'minecraft:bowl')
+  // bowl('kubejs:torchberry_ice_cream', 'minecraft:bowl')
+  // bowl('kubejs:aurora_ice_cream', 'minecraft:bowl')
+  // bowl('kubejs:twilight_ice_cream', 'minecraft:bowl')
+  // bowl('kubejs:rainbow_ice_cream', 'minecraft:bowl')
+  // bowl('kubejs:refreshing_ice_cream', 'minecraft:bowl')
+  // bowl('kubejs:thorn_rose_tea', 'minecraft:glass_bottle')
+  // bowl('kubejs:torchberry_juice', 'minecraft:glass_bottle')
+  // bowl('kubejs:phytochemical_juice', 'minecraft:glass_bottle')
+  // bowl('kubejs:glacier_ice_tea', 'minecraft:glass_bottle')
+  // bowl('kubejs:twilight_spring', 'minecraft:glass_bottle')
+  // bowl('kubejs:tear_drink', 'minecraft:glass_bottle')
 })
 
 
@@ -738,3 +737,13 @@ onEvent('item.food_eaten', event => {
 //   'minecraft:spider',
 //   'minecraft:strider'
 // ];
+
+onEvent('block.left_click', (event) => {
+  const { block, player } = event;
+
+  if (player.mainHandItem != 'witherstormmod:command_block_pickaxe') return;
+
+  if (block.id == 'minecraft:bedrock') {
+    block.set('kubejs:bedrock')
+  }
+})

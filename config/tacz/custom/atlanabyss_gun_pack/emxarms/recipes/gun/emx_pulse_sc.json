@@ -1,0 +1,20 @@
+{
+    "materials": [
+        {
+            "item": {
+                "tag": "atlanabyss:materials/epic"
+            },
+            "count": 3
+        },
+        {
+            "item": {
+                "item": "mekanism:energy_tablet"
+            },
+            "count": 1
+        }
+    ],
+    "result": {
+        "type": "gun",
+        "id": "emxarms:emx_pulse_sc"
+    }
+}

@@ -7,7 +7,7 @@
         {
           "weight": 5,
           "data": {
-            "Name": "minecraft:large_amethyst_bud",
+            "Name": "tconstruct:large_sky_slime_crystal_bud",
             "Properties": {
               "waterlogged": "false",
               "facing": "up"
@@ -17,7 +17,7 @@
         {
           "weight": 15,
           "data": {
-            "Name": "minecraft:small_amethyst_bud",
+            "Name": "tconstruct:small_sky_slime_crystal_bud",
             "Properties": {
               "waterlogged": "false",
               "facing": "up"
@@ -27,7 +27,7 @@
         {
           "weight": 30,
           "data": {
-            "Name": "inversia:glowing_amethyst",
+            "Name": "tconstruct:sky_slime_crystal_cluster",
             "Properties": {
               "waterlogged": "false",
               "facing": "up"
@@ -37,7 +37,7 @@
         {
           "weight": 50,
           "data": {
-            "Name": "minecraft:medium_amethyst_bud",
+            "Name": "tconstruct:medium_sky_slime_crystal_bud",
             "Properties": {
               "waterlogged": "false",
               "facing": "up"

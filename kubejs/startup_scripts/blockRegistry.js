@@ -109,6 +109,7 @@ onEvent('block.registry', event => {
     event.create('mars_uranium_ore')
         .material('deepslate')
         .hardness(6.0)
+        .lightLevel(5)
         .tagBlock('minecraft:mineable/pickaxe')
         .tagBlock('minecraft:needs_diamond_tool')
         .tagBlock('forge:ores')
@@ -120,6 +121,7 @@ onEvent('block.registry', event => {
     event.create('mercury_uranium_ore')
         .material('deepslate')
         .hardness(6.0)
+        .lightLevel(5)
         .tagBlock('minecraft:mineable/pickaxe')
         .tagBlock('minecraft:needs_diamond_tool')
         .tagBlock('forge:ores')
@@ -147,6 +149,7 @@ onEvent('block.registry', event => {
     event.create('raw_uranium_block')
         .material('stone')
         .hardness(6.0)
+        .lightLevel(3)
         .tagBlock('minecraft:mineable/pickaxe')
         .tagBlock('minecraft:needs_diamond_tool')
         .requiresTool(true)
@@ -271,6 +274,7 @@ onEvent('block.registry', event => {
     event.create('plutonium_block')
         .material('lantern')
         .hardness(8.0)
+        .lightLevel(7)
         .tagBlock('minecraft:mineable/pickaxe')
         .requiresTool(true)
         .displayName('Plutonium Block');
@@ -289,6 +293,33 @@ onEvent('block.registry', event => {
         .tagBlock('create:wrench_pickup')
         .tagBlock('minecraft:mineable/pickaxe')
         .displayName('Lucky Block');
+    //水晶传送门
+    event.create('amethyst_portal')
+        .material('amethyst')
+        .hardness(2.0)
+        .tagBlock('minecraft:mineable/pickaxe')
+        .displayName('Amethyst Portal');
+    //深层传送门
+    event.create('deep_portal')
+        .material('netherite')
+        .hardness(5.0)
+        .tagBlock('minecraft:mineable/pickaxe')
+        .tagBlock('minecraft:needs_iron_tool')
+        .displayName('Deep Portal');
+    //深渊传送门
+    event.create('abyss_portal')
+        .material('netherite')
+        .unbreakable()
+        .tagBlock('minecraft:mineable/pickaxe')
+        .tagBlock('minecraft:needs_diamond_tool')
+        .displayName('Abyss Portal');
+    //可破坏基岩
+    event.create('bedrock')
+        .material('stone')
+        .hardness(10)
+        .tagBlock('minecraft:mineable/pickaxe')
+        .tagBlock('minecraft:needs_diamond_tool')
+        .displayName('Bedrock');
 
     //机器
     // let registerMachine = (name, layer) => {

@@ -1,0 +1,6 @@
+{
+  "name": "emxarms.attachment.sight_emx_aps.name",
+  "display": "emxarms:sight_emx_aps_display",
+  "data": "emxarms:sight_emx_aps_data",
+  "type": "scope"
+}

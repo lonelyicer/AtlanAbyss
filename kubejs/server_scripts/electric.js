@@ -1192,6 +1192,17 @@ onEvent('recipes', event => {
   //   "flag": "mod_create"
   // }
 
+  //恐怖炸弹
+  remove('witherstormmod:formidibomb')
+  event.shaped('witherstormmod:formidibomb', [
+    'BBB',
+    'BAB',
+    'BBB'
+  ], {
+    A: 'witherstormmod:super_tnt',
+    B: 'thermal:nuke_tnt'
+  }).id("atlanabyss:formidibomb")
+
   //核弹	
   event.shaped('thermal:nuke_tnt', [
     'ABA',

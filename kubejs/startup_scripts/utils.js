@@ -69,6 +69,16 @@ onEvent('item.modification', event => {
 			tier.level = 3
 		}
 	})
+	event.modify('neapolitan:mint_candies', item => {
+		item.foodProperties = food => {
+			food.alwaysEdible(true)
+		}
+	})
+	event.modify('peculiars:aloe_jelly_slice', item => {
+		item.foodProperties = food => {
+			food.alwaysEdible(true)
+		}
+	})
 	//可食用核废料
 	event.modify('biggerreactors:cyanite_ingot', item => {
 		item.foodProperties = food => {
@@ -106,7 +116,7 @@ onEvent('item.modification', event => {
 })
 
 onEvent('block.modification', event => {
-	event.modify('kubejs:compressed_coal_block', block => {
+	event.modify('kubejs:abyss_portal', block => {
 		block.setDestroySpeed(-1);
 	})
 })

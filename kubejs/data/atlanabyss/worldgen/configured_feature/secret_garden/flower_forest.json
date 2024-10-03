@@ -40,7 +40,7 @@
             },
             {
                 "feature": {
-                    "type": "minecraft:no_bonemeal_flower",
+                    "type": "minecraft:random_patch",
                     "config": {
                         "tries": 96,
                         "xz_spread": 7,
@@ -52,7 +52,11 @@
                                     "to_place": {
                                         "type": "minecraft:simple_state_provider",
                                         "state": {
-                                            "Name": "minecraft:lily_of_the_valley"
+                                            "Name": "neapolitan:mint",
+                                            "Properties": {
+                                                "age": "4",
+                                                "sprouts": "1"
+                                            }
                                         }
                                     }
                                 }

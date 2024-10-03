@@ -1,11 +1,11 @@
 {
-    "sea_level": 63,
+    "sea_level": 16,
     "disable_mob_generation": false,
     "aquifers_enabled": true,
-    "ore_veins_enabled": true,
+    "ore_veins_enabled": false,
     "legacy_random_source": false,
     "default_block": {
-        "Name": "minecraft:stone"
+        "Name": "minecraft:granite"
     },
     "default_fluid": {
         "Name": "minecraft:water",
@@ -30,8 +30,8 @@
             "offset": -1
         },
         "top_slide": {
-            "target": 0.9375,
-            "size": 3,
+            "target": -0.9375,
+            "size": 8,
             "offset": 0
         },
         "terrain_shaper": {
@@ -210,7 +210,7 @@
                     }
                 }
             },
-            "argument2": "minecraft:overworld/caves/noodle"
+            "argument2": "atlanabyss:paradise_noodle"
         },
         "vein_toggle": {
             "type": "minecraft:interpolated",
@@ -303,104 +303,482 @@
                 }
             },
             {
-                "type": "minecraft:sequence",
-                "sequence": [
-                    {
-                        "type": "minecraft:condition",
-                        "if_true": {
-                            "type": "minecraft:not",
-                            "invert": {
-                                "type": "minecraft:vertical_gradient",
-                                "random_name": "beds",
-                                "true_at_and_below": {
-                                    "below_top": 1
-                                },
-                                "false_at_and_above": {
-                                    "below_top": 1
+                "type": "minecraft:condition",
+                "if_true": {
+                    "type": "minecraft:biome",
+                    "biome_is": [
+                        "atlanabyss:paradise/cherry_blossom_jungle"
+                    ]
+                },
+                "then_run": {
+                    "type": "minecraft:sequence",
+                    "sequence": [
+                        {
+                            "type": "minecraft:condition",
+                            "if_true": {
+                                "type": "minecraft:stone_depth",
+                                "offset": 0,
+                                "surface_type": "floor",
+                                "add_surface_depth": false,
+                                "secondary_depth_range": 0
+                            },
+                            "then_run": {
+                                "type": "minecraft:block",
+                                "result_state": {
+                                    "Name": "minecraft:grass_block"
                                 }
                             }
                         },
-                        "then_run": {
-                            "type": "minecraft:block",
-                            "result_state": {
-                                "Name": "minecraft:bedrock"
+                        {
+                            "type": "minecraft:condition",
+                            "if_true": {
+                                "type": "minecraft:stone_depth",
+                                "offset": 1,
+                                "surface_type": "floor",
+                                "add_surface_depth": true,
+                                "secondary_depth_range": 0
+                            },
+                            "then_run": {
+                                "type": "minecraft:block",
+                                "result_state": {
+                                    "Name": "minecraft:dirt"
+                                }
                             }
                         }
-                    },
-                    {
-                        "type": "minecraft:condition",
-                        "if_true": {
-                            "type": "minecraft:not",
-                            "invert": {
-                                "type": "minecraft:vertical_gradient",
-                                "random_name": "water",
-                                "true_at_and_below": {
-                                    "below_top": 5
-                                },
-                                "false_at_and_above": {
-                                    "below_top": 5
+                    ]
+                }
+            },
+            {
+                "type": "minecraft:condition",
+                "if_true": {
+                    "type": "minecraft:biome",
+                    "biome_is": [
+                        "atlanabyss:paradise/deathbed"
+                    ]
+                },
+                "then_run": {
+                    "type": "minecraft:sequence",
+                    "sequence": [
+                        {
+                            "type": "minecraft:condition",
+                            "if_true": {
+                                "type": "minecraft:stone_depth",
+                                "offset": 0,
+                                "surface_type": "floor",
+                                "add_surface_depth": false,
+                                "secondary_depth_range": 0
+                            },
+                            "then_run": {
+                                "type": "minecraft:block",
+                                "result_state": {
+                                    "Name": "tconstruct:blood_ichor_slime_grass"
                                 }
                             }
                         },
-                        "then_run": {
-                            "type": "minecraft:block",
-                            "result_state": {
-                                "Name": "minecraft:water",
-                                "Properties": {
-                                    "level": "0"
+                        {
+                            "type": "minecraft:condition",
+                            "if_true": {
+                                "type": "minecraft:stone_depth",
+                                "offset": 1,
+                                "surface_type": "floor",
+                                "add_surface_depth": true,
+                                "secondary_depth_range": 0
+                            },
+                            "then_run": {
+                                "type": "minecraft:block",
+                                "result_state": {
+                                    "Name": "tconstruct:ichor_slime_dirt"
                                 }
                             }
                         }
-                    },
-                    {
-                        "type": "minecraft:condition",
-                        "if_true": {
-                            "type": "minecraft:not",
-                            "invert": {
-                                "type": "minecraft:vertical_gradient",
-                                "random_name": "light",
-                                "true_at_and_below": {
-                                    "below_top": 7
-                                },
-                                "false_at_and_above": {
-                                    "below_top": 7
+                    ]
+                }
+            },
+            {
+                "type": "minecraft:condition",
+                "if_true": {
+                    "type": "minecraft:biome",
+                    "biome_is": [
+                        "atlanabyss:paradise/purple_fields"
+                    ]
+                },
+                "then_run": {
+                    "type": "minecraft:sequence",
+                    "sequence": [
+                        {
+                            "type": "minecraft:condition",
+                            "if_true": {
+                                "type": "minecraft:stone_depth",
+                                "offset": 0,
+                                "surface_type": "floor",
+                                "add_surface_depth": false,
+                                "secondary_depth_range": 0
+                            },
+                            "then_run": {
+                                "type": "minecraft:block",
+                                "result_state": {
+                                    "Name": "minecraft:mycelium"
                                 }
                             }
                         },
-                        "then_run": {
-                            "type": "minecraft:block",
-                            "result_state": {
-                                "Name": "minecraft:light",
-                                "Properties": {
-                                    "level": "15",
-                                    "waterlogged": "false"
+                        {
+                            "type": "minecraft:condition",
+                            "if_true": {
+                                "type": "minecraft:stone_depth",
+                                "offset": 1,
+                                "surface_type": "floor",
+                                "add_surface_depth": true,
+                                "secondary_depth_range": 0
+                            },
+                            "then_run": {
+                                "type": "minecraft:block",
+                                "result_state": {
+                                    "Name": "botania:metamorphic_fungal_stone"
                                 }
                             }
                         }
-                    },
-                    {
-                        "type": "minecraft:condition",
-                        "if_true": {
-                            "type": "minecraft:not",
-                            "invert": {
-                                "type": "minecraft:vertical_gradient",
-                                "random_name": "air",
-                                "true_at_and_below": {
-                                    "below_top": 23
-                                },
-                                "false_at_and_above": {
-                                    "below_top": 23
+                    ]
+                }
+            },
+            {
+                "type": "minecraft:condition",
+                "if_true": {
+                    "type": "minecraft:biome",
+                    "biome_is": [
+                        "atlanabyss:paradise/golden_township"
+                    ]
+                },
+                "then_run": {
+                    "type": "minecraft:sequence",
+                    "sequence": [
+                        {
+                            "type": "minecraft:condition",
+                            "if_true": {
+                                "type": "minecraft:stone_depth",
+                                "offset": 1,
+                                "surface_type": "floor",
+                                "add_surface_depth": true,
+                                "secondary_depth_range": 0
+                            },
+                            "then_run": {
+                                "type": "minecraft:block",
+                                "result_state": {
+                                    "Name": "atmospheric:red_arid_sand"
                                 }
                             }
-                        },
-                        "then_run": {
-                            "type": "minecraft:block",
-                            "result_state": {
-                                "Name": "minecraft:air"
-                            }
                         }
+                    ]
+                }
+            },
+            {
+                "type": "minecraft:condition",
+                "if_true": {
+                    "type": "minecraft:biome",
+                    "biome_is": [
+                        "atlanabyss:paradise/golden_township"
+                    ]
+                },
+                "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                        "Name": "atmospheric:red_arid_sandstone"
                     }
-                ]
+                }
+            },
+            {
+                "type": "minecraft:condition",
+                "if_true": {
+                    "type": "minecraft:biome",
+                    "biome_is": [
+                        "atlanabyss:paradise/paradise"
+                    ]
+                },
+                "then_run": {
+                    "type": "minecraft:sequence",
+                    "sequence": [
+                        {
+                            "type": "minecraft:condition",
+                            "if_true": {
+                                "type": "minecraft:stone_depth",
+                                "offset": 1,
+                                "surface_type": "floor",
+                                "add_surface_depth": true,
+                                "secondary_depth_range": 0
+                            },
+                            "then_run": {
+                                "type": "minecraft:block",
+                                "result_state": {
+                                    "Name": "minecraft:coarse_dirt"
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "minecraft:condition",
+                "if_true": {
+                    "type": "minecraft:biome",
+                    "biome_is": [
+                        "atlanabyss:paradise/paradise"
+                    ]
+                },
+                "then_run": {
+                    "type": "minecraft:sequence",
+                    "sequence": [
+                        {
+                            "type": "minecraft:condition",
+                            "if_true": {
+                                "type": "minecraft:not",
+                                "invert": {
+                                    "type": "minecraft:vertical_gradient",
+                                    "random_name": "paradise_granite",
+                                    "true_at_and_below": {
+                                        "above_bottom": 384
+                                    },
+                                    "false_at_and_above": {
+                                        "above_bottom": 392
+                                    }
+                                }
+                            },
+                            "then_run": {
+                                "type": "minecraft:block",
+                                "result_state": {
+                                    "Name": "minecraft:granite"
+                                }
+                            }
+                        },
+                        {
+                            "type": "minecraft:condition",
+                            "if_true": {
+                                "type": "minecraft:y_above",
+                                "anchor": {
+                                    "above_bottom": 320
+                                },
+                                "surface_depth_multiplier": 0,
+                                "add_stone_depth": false
+                            },
+                            "then_run": {
+                                "type": "minecraft:block",
+                                "result_state": {
+                                    "Name": "minecraft:deepslate_coal_ore"
+                                }
+                            }
+                        },
+                        {
+                            "type": "minecraft:condition",
+                            "if_true": {
+                                "type": "minecraft:y_above",
+                                "anchor": {
+                                    "above_bottom": 272
+                                },
+                                "surface_depth_multiplier": 0,
+                                "add_stone_depth": false
+                            },
+                            "then_run": {
+                                "type": "minecraft:block",
+                                "result_state": {
+                                    "Name": "minecraft:deepslate_copper_ore"
+                                }
+                            }
+                        },
+                        {
+                            "type": "minecraft:condition",
+                            "if_true": {
+                                "type": "minecraft:y_above",
+                                "anchor": {
+                                    "above_bottom": 240
+                                },
+                                "surface_depth_multiplier": 0,
+                                "add_stone_depth": false
+                            },
+                            "then_run": {
+                                "type": "minecraft:block",
+                                "result_state": {
+                                    "Name": "minecraft:deepslate_iron_ore"
+                                }
+                            }
+                        },
+                        {
+                            "type": "minecraft:condition",
+                            "if_true": {
+                                "type": "minecraft:y_above",
+                                "anchor": {
+                                    "above_bottom": 208
+                                },
+                                "surface_depth_multiplier": 0,
+                                "add_stone_depth": false
+                            },
+                            "then_run": {
+                                "type": "minecraft:block",
+                                "result_state": {
+                                    "Name": "thermal:deepslate_nickel_ore"
+                                }
+                            }
+                        },
+                        {
+                            "type": "minecraft:condition",
+                            "if_true": {
+                                "type": "minecraft:y_above",
+                                "anchor": {
+                                    "above_bottom": 176
+                                },
+                                "surface_depth_multiplier": 0,
+                                "add_stone_depth": false
+                            },
+                            "then_run": {
+                                "type": "minecraft:block",
+                                "result_state": {
+                                    "Name": "thermal:deepslate_tin_ore"
+                                }
+                            }
+                        },
+                        {
+                            "type": "minecraft:condition",
+                            "if_true": {
+                                "type": "minecraft:y_above",
+                                "anchor": {
+                                    "above_bottom": 144
+                                },
+                                "surface_depth_multiplier": 0,
+                                "add_stone_depth": false
+                            },
+                            "then_run": {
+                                "type": "minecraft:block",
+                                "result_state": {
+                                    "Name": "create:deepslate_zinc_ore"
+                                }
+                            }
+                        },
+                        {
+                            "type": "minecraft:condition",
+                            "if_true": {
+                                "type": "minecraft:y_above",
+                                "anchor": {
+                                    "above_bottom": 136
+                                },
+                                "surface_depth_multiplier": 0,
+                                "add_stone_depth": false
+                            },
+                            "then_run": {
+                                "type": "minecraft:block",
+                                "result_state": {
+                                    "Name": "thermal:deepslate_lead_ore"
+                                }
+                            }
+                        },
+                        {
+                            "type": "minecraft:condition",
+                            "if_true": {
+                                "type": "minecraft:y_above",
+                                "anchor": {
+                                    "above_bottom": 128
+                                },
+                                "surface_depth_multiplier": 0,
+                                "add_stone_depth": false
+                            },
+                            "then_run": {
+                                "type": "minecraft:block",
+                                "result_state": {
+                                    "Name": "minecraft:deepslate_gold_ore"
+                                }
+                            }
+                        },
+                        {
+                            "type": "minecraft:condition",
+                            "if_true": {
+                                "type": "minecraft:y_above",
+                                "anchor": {
+                                    "above_bottom": 112
+                                },
+                                "surface_depth_multiplier": 0,
+                                "add_stone_depth": false
+                            },
+                            "then_run": {
+                                "type": "minecraft:block",
+                                "result_state": {
+                                    "Name": "minecraft:deepslate_lapis_ore"
+                                }
+                            }
+                        },
+                        {
+                            "type": "minecraft:condition",
+                            "if_true": {
+                                "type": "minecraft:y_above",
+                                "anchor": {
+                                    "above_bottom": 96
+                                },
+                                "surface_depth_multiplier": 0,
+                                "add_stone_depth": false
+                            },
+                            "then_run": {
+                                "type": "minecraft:block",
+                                "result_state": {
+                                    "Name": "minecraft:deepslate_redstone_ore",
+                                    "Properties": {
+                                        "lit": "false"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "type": "minecraft:condition",
+                            "if_true": {
+                                "type": "minecraft:y_above",
+                                "anchor": {
+                                    "above_bottom": 49
+                                },
+                                "surface_depth_multiplier": 0,
+                                "add_stone_depth": false
+                            },
+                            "then_run": {
+                                "type": "minecraft:block",
+                                "result_state": {
+                                    "Name": "minecraft:deepslate_diamond_ore"
+                                }
+                            }
+                        },
+                        {
+                            "type": "minecraft:condition",
+                            "if_true": {
+                                "type": "minecraft:y_above",
+                                "anchor": {
+                                    "above_bottom": 48
+                                },
+                                "surface_depth_multiplier": 0,
+                                "add_stone_depth": false
+                            },
+                            "then_run": {
+                                "type": "minecraft:block",
+                                "result_state": {
+                                    "Name": "minecraft:deepslate_emerald_ore"
+                                }
+                            }
+                        },
+                        {
+                            "type": "minecraft:condition",
+                            "if_true": {
+                                "type": "minecraft:not",
+                                "invert": {
+                                    "type": "minecraft:vertical_gradient",
+                                    "random_name": "paradise_silver_ore",
+                                    "true_at_and_below": {
+                                        "above_bottom": 32
+                                    },
+                                    "false_at_and_above": {
+                                        "above_bottom": 40
+                                    }
+                                }
+                            },
+                            "then_run": {
+                                "type": "minecraft:block",
+                                "result_state": {
+                                    "Name": "thermal:deepslate_silver_ore"
+                                }
+                            }
+                        }
+                    ]
+                }
             }
         ]
     }

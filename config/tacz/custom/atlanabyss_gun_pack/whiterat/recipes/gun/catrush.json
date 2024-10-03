@@ -2,21 +2,19 @@
   "materials": [
     {
       "item": {
-        "tag": "forge:ingots/iron"
+        "tag": "atlanabyss:materials/legendary"
       },
-      "count": 28
+      "count": 1
     },
     {
       "item": {
-        "tag": "forge:ingots/gold"
+        "type": "forge:partial_nbt",
+        "item": "tacz:modern_kinetic_gun",
+        "nbt": {
+          "GunId": "tacz:m320"
+        }
       },
-      "count": 2
-    },
-    {
-      "item": {
-        "tag": "forge:gems/lapis"
-      },
-      "count": 4
+      "count": 1
     }
   ],
   "result": {

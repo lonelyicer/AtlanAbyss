@@ -15,10 +15,6 @@
       "block_search_extent": 8,
       "offset": 2
     },
-    "additions_sound": {
-      "sound": "atlanabyss:under_forest_ambient_wind",
-      "tick_chance": 0.0001
-    },
     "music": {
       "sound": "minecraft:music.overworld.lush_caves",
       "min_delay": 12000,
@@ -80,13 +76,13 @@
       },
       {
         "type": "neapolitan:chimpanzee",
-        "weight": 12,
+        "weight": 20,
         "minCount": 4,
         "maxCount": 4
       },
       {
         "type": "alexsmobs:gorilla",
-        "weight": 10,
+        "weight": 20,
         "minCount": 2,
         "maxCount": 2
       }
@@ -134,8 +130,7 @@
       "atlanabyss:under_forest/morado_tree_2",
       "atlanabyss:under_forest/rose_tree_1",
       "atlanabyss:under_forest/rose_tree_2",
-      "atlanabyss:under_forest/yucca_tree_2",
-      "atlanabyss:under_forest/aspen_tree"
+      "atlanabyss:under_forest/yucca_tree_2"
     ],
     [],
     [],
@@ -177,7 +172,11 @@
       "minecraft:lush_caves_vegetation",
       "minecraft:rooted_azalea_tree",
       "minecraft:spore_blossom",
-      "minecraft:classic_vines_cave_feature"
+      "minecraft:classic_vines_cave_feature",
+      "atlanabyss:under_forest/patch_adzuki_sprouts",
+      "atlanabyss:under_forest/patch_strawberry_bush",
+      "atlanabyss:under_forest/patch_vanilla_vine",
+      "atlanabyss:under_forest/lake_patch"
     ],
     [
       "minecraft:freeze_top_layer"

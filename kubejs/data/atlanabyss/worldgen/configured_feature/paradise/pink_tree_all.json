@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:simple_random_selector",
+    "config": {
+        "features": [
+            {
+                "feature": "atlanabyss:paradise/pink_tree_1",
+                "placement": []
+            },
+            {
+                "feature": "atlanabyss:paradise/pink_tree_2",
+                "placement": []
+            },
+            {
+                "feature": "atlanabyss:paradise/pink_tree_3",
+                "placement": []
+            }
+        ]
+    }
+}

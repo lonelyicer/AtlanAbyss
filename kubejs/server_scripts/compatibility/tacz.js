@@ -339,6 +339,10 @@ onEvent('recipes', (event) => {
 		'bf1:792x57', 50,
 		'thermal:gunpowder_block', 'create:brass_nugget'
 	)
+	ammo('kubejs:shell_rifle', 'thermal:steel_plate',
+		'emxarms:339x57x', 10,
+		'minecraft:gunpowder', 'ae2:tiny_tnt'
+	)
 	//狙击步枪弹
 	ammo('kubejs:shell_rifle', 'thermal:steel_plate',
 		'tacz:50bmg', 5,
@@ -352,18 +356,26 @@ onEvent('recipes', (event) => {
 		'bf1:132x92', 5,
 		'tconstruct:efln_ball', 'create:brass_nugget'
 	)
+	ammo('kubejs:shell_rifle', 'thermal:steel_plate',
+		'emxarms:1045x103ice', 5,
+		'tconstruct:efln_ball', 'beyond_earth:ice_shard'
+	)
 	//霰弹
 	ammo('kubejs:shell_shotgun', 'create:brass_sheet',
-		'tacz:12g', 2,
+		'tacz:12g', 5,
 		'minecraft:gunpowder', 'minecraft:iron_nugget'
+	)
+	ammo('kubejs:shell_shotgun', 'thermal:steel_plate',
+		'emxarms:12slug', 5,
+		'minecraft:gunpowder', 'ae2:matter_ball'
 	)
 	//马格南
 	ammo('kubejs:shell_magnum', 'kubejs:charged_constantan_sheet',
-		'tacz:357mag', 1,
+		'tacz:357mag', 10,
 		'thermal:gunpowder_block', 'thermal:silver_nugget'
 	)
 	ammo('kubejs:shell_magnum', 'kubejs:charged_constantan_sheet',
-		'tacz:50ae', 1,
+		'tacz:50ae', 10,
 		'thermal:gunpowder_block', 'thermal:constantan_nugget'
 	)
 

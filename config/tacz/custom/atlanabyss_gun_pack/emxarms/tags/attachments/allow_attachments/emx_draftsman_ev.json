@@ -1,0 +1,11 @@
+[
+	"#tacz:scope",
+	"tacz:extended_mag_1",
+	"tacz:extended_mag_2",
+	"tacz:extended_mag_3",
+	"#tacz:grip",
+	"#emxarms:h_mag",
+	"#tacz:laser",
+	"emxarms:muzzle_emx_catch",
+	"emxarms:stock_emx_reentrantlock"
+]

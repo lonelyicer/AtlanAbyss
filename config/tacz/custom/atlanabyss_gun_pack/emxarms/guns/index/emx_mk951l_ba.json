@@ -1,0 +1,8 @@
+{
+    "name": "emxarms.gun.emx_mk951l_ba.name",
+    "display": "emxarms:emx_mk951l_ba_display",
+    "tooltip": "emxarms.gun.emx_mk951l_ba.desc",
+    "data": "emxarms:emx_mk951l_ba_data",
+    "type": "rifle",
+    "sort": 10
+}

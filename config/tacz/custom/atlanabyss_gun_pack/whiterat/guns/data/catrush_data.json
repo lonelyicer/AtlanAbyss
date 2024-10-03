@@ -19,7 +19,7 @@
     "pierce": 0,
     "explosion": {
       "explode": true,
-      "damage": 50,
+      "damage": 220,
       "radius": 7,
       "knockback": true,
       "delay": 30

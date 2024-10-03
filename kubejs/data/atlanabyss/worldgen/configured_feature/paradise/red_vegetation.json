@@ -1,0 +1,45 @@
+{
+    "type": "minecraft:simple_block",
+    "config": {
+        "to_place": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+                {
+                    "weight": 75,
+                    "data": {
+                        "Name": "minecraft:crimson_roots"
+                    }
+                },
+                {
+                    "weight": 1,
+                    "data": {
+                        "Name": "minecraft:crimson_fungus"
+                    }
+                },
+                {
+                    "weight": 16,
+                    "data": {
+                        "Name": "quark:red_blossom_leaf_carpet"
+                    }
+                },
+                {
+                    "weight": 5,
+                    "data": {
+                        "Name": "quark:red_blossom_leaves"
+                    }
+                },
+                {
+                    "weight": 3,
+                    "data": {
+                        "Name": "minecraft:red_candle",
+                        "Properties": {
+                            "candles": "4",
+                            "lit": "true",
+                            "waterlogged": "false"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,9 +1,43 @@
 {
+  "temperature": 0.05,
+  "downfall": 0.3,
+  "precipitation": "none",
+  "temperature_modifier": "none",
+  "category": "underground",
+  "effects": {
+    "sky_color": 16777215,
+    "fog_color": 1448222,
+    "water_color": 4159204,
+    "water_fog_color": 329011,
+    "ambient_sound": "minecraft:ambient.basalt_deltas.loop",
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 2000,
+      "block_search_extent": 8,
+      "offset": 2
+    },
+    "additions_sound": {
+      "sound": "minecraft:block.amethyst_block.chime",
+      "tick_chance": 0.02
+    },
+    "music": {
+      "sound": "minecraft:music.game",
+      "min_delay": 12000,
+      "max_delay": 24000,
+      "replace_current_music": false
+    }
+  },
   "spawners": {
     "monster": [
       {
+        "type": "minecraft:zombie_villager",
+        "weight": 90,
+        "minCount": 1,
+        "maxCount": 1
+      },
+      {
         "type": "minecraft:phantom",
-        "weight": 100,
+        "weight": 20,
         "minCount": 4,
         "maxCount": 4
       },
@@ -15,12 +49,37 @@
       },
       {
         "type": "minecraft:skeleton",
-        "weight": 100,
+        "weight": 10,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "alexsmobs:spawn_egg_rocky_roller",
+        "weight": 20,
+        "minCount": 2,
+        "maxCount": 4
+      },
+      {
+        "type": "alexsmobs:spawn_egg_centipede",
+        "weight": 30,
+        "minCount": 2,
+        "maxCount": 2
+      }
+    ],
+    "creature": [
+      {
+        "type": "alexsmobs:jerboa",
+        "weight": 80,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "alexsmobs:tusklin",
+        "weight": 40,
         "minCount": 4,
         "maxCount": 4
       }
     ],
-    "creature": [],
     "ambient": [],
     "axolotls": [
       {
@@ -56,8 +115,8 @@
       "minecraft:lake_lava_underground"
     ],
     [
-      "minecraft:amethyst_geode",
       "minecraft:pointed_dripstone",
+      "atlanabyss:major_fault/amethyst_geode",
       "atlanabyss:major_fault/void_amethyst_geode"
     ],
     [
@@ -89,39 +148,10 @@
       "minecraft:spore_blossom",
       "minecraft:classic_vines_cave_feature",
       "atlanabyss:major_fault/amethyst_void_crystals",
-      "atlanabyss:major_fault/amethyst_void_ceiling_crystals",
-      "atlanabyss:major_fault/amethyst_vine"
+      "atlanabyss:major_fault/amethyst_void_ceiling_crystals"
     ],
     [
       "minecraft:freeze_top_layer"
     ]
-  ],
-  "temperature": 0.05,
-  "downfall": 0.3,
-  "precipitation": "none",
-  "temperature_modifier": "none",
-  "category": "underground",
-  "effects": {
-    "sky_color": 16777215,
-    "fog_color": 1448222,
-    "water_color": 4159204,
-    "water_fog_color": 329011,
-    "ambient_sound": "minecraft:ambient.basalt_deltas.loop",
-    "mood_sound": {
-      "sound": "minecraft:ambient.cave",
-      "tick_delay": 2000,
-      "block_search_extent": 8,
-      "offset": 2
-    },
-    "additions_sound": {
-      "sound": "minecraft:block.amethyst_block.chime",
-      "tick_chance": 0.02
-    },
-    "music": {
-      "sound": "minecraft:music.overworld.lush_caves",
-      "min_delay": 12000,
-      "max_delay": 24000,
-      "replace_current_music": false
-    }
-  }
+  ]
 }

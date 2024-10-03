@@ -6,7 +6,7 @@
   "bullet": {
     "life": 1.0,
     "bullet_amount": 1,
-    "damage": 22,
+    "damage": 24,
     "tracer_count_interval": 0,
     "extra_damage": {
       "armor_ignore": 0.5,
@@ -14,11 +14,11 @@
       "damage_adjust": [
         {
           "distance": 200,
-          "damage": 22
+          "damage": 24
         },
         {
           "distance": "infinite",
-          "damage": 20
+          "damage": 22
         }
       ]
     },
@@ -27,7 +27,7 @@
     "knockback": 0,
     "friction": 0.015,
     "ignite": false,
-    "pierce": 2
+    "pierce": 3
   },
   "extended_mag_ammo_amount": [
     250,

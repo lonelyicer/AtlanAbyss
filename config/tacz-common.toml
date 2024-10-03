@@ -32,7 +32,7 @@
 
 [other]
 	#When enabled, the reload command will not overwrite the default model file under config
-	DefaultPackDebug = false
+	DefaultPackDebug = true
 	#The farthest sound distance of the target, including minecarts type
 	#Range: > 0
 	TargetSoundDistance = 128

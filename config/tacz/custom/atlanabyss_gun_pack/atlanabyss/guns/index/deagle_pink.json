@@ -3,5 +3,6 @@
   "display": "atlanabyss:deagle_pink_display",
   "data": "atlanabyss:deagle_pink_data",
   "tooltip": "atlanabyss.gun.deagle_pink.desc",
-  "type": "rpg"
+  "type": "rpg",
+  "sort": 10
 }

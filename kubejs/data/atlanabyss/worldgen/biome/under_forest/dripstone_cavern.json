@@ -15,10 +15,6 @@
       "block_search_extent": 8,
       "offset": 2
     },
-    "additions_sound": {
-      "sound": "minecraft:ambient.basalt_deltas.mood",
-      "tick_chance": 0.0001
-    },
     "music": {
       "sound": "minecraft:music.overworld.lush_caves",
       "min_delay": 12000,
@@ -145,7 +141,8 @@
       "minecraft:spring_lava",
       "minecraft:mushroom_island_vegetation",
       "minecraft:brown_mushroom_taiga",
-      "minecraft:red_mushroom_taiga"
+      "minecraft:red_mushroom_taiga",
+      "atlanabyss:under_forest/lake_patch"
     ],
     [
       "minecraft:freeze_top_layer"

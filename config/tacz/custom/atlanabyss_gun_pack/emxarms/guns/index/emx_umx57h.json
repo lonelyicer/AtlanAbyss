@@ -1,0 +1,8 @@
+{
+    "name": "emxarms.gun.emx_umx57h.name",
+    "display": "emxarms:emx_umx57h_display",
+    "tooltip": "emxarms.gun.emx_umx57h.desc",
+    "data": "emxarms:emx_umx57h_data",
+    "type": "rifle",
+    "sort": 11
+}

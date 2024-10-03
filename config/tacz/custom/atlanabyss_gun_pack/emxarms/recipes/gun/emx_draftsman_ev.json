@@ -1,0 +1,26 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "atlanabyss:materials/legendary"
+      },
+      "count": 5
+    },
+    {
+      "item": {
+        "tag": "atlanabyss:materials/epic"
+      },
+      "count": 4
+    },
+    {
+      "item": {
+        "item": "mekanism:energy_tablet"
+      },
+      "count": 1
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "emxarms:emx_draftsman_ev"
+  }
+}

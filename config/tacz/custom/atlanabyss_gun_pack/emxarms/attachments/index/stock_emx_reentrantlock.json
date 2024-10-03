@@ -1,0 +1,6 @@
+{
+  "name": "emxarms.attachment.stock_emx_reentrantlock.name",
+  "display": "emxarms:stock_emx_reentrantlock_display",
+  "data": "emxarms:stock_emx_reentrantlock_data",
+  "type": "stock"
+}

@@ -1,0 +1,49 @@
+{
+    "type": "minecraft:simple_block",
+    "config": {
+        "to_place": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+                {
+                    "weight": 75,
+                    "data": {
+                        "Name": "minecraft:pink_tulip"
+                    }
+                },
+                {
+                    "weight": 15,
+                    "data": {
+                        "Name": "quark:pink_blossom_leaf_carpet"
+                    }
+                },
+                {
+                    "weight": 7,
+                    "data": {
+                        "Name": "quark:pink_blossom_leaves"
+                    }
+                },
+                {
+                    "weight": 1,
+                    "data": {
+                        "Name": "minecraft:amethyst_cluster",
+                        "Properties": {
+                            "facing": "up",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "weight": 2,
+                    "data": {
+                        "Name": "minecraft:pink_candle",
+                        "Properties": {
+                            "candles": "4",
+                            "lit": "true",
+                            "waterlogged": "false"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

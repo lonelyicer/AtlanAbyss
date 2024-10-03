@@ -32,11 +32,11 @@
           0
         ],
         "blocks": [
-          "minecraft:amethyst_block",
-          "minecraft:budding_amethyst",
-          "minecraft:smooth_basalt",
           "minecraft:basalt",
+          "minecraft:tuff",
           "minecraft:calcite",
+          "minecraft:diorite",
+          "create:limestone",
           "minecraft:deepslate"
         ]
       },

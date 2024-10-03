@@ -413,31 +413,12 @@
 			}]
 		}
 		{
-			title: "搭建下界传送门"
-			icon: "minecraft:obsidian"
 			disable_toast: true
-			x: -4.0d
-			y: 2.0d
-			description: ["你可以选择用传统的钻石镐挖掘黑曜石搭建传送门，也可以选择用岩浆桶浇筑传送门，根据你的偏好决定。"]
-			dependencies: ["58D3EC802A6FBD27"]
-			id: "4E12320C5CF0FE7B"
-			tasks: [{
-				id: "5F8439575D62E3EC"
-				type: "checkmark"
-			}]
-			rewards: [{
-				id: "79D152B8E2B1BE1B"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
-			disable_toast: true
-			x: -4.0d
+			x: -5.0d
 			y: 1.0d
 			shape: "hexagon"
 			description: ["利用强劲的附魔，战斗！"]
-			dependencies: ["4E12320C5CF0FE7B"]
+			dependencies: ["23DBDED6263BF172"]
 			hide: true
 			id: "7FEC216969A7D841"
 			tasks: [{
@@ -452,10 +433,10 @@
 			}]
 		}
 		{
-			x: -2.5d
-			y: 4.0d
-			description: ["注：在下界中的敌对生物，生命值会随着距离出生点越远越高（但是掉落物也会随之变多，看你愿不愿意冒险了）。"]
-			dependencies: ["4E12320C5CF0FE7B"]
+			x: 2.5d
+			y: 6.0d
+			description: ["从第七层直接往下跳便可直达下界上层。\\n注：在下界中的敌对生物，生命值会随着距离出生点越远越高（但是掉落物也会随之变多，看你愿不愿意冒险了）。"]
+			dependencies: ["7DE7DA29AEE73C26"]
 			hide: true
 			id: "137563E84BDBF0CC"
 			tasks: [{
@@ -496,9 +477,12 @@
 		{
 			title: " 进入末地"
 			disable_toast: true
-			x: 0.0d
-			y: 5.0d
-			description: ["要塞大改，请用结构罗盘寻找“要塞”，或使用末影之眼寻找。"]
+			x: 2.5d
+			y: 8.0d
+			description: [
+				"要塞只会生成在下界，推荐使用结构罗盘寻找“要塞”，或使用末影之眼寻找。"
+				"注：第一个末影之眼在第六层的小屋内。"
+			]
 			dependencies: ["137563E84BDBF0CC"]
 			id: "31C9BD74CDB26F64"
 			tasks: [{
@@ -519,9 +503,9 @@
 			y: 4.0d
 			description: [
 				"颠倒之域：夹在在主世界与下界之间的维度"
-				"进入方法：\\n1.在主世界的基岩上方食用紫颂果\\n2.在下界往上超过360格"
+				"进入方法：\\n1.在地下第六层使用深层传送门\\n2.在下界往上超过360格"
 			]
-			dependencies: ["31C9BD74CDB26F64"]
+			dependencies: ["629CFB2AC95A381C"]
 			id: "7DE7DA29AEE73C26"
 			tasks: [{
 				id: "1A5C2BBC58D64D5F"
@@ -626,7 +610,7 @@
 		}
 		{
 			disable_toast: true
-			x: -5.0d
+			x: -6.0d
 			y: 1.0d
 			shape: "hexagon"
 			description: ["附魔不再随机。"]
@@ -645,7 +629,7 @@
 		}
 		{
 			disable_toast: true
-			x: -6.0d
+			x: -7.0d
 			y: 1.0d
 			shape: "hexagon"
 			dependencies: ["629B75A3BB761759"]
@@ -765,8 +749,8 @@
 		{
 			title: "铋"
 			icon: "kubejs:end_bismuth_ore"
-			x: -1.0d
-			y: 5.5d
+			x: 1.5d
+			y: 8.5d
 			description: [
 				"只出现在末地的矿石，极其稀少并且深埋地下，但是"
 				"随着时间的推移，铋矿石会往周围的末地石生长。"
@@ -788,8 +772,8 @@
 		{
 			title: "赛特斯石英"
 			icon: "ae2:deepslate_quartz_ore"
-			x: 1.0d
-			y: 5.5d
+			x: 3.5d
+			y: 8.5d
 			description: ["一种只出现在末地的矿石，并且不会暴露在表面。"]
 			dependencies: ["31C9BD74CDB26F64"]
 			hide: true
@@ -807,8 +791,8 @@
 		}
 		{
 			disable_toast: true
-			x: 0.0d
-			y: 6.0d
+			x: 2.5d
+			y: 9.0d
 			shape: "rsquare"
 			description: ["开启建筑之路。"]
 			dependencies: ["1371ABE055E0D70F"]
@@ -922,6 +906,76 @@
 			}]
 			rewards: [{
 				id: "0ACC67B9DD2ADFE3"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -2.5d
+			y: 4.0d
+			description: ["地下第六层已无法使用水晶传送门进行传送了，你需要在地下第五层寻找到深渊传送门遗迹。"]
+			dependencies: ["668F9E6D1E5EAD90"]
+			id: "71F9AA949923BAB9"
+			tasks: [{
+				id: "682E562FE9FF14FE"
+				type: "dimension"
+				icon: "kubejs:abyss_portal"
+				dimension: "atlanabyss:paradise"
+			}]
+			rewards: [{
+				id: "15D94905395AC641"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 0.0d
+			y: 5.0d
+			description: ["通往第七层的传送门。"]
+			dependencies: ["71F9AA949923BAB9"]
+			id: "629CFB2AC95A381C"
+			tasks: [{
+				id: "357E37A3A5A5D9B2"
+				type: "item"
+				item: "kubejs:deep_portal"
+			}]
+			rewards: [{
+				id: "5E15B820188BB0FA"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -4.0d
+			y: 1.0d
+			shape: "hexagon"
+			description: ["如果没找到自然生成的黑曜石，可以把水浇在岩浆上，这样便有了黑曜石，另外你还需要钻石镐以及以上的稿子用于挖掘黑曜石。"]
+			dependencies: ["2EAB82EBAF44C882"]
+			id: "23DBDED6263BF172"
+			tasks: [{
+				id: "75A567ACBF22B9FF"
+				type: "item"
+				item: "minecraft:obsidian"
+			}]
+			rewards: [{
+				id: "5B9F5977FA209708"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -4.0d
+			y: 2.0d
+			description: ["通往地下世界的传送门！"]
+			dependencies: ["58D3EC802A6FBD27"]
+			id: "668F9E6D1E5EAD90"
+			tasks: [{
+				id: "60981D2403E48051"
+				type: "item"
+				item: "kubejs:amethyst_portal"
+			}]
+			rewards: [{
+				id: "697284F83B9ABBED"
 				type: "xp"
 				xp: 10
 			}]

@@ -2,7 +2,6 @@
   "replace": false,
   "values": [
     "minecraft:polished_diorite",
-    "botania:enchanted_soil",
-    "atmospheric:red_arid_sand"
+    "botania:enchanted_soil"
   ]
 }

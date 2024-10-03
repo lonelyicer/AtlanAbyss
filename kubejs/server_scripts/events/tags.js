@@ -368,7 +368,8 @@ onEvent('tags.items', event => {
 		'botania:record_gaia_1', 'botania:record_gaia_2',
 		'quark:music_disc_endermosh', 'neapolitan:music_disc_hullabaloo',
 		'minecraft:music_disc_otherside', 'minecraft:music_disc_pigstep',
-		'integrated_stronghold:music_disc_forlorn', 'integrated_stronghold:disc_fragment_sight'
+		'integrated_stronghold:music_disc_forlorn', 'integrated_stronghold:disc_fragment_sight',
+		'alexsmobs:music_disc_thime', 'alexsmobs:music_disc_daze'
 	]);
 	//专辑
 	event.add('atlanabyss:albums', [
@@ -459,7 +460,11 @@ onEvent('tags.blocks', event => {
 	removeBeaconBase('beyond_earth:steel_block')
 
 	//泥土
-	event.add('minecraft:dirt', 'botania:enchanted_soil')
+	event.add('minecraft:dirt', [
+		'botania:enchanted_soil',
+		'atmospheric:crustose',
+		'tconstruct:blood_ichor_slime_grass'
+	])
 
 	//机械动力扳手标签
 	event.add('create:wrench_pickup', [

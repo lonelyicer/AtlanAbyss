@@ -1,0 +1,24 @@
+{
+  "weight": 0,
+  "recoil_modifier": {
+    "pitch": -0.25
+  },
+  "inaccuracy": {
+    "addend": -0.1
+  },
+  "effective_range": {
+    "multiplier": 1.3
+  },
+  "ammo_speed": {
+    "addend": 50
+  },
+  "pierce": {
+    "addend": 3
+  },
+  "damage": {
+    "multiplier": 2.0
+  },
+  "armor_ignore": {
+    "multiplier": 1.5
+  }
+}

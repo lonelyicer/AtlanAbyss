@@ -15,10 +15,6 @@
       "block_search_extent": 8,
       "offset": 2
     },
-    "additions_sound": {
-      "sound": "atlanabyss:under_forest_ambient_wind",
-      "tick_chance": 0.0001
-    },
     "music": {
       "sound": "minecraft:music.overworld.lush_caves",
       "min_delay": 12000,

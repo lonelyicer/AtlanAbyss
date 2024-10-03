@@ -2,25 +2,15 @@
   "materials": [
     {
       "item": {
-        "tag": "forge:dusts/blaze"
+        "tag": "atlanabyss:materials/ultimate"
       },
       "count": 3
     },
     {
       "item": {
-        "tag": "forge:ingots/netherite"
-      }
-    },
-    {
-      "item": {
-        "tag": "forge:ingots/iron"
+        "tag": "atlanabyss:materials/legendary"
       },
-      "count": 42
-    },
-    {
-      "item": {
-        "tag": "forge:dyes/red"
-      }
+      "count": 1
     }
   ],
   "result": {

@@ -1,0 +1,20 @@
+{
+  "materials": [
+    {
+      "item": {
+        "item": "mekanism:upgrade_speed"
+      },
+      "count": 8
+    },
+    {
+      "item": {
+        "item": "mekanism:upgrade_energy"
+      },
+      "count": 8
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "emxarms:stock_emx_reentrantlock"
+  }
+}

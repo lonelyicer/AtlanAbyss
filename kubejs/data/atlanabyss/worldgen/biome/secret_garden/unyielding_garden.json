@@ -1,17 +1,64 @@
 {
+  "temperature": 0.6,
+  "downfall": 0.5,
+  "precipitation": "none",
+  "category": "plains",
+  "effects": {
+    "sky_color": 5205851,
+    "fog_color": 1448222,
+    "water_color": 4159204,
+    "water_fog_color": 329011,
+    "ambient_sound": "minecraft:block.roots.step",
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2
+    },
+    "music": {
+      "sound": "minecraft:music.game",
+      "min_delay": 12000,
+      "max_delay": 24000,
+      "replace_current_music": false
+    }
+  },
   "spawners": {
     "monster": [
       {
         "type": "minecraft:zombie_villager",
-        "weight": 10,
-        "minCount": 1,
-        "maxCount": 2
+        "weight": 100,
+        "minCount": 2,
+        "maxCount": 4
       }
     ],
     "creature": [
       {
-        "type": "minecraft:rabbit",
+        "type": "minecraft:sheep",
         "weight": 100,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:pig",
+        "weight": 90,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:chicken",
+        "weight": 100,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:cow",
+        "weight": 80,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:rabbit",
+        "weight": 50,
         "minCount": 2,
         "maxCount": 3
       },
@@ -20,6 +67,18 @@
         "weight": 120,
         "minCount": 2,
         "maxCount": 4
+      },
+      {
+        "type": "alexsmobs:raccoon",
+        "weight": 80,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:turtle",
+        "weight": 5,
+        "minCount": 2,
+        "maxCount": 5
       }
     ],
     "ambient": [],
@@ -42,9 +101,15 @@
     "water_creature": [],
     "water_ambient": [
       {
+        "type": "minecraft:cod",
+        "weight": 50,
+        "minCount": 3,
+        "maxCount": 6
+      },
+      {
         "type": "minecraft:tropical_fish",
         "weight": 25,
-        "minCount": 8,
+        "minCount": 4,
         "maxCount": 8
       }
     ],
@@ -61,7 +126,7 @@
     [],
     [],
     [
-      "minecraft:amethyst_geode",
+      "atlanabyss:secret_garden/amethyst_geode",
       "atlanabyss:secret_garden/white_candle"
     ],
     [
@@ -85,48 +150,19 @@
     ],
     [
       "minecraft:patch_grass_badlands",
-      "minecraft:brown_mushroom_normal",
-      "minecraft:red_mushroom_normal",
       "minecraft:patch_sugar_cane",
       "minecraft:patch_pumpkin",
       "minecraft:spore_blossom",
       "minecraft:classic_vines_cave_feature",
       "atlanabyss:secret_garden/flower_flower_white",
-      "atlanabyss:secret_garden/cave_vines",
       "atlanabyss:secret_garden/pink_ceiling",
-      "atlanabyss:secret_garden/cave_pool",
+      "atlanabyss:secret_garden/veridium_pool",
       "atlanabyss:secret_garden/flower_forest",
-      "atlanabyss:secret_garden/flower_cave"
+      "atlanabyss:secret_garden/flower_cave",
+      "atlanabyss:secret_garden/sugar_cube_pile"
     ],
     [
       "minecraft:freeze_top_layer"
     ]
-  ],
-  "temperature": 0.95,
-  "downfall": 0.5,
-  "effects": {
-    "sky_color": 5205851,
-    "fog_color": 1448222,
-    "water_color": 4159204,
-    "water_fog_color": 329011,
-    "mood_sound": {
-      "sound": "minecraft:ambient.cave",
-      "tick_delay": 6000,
-      "block_search_extent": 8,
-      "offset": 2
-    },
-    "additions_sound": {
-      "sound": "atlanabyss:under_forest_ambient_wind",
-      "tick_chance": 0.0001
-    },
-    "music": {
-      "sound": "minecraft:music.overworld.lush_caves",
-      "min_delay": 12000,
-      "max_delay": 24000,
-      "replace_current_music": false
-    },
-    "ambient_sound": "minecraft:block.roots.step"
-  },
-  "precipitation": "none",
-  "category": "none"
+  ]
 }

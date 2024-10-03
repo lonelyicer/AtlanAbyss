@@ -1,0 +1,20 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "atlanabyss:materials/legendary"
+      },
+      "count": 4
+    },
+    {
+      "item": {
+        "tag": "atlanabyss:materials/epic"
+      },
+      "count": 1
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "atlanabyss:vector45_blue"
+  }
+}

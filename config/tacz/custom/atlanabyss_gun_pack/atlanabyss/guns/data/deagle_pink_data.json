@@ -4,13 +4,13 @@
   "bullet": {
     "life": 6,
     "bullet_amount": 1,
-    "damage": 18,
+    "damage": 20,
     "tracer_count_interval": 0,
     "extra_damage": {
       "armor_ignore": 0.0,
       "head_shot_multiplier": 1.75,
       "damage_adjust": [
-        {"distance": 100, "damage": 18},
+        {"distance": 100, "damage": 20},
         {"distance": "infinite", "damage": 16}
       ]
     },
@@ -22,7 +22,7 @@
     "pierce": 0,
     "explosion": {
       "explode": true,
-      "damage": 500,
+      "damage": 450,
       "radius": 5,
       "knockback": true,
       "delay": 30
@@ -31,8 +31,8 @@
   "ammo_amount": 3,
   "extended_mag_ammo_amount": [
     5,
-    7,
-    9
+    9,
+    13
   ],
   "bolt": "closed_bolt",
   "reload": {

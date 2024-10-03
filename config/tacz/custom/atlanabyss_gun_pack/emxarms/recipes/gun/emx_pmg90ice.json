@@ -1,0 +1,26 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "atlanabyss:materials/ultimate"
+      },
+      "count": 6
+    },
+    {
+      "item": {
+        "tag": "atlanabyss:materials/legendary"
+      },
+      "count": 15
+    },
+    {
+      "item": {
+        "item": "mekanism:energy_tablet"
+      },
+      "count": 1
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "emxarms:emx_pmg90ice"
+  }
+}

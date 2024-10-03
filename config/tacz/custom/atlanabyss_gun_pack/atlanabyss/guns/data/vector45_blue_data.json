@@ -16,7 +16,7 @@
         },
         {
           "distance": 50,
-          "damage": 9.5
+          "damage": 9
         },
         {
           "distance": 80,
@@ -71,14 +71,14 @@
   ],
   "fire_mode_adjust": {
     "semi": {
-      "damage": 10,
+      "damage": 6,
       "speed": 100,
       "armor_ignore": 0.8,
       "head_shot_multiplier": 1.0,
       "other_inaccuracy": -2.5
     },
     "burst": {
-      "damage": 6,
+      "damage": 3,
       "rpm": -300,
       "speed": 50,
       "armor_ignore": 0.5,
