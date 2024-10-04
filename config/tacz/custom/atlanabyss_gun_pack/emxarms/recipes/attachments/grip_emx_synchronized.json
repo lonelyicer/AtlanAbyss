@@ -1,0 +1,14 @@
+{
+  "materials": [
+    {
+      "item": {
+        "item": "kubejs:aluminium_alloy_ingot"
+      },
+      "count": 32
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "emxarms:grip_emx_synchronized"
+  }
+}

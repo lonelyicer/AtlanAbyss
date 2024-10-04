@@ -26,13 +26,27 @@
         },
         {
             "id": "minecraft:generic.max_health",
-            "modifier_name": "max_health for Husks",
+            "modifier_name": "max_health for Drowneds",
             "amount": -16,
             "operation": "addition"
         },
         {
+            "id": "minecraft:generic.max_health",
+            "modifier_name": "max_health for Drowneds dead_sea",
+            "amount": {
+                "min": 16,
+                "max": 96
+            },
+            "operation": "addition",
+            "world_whitelist": {
+                "dimensions": [
+                    "atlanabyss:sinking_sea"
+                ]
+            }
+        },
+        {
             "id": "minecraft:generic.movement_speed",
-            "modifier_name": "Speed for Husks",
+            "modifier_name": "Speed for Drowneds",
             "amount": {
                 "min": 0.1,
                 "max": 0.2

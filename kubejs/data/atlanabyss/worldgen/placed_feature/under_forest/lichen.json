@@ -2,25 +2,25 @@
     "feature": "atlanabyss:under_forest/lichen",
     "placement": [
         {
-            "type": "count",
+            "type": "minecraft:count",
             "count": {
                 "type": "minecraft:uniform",
                 "value": {
-                    "min_inclusive": 20,
-                    "max_inclusive": 30
+                    "min_inclusive": 40,
+                    "max_inclusive": 80
                 }
             }
         },
         {
             "type": "minecraft:height_range",
             "height": {
+                "type": "minecraft:uniform",
                 "min_inclusive": {
                     "above_bottom": 0
                 },
                 "max_inclusive": {
-                    "absolute": 250
-                },
-                "type": "minecraft:uniform"
+                    "below_top": 10
+                }
             }
         },
         {

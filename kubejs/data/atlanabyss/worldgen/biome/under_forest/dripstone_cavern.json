@@ -102,8 +102,6 @@
     [
       "minecraft:patch_tall_grass_2",
       "minecraft:trees_plains",
-      "atlanabyss:under_forest/lichen",
-      "atlanabyss:under_forest/lichen2",
       "minecraft:patch_grass_plain"
     ],
     [
@@ -125,8 +123,8 @@
       "minecraft:ore_lapis_buried",
       "minecraft:disk_sand",
       "minecraft:ore_gold_extra",
-      "atlanabyss:under_forest/emerald_ore",
-      "atlanabyss:under_forest/diamond_ore",
+      "atlanabyss:under_forest/zinc_ore",
+      "atlanabyss:under_forest/niter_ore",
       "atlanabyss:under_forest/magma_lower",
       "atlanabyss:under_forest/diorite_big",
       "atlanabyss:under_forest/gravel",
@@ -135,6 +133,7 @@
     [],
     [],
     [
+      "atlanabyss:under_forest/lichen",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
       "minecraft:spring_water",

@@ -149,18 +149,18 @@ onEvent('recipes', event => {
     event.custom({
         type: 'extendedcrafting:compressor',
         powerCost: 7210000,
-        inputCount: 100,
-        ingredient: { item: 'kubejs:infinity_ingot' },
-        catalyst: { item: 'minecraft:barrel' },
+        inputCount: 1000,
+        ingredient: { item: 'minecraft:bedrock' },
+        catalyst: { item: 'kubejs:infinity_ingot' },
         result: { item: 'create:creative_crate' }
     }).id('atlanabyss:compressor_creative_crate');
     //创造储罐
     event.custom({
         type: 'extendedcrafting:compressor',
         powerCost: 7210000,
-        inputCount: 10,
-        ingredient: { item: 'kubejs:infinity_ingot' },
-        catalyst: { item: 'create:fluid_tank' },
+        inputCount: 1000,
+        ingredient: { item: 'create:fluid_tank' },
+        catalyst: { item: 'kubejs:infinity_ingot' },
         result: { item: 'create:creative_fluid_tank' }
     }).id('atlanabyss:compressor_creative_fluid_tank');
 })

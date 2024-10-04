@@ -23,6 +23,6 @@
       "minecraft:fossil/skull_4_coal"
     ],
     "fossil_processors": "minecraft:fossil_rot",
-    "overlay_processors": "minecraft:fossil_diamonds"
+    "overlay_processors": "atlanabyss:fossil_fluorite"
   }
 }

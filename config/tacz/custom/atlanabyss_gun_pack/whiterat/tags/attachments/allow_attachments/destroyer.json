@@ -1,3 +1,6 @@
 [
-  "#tacz:extended_mag"
+  "#tacz:extended_mag",
+  "#emxarms:h_mag",
+  "emxarms:muzzle_emx_catch",
+  "emxarms:stock_emx_reentrantlock"
 ]

@@ -1,0 +1,23 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "atlanabyss:materials/epic"
+      },
+      "count": 3
+    },
+    {
+      "item": {
+        "tag": "atlanabyss:materials/rare"
+      },
+      "count": 8
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "tacz:rpk",
+    "attachments": {
+      "stock": "tacz:oem_stock_heavy"
+    }
+  }
+}

@@ -291,6 +291,13 @@ const tagToAdd = [
 	//银
 	['forge:ores', 'kubejs:mercury_silver_ore'],//矿石
 	['forge:ores/silver', 'kubejs:mercury_silver_ore'],
+	['forge:ores/silver', 'kubejs:diorite_silver_ore'],
+	//镍
+	['forge:ores/nickel', 'kubejs:diorite_nickel_ore'],
+	//锡
+	['forge:ores/tin', 'kubejs:diorite_tin_ore'],
+	//朱砂
+	['forge:ores/cinnabar', 'kubejs:diorite_cinnabar_ore'],
 	//枪械材料
 	['atlanabyss:materials/uncommon', 'kubejs:uncommon_material'],
 	['atlanabyss:materials/rare', 'kubejs:rare_material'],

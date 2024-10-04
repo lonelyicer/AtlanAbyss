@@ -1,0 +1,9 @@
+{
+  "slot": "emxarms:attachment/slot/grip_emx_synchronized",
+  "model": "emxarms:attachment/grip_emx_synchronized_geo",
+  "texture": "emxarms:attachment/uv/emx_synchronized",
+  "sounds": {
+    "install": "tacz:attachments/scope_general_e",
+    "uninstall": "tacz:attachments/scope_general_e"
+  }
+}

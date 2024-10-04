@@ -1,0 +1,27 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/steel"
+      },
+      "count": 5
+    },
+    {
+      "item": {
+        "tag": "forge:gunpowder"
+      },
+      "count": 15
+    },
+    {
+      "item": {
+        "tag": "forge:nuggets/brass"
+      },
+      "count": 10
+    }
+  ],
+  "result": {
+    "type": "ammo",
+    "id": "tacz:762x39",
+    "count": 10
+  }
+}

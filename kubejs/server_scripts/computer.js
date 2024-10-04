@@ -14,6 +14,8 @@ onEvent('recipes', event => {
   //赛特斯石英粉
   remove('ae2:inscriber/certus_quartz_dust')
   remove('ae2:inscriber/fluix_dust')
+  remove('industrialforegoing:laser_drill_ore/certus_quartz')
+  remove('create:crushing/compat/ae2/quartz_ore')
   //末影粉
   remove('create:compat/ae2/milling/ender_pearl')
   remove('ae2:inscriber/ender_dust')

@@ -30,6 +30,61 @@ onEvent('block.registry', event => {
         .item((seedItem) => {
             seedItem.texture("kubejs:item/cottons_seed")
         })
+    //闪长朱砂矿
+    event.create('diorite_cinnabar_ore')
+        .material('stone')
+        .hardness(3.0)
+        .tagBlock('minecraft:mineable/pickaxe')
+        .tagBlock('minecraft:needs_stone_tool')
+        .tagBlock('forge:ores')
+        .tagBlock('forge:ores/cinnabar')
+        .tagBlock('forge:ores_in_ground/diorite')
+        .requiresTool(true)
+        .displayName('Diorite Cinnabar Ore');
+    //闪长锡矿
+    event.create('diorite_tin_ore')
+        .material('stone')
+        .hardness(5.0)
+        .tagBlock('minecraft:mineable/pickaxe')
+        .tagBlock('minecraft:needs_stone_tool')
+        .tagBlock('forge:ores')
+        .tagBlock('forge:ores/tin')
+        .tagBlock('forge:ores_in_ground/diorite')
+        .requiresTool(true)
+        .displayName('Diorite Tin Ore');
+    //闪长镍矿
+    event.create('diorite_nickel_ore')
+        .material('stone')
+        .hardness(5.0)
+        .tagBlock('minecraft:mineable/pickaxe')
+        .tagBlock('minecraft:needs_iron_tool')
+        .tagBlock('forge:ores')
+        .tagBlock('forge:ores/nickel')
+        .tagBlock('forge:ores_in_ground/diorite')
+        .requiresTool(true)
+        .displayName('Diorite Nickel Ore');
+    //闪长银矿
+    event.create('diorite_silver_ore')
+        .material('stone')
+        .hardness(5.0)
+        .tagBlock('minecraft:mineable/pickaxe')
+        .tagBlock('minecraft:needs_iron_tool')
+        .tagBlock('forge:ores')
+        .tagBlock('forge:ores/silver')
+        .tagBlock('forge:ores_in_ground/diorite')
+        .requiresTool(true)
+        .displayName('Diorite Silver Ore');
+    //永冻氟矿
+    event.create('permafrost_fluorite_ore')
+        .material('stone')
+        .hardness(8.0)
+        .tagBlock('minecraft:mineable/pickaxe')
+        .tagBlock('minecraft:needs_diamond_tool')
+        .tagBlock('forge:ores')
+        .tagBlock('forge:ores/fluorite')
+        .tagBlock('forge:ores_in_ground/permafrost')
+        .requiresTool(true)
+        .displayName('Permafrost Fluorite Ore');
     //下界硫矿
     event.create('nether_sulfur_ore')
         .material('nether_ore')

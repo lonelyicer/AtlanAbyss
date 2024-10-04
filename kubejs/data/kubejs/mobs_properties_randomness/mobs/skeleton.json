@@ -1,5 +1,19 @@
 {
     "mob_id": "minecraft:skeleton",
+    "attributes": [
+        {
+            "id": "minecraft:generic.max_health",
+            "modifier_name": "max_health for Skeleton",
+            "amount": 20,
+            "operation": "addition",
+            "world_whitelist": {
+                "dimensions": [
+                    "atlanabyss:under_forest",
+                    "atlanabyss:major_fault"
+                ]
+            }
+        }
+    ],
     "equipment": {
         "main_hand": {
             "override": true,

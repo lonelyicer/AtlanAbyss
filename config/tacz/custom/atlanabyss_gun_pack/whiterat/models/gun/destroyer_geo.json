@@ -11432,6 +11432,16 @@
 					"pivot": [0, 8, -32.75]
 				},
 				{
+					"name": "muzzle_pos",
+					"parent": "gun",
+					"pivot": [0, 8.25, -32.725]
+				},
+				{
+					"name": "stock_pos",
+					"parent": "gun",
+					"pivot": [1, 8.6625, 14.6]
+				},
+				{
 					"name": "fire_illuminated",
 					"parent": "root",
 					"pivot": [0, 8.125, -22]
@@ -11691,6 +11701,18 @@
 					"parent": "views",
 					"pivot": [8, 10, -18],
 					"rotation": [0, 120, -12.5]
+				},
+				{
+					"name": "refit_muzzle_view",
+					"parent": "views",
+					"pivot": [9, 8, -26],
+					"rotation": [0, 90, 0]
+				},
+				{
+					"name": "refit_stock_view",
+					"parent": "views",
+					"pivot": [9, 8, 18],
+					"rotation": [0, 90, 0]
 				},
 				{
 					"name": "positioning",

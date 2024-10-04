@@ -130,22 +130,25 @@
     [
       "minecraft:patch_tall_grass_2",
       "minecraft:trees_plains",
-      "atlanabyss:under_forest/lichen",
-      "atlanabyss:under_forest/lichen2",
+      "atlanabyss:major_fault/lichen",
       "minecraft:patch_grass_plain"
     ],
     [
-      "atlanabyss:major_fault/diorite_big"
+      "atlanabyss:major_fault/diorite_big",
+      "atlanabyss:major_fault/diorite_cinnabar_ore",
+      "atlanabyss:major_fault/diorite_tin_ore",
+      "atlanabyss:major_fault/diorite_nickel_ore",
+      "atlanabyss:major_fault/diorite_silver_ore"
     ],
     [],
-    [],
+    [
+      "minecraft:spring_water"
+    ],
     [
       "minecraft:glow_lichen",
-      "minecraft:patch_tall_grass_2",
       "minecraft:lush_caves_ceiling_vegetation",
       "minecraft:cave_vines",
       "minecraft:rooted_azalea_tree",
-      "minecraft:spore_blossom",
       "minecraft:classic_vines_cave_feature",
       "atlanabyss:major_fault/amethyst_void_crystals",
       "atlanabyss:major_fault/amethyst_void_ceiling_crystals"

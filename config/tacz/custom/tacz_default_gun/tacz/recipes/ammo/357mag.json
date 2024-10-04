@@ -1,0 +1,27 @@
+{
+  "materials": [
+    {
+      "item": {
+        "item": "kubejs:charged_constantan_ingot"
+      },
+      "count": 5
+    },
+    {
+      "item": {
+        "tag": "forge:gunpowder"
+      },
+      "count": 45
+    },
+    {
+      "item": {
+        "tag": "forge:nuggets/silver"
+      },
+      "count": 9
+    }
+  ],
+  "result": {
+    "type": "ammo",
+    "id": "tacz:357mag",
+    "count": 5
+  }
+}

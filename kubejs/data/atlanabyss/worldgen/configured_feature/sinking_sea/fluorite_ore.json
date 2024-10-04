@@ -10,7 +10,7 @@
                     "tag": "minecraft:sinking_sea_replaceable"
                 },
                 "state": {
-                    "Name": "mekanism:deepslate_fluorite_ore"
+                    "Name": "kubejs:permafrost_fluorite_ore"
                 }
             }
         ]

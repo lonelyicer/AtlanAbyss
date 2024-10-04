@@ -14,7 +14,7 @@
     },
     {
       "item": {
-        "tag": "forge:dusts/redstone"
+        "item": "kubejs:charged_electron_tube"
       },
       "count": 1
     },

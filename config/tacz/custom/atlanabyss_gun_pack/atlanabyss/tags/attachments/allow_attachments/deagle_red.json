@@ -1,4 +1,7 @@
 [
   "#tacz:light_extended_mag",
-  "tacz:muzzle_silence_phantom_s1"
+  "tacz:muzzle_silence_phantom_s1",
+  "#emxarms:h_mag",
+  "emxarms:muzzle_emx_catch",
+  "emxarms:stock_emx_reentrantlock"
 ]

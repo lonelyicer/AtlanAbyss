@@ -8,9 +8,9 @@
     },
     {
       "item": {
-        "tag": "forge:dusts/redstone"
+        "item": "kubejs:charged_electron_tube"
       },
-      "count": 4
+      "count": 2
     },
     {
       "item": {

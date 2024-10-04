@@ -4,8 +4,8 @@
 	"tacz:extended_mag_2",
 	"tacz:extended_mag_3",
 	"#tacz:grip",
-	"#emxarms:h_mag",
 	"#tacz:laser",
+	"#emxarms:h_mag",
 	"emxarms:muzzle_emx_catch",
 	"emxarms:stock_emx_reentrantlock"
 ]

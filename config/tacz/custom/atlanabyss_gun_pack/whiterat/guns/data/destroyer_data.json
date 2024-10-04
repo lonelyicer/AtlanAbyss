@@ -127,7 +127,9 @@
     }
   },
   "allow_attachment_types": [
-    "extended_mag"
+    "extended_mag",
+    "stock",
+    "muzzle"
   ],
   "exclusive_attachments": {}
 }

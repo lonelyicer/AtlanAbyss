@@ -1,0 +1,20 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "atlanabyss:materials/legendary"
+      },
+      "count": 2
+    },
+    {
+      "item": {
+        "tag": "atlanabyss:materials/epic"
+      },
+      "count": 9
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "tacz:m249"
+  }
+}

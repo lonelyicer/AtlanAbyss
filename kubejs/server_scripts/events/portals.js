@@ -32,7 +32,7 @@ onEvent('block.right_click', (e) => {
         server.runCommandSilent(`execute in ${dimGo} run fill ${xgo} ${ygo} ${zgo + 1} ${xgo} ${ygo} ${zgo - 1} minecraft:obsidian`);
         server.runCommandSilent(`execute in ${dimGo} run fill ${xgo} ${ygo} ${zgo} ${xgo} ${ygo} ${zgo} ${portalBlock[n]}`);
         player.potionEffects.add('minecraft:slow_falling', 200);
-        server.scheduleInTicks(20, () => {
+        server.scheduleInTicks(1, () => {
             player.playSound('minecraft:block.portal.travel');
             //server.tell(`${xgo},${ygo},${zgo}`)
         });
@@ -48,7 +48,7 @@ onEvent('block.right_click', (e) => {
         server.runCommandSilent(`execute in ${dimback} run fill ${xback + 1} ${yback} ${zback} ${xback - 1} ${yback} ${zback} minecraft:obsidian`);
         server.runCommandSilent(`execute in ${dimback} run fill ${xback} ${yback} ${zback + 1} ${xback} ${yback} ${zback - 1} minecraft:obsidian`);
         server.runCommandSilent(`execute in ${dimback} run fill ${xback} ${yback} ${zback} ${xback} ${yback} ${zback} ${portalBlock[n]}`);
-        server.scheduleInTicks(40, () => {
+        server.scheduleInTicks(1, () => {
             player.playSound('minecraft:block.portal.travel');
             //server.tell(`${xback},${yback},${zback}`)
         });

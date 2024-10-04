@@ -328,6 +328,9 @@ onEvent('recipes', event => {
     mekanism.crushing('thermal:steel_dust', 'thermal:steel_ingot').id('atlanabyss:crushing_steel_ingot')
     mekanism.metallurgic_infusing('thermal:steel_dust', 'mekanism:enriched_iron', 'mekanism:carbon', 10).id('atlanabyss:metallurgic_infusing_steel_dust')
 
+    //赛特斯石英粉
+    remove('mekanism:compat/ae2/certus_ore_to_dust')
+    mekanism.enriching('5x ae2:certus_quartz_dust', 'ae2:deepslate_quartz_ore').id('atlanabyss:deepslate_quartz_ore')
     //黑曜石粉
     remove('mekanism:enriching/conversion/obsidian_to_obsidian_dust')
     mekanism.enriching('4x create:powdered_obsidian', 'minecraft:obsidian').id('atlanabyss:enriching_obsidian')

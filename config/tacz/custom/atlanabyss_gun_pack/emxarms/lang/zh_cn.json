@@ -2,86 +2,51 @@
   "pack.tacz.emx_arms_gun.name": "§8EMX 逆境重科",
   "pack.tacz.emx_arms_gun.desc": "于绝境中凋亡，在逆境中重生。",
 
-
-  "emxarms.gun.emx_draftsman_ev.name": "§6SAIG-24HE “罪恶导航者”",
-  "emxarms.gun.emx_draftsman_ev.desc": "§6【民间私改】§eEvil_157纪念款\n§7世上没有绝对安全的系统\n§7人类才是最大的安全漏洞",
-
-  "emxarms.attachment.emx_lightweight_mag_2.tooltip": "通过大量镂空来降低重量的EMX聚合物弹匣\n挺符合“短整型”这个名称\n可他的强度是不是有些过于“短整型”了？",
-
   "emxarms.ammo.12slug.name": "§912 号口径独头弹",
-  
+  "emxarms.ammo.330x57x.desc": "§4§l易燃易爆，轻拿轻放",
+  "emxarms.ammo.339x57x.name": "§63.39x5.7mm 爆破穿甲磁钢弹",
+  "emxarms.ammo.1045x103ice.name": "§610.45x103IE 冰爆碎甲弹",
+
   "emxarms.attachment.sight_emx_char1.name": "§a“字元”I型 视觉瞄准镜",
   "emxarms.attachment.sight_emx_char2.name": "§a“字元”II型 视觉瞄准镜",
   "emxarms.attachment.sight_emx_array.name": "§a“数组” 高倍视觉瞄准镜",
+  "emxarms.attachment.sight_emx_aps.name": "§a“执行器” 弹道计算系统",
+  "emxarms.attachment.sight_emx_aw_h.name": "§6“付丧神” 特制涂装版瞄准镜",
+  "emxarms.attachment.sight_emx_char2_ev.name": "§6“字元”X型 视觉瞄准镜",
+  "emxarms.attachment.sight_emx_laterano_yh.name": "§6“MX·印花集” 定制全息瞄准镜",
+  "emxarms.attachment.sight_emx_return_yh.name": "§6“返程·印花集” 视觉瞄准镜",
+  "emxarms.attachment.sight_emx_aw_ba.name": "§6“星象仪” 定制瞄准镜",
 
   "emxarms.attachment.grip_emx_assert.name": "§a“断言” 水平握把",
-  "emxarms.attachment.emx_lightweight_mag_2.name": "§a“短整型” 轻量化扩容弹匣",
   "emxarms.attachment.grip_emx_extends.name": "§a“延伸” 垂直握把",
   "emxarms.attachment.grip_emx_extendsex.name": "§a“嵌合” 战术镭射|垂直握把",
+  "emxarms.attachment.grip_emx_synchronized.name": "§a“同步” 两脚架",
+  "emxarms.attachment.grip_emx_wireframeex.name": "§a“延伸·MX” 组合战术握把",
 
-  "emxarms.attachment.sight_emx_char2_ev.name": "§6“字元”X型 视觉瞄准镜",
-
-  "emxarms.gun.emx_mg57_yh.name": "§6HCMG-57FMJ “印花集”",
-  "emxarms.gun.emx_kund50ex_al.name": "§6MACH-50FMJ “印花集”",
-  "emxarms.gun.emx_pulse_al.name": "§6XSP-31RIP “铁砧航空”",
-  
-  "emxarms.attachment.sight_emx_laterano_yh.name": "§6“MX·印花集” 定制全息瞄准镜",
   "emxarms.attachment.muzzle_emx_catch.name": "§a枪管强化升级单元",
   "emxarms.attachment.stock_emx_reentrantlock.name": "§a“线程锁” 升级改造",
 
-  "emxarms.attachment.grip_emx_synchronized.name": "§a“同步” 两脚架",
-  "emxarms.attachment.sight_emx_return_yh.name": "§6“返程·印花集” 视觉瞄准镜",
-  "emxarms.attachment.emx_heavyweight_mag_3.name": "§a“长整型” 重型扩容弹匣",
-  "emxarms.attachment.emx_heavyweight_mag_3.tooltip": "即便它叫“长整型”也不可能让你装下百万兆弹药\n除非你想给大伙表演一个背行囊",
-
-  "emxarms.gun.emx_mg57_yh.desc": "§6【民间私改】§e重骑兵-印花集\n§7当你的对手听到一连串厚重的开火声音时\n他们就该后悔为什么没早点找掩体了",
-  "emxarms.gun.emx_kund50ex_al.desc": "§6【民间私改】§e极地探索者-印花集\n§7唯有鹰眼般的精准与决断，方能掌控生死",
-  "emxarms.gun.emx_pulse_al.desc": "§6【民间私改】§e脉冲-铁砧航空\n§7锻造未来，翱翔星际",
-  
+  "emxarms.gun.emx_mg57_yh.name": "§6HCMG-57FMJ “印花集”",
+  "emxarms.gun.emx_draftsman_ev.name": "§6SAIG-24HE “罪恶导航者”",
   "emxarms.gun.emx_pulse_dl1.name": "§6XSP-31FMJ “绝境特攻”",
   "emxarms.gun.emx_pulse_dl2.name": "§6XSP-31 “深度锐化”",
+  "emxarms.gun.emx_pulse_sc.name": "§6XSP-31 “彼岸樱”",
+  "emxarms.gun.emx_mk951l_ba.name": "§6CML-951 “星象仪”",
+  "emxarms.gun.emx_umx57h.name": "§6VXM-57X “绘”",
+  "emxarms.gun.emx_pmg90ice.name": "§6HAER-90 “永冻扳机”",
+ 
+
+  "emxarms.gun.emx_draftsman_ev.desc": "§6【民间私改】§eEvil_157纪念款\n§7世上没有绝对安全的系统\n§7人类才是最大的安全漏洞",
+  "emxarms.gun.emx_mg57_yh.desc": "§6【民间私改】§e重骑兵-印花集\n§7当你的对手听到一连串厚重的开火声音时\n他们就该后悔为什么没早点找掩体了",
   "emxarms.gun.emx_pulse_dl1.desc": "§6【Desert投稿】§e脉冲-EMITECH纪念款\n§7穿透力并非源于信仰，而是使用弹种的更换",
   "emxarms.gun.emx_pulse_dl2.desc": "§6【Desert投稿】§e脉冲-深度锐化\n§7久经沙场，无坚不摧",
-
-  "emxarms.attachment.sight_emx_aps.name": "§a“执行器” 弹道计算系统",
-
-  "emxarms.gun.emx_pulse_sc.name": "§6XSP-31 “彼岸樱”",
   "emxarms.gun.emx_pulse_sc.desc": "§6【Desert投稿】§e脉冲-彼岸樱纪念款\n§c此景，我虽求而不得\n却能……邀诸位共赏!",
-
-  "emxarms.gun.emx_mk951l_ba.name": "§6CML-951 “星象仪”",
   "emxarms.gun.emx_mk951l_ba.desc": "§6【民间私改】§eCML951-星象仪纪念款\n§d目标识别，确认主操作系统为A.R.O.N.A\n应对等级设定为最大。",
-  "emxarms.attachment.sight_emx_aw_ba.name": "§6“星象仪” 定制瞄准镜",
-
-	"emxarms.gun.emx_umx57h.name": "§6VXM-57X “绘”",
-	"emxarms.ammo.339x57x.name": "§63.39x5.7mm 爆破穿甲磁钢弹",
-	"emxarms.gun.emx_umx57h.desc": "§6【12sssss投稿】§eVXM-57X-绘\n§7一位匿名小姐的定制武器，攻速较快\n可进行连续攻击，适合更加虾头的体质",
-	"emxarms.ammo.330x57x.desc": "§4§l易燃易爆，轻拿轻放",
-
-  "emxarms.attachment.sight_emx_aw_h.name":"§6“付丧神” 特制涂装版瞄准镜",
-
-  "emxarms.attachment.ammo_h1.tooltip":"EMX-ARMS设计的军规级特种聚合物弹匣\n尺寸为标准型，兼容大部分单兵武器",
-  "emxarms.attachment.ammo_h1.name":"§a高级标准聚合物弹匣",
-  "emxarms.attachment.ammo_h2.name":"§a精英标准聚合物弹匣",
-  "emxarms.attachment.ammo_h3.name":"§a终极标准聚合物弹匣",
-  
-  "emxarms.attachment.ammo_l1.tooltip":"EMX-ARMS设计的军规级特种聚合物弹匣\n尺寸为轻型，兼容大部分轻型武器",
-  "emxarms.attachment.ammo_l1.name":"§a高级轻型聚合物弹匣",
-  "emxarms.attachment.ammo_l2.name":"§a精英轻型聚合物弹匣",
-  "emxarms.attachment.ammo_l3.name":"§a终极轻型聚合物弹匣",
-
-  
-  "emxarms.attachment.ammo_sh1.tooltip":"EMX-ARMS设计的军规级特种聚合物弹匣\n尺寸为重型，兼容大部分单兵重武器",
-  "emxarms.attachment.ammo_sh1.name":"§a高级重型聚合物弹匣",
-  "emxarms.attachment.ammo_sh2.name":"§a精英重型聚合物弹匣",
-  "emxarms.attachment.ammo_sh3.name":"§a终极重型聚合物弹匣",
-
-  "emxarms.attachment.grip_emx_wireframeex.name":"§a“延伸·MX” 组合战术握把",
-
-  "emxarms.gun.emx_pmg90ice.name": "§6HAER-90 “永冻扳机”",
+  "emxarms.gun.emx_umx57h.desc": "§6【12sssss投稿】§eVXM-57X-绘\n§7一位匿名小姐的定制武器，攻速较快\n可进行连续攻击，适合更加虾头的体质",
   "emxarms.gun.emx_pmg90ice.desc": "§6【民间私改】§e巡弋者-永冻扳机\n§b霜冻之下",
-  "emxarms.ammo.1045x103ice.name": "§610.45x103IE 冰爆碎甲弹",
 
-  "emxarms.attachment.ammo_sh3r.name":"§6钨芯重型聚合物弹匣",
-  "emxarms.attachment.ammo_l3r.name":"§6钨芯轻型聚合物弹匣",
-  "emxarms.attachment.ammo_h3r.name":"§6钨芯标准聚合物弹匣"
+  "emxarms.attachment.ammo_h3r.name": "§6钨芯通用聚合物弹匣",
+  "emxarms.attachment.ammo_h1.name": "通用聚合物弹匣",
+  "emxarms.attachment.ammo_h2.name": "§9通用聚合物弹匣",
+  "emxarms.attachment.ammo_h3.name": "§d通用聚合物弹匣"
 }

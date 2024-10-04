@@ -2,8 +2,8 @@
 	"#tacz:scope",
 	"#tacz:sniper_extended_mag",
 	"#tacz:grip",
-	"#emxarms:scope_pistol",
 	"#tacz:laser",
+	"#emxarms:h_mag",
 	"emxarms:muzzle_emx_catch",
 	"emxarms:stock_emx_reentrantlock"
 ]

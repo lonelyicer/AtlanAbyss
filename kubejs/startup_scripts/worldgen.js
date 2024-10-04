@@ -198,7 +198,7 @@ onEvent('worldgen.add', event => {
     ore.id = 'kubejs:inversia_diamond_ore'
     ore.biomes = /^inversia:*/
 
-    ore.addTarget('minecraft:deepslate', 'minecraft:deepslate_diamond_ore')//颠倒钻石矿
+    ore.addTarget('minecraft:deepslate', 'minecraft:deepslate_emerald_ore')//颠倒绿宝石矿
 
     ore.count([8, 12]).squared().triangleHeight(anchors.aboveBottom(198), anchors.absolute(255))
 
@@ -231,16 +231,4 @@ onEvent('worldgen.add', event => {
     ore.noSurface = 1
     ore.worldgenLayer = 'underground_ores'
   });
-
-  event.addOre(ore => {
-    ore.id = 'kubejs:deepslate_fluorite_ore'
-    ore.biomes = /^inversia:*/
-
-    ore.addTarget('minecraft:deepslate', 'mekanism:deepslate_fluorite_ore')//颠倒红石矿
-
-    ore.count([8, 12]).squared().triangleHeight(anchors.aboveBottom(188), anchors.absolute(255))
-
-    ore.size = 8
-    ore.worldgenLayer = 'underground_ores'
-  });
-})
+});

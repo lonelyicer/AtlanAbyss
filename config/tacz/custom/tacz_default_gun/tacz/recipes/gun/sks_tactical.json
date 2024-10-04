@@ -1,0 +1,17 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "atlanabyss:materials/epic"
+      },
+      "count": 6
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "tacz:sks_tactical",
+    "attachments": {
+      "stock": "tacz:oem_stock_tactical"
+    }
+  }
+}

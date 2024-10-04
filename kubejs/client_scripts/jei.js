@@ -170,6 +170,7 @@ onEvent('jei.hide.items', event => {
 		'ae2:vibration_chamber',
 		'ae2:charger',
 		'ae2:silicon_press',
+		'ae2:quartz_ore',
 		//pipez
 		'pipez:wrench',
 		//neapolitan

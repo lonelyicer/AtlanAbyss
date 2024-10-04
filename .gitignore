@@ -46,11 +46,8 @@ config/worldedit
 config/bocchud
 config/titanium
 config/touhou_little_maid
-config/yes_steve_model
-config/tacz/custom/tacz_default_gun
 config/tacz/backup
 config/tacz/server
 
 resourcepacks/Quark Programmer Art.zip
 resourcepacks/AtlanAbyss Music Pack v1.0.0.zip
-resourcepacks/AtlanAbyss Music Pack v1.0.0
