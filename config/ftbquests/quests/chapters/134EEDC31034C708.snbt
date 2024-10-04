@@ -384,7 +384,6 @@
 			y: 2.5d
 			description: ["不管是用传统的熔炉冶炼，还是通过四处搜刮获取，铁都是本游戏里最为重要的资源。"]
 			dependencies: ["71BE14B442164268"]
-			hide: true
 			id: "58D3EC802A6FBD27"
 			tasks: [{
 				id: "30F97086984C186C"
@@ -405,6 +404,7 @@
 			shape: "hexagon"
 			description: ["落地水：手里拿着水桶的情况下受到致命摔落伤害时会自动触发落地水哦。"]
 			dependencies: ["58D3EC802A6FBD27"]
+			hide: true
 			id: "2EAB82EBAF44C882"
 			tasks: [{
 				id: "52F1B5CDB0E3F9A4"
@@ -1069,7 +1069,6 @@
 			y: 1.5d
 			description: ["使用石磨粉碎赭金砂可以获得些许粉碎金矿石。"]
 			dependencies: ["71BE14B442164268"]
-			hide: true
 			id: "43F7CFD129A732E5"
 			tasks: [{
 				id: "06093F967B6E0F68"

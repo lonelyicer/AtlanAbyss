@@ -189,7 +189,6 @@ onEvent('block.registry', event => {
         .material('stone')
         .hardness(3.0)
         .tagBlock('minecraft:mineable/pickaxe')
-        .tagBlock('minecraft:needs_iron_tool')
         .requiresTool(true)
         .displayName('Raw Aluminum Block');
     //粗铋块

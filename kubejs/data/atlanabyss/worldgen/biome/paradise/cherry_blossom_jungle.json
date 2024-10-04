@@ -34,29 +34,15 @@
     "monster": [],
     "creature": [
       {
-        "type": "minecraft:mooshroom",
-        "weight": 100,
+        "type": "alexsmobs:spawn_egg_spectre",
+        "weight": 10,
         "minCount": 4,
         "maxCount": 4
       }
     ],
     "ambient": [],
-    "axolotls": [
-      {
-        "type": "minecraft:axolotl",
-        "weight": 10,
-        "minCount": 4,
-        "maxCount": 6
-      }
-    ],
-    "underground_water_creature": [
-      {
-        "type": "minecraft:tropical_fish",
-        "weight": 100,
-        "minCount": 4,
-        "maxCount": 8
-      }
-    ],
+    "axolotls": [],
+    "underground_water_creature": [],
     "water_creature": [],
     "water_ambient": [],
     "misc": []

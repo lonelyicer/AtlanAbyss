@@ -43,12 +43,6 @@
         "maxCount": 2
       },
       {
-        "type": "alexsmobs:rattlesnake",
-        "weight": 10,
-        "minCount": 2,
-        "maxCount": 2
-      },
-      {
         "type": "alexsmobs:guster",
         "weight": 20,
         "minCount": 1,
@@ -124,14 +118,7 @@
       }
     ],
     "ambient": [],
-    "axolotls": [
-      {
-        "type": "minecraft:axolotl",
-        "weight": 10,
-        "minCount": 4,
-        "maxCount": 6
-      }
-    ],
+    "axolotls": [],
     "underground_water_creature": [
       {
         "type": "minecraft:tropical_fish",

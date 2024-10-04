@@ -292,6 +292,8 @@ const tagToAdd = [
 	['forge:ores', 'kubejs:mercury_silver_ore'],//矿石
 	['forge:ores/silver', 'kubejs:mercury_silver_ore'],
 	['forge:ores/silver', 'kubejs:diorite_silver_ore'],
+	//氟
+	['forge:ores/fluorite', 'kubejs:permafrost_fluorite_ore'],
 	//镍
 	['forge:ores/nickel', 'kubejs:diorite_nickel_ore'],
 	//锡
@@ -392,6 +394,11 @@ onEvent('tags.items', event => {
 		'kubejs:album_adp7', 'kubejs:album_adp8',
 		'kubejs:album_adp9', 'kubejs:album_mameyudoufu',
 	]);
+
+	//石头标签
+	event.add('quark:stone_tool_materials', [
+		'botania:metamorphic_fungal_cobblestone'
+	])
 
 	//原木标签
 	event.add('atlanabyss:unstripped_wood', [

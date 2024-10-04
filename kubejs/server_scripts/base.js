@@ -248,6 +248,38 @@ onEvent('recipes', event => {
 		'farmersdelight:rotten_tomato'
 	).id("atlanabyss:spider_eye")
 
+	//熔炉
+	remove('quark:building/crafting/furnaces/cobblestone_furnace')
+	event.shaped('minecraft:furnace', [
+		'AAA',
+		'A A',
+		'AAA'
+	], {
+		A: 'minecraft:cobblestone'
+	}).id("atlanabyss:furnace_from_cobblestone")
+	event.shaped('minecraft:furnace', [
+		'AAA',
+		'A A',
+		'AAA'
+	], {
+		A: 'minecraft:andesite'
+	}).id("atlanabyss:furnace_from_andesite")
+	event.shaped('minecraft:furnace', [
+		'AAA',
+		'A A',
+		'AAA'
+	], {
+		A: 'minecraft:diorite'
+	}).id("atlanabyss:furnace_from_diorite")
+	event.shaped('minecraft:furnace', [
+		'AAA',
+		'A A',
+		'AAA'
+	], {
+		A: 'minecraft:granite'
+	}).id("atlanabyss:furnace_from_granite")
+
+
 
 
 	//修复下界合金粒

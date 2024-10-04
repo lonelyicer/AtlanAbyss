@@ -46,14 +46,7 @@
       }
     ],
     "ambient": [],
-    "axolotls": [
-      {
-        "type": "minecraft:axolotl",
-        "weight": 10,
-        "minCount": 4,
-        "maxCount": 6
-      }
-    ],
+    "axolotls": [],
     "underground_water_creature": [
       {
         "type": "minecraft:tropical_fish",
