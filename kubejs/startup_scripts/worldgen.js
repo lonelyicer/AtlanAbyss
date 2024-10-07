@@ -176,7 +176,7 @@ onEvent('worldgen.add', event => {
 
     ore.addTarget('#forge:netherrack', 'kubejs:nether_aluminum_ore')//下界铝矿
 
-    ore.count([8, 16]).squared().triangleHeight(anchors.aboveBottom(104), anchors.absolute(128))
+    ore.count([8, 16]).squared().triangleHeight(anchors.aboveBottom(80), anchors.absolute(128))
 
     ore.size = 6
     ore.worldgenLayer = 'underground_ores'

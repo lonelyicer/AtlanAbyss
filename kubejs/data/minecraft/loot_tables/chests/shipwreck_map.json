@@ -19,6 +19,21 @@
             }
           ],
           "name": "minecraft:moss_block"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1.0,
+                "max": 4.0
+              },
+              "add": false
+            }
+          ],
+          "name": "minecraft:cactus"
         }
       ]
     },
@@ -39,30 +54,6 @@
             }
           ],
           "name": "minecraft:kelp"
-        }
-      ]
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:exploration_map",
-              "decoration": "red_x",
-              "zoom": 1,
-              "skip_existing_chunks": false
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "filled_map.buried_treasure"
-              }
-            }
-          ],
-          "name": "minecraft:map"
         }
       ]
     },

@@ -110,4 +110,14 @@ onEvent('recipes', event => {
     event.shapeless('compactmachines:machine_tiny', [
         'compactmachines:personal_shrinking_device'
     ]).id('atlanabyss:machine_from_personal_shrinking_device')
+
+    //区块加载升级
+    event.shaped('compactmachines:chunkloader_upgrade', [
+        'AAA',
+        'ABA',
+        'AAA'
+    ], {
+        A: 'kubejs:vibration_mechanism',
+        B: 'compactmachines:wall'
+    }).id('atlanabyss:chunkloader_upgrade')
 })

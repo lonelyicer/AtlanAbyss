@@ -1273,7 +1273,7 @@
 			shape: "hexagon"
 			description: [
 				"一个多方块机器，按住 [W] 可查看搭建方法。"
-				"机器最下面一层为实心压缩墙。"
+				"机器最下面一层为实心压缩墙（意思是这台机器你只能建在压缩空间内）。"
 			]
 			dependencies: ["37B5919B712CD6A4"]
 			hide: true
@@ -1423,6 +1423,33 @@
 			}]
 			rewards: [{
 				id: "2E346119E9A567C2"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 2.0d
+			y: -1.0d
+			shape: "hexagon"
+			dependencies: ["68A8270CB408D0C4"]
+			hide: true
+			id: "71AC2883BD673F2D"
+			tasks: [{
+				id: "7F221B8E247E0D51"
+				type: "item"
+				item: {
+					id: "compactmachines:chunkloader_upgrade"
+					Count: 1b
+					tag: {
+						upgrade_info: {
+							key: "compactmachines:chunkloader"
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "2D5259B630AA6E21"
 				type: "xp"
 				xp: 10
 			}]
