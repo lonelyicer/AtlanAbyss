@@ -1,0 +1,8 @@
+{
+  "name": "whiterat.gun.winered.name",
+  "display": "whiterat:winered_display",
+  "data": "whiterat:winered_data",
+  "tooltip": "whiterat.gun.winered.desc",
+  "type": "rifle",
+  "sort": 9
+}

@@ -1,0 +1,7 @@
+{
+  "hidden": true,
+  "name": "whiterat.attachment.winered_scope.name",
+  "display": "whiterat:winered_scope_display",
+  "data": "whiterat:winered_scope_data",
+  "type": "scope"
+}
